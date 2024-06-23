@@ -5,7 +5,7 @@
 # 3. Set
 # 4. Dictionary
 
-# 2. Tipe Data Tuple (Ordered-Terurut) - (Unchnagble-Tidak Bisa diubah)
+""" Tipe Data Tuple (Ordered-Terurut) - (Unchnagble-Tidak Bisa diubah) """
 
 # Cara Standar Tuple
 standar_tuple = ('Laki-laki', 'Perempuan')

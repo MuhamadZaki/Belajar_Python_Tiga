@@ -1,4 +1,4 @@
-# Name Variable dan Value
+"""  Name Variable dan Value """
 
 nama = 'Muhamad Zaki' # --> String atau teks
 usia = 23             # --> Integer atau bilangan bulat
@@ -12,7 +12,7 @@ print('Sudah Menikah :', sudah_menikah)     # False
 
 print('-------------')
 
-# Aturan Assignment
+""" Aturan Assignment """
 
 # 1. Multiple Assignment
 
@@ -31,7 +31,8 @@ print('C :', c) # 10
 
 print('-------------')
 
-# Memeriksa Tipe Data
+""" Memeriksa Tipe Data """
+
 a = 'Manusia'
 b = 50
 c = 5.5
@@ -43,7 +44,7 @@ print(type(d)) # Boolean
 
 print('-------------')
 
-# Mencoba Tipe Data Numrik
+""" Mencoba Tipe Data Numrik """
 
 # 1
 panjang = 5
@@ -67,7 +68,7 @@ print(type(c)) # 15j --> complex
 
 print('-------------')
 
-# Tipe Data String atau Teks
+""" Tipe Data String atau Teks """
 
 nama_depan = 'Muhamad'
 nama_belakang = 'Zaki'
@@ -85,7 +86,7 @@ print(type(alamat))       # String
 
 print('-------------')
 
-# Perbedaan Tipe Data String dan Numrik
+""" Perbedaan Tipe Data String dan Numrik """
 
 # 1. Penjumlahan Dua data String
 print('5'+ '5')     # 55
@@ -100,7 +101,8 @@ print('Meki ' * 5)  # Meki Meki Meki Meki Meki
 
 print('-------------')
 
-# Tipe Data Boolean (True or False)
+"""  Tipe Data Boolean (True or False) """
+
 manusia = True
 robot = False
 print('Apa kamu manusia?', manusia) # True

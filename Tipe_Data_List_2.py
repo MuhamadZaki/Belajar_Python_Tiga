@@ -5,7 +5,7 @@
 # 3. Set
 # 4. Dictionary
 
-""" H1 Tipe Data List - (Ordered-Terurut) - (Changable-Bisa diubah) H1"""
+""" Tipe Data List - (Ordered-Terurut) - (Changable-Bisa diubah) """
 
 # List Kosong
 list_kosong = [] 
@@ -30,225 +30,186 @@ print('list Campuran :', list_campuran) # 100, 10.0, Tobrut, True
 
 """ Mengambil Indeks Dari List (Indeks dimulai dari 0) """
 
-# Contoh 1 : Mengembalikan elemen pertama dari list_string
-print('Indeks 0 dari List_String :',list_string[0])         # manusia
+print('Indeks 0 dari List_String :',list_string[0])         # Mengembalikan elemen pertama dari list_string dan hasilnya adalah manusia
 
-# Contoh 2 : Mengembalikan elemen kedua  dari list_integer
-print('Indeks 1 dari List_Integer : ', list_integer[1])     # 2
+print('Indeks 1 dari List_Integer : ', list_integer[1])     # Mengembalikan elemen kedua  dari list_integer dan hasilnya adalah 2
 
-# Contoh 3 : Mengembalikan elemen ke empat dari list_campuran
-print('Indeks 4 dari List_Campuran :', list_campuran[3])    # True
+print('Indeks 4 dari List_Campuran :', list_campuran[3])    # Mengembalikan elemen ke empat dari list_campuran dan hasilnya adalah True
 
 
 """ Mengambil Indeks negatif """
 
-# Contoh 1 : Mengembalikan elemen terakhir dari list_string
-print('Indeks -1 dari List_String :',list_string[-1])       # Bumi
+print('Indeks -1 dari List_String :',list_string[-1])       # Mengembalikan elemen terakhir dari list_string dan hasilnya adalah Bumi
 
-# Contoh 2 : Mengembalikan elemen kedua dari terakhir dari list_integer
-print('Indeks -2 dari List_Integer : ', list_integer[-2])   # 9
+print('Indeks -2 dari List_Integer : ', list_integer[-2])   # Mengembalikan elemen kedua dari terakhir dari list_integer dan hasilnya adalah 9
 
-# Contoh 3 : Mengembalikan elemen ketiga dari terakhir dari list_integer
-print('Indeks -3 dari List_Integer : ', list_integer[-3])   # 8
+print('Indeks -3 dari List_Integer : ', list_integer[-3])   # Mengembalikan elemen ketiga dari terakhir dari list_integer dan hasilnya adalah 8
 
-# Contoh 4 : Mengembalikan elemen keempat dari terakhir dari list_campuran
-print('Indeks -4 dari List_Campuran :', list_campuran[-4])  # 100
+print('Indeks -4 dari List_Campuran :', list_campuran[-4])  # Mengembalikan elemen keempat dari terakhir dari list_campuran dan hasilnya adalah 100
 
 print('-------------')
 
-"""Slicing List atau Teknik Memotong Value Pada List"""
+""" Slicing List atau Teknik Memotong Value Pada List """
 
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian', 'Nanas']
 print('Hasil List_Buah Utama : ', list_buah)
 
-# Contoh 1 : Mengambil elemen dari indeks 0 hingga sebelum indeks 1
-print(list_buah[0:1])   # Anggur
+print(list_buah[0:1])   # Mengambil elemen dari indeks 0 hingga sebelum indeks 1 dan hasilnya adalah Anggur
 
-# COntoh 2 : Mengambil elemen dari indeks 0 hingga sebelum indeks 2
-print(list_buah[0:2])   # Anggur, Mellon
+print(list_buah[0:2])   # Mengambil elemen dari indeks 0 hingga sebelum indeks 2 Anggur, dan hasilnya aalah Mellon
 
-# Contoh 3 : Mengambil elemen dari indeks 1 hingga sebelum indeks 3
-print(list_buah[1:3])   # Melon, Jesruk
+print(list_buah[1:3])   # Mengambil elemen dari indeks 1 hingga sebelum indeks 3 dan hasilnya adalah Melon, Jeruk
 
-# Contoh 4 : Mengambil elemen dari indeks 0 hingga sebelum indeks -1 (elemen terakhir)
-print(list_buah[0:-1])  # Anggur, Melon, Jeruk, Durian
+print(list_buah[0:-1])  # Mengambil elemen dari indeks 0 hingga sebelum indeks -1 (elemen terakhir) dan hasilnya adalah Anggur, Melon, Jeruk, Durian
 
-# Contoh 5 : Mengambil elemen dari indeks -1 hingga sebelum indeks -1 --> Karena indeks mulai dan indeks akhir sama, hasilnya kosong
-print(list_buah[-1:-1]) # []
+print(list_buah[-1:-1]) # Mengambil elemen dari indeks -1 hingga sebelum indeks -1 --> Karena indeks mulai dan indeks akhir sama, dan hasilnya kosong []
 
-# Contoh 6 : Mengambil elemen dari indeks -1 hingga sebelum indeks -2 --> Karena indeks mulai lebih besar dari indeks akhir, hasilnya kosong
-print(list_buah[-1:-2]) # []
+print(list_buah[-1:-2]) # Mengambil elemen dari indeks -1 hingga sebelum indeks -2 --> Karena indeks mulai lebih besar dari indeks akhir, dan hasilnya kosong []
 
-# Contoh 7 : Mengambil elemen dari indeks -3 hingga sebelum indeks -1
-print(list_buah[-3:-1]) # Jeruk, Durian
+print(list_buah[-3:-1]) # Mengambil elemen dari indeks -3 hingga sebelum indeks -1 dan hasilnya adalah Jeruk, Durian
 
 print('-------------')
 
-"""Slicing Tanpa Batas"""
+""" Slicing Tanpa Batas """
 
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
-# Contoh 1 : Mengambil semua elemen dari indeks 0 sampai akhir
-print(list_buah[0:])  # Anggur, Melon, Jeruk, Durian
+print(list_buah[0:])  # Mengambil semua elemen dari indeks 0 sampai akhir dan hasilnya adalah Anggur, Melon, Jeruk, Durian
 
-# Contoh 2 : Mengambil semua elemen dari indeks 1 sampai akhir
-print(list_buah[1:])  # Melon, Jeruk, Durian
+print(list_buah[1:])  # Mengambil semua elemen dari indeks 1 sampai akhir dan hasilnya adalah Melon, Jeruk, Durian
 
-# Contoh 3 : Mengambil semua elemen dari indeks 2 sampai akhir
-print(list_buah[2:])  # Jeruk, Durian
+print(list_buah[2:])  # Mengambil semua elemen dari indeks 2 sampai akhir dan hasilnya adalah Jeruk, Durian
 
-# Contoh 4 : Mengambil semua elemen dari awal sampai sebelum indeks 0
-print(list_buah[:0])  # Kosong
+print(list_buah[:0])  # Mengambil semua elemen dari awal sampai sebelum indeks 0 dan hasinya adalah Kosong
 
-# Contoh 5 : Mengambil elemen dari indeks 0 sampai sebelum indeks 1
-print(list_buah[0:1]) # Anggur
+print(list_buah[0:1]) # Mengambil elemen dari indeks 0 sampai sebelum indeks 1 dan hasilnya adalah Anggur
 
-# Contoh 6 : Mengambil elemen dari indeks 0 sampai sebelum indeks 2
-print(list_buah[0:2]) # Anggur, Melon
+print(list_buah[0:2]) # Mengambil elemen dari indeks 0 sampai sebelum indeks 2 dan hasilnya adalah Anggur, Melon
 
-# Contoh 7 : Mengambil semua elemen dari awal sampai sebelum indeks 3
-print(list_buah[:3])  # Anggur, Melon, Jeruk
+print(list_buah[:3])  # Mengambil semua elemen dari awal sampai sebelum indeks 3 dan hasilnya adalah Anggur, Melon, Jeruk
 
-# Contoh 8 : Mengambil semua elemen dari awal sampai sebelum indeks 4
-print(list_buah[:4])  # Anggur, Melon, Jeruk, Durian
+print(list_buah[:4])  # Mengambil semua elemen dari awal sampai sebelum indeks 4 dan hasilnya adalah Anggur, Melon, Jeruk, Durian
 
 print('-------------')
 
-"""Mengubah Data di Dalam List (changable/bisa diubah)"""
+""" Mengubah Data di Dalam List (changable/bisa diubah) """
 
-# Contoh 1 : Mengubah elemen pertama (indeks 0)
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 list_buah[0] = 'Nanas'
-print(list_buah) # Nanas, Melon, Jeruk, Durian
+print(list_buah) # Mengubah elemen pertama (indeks 0) dan hasilnya adalah Nanas, Melon, Jeruk, Durian
 
-# Contoh 2 : Mengubah elemen terakhir (indeks -1)
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 list_buah[-1] = 'Belimbing'
-print(list_buah) # Anggur, Melon, Jeruk, Belimbing
+print(list_buah) # Mengubah elemen terakhir (indeks -1) dan hasilnya adalah Anggur, Melon, Jeruk, Belimbing
 
 print('-------------')
 
 """ Mengubah Data dalam Range Pada List """
 
-# Contoh 1: Mengubah elemen pada indeks 1 sampai 2 (termasuk)
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
-list_buah[1:3] = ['Nangka', 'Semangka'] # Anggur, Nangka, Semangka, Durian
+list_buah[1:3] = ['Nangka', 'Semangka'] # Mengubah elemen pada indeks 1 sampai 2 (termasuk) dan hasilnya adalah Anggur, Nangka, Semangka, Durian
 print(list_buah)
 
-# Contoh 2: Mengubah elemen pada indeks 2 sampai 3 (termasuk)
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
-list_buah[2:4] = ['Nangka', 'Semangka'] # Anggur, Melon, Nangka, Semangka
+list_buah[2:4] = ['Nangka', 'Semangka'] # Mengubah elemen pada indeks 2 sampai 3 (termasuk) dan hasilnya adalah Anggur, Melon, Nangka, Semangka
 print(list_buah)
 
 print('-------------')
 
-# Contoh : Menambahkan elemen baru di indeks akhir
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 list_buah.append('Sirsak')
-print(list_buah) # Anggur, Melon, Jeruk, Durian, Sirsak
+print(list_buah) # Menambahkan elemen baru di indeks akhir dan hasilnya adalah Anggur, Melon, Jeruk, Durian, Sirsak
 
-# Contoh : Menghapus semua elemen pada list
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 list_buah.clear()
-print(list_buah) # []
+print(list_buah) # Menghapus semua elemen pada list dan hasilnya adalah kosong []
 
-# Contoh : Membuat salinan baru dari list
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buat Utama : ')
 
 list_buah_copy = list_buah.copy()
-print('Salinan List_Buah : ', list_buah_copy)  # Anggur, Melon, Jeruk, Durian
+print('Salinan List_Buah : ', list_buah_copy)  # Membuat salinan baru dari list dan hasilnya adalah Anggur, Melon, Jeruk, Durian
 
-# Contoh : Menambahkan elemen baru Sirsak di posisi indeks 0
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 list_buah.insert(0, 'Sirsak')
-print(list_buah) # Sirsak, Anggur, Melon, Jeruk, Durian
+print(list_buah) # Menambahkan elemen baru Sirsak di posisi indeks 0 dan hasilnya adalah Sirsak, Anggur, Melon, Jeruk, Durian
 
-# Contoh : Menambahkan elemen baru sirsak di posisi indeks 2
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 list_buah.insert(2, 'Sirsak')
-print(list_buah) # Anggur, Melon, Sirsak, Jeruk, Durian
+print(list_buah) # Menambahkan elemen baru sirsak di posisi indeks 2 dan hasilnya adalah Anggur, Melon, Sirsak, Jeruk, Durian
 
-# Contoh : Mengembalikan posisi indeks pertama dari elemen Jeruk
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 index_jeruk = list_buah.index('Jeruk')
-print('Indeks dari Jeruk : ', index_jeruk) # 2
+print('Indeks dari Jeruk : ', index_jeruk) # Mengembalikan posisi indeks pertama dari elemen Jeruk dan hasilnya adalah 2
 
 print('-------------')
 
-# Contoh : Menghapus dan mengembalikan elemen akhir dari list
 list_angka = [1, 2, 3, 4, 5]
 print('Hasil List_Angka utama :', list_angka)
 
 angka_yang_dihapus = list_angka.pop()
-print('Angka yang di Hapus : ',angka_yang_dihapus) # 5
+print('Angka yang di Hapus : ',angka_yang_dihapus) # Menghapus dan mengembalikan elemen akhir dari list dan hasilnya adalah 5
 
-# Contoh : Menghitung berapa kali nilai 2 muncul di dalam list
 list_angka = [1, 2, 2, 3, 4, 5]
 print('Hasil List_Angka utama :', list_angka)
 
 jumlah_dua = list_angka.count(2)
-print('Jumlah angka 2 : ', jumlah_dua) # 2
+print('Jumlah angka 2 : ', jumlah_dua) # Menghitung berapa kali nilai 2 muncul di dalam list dan hasilnya adalah 2
 
-# Contoh : Menghapus elemen pertama yang memiliki nilai 1 dari list
 list_angka = [1, 2, 2, 3, 4, 5]
 print('Hasil List_Angka utama :', list_angka)
 
 list_angka.remove(1)
-print(list_angka) # 2, 2, 3, 4, 5
+print(list_angka) # Menghapus elemen pertama yang memiliki nilai 1 dari list dan hasilnya adalah 2, 2, 3, 4, 5
 
 print('-------------')
 
-# Contoh : Menghapus elemen pertama yang memiliki nilai Anggur dari list
 list_buah = ['Anggur', 'Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 list_buah.remove('Anggur')
-print(list_buah) # Anggur, Melon, Jeruk, Durian
+print(list_buah) # Menghapus elemen pertama yang memiliki nilai Anggur dari list dan hasilnya adalah Anggur, Melon, Jeruk, Durian
 
-# Contoh : Menghapus elemen terakhir dari list
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 del list_buah[-1]
-print(list_buah) # Anggur, Melon, Jeruk
+print(list_buah) # Menghapus elemen terakhir dari list dan hasilnya adalah Anggur, Melon, Jeruk
 
-# Contoh : Menghapus elemen pertama dari list
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 del list_buah[0]
-print(list_buah) # Melon, Jeruk, Durian
+print(list_buah) # Menghapus elemen pertama dari list dan hasilnya adalah Melon, Jeruk, Durian
 
-# Contoh : Menghapus elemen dari indeks 0 hingga 1 (indeks 0 dan 1) dari list
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 del list_buah[0:2]
-print(list_buah) # Jeruk, Durian
+print(list_buah) # Menghapus elemen dari indeks 0 hingga 1 (indeks 0 dan 1) dari list dan hasilnya adalah Jeruk, Durian
 
 print('-------------')
 
-"""Menggabungkan Dua Buah List atau Lebih"""
+""" Menggabungkan Dua Buah List atau Lebih """
 a = [1, 2, 3]
 b = ['a']
 c = [True, 'b', False]

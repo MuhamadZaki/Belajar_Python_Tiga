@@ -1,5 +1,4 @@
-
-# 1.1 Macam-Macam Operator 
+""" Macam-Macam Operator  """
 
 # Sederhana Operator Aritmatika
 a = 10 + 5  # 5 dan 10 disebut  Operan, lalu + disebut Operator
