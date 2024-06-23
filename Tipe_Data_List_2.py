@@ -8,24 +8,24 @@
 # 1. Tipe Data List - (Ordered-Terurut) - (Changable-Bisa diubah)
 
 # 1.1 List Kosong
-list_kosong = [] # Kosong
+list_kosong = [] 
 
 
 # 1.2 List yang Berisi Kumpulan String
-list_string = ['Manusia', 'adalah', 'mahluk', 'Bumi!'] # Manusia, adalah, mahluk, Bumi
+list_string = ['Manusia', 'adalah', 'mahluk', 'Bumi!'] 
 
 
 # 1.3 List yang Berisi Kumpulan Integer
-list_integer = [1,2,3,4,5,6,7,8,9,0] # 1,2,3,4,5,6,7,8,9,0
+list_integer = [1,2,3,4,5,6,7,8,9,0] 
 
 
 # 1.4 List yang Berisi Campuran Tipe Data (int, float, string, boolean)
-list_campuran = [100, 10.0, 'Tobrut', True] # 100, 10.0, Tobrut, True
+list_campuran = [100, 10.0, 'Tobrut', True]
 
-print('List Kosong :', list_kosong)
-print('List_String :', list_string)
-print('List Integer :', list_integer)
-print('list Campuran :', list_campuran)
+print('List Kosong :', list_kosong)     # []
+print('List_String :', list_string)     # Manusia, adalah, mahluk, Bumi
+print('List Integer :', list_integer)   # 1,2,3,4,5,6,7,8,9,0
+print('list Campuran :', list_campuran) # 100, 10.0, Tobrut, True
 
 
 # 1.5 Mengambil Indeks dari List (Indeks dimulai dari 0)
@@ -99,12 +99,26 @@ print(list_buah)
 
 # 1.11 Menambah Item ke Dalam List
 
-# Menambah Data di index Belakang (fungsi append())
+# Menambah Data atau element Baru Pada List di index Belakang (fungsi append())
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 list_buah.append('Sirsak')
 print(list_buah) # Anggur, Melon, Jeruk, Durian, Sirsak
+
+# Menghapus Semua Item Pada List (funsi clear())
+list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
+print('Hasil List_Buah Utama : ', list_buah)
+
+list_buah.clear()
+print(list_buah) # []
+
+# 3.Mengembalikan hasil duplikat dari list (fungsi copy())
+list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
+print('Hasil List_Buat Utama : ')
+
+list_buah_copy = list_buah.copy()
+print('Salinan List_Buah : ', list_buah_copy)  # Anggur, Melon, Jeruk, Durian
 
 # Menambah Data di index Depan (fungsi insert())
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
@@ -120,6 +134,12 @@ print('Hasil List_Buah Utama : ', list_buah)
 list_buah.insert(2, 'Sirsak')
 print(list_buah) # Anggur, Melon, Sirsak, Jeruk, Durian
 
+# Mengembalikan indeks pertama dari item yang sudah didefinisikan
+list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
+print('Hasil List_Buah Utama : ', list_buah)
+
+index_jeruk = list_buah.index('Jeruk')
+print('Indeks dari Jeruk : ', index_jeruk) # Output: 2
 
 # 1.12 Menghapus Item dari List
 list_angka = [1, 2, 3, 4, 5]
@@ -128,6 +148,13 @@ print('Hasil List_Angka utama :', list_angka)
 # Hapus Satu Angka di Indeks Belakang (fungsi pop())
 angka_yang_dihapus = list_angka.pop()
 print('Angka yang di Hapus : ',angka_yang_dihapus) # 5
+
+# Mengembalikan jumlah item pada list sesuai yang didefinisikan
+list_angka = [1, 2, 2, 3, 4, 5]
+print('Hasil List_Angka utama :', list_angka)
+
+jumlah_dua = list_angka.count(2)
+print('Jumlah angka 2 : ', jumlah_dua) # 2
 
 # Hapus Data yang Memiliki Value yang Sama atau Tidak (fungsi remove())
 list_angka = [1, 2, 2, 3, 4, 5]
@@ -186,6 +213,13 @@ print('Hasil List_Buah Utama : ', list_buah)
 
 list_buah.reverse()
 print(list_buah) # Durian, Apel, Zaitun, Jeruk, Mangga
+
+# Menambahkan elemen dari iterable (misalnya list) ke list saat ini
+list_buah = ['Mangga', 'Jeruk', 'Zaitun']
+buah_tambahan = ['Apel', 'Durian']
+
+list_buah.extend(buah_tambahan)
+print(list_buah) # Mangga, Jeruk, Zaitun, Apel, Durian
 
 
 # FUNGSI - FUNGSI BAWAAN LIST
