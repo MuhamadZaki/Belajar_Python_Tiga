@@ -231,7 +231,7 @@ print(str_a is not str_b) # Karena nilai a dan b identik(sama) dan False
 print(tuple_a is tuple_b)       # Karena nilai a dan b identik(sama) dan True
 print(tuple_a is not tuple_b)   # Karena nilai a dan b identik(sama) dan False
 
-
+print('-------------')
 
 
 

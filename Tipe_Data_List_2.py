@@ -7,19 +7,19 @@
 
 # 1. Tipe Data List - (Ordered-Terurut) - (Changable-Bisa diubah)
 
-# 1.1 List Kosong
+# List Kosong
 list_kosong = [] 
 
 
-# 1.2 List yang Berisi Kumpulan String
+# List yang Berisi Kumpulan String
 list_string = ['Manusia', 'adalah', 'mahluk', 'Bumi!'] 
 
 
-# 1.3 List yang Berisi Kumpulan Integer
+# List yang Berisi Kumpulan Integer
 list_integer = [1,2,3,4,5,6,7,8,9,0] 
 
 
-# 1.4 List yang Berisi Campuran Tipe Data (int, float, string, boolean)
+# List yang Berisi Campuran Tipe Data (int, float, string, boolean)
 list_campuran = [100, 10.0, 'Tobrut', True]
 
 print('List Kosong :', list_kosong)     # []
@@ -28,20 +28,21 @@ print('List Integer :', list_integer)   # 1,2,3,4,5,6,7,8,9,0
 print('list Campuran :', list_campuran) # 100, 10.0, Tobrut, True
 
 
-# 1.5 Mengambil Indeks dari List (Indeks dimulai dari 0)
+# Mengambil Indeks dari List (Indeks dimulai dari 0)
 print('Indeks 0 dari List_String :',list_string[0])         # manusia
 print('Indeks 1 dari List_Integer : ', list_integer[1])     # 2
 print('Indeks 4 dari List_Campuran :', list_campuran[3])    # True
 
 
-# 1.6 Mengambil Indeks negatif
+# Mengambil Indeks negatif
 print('Indeks -1 dari List_String :',list_string[-1])       # Bumi
 print('Indeks -2 dari List_Integer : ', list_integer[-2])   # 9
 print('Indeks -3 dari List_Integer : ', list_integer[-3])   # 8
 print('Indeks -4 dari List_Campuran :', list_campuran[-4])  # 100
 
+print('-------------')
 
-# 1.7 Slicing List atau Teknik Memotong Value Pada List
+# Slicing List atau Teknik Memotong Value Pada List
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian', 'Nanas']
 print('Hasil List_Buah Utama : ', list_buah)
 
@@ -49,27 +50,29 @@ print(list_buah[0:1])   # Anggur
 print(list_buah[0:2])   # Anggur, Mellon
 print(list_buah[1:3])   # Melon, Jesruk
 print(list_buah[0:-1])  # Anggur, Melon, Jeruk, Durian
-print(list_buah[-1:-1]) # Kosong
-print(list_buah[-1:-2]) # Kosong
-print(list_buah[-1:-3]) # Kosong
-print(list_buah[-1:3])  # Kosong
+print(list_buah[-1:-1]) # []
+print(list_buah[-1:-2]) # []
+print(list_buah[-1:-3]) # []
+print(list_buah[-1:3])  # []
 print(list_buah[-3:-1]) # Jeruk, Durian
 
+print('-------------')
 
-# 1.8 Slicing Tanpa Batas
+# Slicing Tanpa Batas
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
-print(list_buah[0:])  # Tanpa batas
-print(list_buah[1:])  # Mulai Indeks 1 yaitu Melon dan seterusnya (tanpa batas)
-print(list_buah[2:])  # mulai Indeks 2 yaitu Jeruk dan seterusnya (tanpa batas)
+print(list_buah[0:])  # Anggur, Melon, Jeruk, Durian
+print(list_buah[1:])  # Melon, Jeruk, Durian
+print(list_buah[2:])  # Jeruk, Durian
 print(list_buah[:0])  # Kosong
 print(list_buah[0:1]) # Anggur
 print(list_buah[0:2]) # Anggur, Melon
 print(list_buah[:3])  # Anggur, Melon, Jeruk
 print(list_buah[:4])  # Anggur, Melon, Jeruk, Durian
 
+print('-------------')
 
-# 1.9 Mengubah Data di dalam List (changable/bisa diubah)
+# Mengubah Data di dalam List (changable/bisa diubah)
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
@@ -82,8 +85,9 @@ print('Hasil List_Buah Utama : ', list_buah)
 list_buah[-1] = 'Belimbing'
 print(list_buah) # Anggur, Melon, Jeruk, Belimbing
 
+print('-------------')
 
-# 1.10 Mengubah Data dalam Range
+# Mengubah Data dalam Range
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
@@ -96,24 +100,23 @@ print('Hasil List_Buah Utama : ', list_buah)
 list_buah[2:4] = ['Nangka', 'Semangka'] # Anggur, Melon, Nangka, Semangka
 print(list_buah)
 
+print('-------------')
 
-# 1.11 Menambah Item ke Dalam List
-
-# Menambah Data atau element Baru Pada List di index Belakang (fungsi append())
+# Menambah Data atau element Baru Pada List di index Belakang
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 list_buah.append('Sirsak')
 print(list_buah) # Anggur, Melon, Jeruk, Durian, Sirsak
 
-# Menghapus Semua Item Pada List (funsi clear())
+# Menghapus Semua Item Pada List
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 list_buah.clear()
 print(list_buah) # []
 
-# 3.Mengembalikan hasil duplikat dari list (fungsi copy())
+# Mengembalikan hasil duplikat dari list (fungsi copy())
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buat Utama : ')
 
@@ -141,11 +144,13 @@ print('Hasil List_Buah Utama : ', list_buah)
 index_jeruk = list_buah.index('Jeruk')
 print('Indeks dari Jeruk : ', index_jeruk) # Output: 2
 
-# 1.12 Menghapus Item dari List
+print('-------------')
+
+# Menghapus Item dari List
 list_angka = [1, 2, 3, 4, 5]
 print('Hasil List_Angka utama :', list_angka)
 
-# Hapus Satu Angka di Indeks Belakang (fungsi pop())
+# Hapus Satu Angka di Indeks Belakang
 angka_yang_dihapus = list_angka.pop()
 print('Angka yang di Hapus : ',angka_yang_dihapus) # 5
 
@@ -156,12 +161,14 @@ print('Hasil List_Angka utama :', list_angka)
 jumlah_dua = list_angka.count(2)
 print('Jumlah angka 2 : ', jumlah_dua) # 2
 
-# Hapus Data yang Memiliki Value yang Sama atau Tidak (fungsi remove())
+# Hapus Data yang Memiliki Value yang Sama atau Tidak
 list_angka = [1, 2, 2, 3, 4, 5]
 print('Hasil List_Angka utama :', list_angka)
 
 list_angka.remove(1)
 print(list_angka) # 2, 2, 3, 4, 5
+
+print('-------------')
 
 list_buah = ['Anggur', 'Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
@@ -188,8 +195,9 @@ print('Hasil List_Buah Utama : ', list_buah)
 del list_buah[0:2]
 print(list_buah) # Jeruk, Durian
 
+print('-------------')
 
-# 1.13 Menggabungkan Dua Buah List atau Lebih
+# Menggabungkan Dua Buah List atau Lebih
 a = [1, 2, 3]
 b = ['a']
 c = [True, 'b', False]
@@ -197,8 +205,9 @@ c = [True, 'b', False]
 list_baru = a + b + c
 print(list_baru) # 1, 2, 3, a, True, b, False
 
+print('-------------')
 
-# 1.14 Mengurutkan Data
+# Mengurutkan Data
 
 # Urutkan Secara Ascending
 list_buah = ['Mangga', 'Jeruk', 'Zaitun', 'Apel', 'Durian']

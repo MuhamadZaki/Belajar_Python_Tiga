@@ -5,9 +5,7 @@
 # 3. Set
 # 4. Dictionary
 
-# Tipe Data Tuple (Ordered-Terurut) - (Unchnagble-Tidak Bisa diubah)
-
-# 1.1 Cara Membuat Tuple
+# 2. Tipe Data Tuple (Ordered-Terurut) - (Unchnagble-Tidak Bisa diubah)
 
 # Cara Standar Tuple
 standar_tuple = ('Laki-laki', 'Perempuan')
@@ -28,8 +26,7 @@ print(tuple_tunggal) # 10 --> Akan tetapi di Anggap Integer
 tuple_tunggal = (10,)
 print(tuple_tunggal) # 10 --> Ini Baru dianggap Tuple
 
-
-# 1.2 Mengakses Nilai Tuple
+print('-------------')
 
 # Cara Standar (Mengakses Nilai Tuple dengan Langsung Mendefinisikan Indeks)
 cara_standar_tuple = ('Tobrut', 'Era')
@@ -42,7 +39,7 @@ print(cara_standar_tuple[-1]) # Era
 print(cara_standar_tuple[-2]) # Tobrut
 
 
-# 1.3 Slicing Tuple
+# Slicing Tuple
 tuple_buah = ('Anggur', 'Melon', 'Nanas', 'Semangka')
 print(tuple_buah[0:])    # Anggur, Melon, Nanas, Semangka dan Tak-terbatas
 print(tuple_buah[0:2])   # Anggur, Melon
@@ -54,18 +51,19 @@ print(tuple_buah[-3:-1]) # Melon, Nanas
 
 # Slicing Tanpa Batas
 tuple_buah = ('Anggur', 'Melon', 'Nanas', 'Semangka')
-print(tuple_buah[0:])    # Anggur, Melon, Nanas, Semangka dan Tak-terbatas
-print(tuple_buah[1:])    # Melon, Nanas, Semangka dan Tak-terbatas
-print(tuple_buah[2:])    # Nanas, Semangka dan Tak-terbatas
+print(tuple_buah[0:])    # Anggur, Melon, Nanas, Semangka
+print(tuple_buah[1:])    # Melon, Nanas, Semangka
+print(tuple_buah[2:])    # Nanas, Semangka
 print(tuple_buah[3:])    # Semangka dan Tak-terbatas
-print(tuple_buah[:0])    # Kosong
+print(tuple_buah[:0])    # []
 print(tuple_buah[:1])    # Anggur
 print(tuple_buah[:2])    # Anggur, Melon
 print(tuple_buah[:3])    # Anggur, Melon, Nanas
 print(tuple_buah[:4])    # Anggur, Melon, Nanas, Semangka
 
+print('-------------')
 
-# 1.4 Squence Unpaking (Mengekstrak Isi Dari Tuple ke Dalam Variable-Variable Tunggal, Secara Berurutan)
+# Squence Unpaking (Mengekstrak Isi Dari Tuple ke Dalam Variable-Variable Tunggal, Secara Berurutan)
 siswi = (' Natasia Tobrut', 'Makassar', 22)
 
 nama, asal, usia = siswi # Ekstrak Data atau Juga dinamakan Sequence Unpacking (Setiap Variable Akan Memiliki Nilai dari Variable siswi)- yang pertama, nama maka mempunyai indeks [0]
@@ -73,8 +71,9 @@ print('Nama :', nama)    # Natasia Tobrut --> siswi[0] -nama
 print('Asal : ', asal)   # Makassar       --> siswi[1] -asal
 print('Usia : ', usia)   # 22             --> siswi[2] -usia
 
+print('-------------')
 
-# 1.5 Menggabungkan Dua Buat Tuple atau Lebih Menjadi Satu
+# Menggabungkan Dua Buat Tuple atau Lebih Menjadi Satu
 a = (1,2,3)
 b = (4,5,6)
 c = a + b
