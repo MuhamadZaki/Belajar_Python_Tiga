@@ -201,6 +201,7 @@ print('Hasil List_Buah Utama : ', list_buah)
 del list_buah[0]
 print(list_buah) # Menghapus elemen pertama dari list dan hasilnya adalah Melon, Jeruk, Durian
 
+
 list_buah = ['Anggur', 'Melon', 'Jeruk', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
@@ -219,26 +220,25 @@ print(list_baru) # 1, 2, 3, a, True, b, False
 
 print('-------------')
 
-# Contoh : Mengurutkan list secara asceding atau menaik, yaitu elemen yang diurutkan dari yang terkecil ke yang terbesar berdasarkan urutan alfabet untuk string
 list_buah = ['Mangga', 'Jeruk', 'Zaitun', 'Apel', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 list_buah.sort()
-print(list_buah) # Apel, Durian, Jeruk, Mangga, Zaitun
+print(list_buah) # Mengurutkan list secara asceding atau menaik, yaitu elemen yang diurutkan dari yang terkecil ke yang terbesar berdasarkan urutan alfabet untuk string dan hasilnya adalah Apel, Durian, Jeruk, Mangga, Zaitun
 
-# Contoh : Membalik urutan elemen dalam list, yaitu elemen akan diputar ke arah yang berlawanan dari urutan sebelumnya
+
 list_buah = ['Mangga', 'Jeruk', 'Zaitun', 'Apel', 'Durian']
 print('Hasil List_Buah Utama : ', list_buah)
 
 list_buah.reverse()
-print(list_buah) # Durian, Apel, Zaitun, Jeruk, Mangga
+print(list_buah) # Membalik urutan elemen dalam list, yaitu elemen akan diputar ke arah yang berlawanan dari urutan sebelumnya dan hasilnya adalah Durian, Apel, Zaitun, Jeruk, Mangga
 
-# Contoh : Menambahkan semua elemen dari list, yaitu di ikuti dari semua elemen dari variabel baru list
+
 list_buah = ['Mangga', 'Jeruk', 'Zaitun']
 buah_tambahan = ['Apel', 'Durian']
 
 list_buah.extend(buah_tambahan)
-print(list_buah) # Mangga, Jeruk, Zaitun, Apel, Durian
+print(list_buah) #  Menambahkan semua elemen dari list, yaitu di ikuti dari semua elemen dari variabel baru list dan hasilnya adalah Mangga, Jeruk, Zaitun, Apel, Durian
 
 
 # FUNGSI - FUNGSI BAWAAN LIST

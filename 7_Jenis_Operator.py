@@ -4,7 +4,7 @@
 a = 10 + 5  # 5 dan 10 disebut  Operan, lalu + disebut Operator
 print(a)    # 15
 
-# Tabel Operator Aritmatika
+# Tabel Operator Aritmatika untuk melakukan operasi matematika
 # 1. Penjumlahan     --> Menjumlahkan operan                    --> 5 + 5  = 10
 # 2. Pengurangan     --> Mengurangi nilai operan                --> 5 - 4  = 1
 # 3. Perkalian       --> Mengalikan nilai operan                --> 5 * 2  = 10
@@ -34,7 +34,7 @@ print('Pangkat ** :', a)         # Karena 2 dipangkatkan 3 dan hasilnya adalah 8
 a = 10 // 3 
 print('Pembagian Bulat // :', a) # Karena 10 dibagi secara floor dengan 3 dan hasilnya adalah 3 (hasil pembagian dibulatkan)
 
-# Tabel Operator Komparasi atau Perbandingan 
+# Tabel Operator Komparasi atau Perbandingan untuk membandingkan dua nilai (True dan False)
 # 1. Lebih dari                     --> 5 > 5       --> False
 # 2. kurang dari                    --> 2 < 4       --> True
 # 3. Sama dengan                    --> 10 == 10    --> True
@@ -60,7 +60,7 @@ print('Lebih dari atau sama dengan >= :', a) # Karena 10 lebih besar atau samade
 a = 9 <= 10
 print('Kurang dari atau sama dengan ')       # Karena 9 kurang dari atau sama dengan 10 dan hasilnya adalah True
 
-# Tabel Operator Penugasan
+# Tabel Operator Penugasan untuk menetapkan nilai ke variabel 
 # 1. =      --> a = 10     --> a = 10
 # 2. +=     --> a += 5     --> a = a + 5
 # 3. -=     --> a -= 5     --> a = a - 5
@@ -126,7 +126,7 @@ a = 10
 a <<= 5
 print('a <<= 5 -->', a) # Karena 10 di-shift left 5 bit (1010 << 5 --> 101000000) dan hasilnya adalah 320
 
-# Tabel Operator Logika
+# Tabel Operator Logika untuk menggabungkan kondisi atau ekspresi logika dalam pemrograman
 
 # 1. and --> Mengembalikan True jika kedua statement atau operan adalah True
 #        --> Mengembalikan false jika salah satu atau kedua operan adalah False
@@ -161,7 +161,8 @@ print(not(1 > 5))          # karena 1 > 5 itu (False) dan not False dan hasilnya
 
 print('-------------')
 
-# Tabel Operator Keanggotaan
+# Tabel Operator Keanggotaan untuk menguji apakah nilai atau variabel ada di dalam suatu urutan (list, tuple, string, dict)
+
 # 1. in     --> Bernilai True jika nila tersebut ada di dalam sequence (seperti string, list, tuple dan dict)
 #           --> Bernilai False jika nilai tersebut tidak ada di dalam sequence
 #           --> Noted : Operator in digunakan untuk memeriksa keanggotaan suatu nilai di dalam sebuah sequence
@@ -197,7 +198,8 @@ print("Apakah 'tobrut' berada di variable mahasiswa?", 'tobrut' not in mahasiswa
 
 print('-------------')
 
-# Tabel Operator Identitas
+# Tabel Operator Identitas untuk membandingkan objek, melihat apakah mereka sebenarnya adalah objek yang sama dan bukan hanya memiliki nilai yang sama
+
 # 1. is     --> Bernilai True jika dua variabel menunjuk ke objek yang sama di memory
 #           --> Bernilai False jika dua variable menunjuk ke objek yang berbeda di memory
 
@@ -232,7 +234,86 @@ print(tuple_a is not tuple_b)   # Karena nilai a dan b identik(sama) dan False
 
 print('-------------')
 
+# Cara Kerja id Mendapatkan alamat memori dari suatu objek
 
+a = 10
+print(id(a)) # Alamat memori dari objek yang diacu oleh a dan hasilnya adalah 140725277346520
+
+b = 'kuning'
+print(id(b)) # Alamat memori dari objek yang diacu oleh b dan hasilnya adalah 2836436821472
+
+a = 10
+b = a
+print(id(b)) # Alamat memori yang sama dengan a dan hasilnya adalah 140725277346520
+
+# Noted : Untuk medapatkan alamat memori unik dari sebuah objek.
+# Refrensi objek
+# --> Memastikan apakah dua variabel merujuk pada objek yang sama atau tidak.
+# --> Memahami prilaku mutable dan immutable, misalnya ketika mengubah list (mutable) dan perubahan tersebut dapat tercermin di semua variable yang merujuk pada list yang sama
+
+# Debuging Optimalisasi
+# --> Untuk memastikan bahwa refrensi objek sedang dikelola sebagaimana mestinya
+# --> Membantu dalam memahami optimisasi memori, seperti interning string dan integer
+
+print('-------------')
+
+# Tabel Operator Bitwise digunakan untuk melakukan operasi pada level bit pada operan
+
+# 1. AND (&) --> Menghaislkan 1 hanya jika kedua bit operan adalah 1
+
+a = 5 # 0101 dalam biner
+b = 3 # 0011 dalam biner
+hasil = a & b # 0001 dalam biner atau 1 dalam desimal
+print(hasil)  # Hasilnya adalah 1
+
+izin = 0b1010           # Ijin dalam biner
+membaca_topeng = 0b1000 # Topeng untuk pengecekan membaca izin
+membaca = izin & membaca_topeng # Hanya bit membaca yang di cek
+print(membaca != 0)             # Hasilanya adalah True
+
+# 2. OR (|) --> Menghasilkan 1 jika salah satu atau kedua bit operan adalah 1
+
+a = 5 # 0101 dalam biner
+b = 3 # 0011 dalam biner
+hasil = a | b # 0111 dalam biner, atau 7 dalam desimal
+print(hasil)  # Hasilnya adalah 7
+
+izin = 0b1000         # Ijin awal
+menulis_izin = 0b0010 # Topeng untuk menulis izin
+izin = izin | menulis_izin # Tambahkan menulis izin
+print(bin(izin))           # Haislnya adalah 0b1010
+
+# 3. XOR (^) --> Menghasilkan 1 jika satu bit adalah 1 dan bit lainnya adalah 0
+
+a = 5 # 0101 dalam biner
+b = 3 # 0011 dalam biner
+hasil = a ^ b # 0110 dalam biner, atau 6 dalam desimal
+print(hasil)  # Hasilnya adalah 6
+
+bendera = 0b1010        # Nilai awal
+beralih_topeng = 0b0011 # Topeng untuk membalikan bit tertentu
+bendera = bendera ^ beralih_topeng # Balikan bit sesuai topeng
+print(bin(bendera))                # Hasinya adalah 0b1001
+
+# 4. NOT (~) --> Membalikan semua bit dari operan 1 menjadi 0 dan 0 menjadi 1
+
+a = 5        # 0101 dalam biner
+hasil = ~ a  # 1010 dalam biner (untuk representasi 8-bit, ~5 = -6)
+print(hasil) # Hasilnya adalah -6
+
+# 5. Left Shift (<<) --> Menggeser bit operan pertama ke kiri sebanyak jumlah bit yang ditentukan oleh operan kedua (menambahakan 0 di tempat yang kosong)
+
+a = 5           # 0101 dalam biner
+hasil = a << 1  # 1010 dalam biner, atau 10 dalam desimal
+print(hasil)   # Hasilnya adalah 10
+
+# 6. Right Shift(>>) --> Menggeser bit operan pertama ke kanan sebanyak jumlah bit yang ditentukan oleh operan kedua
+
+a = 5           # 0101 dalam biner
+hasil = a>> 1   # 0010 dalam biner, atau 2 dalam desimal
+print(hasil)    # Hasilnya adalah 2
+
+print('-------------')
 
 
 # Jenis-Jenis Operator Pada Python
