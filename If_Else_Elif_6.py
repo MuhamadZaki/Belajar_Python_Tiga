@@ -33,3 +33,8 @@ while True: # Loop ini akan terus berjalan sampai pernyataan break
         
     except ValueError: # Pesan kesalahan
         print("Input tidak benar! Masukan angka!")
+
+# Noted if-elif-else :
+# 1. if     --> Merupakan pernyataan kondisional yang memeriksa apakah suatu kondisi benar (True), jika kondisi benar blok code yang berada di bawah if akan dijalankan
+# 2. elif   --> Merupakan singkatan dari else if, pernyataan ini digunakan untuk memeriksa kondisi tambahan jika kondisi if di atasnya salah (False) dan kita dapat memiliki beberpa elif dalam satu rangkaian pernyataan kondisional
+# 3. else   --> Merupakan pernyataan yang digunakan untuk menangani semua kondisi lain yang tidak terpenuhi oleh if dan elif dan code di bawah else akan dijalankan ketika semua kondisi sebelumnya salah (False)
