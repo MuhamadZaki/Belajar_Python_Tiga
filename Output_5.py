@@ -1,7 +1,7 @@
 """ Ini Adalah Beberapa Output """
 
 # Menampilkan String
-print("Hello World") # Hasilnya adalah Hello World
+print("Hello World!") # Hasilnya adalah Hello World!
 
 # Menampilkan Angka
 print(1997) # Hasilnya adalah Integer 1997
@@ -58,7 +58,7 @@ print("satu baris.")
 
 # 4. File --> Menulis Output ke File dan Alih-Alih ke Konsol
 with open("output.txt", "w") as file:
-    print("Hello, world!", file=file)  # Hasilnya adalah output.txt
+    print("Hello, world!", file=file)  # Hasilnya adalah output.txt yang beisi Hello, World!
 
 # 5. Flush --> Menyegarkan Aliran Output Secara Paksa
 import time
