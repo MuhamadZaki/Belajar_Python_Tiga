@@ -1,3 +1,5 @@
+# Praktekan dan Pahami!
+
 # Tipe Data Canggih atau Koleksi
 
 # 1. List

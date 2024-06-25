@@ -1,4 +1,5 @@
 """ Macam-Macam Operator  """
+# Praktekan dan Pahami!
 
 # Sederhana Operator Aritmatika
 a = 10 + 5  # 5 dan 10 disebut  Operan, lalu + disebut Operator

@@ -1,5 +1,7 @@
 """  Name Variable dan Value """
 
+# Praktekan dan Pahami!
+
 nama = 'Muhamad Zaki' # --> String atau teks
 usia = 23             # --> Integer atau bilangan bulat
 akhir = 5.5           # --> float atau nilai pecahan (desimal)

@@ -1,5 +1,7 @@
 """ Membaca Input Dari Pengguna dan Mencetaknya """
 
+# Praktekan dan Pahami!
+
 # Input Menggunakan String
 nama = input("Masukan nama sobat : ")
 print("Nama : ", nama) # Dinamis, sesuai inputas pengguna dan contoh inputan Muhamad Zaki
@@ -22,13 +24,13 @@ angka = [int(tobrut) for tobrut in angka_string ]
 print("Hasil angka : ", angka) # Dinamis, sesuai inputan user dan contoh inputan 100, 200, 300, 400, 500
 
 # Inputan Menggunakan Validasi (di sini saya mengkonversi string to int)
-while True:
-    try:
+while True: # Looping ini akan teruse berjalan sampai pernyataan break
+    try:    # Menjalankan code di dalam 
         data_usia_string = input("Masukan Usia Sobat : ")
         usia = int(data_usia_string)
         break # keluar loop, jika konversi berhasil
     except ValueError:
-        print("Input tidak benar! Masukan angka!") # Dinamis, jika user memasukan angka, maka akan break (konversi berhasil), jika tidak akan mengulai lagi dan terdapat pesan
-print("Usia sobat : ", usia )
+        print("Input tidak benar! Masukan angka!") 
+print("Usia sobat : ", usia ) # Dinamis, jika user memasukan nilai berupa angka (karena string di konversi menjadi integer)
 
 # Note : Input merujuk pada data yang diterima oleh program dari luar (pengguna) atau mengambil data daari pengguna
