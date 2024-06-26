@@ -26,7 +26,7 @@ while True: # Loop ini akan terus berjalan sampai pernyataan break
         else:
             print("Nilai diluar jangkauan! Masukan nilai antara 0 hingga 100!")
 
-        print(f"Hasil Nilai : {hasil}") # Dinamis, jika user memasukan nilai berupa angka (karena string di konversi menjadi integer)
+        print(f"Hasil Nilai : {hasil}") # Dinamis, jika user memasukan nilai berupa angka (karena string sudah konversi menjadi integer)
 
         lanjut = input("Ingin memasukan nilai lagi tidak tobrut? (y/n) :")
 
