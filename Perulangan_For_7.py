@@ -115,3 +115,55 @@ with open("contoh.txt", "r") as file:  # Membaca  isi file dari contoh.txt
     for line in file:
         hasil_line = line.strip() # strip() --> menghapus spasi putih di awal dan akhir
         print(hasil_line) # Hasilnya adlaah isi dari file contoh.txt
+
+# 4. Manipulasi Iterator dengan itertools Count --> Menghasilkan iterator yang menghasilkan angka yang tidak pernah berakhir
+
+import itertools
+for tobrut in itertools.count(10):
+    print(tobrut) # Hasilnya adalah 10 11 12 13 14 15
+    if tobrut >= 15:
+        break
+
+# Itertools Cycle --> Mengulang elemen dari iterable tanpa henti
+ukhti = 0
+for tobrut in itertools.cycle(["A", "B", "C"]):
+    print(tobrut) # Hasilnya aalah A B C. A B C, A B C
+    ukhti += 1
+    if ukhti == 9:
+        break
+
+# Itertools Chain --> Menggabungkan beberapa iterble menjadi satu iterator
+list1 = [1,2,3]
+list2 = ["a", "b", "c"]
+for item in itertools.chain(list1, list2):
+    print(item) # --> Hasilnya adalah 1 2 3 a b c
+
+# 5. Menggunakan fungsi buatan sendiri dalam List Comprehension
+def is_tobrut(t):
+    if t <= 1:
+        return False
+    for tobrut in range(2, int(t ** 0.5) + 1):
+        if t % tobrut == 0:
+            return False
+    return True
+
+ukhti_tobrut = [x for x in range(20) if is_tobrut(x)]
+print(ukhti_tobrut) # Hasilnya adalah 2 3 5 7 11 13 17 19
+
+# 6. Nested List Comprehension --> ini juga bisa bersarang untuk mengulangi melalui nested struktur
+ukhti = [[1,2,3], [4,5,6], [7,8,9]]
+tobrut = [num for row in ukhti for num in row]
+print(tobrut) # Hasilnya adalah 1 2 3 4 5 6 7 8 9
+
+# 7. Enumerete dengan start index --> Kita dapat menentukan dari mana index enumerate dimulai
+list_buah = ['Apel', 'Mangga', 'Jeruk']
+for index, buah in enumerate(list_buah, start=1):
+    print(index, buah) # Hasilnya adalah 1 Apel, 2 Mangga, 3 Jeruk
+
+# 8. Menggunakan zip untuk menggabungkan list dengan panjang berbeda --> Dapat menggabungkan list dengan panjang yang berbeda
+from itertools import zip_longest
+
+list1 = [1, 2]
+list2 = ['a', 'b', 'c']
+for num, char in zip_longest(list1, list2, fillvalue='None'):
+    print(num, char) # Hasilnya adalah 1 a, 2 b dan None c
