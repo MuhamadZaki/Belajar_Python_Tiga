@@ -167,3 +167,20 @@ list1 = [1, 2]
 list2 = ['a', 'b', 'c']
 for num, char in zip_longest(list1, list2, fillvalue='None'):
     print(num, char) # Hasilnya adalah 1 a, 2 b dan None c
+
+
+# 9. Bonus untuk kamu
+for heart in range(10):
+    love = "I Love You"
+    print(love) # Hasilnya adalah I Love You 10x
+
+
+hati = [1,2,3,4,5]
+for sayang in hati:
+    cinta = "I Love U"
+    if sayang < 3:   # Tidak menggunakan kondisi juga bisa
+        print(cinta) # Hasilnya adalah I Love U, I Love U
+
+hati = ["Sayang"] * 2
+for pesan in hati:
+    print(pesan) # Hasilnya adalah Sayang, Sayang
