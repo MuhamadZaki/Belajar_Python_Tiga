@@ -1,47 +1,47 @@
 """ Perulangan While digunakan untuk menjalankan blok kode selama kondisi benar atau True """
 
 # 1. Perulangan dasar dengan while
-hitung = 0
-while hitung < 5:
-    print(hitung) # Hasilnya adalah 0 1 2 3 4
-    hitung += 1
+hitung = 0          # --> Inisialisasi variabel hitung dengan nilai 0
+while hitung < 5:   # --> Selama nilai hitung kurang dari 5, loop akan terus berjalan
+    print(hitung)   # --> Hasilnya adalah 0 1 2 3 4 (pada setiap iterasi kita mencetak nilai hitung)
+    hitung += 1     # --> Pada setiap iterasi, nilai hitung akan ditambahkan 1 (increment), agar loop dapat berlajut ke iterasi berikutnya
 
 print("----------")
 
 # 2. While dengan kondisi spesifik
-angka = 5
-while angka > 0:
-    print(angka)  # Hasilnya adalah 5 4 3 2 1
-    angka -= 1
+angka = 5           # --> Inisialisasi variabel angka dengan nilai 5
+while angka > 0:    # --> Selama nilai angka lebih besar dari 0, loop akan terus berjalan
+    print(angka)    # --> Hasilnya adalah 5 4 3 2 1
+    angka -= 1      # --> Pada setiap iterasi, nilai angka akan dikurangi 1 (decrement), agar loop dapat berlanjut ke iterasi berikutnya
 
 print("----------")
 
 # 3 While dengan break --> Untuk menghentikan loop
-hitung = 0
-while True:
-    print(hitung)  # Hasilnya adalah 0 1 2 3 4
-    hitung += 1
-    if hitung == 5:
-        break
+hitung = 0          # --> Inisialisasi variabel hitung dengan nilai 0
+while True:         # --> Infinite loop atau looping akan berjalan terus menerus, selama kondisi True
+    print(hitung)   # --> Hasilnya adalah 0 1 2 3 4 (pada setiap iterasi kita mencetak nilai hitung)
+    hitung += 1     # --> Pada setiap iterasi, nilai hitung akan ditambahkan 1 (increment), agar loop dapat berlajut ke iterasi berikutnya
+    if hitung == 5: # --> Jika nilai hitung mencapai 5
+        break       # --> Kita menggunakan pernyataan break untuk menghentikan loop
 
 print("----------")
 
 # 4. While dengan continue --> Untuk melewati iterasi tertentu dan melajutkan ke iterasi berikutnya
-hitung = 0
-while hitung < 10:
-    hitung += 1
-    if hitung % 2 == 0:
-        continue
-    print(hitung) # Hasilnya adalah 1 3 5 7 9 (mencetak angka ganjil)
+hitung = 0              # --> Inisialisasi variabel hitung dengan nilai 0
+while hitung < 10:      # --> Selama nilai hitung kurang dari 10, loop akan terus berjalan
+    hitung += 1         # --> Pada setiap iterasi, nilai hitung akan ditambahkan 1 (increment)
+    if hitung % 2 == 0: # --> Memeriksa menggunakan kondisi, apakah nilai hitung genap (hitung % 2==0, menghitung sisa pembagian hitung dengan 2 dan jika sisa pembagian adalah 0) maka nilai hitung adalah genap
+        continue        # --> Jika nilai hitung genap, kita menggunakan pernyataan continue untuk melewati iterasi ini dan melajutkan ke iterasi berikutnya
+    print(hitung)       # Hasilnya adalah 1 3 5 7 9 (mencetak angka ganjil 1-9), karena kita melewati iterasi ketika nilai hitung adalah genap
 
 print("----------")
 
-hitung = 0
-while hitung < 10:
-    hitung += 1
-    if hitung % 2:
-        continue
-    print(hitung) # Hasilnya adalah 2 4 6 8 10 (mencetak angka genap)
+hitung = 0         # --> Inisialisasi variable hitung dengan nilai 0
+while hitung < 10: # --> Selama nilai hitung kurang dari 10, loop akan terus berjalan
+    hitung += 1    # --> Pada setiap iterasi, nilai hitng akan ditambahkan 1 (increment)
+    if hitung % 2: # --> Jika nilai hitung ganjil, (karena % 2 akan menghasilkan 1)
+        continue   # --> Jika nilai hitung ganjil, kita menggunakan pernyataan continue untuk melewati iterasi ini dan melanjutkan ke iterasi berikutnya
+    print(hitung) # Hasilnya adalah 2 4 6 8 10 (mencetak angka genap 2-10), karena kita melewati iterasi ketika nilai hitung adalah ganjil
 
 print("----------")
 
