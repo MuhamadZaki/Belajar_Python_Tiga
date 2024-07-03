@@ -104,7 +104,118 @@ while index < len(list_tobrut):
     print(list_tobrut[index]) # Hasilnya adlaah 1 2 3 4 5
     index += 1
 
-# 12. Toburt merajalela di Indonesia!
+# 12. Game sederhana tebak angka menggunakan while
+""" import random
+
+angka_rahasia = random.randint(1,100)
+tobrut_tebak = None
+while tobrut_tebak != angka_rahasia:
+    try:
+
+        tobrut_tebak = int(input("Masukan angka 1-100 : "))
+        if tobrut_tebak < angka_rahasia:
+            print("Sanagat rendah!")
+        elif tobrut_tebak > angka_rahasia:
+            print("Terlalu tinggi!")
+
+    except ValueError:
+        print("Masukan angka yang benar!")
+
+print("Tobrut tertebak!") """ # Hasilnya adalah dinamis, masukan angka di mulai dari 1 hingga 100
+
+# 13. kalkulator sederhana --> Melakukan operasi dasar
+def kalkulator_tobrut():
+    while True:
+        print("Kalkulator Tobrut")
+        print("Pilih operasi : ")
+        print("1. Pejumlahan")
+        print("2. Pengurangan")
+        print("3. Perkalian")
+        print("4. Pembagian")
+
+        while True:
+            try:
+                operasi = int(input("Masukan pilihan 1/2/3/4 : "))
+                if operasi in [1,2,3,4]:
+                    break
+                else:
+                    print("Pilihan tidak benar, pilih antara 1-4!")
+            except ValueError:
+                print("Masukan angka yang benar")
+    
+        while True:
+            try:
+                nums_1 = float(input("Masukan angka pertama : "))
+                nums_2 = float(input("Masukan angka kedua : "))
+                break
+            except ValueError:
+                print("Masukan angka yang benar!")
+    
+        if operasi == 1:
+            hasil = nums_1 + nums_2
+            operasi_str = "+"
+
+        elif operasi == 2:
+            hasil = nums_1 - nums_2
+            operasi_str = "-"
+
+        elif operasi == 3:
+            hasil = nums_1 * nums_2
+            operasi_str = "*"
+
+        elif operasi == 4:
+            if nums_2 == 0:
+                print("Pembagian 0 tidak benar!")
+                continue
+            hasil = nums_1 / nums_2
+            operasi_str = "/"
+
+        print(f"Hasil : {nums_1} {operasi_str} {nums_2} = {hasil}")
+        
+        lanjut = input("Apa kamu ingin melanjutkan? (y/n)")
+        if lanjut.lower() != "y":
+            print("Terima kasih!")
+            break
+
+kalkulator_tobrut()
+
+# 14. Menghitung bilangan prima dengan rentang tertentu (menemukan bilangan prima dalam rentang tertentu)
+def ukhti_prima(tobrut):
+    if tobrut<= 1:
+        return False
+    montok = 2
+    while montok * montok <= tobrut:
+        if tobrut % montok == 0:
+            return False
+        montok += 1
+    return True
+
+def bilangan_prima(rentang_awal, rentang_akhir):
+    print(f"Bilangan prima antara {rentang_awal} dan {rentang_akhir} : ")
+    nums= rentang_awal
+    while nums <= rentang_akhir:
+        if ukhti_prima(nums):
+            print(nums, end=" ")
+        nums += 1
+    print() # Hasilnya adalah dinamis, misal pengguna memasukan rentang awal 1 dna rentang akhir 20 maka outputnya 2 3 4 7 11 13 17 19
+
+rentang_awal = int(input("Masukkan rentang awal: "))
+rentang_akhir = int(input("Masukkan rentang akhir: "))
+bilangan_prima(rentang_awal, rentang_akhir)
+
+# 15. Membaca file dan memproses isi tobrut
+def baca_file(nama_file):
+    try:
+        with open(nama_file, 'r') as file:
+            baris = file.readline()
+            while baris:
+                print(baris.strip()) # Hasilnya adalah isi dari file yang di baca, contoh saat tobrut meng input file contoh.txt
+                baris = file.readline()
+    except FileNotFoundError:
+        print(f"File {nama_file} tidak ditemukan.")
+
+nama_file = input("Masukkan nama file yang akan dibaca: ")
+baca_file(nama_file)
 
 
 # Bonus untuk kamu
