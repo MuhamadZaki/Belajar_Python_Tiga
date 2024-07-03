@@ -1,5 +1,15 @@
 """ Perulangan While digunakan untuk menjalankan blok kode selama kondisi benar atau True """
 
+# Note :
+# Itersi atau Iteration --> Proses di mana kita menelusuri atau melintasi setiap elemen dari suatu koleksi data seperti (ist, tuple, set dan dict) satu persatu (secara singkat adalah aksi atau proses)
+numbers = [1, 2, 3, 4, 5]   # --> list yang di iterasi
+index = 0                   # --> Melacak posisi elemen lit, ini adalah bagiandari persiapan untuk melakukan iterasi
+
+while index < len(numbers): # --> Iterasi dumulai dari blok ini
+    print(numbers[index])   # --> Aksi yang dilakukan selama iterasi
+    index += 1              # --> iterasi
+
+
 # 1. Perulangan dasar dengan while
 hitung = 0          # --> Inisialisasi variabel hitung dengan nilai 0
 while hitung < 5:   # --> Selama nilai hitung kurang dari 5, loop akan terus berjalan
@@ -55,38 +65,38 @@ else:
 
 
 # 6. Nested while atau perulangan baersarang --> Bisa menggunakan while di dalam while
-i = 0
-while i < 2:
-    j = 0
-    while j < 2:
-        print(f"i: {i}, j: {j}") # Hasilnya adalah i: 0 j: 0, i:0 j:1, i:1 j:0, i:1 j:1
-        j += 1
-    i +=1
+i = 0               # --> Inisialisasi variabel i dengan nilai 0
+while i < 2:        # --> Selama nilai i kurang dari 2, loop akan terus berjalan
+    j = 0           # --> Inisialisasi variabel j dengan nilai 0
+    while j < 2:    # --> Looping di dalam looping, akan berjalan selama nilai j kurang dari 2
+        print(f"i: {i}, j: {j}") # --> Hasilnya adalah i: 0 j: 0, i:0 j:1, i:1 j:0, i:1 j:1 (pada setiap iterasi nested loop, kita mencetak nilai i dan j)
+        j += 1      # --> Pada setiap itrasi, nilai j akan ditambahkan 1 (increment)
+    i +=1           # --> pada setiap iterasi nilai i akan ditamahkan 1 (increment)
 
 # 7. Program interaktif menggunakan while (sederhana)
-while True:
-    user_input = input("Ketik exit, untuk keluar : ")
-    if user_input.lower() == "exit":
-        break
-    print(f"Kamu masukan: {user_input}") # hasilnya adalah dinamis, ketika user input exit maka akan keluar dari program, jika input Tobrut maka akan dicetak Tobrut
+while True:                                           # --> Infinite loop atau looping akan berjalan terus menerus, selama kondisi True
+    user_input = input("Ketik exit, untuk keluar : ") # --> Kita meminta pengguna untuk memasukan input, lalu ditampilkan dan input pengguna akan disimpan dalam variabel user_input
+    if user_input.lower() == "exit":                  # --> Kita menggunakan kodisional, apakah input pengguna adalah exit (setelah diubah menjadi huruf kecil)
+        break                                         # --> Jika input adalah exit, kita menggunakan pernyataan break untuk menghentikan loop
+    print(f"Kamu masukan: {user_input}")              # --> Hasilnya adalah dinamis, jika input bukan exit, kita mencetak pesan Kamu masukan: {user_input}
 
 # 8. Infinite loop --> Perulangan berjalan terus menerus sampai dihentikan secara manual atau dengan break
-while True:
-    print("Tobrut") # Hasilnya adalah Tobrut (karena sudah dihentikan dengan break)
-    break
+while True:         # --> Infinite loop atau looping akan berjalan terus menerus, selama kondisi True
+    print("Tobrut") # --> Hasilnya adalah Tobrut (karena sudah dihentikan dengan break)
+    break           # --> Karena loop dihentikan secara paksa dengan pernyataan break, bahakan jika kondisi loop masih terpenuhi.
 
 # 9. Validasi atau menangani input pengguna dengan while
-while True:
-    try:
-        nilai = int(input("Masukan nilai 0-100 : ")) # String konversi ke integer
-        if 0 <= nilai <=100:
-            break
+while True:         # --> Infinite loop atau looping akan berjalan terus menerus, selama kondisi True
+    try:            # --> Menjalankan blok kode di dalamnya
+        nilai = int(input("Masukan nilai 0-100 : "))    # --> Kita meminta pengguna untuk melakukan input dan input dari pengguna di konversi menjadi integer dan tersimpan di variabel nilai
+        if 0 <= nilai <=100:                            # --> Meguakan kodisional, kita memeriksa pakah nilai yang dimasukan berada dalam renatang 0 hingga 100
+            break                                       # --> Jika nilai berada dalam rentang tersebut, kita menggunakan pernyataan break untuk menghentikan loop
         else:
-            print("Nilai wajib diantara 0 sampai 100!")
+            print("Nilai wajib diantara 0 sampai 100!") # --> Jika nilai tidak berada dalam rentang tersebut, kita mencetak pesan ini
     
-    except ValueError:
-        print("Masukan angka yang benar!")
-print(f"Nilai yang di input : {nilai}") # Hasilnya adalah dinamis, tergantung inputan user dan dengan rentang nilai 0 sampai 100
+    except ValueError:                      # --> Jika terjadi kesalahan koncersi, misalnya pengguna memasukan teks bukan angka, dengan ini kita menangkap kesalahan dengan blok except
+        print("Masukan angka yang benar!")  # --> Jika terjadi kesalahan makan akan mencetak ini
+print(f"Nilai yang di input : {nilai}")     # --> Hasilnya adalah dinamis (jika loop selesai kita mencetak nilai yang dimasukan olehpengguna)
 
 # 10. Mwnggunakan while di dalam fungsi
 def tobrut(t):

@@ -1,6 +1,20 @@
 """ Perulangan for Termasuk Penjelasan Dasar, Iterasi Melalui Berbagai Tipe Data """
 """ Teknik Lebih Lanjut Juga Tersedia """
 
+# Note :
+# Itersi atau Iteration --> Proses di mana kita menelusuri atau melintasi setiap elemen dari suatu koleksi data seperti (ist, tuple, set dan dict) satu persatu (secara singkat adalah aksi atau proses)
+numbers = [1, 2, 3, 4, 5] # --> List yang diitersi
+
+for number in numbers:    # --> Iterasi dimulai dari sini
+    print(number)         # --> Aksi selama iterasi
+
+# Iterable --> Merupakan sebuah objek yang bisa diiterasi atau dilintasi (secara singkat adalah objek yang mendukung aksi atau proses)
+my_list = [1, 2, 3, 4, 5] # --> Ini adalah contoh dari iterable
+
+# Memeriksa apakah my_list adalah iterable
+iter_obj = iter(my_list)  # --> Ini tidak akan menghasilkan error, sehingga my_list adalah iterable
+print(iter_obj)           # --> Mencetak objek iterator
+
 # Perulangan for digunakan untuk mengulangi item-item dalam urutan seperti (list, tuple, dict, set dan string)
 
 # 1. Sintaks dasar perulangan for
