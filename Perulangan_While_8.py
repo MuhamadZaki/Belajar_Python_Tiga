@@ -4,15 +4,15 @@
 hitung = 0          # --> Inisialisasi variabel hitung dengan nilai 0
 while hitung < 5:   # --> Selama nilai hitung kurang dari 5, loop akan terus berjalan
     print(hitung)   # --> Hasilnya adalah 0 1 2 3 4 (pada setiap iterasi kita mencetak nilai hitung)
-    hitung += 1     # --> Pada setiap iterasi, nilai hitung akan ditambahkan 1 (increment), agar loop dapat berlajut ke iterasi berikutnya
+    hitung += 1     # --> Pada setiap iterasi, nilai hitung akan ditambahkan 1 (increment)
 
 print("----------")
 
 # 2. While dengan kondisi spesifik
 angka = 5           # --> Inisialisasi variabel angka dengan nilai 5
 while angka > 0:    # --> Selama nilai angka lebih besar dari 0, loop akan terus berjalan
-    print(angka)    # --> Hasilnya adalah 5 4 3 2 1
-    angka -= 1      # --> Pada setiap iterasi, nilai angka akan dikurangi 1 (decrement), agar loop dapat berlanjut ke iterasi berikutnya
+    print(angka)    # --> Hasilnya adalah 5 4 3 2 1 (pada setiap iterasi kita mencetak nilai angka)
+    angka -= 1      # --> Pada setiap iterasi, nilai angka akan dikurangi 1 (decrement)
 
 print("----------")
 
@@ -20,7 +20,7 @@ print("----------")
 hitung = 0          # --> Inisialisasi variabel hitung dengan nilai 0
 while True:         # --> Infinite loop atau looping akan berjalan terus menerus, selama kondisi True
     print(hitung)   # --> Hasilnya adalah 0 1 2 3 4 (pada setiap iterasi kita mencetak nilai hitung)
-    hitung += 1     # --> Pada setiap iterasi, nilai hitung akan ditambahkan 1 (increment), agar loop dapat berlajut ke iterasi berikutnya
+    hitung += 1     # --> Pada setiap iterasi, nilai hitung akan ditambahkan 1 (increment)
     if hitung == 5: # --> Jika nilai hitung mencapai 5
         break       # --> Kita menggunakan pernyataan break untuk menghentikan loop
 
@@ -41,17 +41,17 @@ while hitung < 10: # --> Selama nilai hitung kurang dari 10, loop akan terus ber
     hitung += 1    # --> Pada setiap iterasi, nilai hitng akan ditambahkan 1 (increment)
     if hitung % 2: # --> Jika nilai hitung ganjil, (karena % 2 akan menghasilkan 1)
         continue   # --> Jika nilai hitung ganjil, kita menggunakan pernyataan continue untuk melewati iterasi ini dan melanjutkan ke iterasi berikutnya
-    print(hitung) # Hasilnya adalah 2 4 6 8 10 (mencetak angka genap 2-10), karena kita melewati iterasi ketika nilai hitung adalah ganjil
+    print(hitung)  # Hasilnya adalah 2 4 6 8 10 (mencetak angka genap 2-10), karena kita melewati iterasi ketika nilai hitung adalah ganjil
 
 print("----------")
 
 # 5. While dengan else --> Akan dijalankan jika loop while tidak dihentikan dengan break
-hitung = 0
-while hitung <5:
-    print(hitung)
-    hitung += 1
+hitung = 0         # --> Inisialisasi variable hitung dengan nilai 0
+while hitung < 5:  # --> Selama nilai hitung kurang dari 5, loop akan terus berjalan
+    print(hitung)  # --> Hasilnya adalah 0 1 2 3 4 (pada setiap iterasi kita mencetak nilai hitung)
+    hitung += 1    # --> Pada setiap iterasi, nilai hitng akan ditambahkan 1 (increment)
 else:
-    print("Loop selesai tanpa break!") # Hasilnya adalah 0 1 2 3 4 dan Loop selesai tanpa break!
+    print("Loop selesai tanpa break!") # --> Akan dieksekusi setelah loop selesai, jika loop berakhir karena kondisi tidak terpenuhi (nilai hitung tidak kurnag dari 5) akan tetapi kita tidak menggunakan break makan blok ini tetap di eksekusi
 
 
 # 6. Nested while atau perulangan baersarang --> Bisa menggunakan while di dalam while
