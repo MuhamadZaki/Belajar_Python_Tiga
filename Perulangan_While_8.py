@@ -87,7 +87,7 @@ while True:         # --> Infinite loop atau looping akan berjalan terus menerus
 
 # 9. Validasi atau menangani input pengguna dengan while
 while True:         # --> Infinite loop atau looping akan berjalan terus menerus, selama kondisi True
-    try:            # --> Menjalankan blok kode di dalamnya
+    try:            # --> Menjalankan blok kode di dalamnya (sembari menangani error)
         nilai = int(input("Masukan nilai 0-100 : "))    # --> Kita meminta pengguna untuk melakukan input dan input dari pengguna di konversi menjadi integer dan tersimpan di variabel nilai
         if 0 <= nilai <=100:                            # --> Meguakan kodisional, kita memeriksa pakah nilai yang dimasukan berada dalam renatang 0 hingga 100
             break                                       # --> Jika nilai berada dalam rentang tersebut, kita menggunakan pernyataan break untuk menghentikan loop
@@ -99,20 +99,20 @@ while True:         # --> Infinite loop atau looping akan berjalan terus menerus
 print(f"Nilai yang di input : {nilai}")     # --> Hasilnya adalah dinamis (jika loop selesai kita mencetak nilai yang dimasukan olehpengguna)
 
 # 10. Mwnggunakan while di dalam fungsi
-def tobrut(t):
-    faktor = 1
-    while t > 1:
-        faktor *= t
-        t -= 1
-    return faktor
-print(tobrut(5)) # Hasilnya adalah 120
+def tobrut(t):      # --> Mendfinisikan fungsi tibrut dengan parameter t
+    faktor = 1      # --> Inisialisasi variabel faktor dengan nilai 1
+    while t > 1:    # --> Selama nilai t lebih besar dari 1, loop akan terus berjalan
+        faktor *= t # --> Selajutnya kita mengalikan nilai faktor dengan t
+        t -= 1      # --> Setiap iterasi nilai t akan dikurangi 1 (decrement) --> Proses ini terus berlanjut hingga t mencapai 1
+    return faktor   # --> Mengembalikan nilai faktor
+print(tobrut(5))    # --> Hasilnya adalah 120 --> Dalam kasus ini kita menghitung faktorial dari 5 (5 !=5 x4 x3 x2 x1 = 120)
 
 # 11. Menggunakan while untuk iterasi dengan struktur data lain atau di sini dengan list
-list_tobrut = [1,2,3,4,5]
-index = 0
-while index < len(list_tobrut):
-    print(list_tobrut[index]) # Hasilnya adlaah 1 2 3 4 5
-    index += 1
+list_tobrut = [1,2,3,4,5]           # --> List tobrut dengan beberapa nilai atau elemen
+index = 0                           # --> Inisialisasi variabel index dengan nilai 0
+while index < len(list_tobrut):     # --> Selama nilai index kurang dari panjang list_tobrut, maka looping akan berjalan
+    print(list_tobrut[index])       # --> Setiap iterasi akan mencetak elemen dari list_tobrut berdasarkan nilai index dan hasilnya adlaah 1 2 3 4 5
+    index += 1                      # --> Setiap itersi, nilai index akan ditambahkan 1 (increment)
 
 # 12. Game sederhana tebak angka menggunakan while
 """ import random
@@ -134,84 +134,86 @@ while tobrut_tebak != angka_rahasia:
 print("Tobrut tertebak!") """ # Hasilnya adalah dinamis, masukan angka di mulai dari 1 hingga 100
 
 # 13. kalkulator sederhana --> Melakukan operasi dasar
-def kalkulator_tobrut():
-    while True:
-        print("Kalkulator Tobrut")
-        print("Pilih operasi : ")
-        print("1. Pejumlahan")
-        print("2. Pengurangan")
-        print("3. Perkalian")
-        print("4. Pembagian")
+def kalkulator_tobrut():            # --> Mendefinisikan taua deklarasi fungsi kalkulator_tobrut
+    while True:                     # --> Loop utama, ini akan terus berjalan selama dalam kondisi True (infinite loop)
+        print("Kalkulator Tobrut")  # --> Judul
+        print("Pilih operasi : ")   # --> Pilihan
+        print("1. Pejumlahan")      # --> Pilihan
+        print("2. Pengurangan")     # --> Pilihan
+        print("3. Perkalian")       # --> Pilihan
+        print("4. Pembagian")       # --> Pilihan
 
-        while True:
+        # Memilih Operasi
+        while True:                                                 # --> Looping untuk validasi input operasi!
             try:
-                operasi = int(input("Masukan pilihan 1/2/3/4 : "))
-                if operasi in [1,2,3,4]:
-                    break
-                else:
-                    print("Pilihan tidak benar, pilih antara 1-4!")
-            except ValueError:
-                print("Masukan angka yang benar")
-    
-        while True:
+                operasi = int(input("Masukan pilihan 1/2/3/4 : "))  # --> Meminta pengguna untuk meng-input dan tersimpan di variabel operasi (ini ddikonversi ke integer)
+                if operasi in [1,2,3,4]:                            # --> Pengguna diminta untuk memiliah operasi dengan memasukan angka 1,2,3,4 (jika input valid)
+                    break                                           # --> Menghentikan paksa loop dengan pernyataan break, jika input benar
+                else:                                               
+                    print("Pilihan tidak benar, pilih antara 1-4!") # --> Jika input tidak sesuai dengan angka 1,2,3,4 (jika input tidak valid) dan ini akan dicetak
+            except ValueError:                                      # --> Untuk menangani kesalahan jika pengguna memasukan input bukan angka (karena sebelumnya sudah di konversi ke integer)
+                print("Masukan angka yang benar")                   
+        # Memasukan Angka
+        while True:                                                 # --> Loping untuk validasi input angka!
             try:
-                nums_1 = float(input("Masukan angka pertama : "))
-                nums_2 = float(input("Masukan angka kedua : "))
-                break
-            except ValueError:
+                nums_1 = float(input("Masukan angka pertama : "))   # --> Meminta pengguna untuk meng-input angka pertama (dna mengkonversinya ke float)
+                nums_2 = float(input("Masukan angka kedua : "))     # --> Meminta pengguna untuk meng-input angka kedua (dan mengkonversinya ke float)
+                break                                               # --> Menghentikan loop secara pakasa dengan pernyataan break, jika input benar
+            except ValueError:                                      # --> Untuk menangani kesalahan jika pengguna meng-input bukan angka
                 print("Masukan angka yang benar!")
-    
-        if operasi == 1:
-            hasil = nums_1 + nums_2
-            operasi_str = "+"
 
-        elif operasi == 2:
-            hasil = nums_1 - nums_2
-            operasi_str = "-"
+        # Melakukan Operasi
+        if operasi == 1:             # --> Jika operasi adalah penjumlahan --> Apakah operasi yang dimasukan pengguna adalah penjumlahan (dengan memerikasa apakah nilai operasi sama dengan 1)
+            hasil = nums_1 + nums_2  # --> Melakukan penjumlahan dua angka
+            operasi_str = "+"        # --> Menyimpan operasi dalam bentuk string (pemanis saja)
 
-        elif operasi == 3:
-            hasil = nums_1 * nums_2
-            operasi_str = "*"
+        elif operasi == 2:           # --> Jika operasi adalah pengurangan --> Apakah operasi yang dimasukan pengguna adalah pengurangan (dengan memerikasa apakah nilai operasi sama dengan 2)
+            hasil = nums_1 - nums_2  # --> Melakukan pengurangan dua angka
+            operasi_str = "-"        # --> Menyimpan operasi dalam bentuk string (pemanis saja)
 
-        elif operasi == 4:
-            if nums_2 == 0:
+        elif operasi == 3:           # --> Jika operasi adalah perkalian --> Apakah operasi yang dimasukan pengguna adalah perkalian (dengan memerikasa apakah nilai operasi sama dengan 3)
+            hasil = nums_1 * nums_2  # --> Melakukan perkalian dua angka
+            operasi_str = "*"        # --> Menyimpan operasi dalam bentuk string (pemanis saja)
+
+        elif operasi == 4:           # --> Jika operasi adlah pembagaian --> Apakah operasi yang dimasukan pengguna adalah pembagian (dengan memerikasa apakah nilai operasi sama dengan 4)
+            if nums_2 == 0:          # --> Menggunakan kondisional untuk memeriksa apakah kedua angka bukan 0(untuk menghindari pembagian dengan 0)
                 print("Pembagian 0 tidak benar!")
-                continue
-            hasil = nums_1 / nums_2
-            operasi_str = "/"
+                continue             # --> Melajutkan ke iterasi selanjutnya
+            hasil = nums_1 / nums_2  # --> Melakukan pembagian dua angka
+            operasi_str = "/"        # --> Menyimpan operasi dalam bentuk string (pemanis saja)
+        # Menampilkan Haisl
+        print(f"Hasil : {nums_1} {operasi_str} {nums_2} = {hasil}") # --> Mencetak hasil perhitungan dengan format (hasil operasi)
+        # Lanjut atau mandeg
+        lanjut = input("Apa kamu ingin melanjutkan? (y/n)")         # --> Pilihan pengguna untuk melajutkan atau tidak
+        if lanjut.lower() != "y":                                   # --> jika pengguna memasukan y, program kembali ke menu utama
+            print("Terima kasih!")                                  # --> Jika pengguna memasukan selain y maka ini yang akan di cetak
+            break                                                   # --> Menghentikan loop secara paksa menggunakan pernyataan break
 
-        print(f"Hasil : {nums_1} {operasi_str} {nums_2} = {hasil}")
-        
-        lanjut = input("Apa kamu ingin melanjutkan? (y/n)")
-        if lanjut.lower() != "y":
-            print("Terima kasih!")
-            break
-
-kalkulator_tobrut()
-
+kalkulator_tobrut() # Pemanggilah hujan, eh! fungsi kalkulator_tobrut
+ 
 # 14. Menghitung bilangan prima dengan rentang tertentu (menemukan bilangan prima dalam rentang tertentu)
-def ukhti_prima(tobrut):
-    if tobrut<= 1:
-        return False
-    montok = 2
-    while montok * montok <= tobrut:
-        if tobrut % montok == 0:
-            return False
-        montok += 1
-    return True
+def ukhti_prima(tobrut):                # --> Mendefinisikan funsi ukhti_prima dengan parameter tobrut (memerikasa apakah tobrut adalah bilangan prima?)
+    if tobrut<= 1:                      # --> Memerikasa apakah tobrut kurang dari atau sama dengan 1
+        return False                    # --> Jika iya, maka akan mengambalikan False, karena bilangan prima harus lebih nesar dari 1 (bukan bilangan prima)
+    montok = 2                          # --> Inisialisasi variabel montok dengan nilai 2
+    while montok * montok <= tobrut:    # --> Selama kuadrat dari montok kurang dari atau sama dengan tobrut, maka lanjut ke itersi selajutnya
+        if tobrut % montok == 0:        # --> Jika tobrut habis dibagi dengan montok
+            return False                # --> Kita mengembalikan False, karena tobrut bukan bilangan prima
+        montok += 1                     # --> Jika tidak, setiap iterasi nilai montok ditambah 1
+    return True                         # --> Jika kita melewati semua iterasi dan tidak ada pembagian yang menghasilkan sisa nol, kita mengembalikan True karena tobrut adalah bilangan prima
 
-def bilangan_prima(rentang_awal, rentang_akhir):
-    print(f"Bilangan prima antara {rentang_awal} dan {rentang_akhir} : ")
-    nums= rentang_awal
-    while nums <= rentang_akhir:
-        if ukhti_prima(nums):
-            print(nums, end=" ")
-        nums += 1
-    print() # Hasilnya adalah dinamis, misal pengguna memasukan rentang awal 1 dna rentang akhir 20 maka outputnya 2 3 4 7 11 13 17 19
+def bilangan_prima(rentang_awal, rentang_akhir):                            # --> fungsi bilangan_prima dengan dua paramater, yang bertujuan mencetak semua bilangan prima dlam rentang awal hingga akhir
+    print(f"Bilangan prima antara {rentang_awal} dan {rentang_akhir} : ")   # --> Mencetak pesan bilangan prima  rentang awal dan akhir
+    nums= rentang_awal              # --> Inisialisasi variabel nums dengan nilai rentang awal
+    while nums <= rentang_akhir:    # --> Mengitrasi melalui semua angka dalam rentang (loop akan berjalan selama nums kurang dari atau sama dengan rentang akhir)
+        if ukhti_prima(nums):       # --> Jika numas adalah bilangan prima (dengan memanggil fungsi ukhti_prima)
+            print(nums, end=" ")    # --> lalu kita mencentak bilangan prima
+        nums += 1                   # --> Setiap iterasi nilai nums ditambah 1
+    print() # Hasilnya adalah dinamis, misal pengguna memasukan rentang awal 1 dna rentang akhir 20 maka outputnya 2 3 4 7 11 13 17 19 --> Mencetak baris baru
 
-rentang_awal = int(input("Masukkan rentang awal: "))
-rentang_akhir = int(input("Masukkan rentang akhir: "))
-bilangan_prima(rentang_awal, rentang_akhir)
+rentang_awal = int(input("Masukkan rentang awal: "))    # --> Memnitnta pengguna untuk menginput rentang awal
+rentang_akhir = int(input("Masukkan rentang akhir: "))  # --> Memnitnta pengguna untuk menginput rentang akhit
+bilangan_prima(rentang_awal, rentang_akhir)             # --> Memanggil fungsi bilangan_prima dengan input dari pengguna
 
 # 15. Membaca file dan memproses isi tobrut
 def baca_file(nama_file):
