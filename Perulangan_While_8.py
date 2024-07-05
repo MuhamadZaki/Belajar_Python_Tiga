@@ -87,7 +87,7 @@ while True:         # --> Infinite loop atau looping akan berjalan terus menerus
 
 # 9. Validasi atau menangani input pengguna dengan while
 while True:         # --> Infinite loop atau looping akan berjalan terus menerus, selama kondisi True
-    try:            # --> Menjalankan blok kode di dalamnya (sembari menangani error)
+    try:            # --> Menjalankan blok kode di dalamnya, jika ada kesalahan dalam blok try, program akan melajutkan ke blok except
         nilai = int(input("Masukan nilai 0-100 : "))    # --> Kita meminta pengguna untuk melakukan input dan input dari pengguna di konversi menjadi integer dan tersimpan di variabel nilai
         if 0 <= nilai <=100:                            # --> Meguakan kodisional, kita memeriksa pakah nilai yang dimasukan berada dalam renatang 0 hingga 100
             break                                       # --> Jika nilai berada dalam rentang tersebut, kita menggunakan pernyataan break untuk menghentikan loop
@@ -145,7 +145,7 @@ def kalkulator_tobrut():            # --> Mendefinisikan taua deklarasi fungsi k
 
         # Memilih Operasi
         while True:                                                 # --> Looping untuk validasi input operasi!
-            try:
+            try:                                                    # --> Menjalankan blok kode di dalamnya, jika ada kesalahan dalam blok try, program akan melajutkan ke blok except
                 operasi = int(input("Masukan pilihan 1/2/3/4 : "))  # --> Meminta pengguna untuk meng-input dan tersimpan di variabel operasi (ini ddikonversi ke integer)
                 if operasi in [1,2,3,4]:                            # --> Pengguna diminta untuk memiliah operasi dengan memasukan angka 1,2,3,4 (jika input valid)
                     break                                           # --> Menghentikan paksa loop dengan pernyataan break, jika input benar
@@ -155,7 +155,7 @@ def kalkulator_tobrut():            # --> Mendefinisikan taua deklarasi fungsi k
                 print("Masukan angka yang benar")                   
         # Memasukan Angka
         while True:                                                 # --> Loping untuk validasi input angka!
-            try:
+            try:                                                    # --> Menjalankan blok kode di dalamnya, jika ada kesalahan dalam blok try, program akan melajutkan ke blok except
                 nums_1 = float(input("Masukan angka pertama : "))   # --> Meminta pengguna untuk meng-input angka pertama (dna mengkonversinya ke float)
                 nums_2 = float(input("Masukan angka kedua : "))     # --> Meminta pengguna untuk meng-input angka kedua (dan mengkonversinya ke float)
                 break                                               # --> Menghentikan loop secara pakasa dengan pernyataan break, jika input benar
@@ -215,25 +215,25 @@ rentang_awal = int(input("Masukkan rentang awal: "))    # --> Memnitnta pengguna
 rentang_akhir = int(input("Masukkan rentang akhir: "))  # --> Memnitnta pengguna untuk menginput rentang akhit
 bilangan_prima(rentang_awal, rentang_akhir)             # --> Memanggil fungsi bilangan_prima dengan input dari pengguna
 
-# 15. Membaca file dan memproses isi tobrut
-def baca_file(nama_file):
-    try:
-        with open(nama_file, 'r') as file:
-            baris = file.readline()
-            while baris:
-                print(baris.strip()) # Hasilnya adalah isi dari file yang di baca, contoh saat tobrut meng input file contoh.txt
-                baris = file.readline()
+# 15. Membaca isi dari file
+def baca_file(nama_file):                   # --> Deklarasi fungsi dengan satu parameter
+    try:                                    # --> Menjalankan blok kode di dalamnya, jika ada kesalahan dalam blok try, program akan melajutkan ke blok except
+        with open(nama_file, 'r') as file:  # --> Membuka file dengan nama yang diberikan dan dalam mode read
+            baris = file.readline()         # --> Membaca satu baris dari file dan menyimpan dalam variabel baris
+            while baris:                    # --> loop akan berjalan selama variabel baris tidak kosong (berisi tesks)
+                print(baris.strip())        # --> Hasilnya adalah membaca isi dari file yang dimasukan pengguna, seperti contoh.txt (Mencetak isi dari baris)
+                baris = file.readline()     # --> Membaca baris berikutnya dari file dan menyimpan kembali dalam variabel baris
     except FileNotFoundError:
-        print(f"File {nama_file} tidak ditemukan.")
+        print(f"File {nama_file} tidak ditemukan.")        # --> Pesan akan dicetak jika file tidak ditemukan
 
-nama_file = input("Masukkan nama file yang akan dibaca: ")
-baca_file(nama_file)
+nama_file = input("Masukkan nama file yang akan dibaca: ") # --> Meminta pengguna untuk memasukan nama file
+baca_file(nama_file)                                       # --> Memanggil fungsi
 
 
 # Bonus untuk kamu
-halal = 0
-while halal < 100:
-    hati = "I Love You"
-    if halal < 2:   # Menggunakan kondisi dan tanpa kondisi pun bisa
-        print(hati) # Hasilnya adalah I Love You 2x
-    halal += 1      # Increment manual
+halal = 0                   # --> Inisialisasi variabel halal dengan nilai 0
+while halal < 100:          # --> Loop yang akan berjalan selama nilai halal kurang dari 100 dan tentu selama loop kode di dalamnya akan di eksekusi berulang kali (makanya pake kondisi atau break)
+    hati = "I Love You"     # --> Variabel hati dengan nilai string
+    if halal < 2:           # --> Menggunakan kondisin (jika nilai halal kurang dari 2, maka kode dalam blok if akan dieksekusi - pada iterasi pertama, ketika halal masih 0 dan kondisi terpenuhi dan string akan dicetak) dan tanpa kondisi pun bisa
+        print(hati)         # --> Hasilnya adalah I Love You 2x (mencetak isi dari variabel hati)
+    halal += 1              # --> Increment manual (setiap iterasi nilai halal ditambah 1)

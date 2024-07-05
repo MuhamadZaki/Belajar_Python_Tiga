@@ -4,7 +4,7 @@
 # Contoh Dalam Penentuan Nilai pada Siswa (Program)
 
 while True: # --> Loop ini akan terus berjalan sampai pernyataan break
-    try:    # --> Menjalankan kode di dalam (sembari untuk menangani error)
+    try:    # --> Menjalankan blok kode di dalamnya, jika ada kesalahan dalam blok try, program akan melajutkan ke blok except
 
         nilai = int(input("Masukan nilai ujian : ")) # Fungsi input String yang dikonversi ke Integer
     
