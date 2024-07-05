@@ -22,29 +22,26 @@ print(iter_obj)           # --> Mencetak objek iterator
     #Lakukan sesuatu dengan item
 
 # 2. Itersi melalui list
-list_buah = ["Semangka", "Tobrut", "Jeruk", "Durian"]
-
-for buah in list_buah:
-    print(buah) # Hasilnya adalah Semangka, Tobrut, Jeruk, Durian
+list_buah = ["Semangka", "Tobrut", "Jeruk", "Durian"] # --> Deklasari dari list_buah dan berisi 4 elemen
+for buah in list_buah: # --> loop for yang akan mengulang setiap elemen dalam list_buah dan pada setiap iterasi variabel buah akan berisi salah satu elemen dari list
+    print(buah)        # --> Hasilnya adalah Semangka, Tobrut, Jeruk, Durian (mencetak nilai atau elemen dari variabel buah pada setiap iterasi)
 
 # 3. Iterasi melalui string
-toket_brutal = "Ukhti"
-
-for huruf in toket_brutal:
-    print(huruf) # Hasilnya adalah ukhti
+toket_brutal = "Ukhti"      # --> Deklasari variabe toket_brutal dengan nilai string
+for huruf in toket_brutal:  # --> Loop for yang akan mengulangi setiap karakter dalam toket_brutal dan pada setiap iterasi variabel huruf, akan berisi salah satu karakter dari string
+    print(huruf)            # --> Hasilnya adalah mencetak setiap karakter dari ukhti secara terpisah (mencetak nilai dari variabel huruf pada setiap iterasi)
 
 # 4. Iterasi melalui tuple
-tuple_buah = ("Anggur", "Jeruk", "Nanas")
-
-for buah in  tuple_buah:
-    print(buah) # Hasilnya adalah Amggur, Jeruk, Nanas
+tuple_buah = ("Anggur", "Jeruk", "Nanas") # --> Deklarasi tuple_buah dan berisi tiga elemen (ingat tupel tuple bersifat immutabel atau tidak bisa diubah setelah dibuat)
+for buah in  tuple_buah: # --> Loop for yang akan mengulang setiap elemen dalam tuple_buah dan pada setiap iterasi variabel buah, akan berisi salah satu elemen dari tuple
+    print(buah)          # --> Hasilnya adalah Amggur, Jeruk, Nanas (mencetak nilai dari variabel buah, pada setiap iterasi)
 
 
 # 5. Iterasi melaui dictionary
-dict_buah = {"Mangga": 1, "Apel": 2, "Jeruk": 3}
+dict_buah = {"Mangga": 1, "Apel": 2, "Jeruk": 3} # --> Deklarasi dictionary dict_buah yang berisi tiga pasangan key-value
 
-for kunci in dict_buah:
-    print(kunci, dict_buah[kunci]) # Hasilnya adalah Mangga 1, Apel 2, Jeruk 3
+for kunci in dict_buah:            # --> Loop for yang mengulang setiap key dalam dict_buah (pada setiap iterasi variabel kunci akan berisi salah satu key dari dict)
+    print(kunci, dict_buah[kunci]) # --> Hasilnya adalah Mangga 1, Apel 2, Jeruk 3 (mencetak nilai dari variabel kunci (key dan value yang sesuai dari dict))
 
 # 6. Menggunakan range() --> Untuk menghasilkan urutan bilangan
 for tobrut in range(5):
