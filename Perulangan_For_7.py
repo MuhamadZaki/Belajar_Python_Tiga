@@ -82,24 +82,24 @@ for buah in set_buah:                  # --> Loop for yang akan mengulang setiap
     print(buah)                        # --> Mencetak nilai dari variabel buah pada setiap iterasi dan hasilnya adalah Apel Mangga Jeruk
 
 # 13. Menggunakan enumerate() --> Menambahkan penghitung ke itrable dan mengembalikannya dalam bentuk objek enum. Berguna ketika kita memerlukan indeks dalam perulangan
-list_buah = ['Apel', 'Mangga', 'Jeruk']
-for index, buah in enumerate(list_buah):
-    print(index, buah) # 0 apel, 1 Mangga, 2 Jeruk
+list_buah = ['Apel', 'Mangga', 'Jeruk']     # --> Deklarasi list yang berisi 3 elemen
+for index, buah in enumerate(list_buah):    # --> loop for yang akan mengulang setiap elemen dalam list_buah dan fungsi enumerate() digunakan untuk menghasilkan pasangan indeks dan nilai dari list (pada setiap iterasi, variabel index akan berisi indeks mulai dari 0 dan variabel buah akan berisi nilai dari lis)
+    print(index, buah)                      # --> Mencetak nilai dari variabel index dan buah pada setiap iterasi dan hasilnya aalah 0 apel, 1 Mangga, 2 Jeruk (indeks dan nama buah yang ada dalam list)
 
 # 14. Menggunakan zip() --> digunakan untuk menggabungkan dua atau lebih itrable, menghasilkan tuple pasangan elemen dari itrable
-list_buah = ['Apel', 'Mangga', 'Jeruk']
-list_harga = [1000, 2000, 3000]
+list_buah = ['Apel', 'Mangga', 'Jeruk']         # --> Deklarasi list yang berisi 3 elemen
+list_harga = [1000, 2000, 3000]                 # --> Deklarasi list yang berisi 3 elemen (nantinya masing-masing akan mewakili harga buah yang sesuai dengan urutan di list_buah)
 
-for buah, harga in zip(list_buah, list_harga):
-    print(f"{buah}, {harga}") # Hasilnya adalah Apel 1000, Mangga 2000, Jeruk 3000
+for buah, harga in zip(list_buah, list_harga):  # --> Loop for yang akan mengulang setiap pasangan nilai dari list_buah dan list_harga dan fungsi zip menggabungkan elemen-elemen dari dua list menjadi pasang-pasangan (pada setiap iterasi variabel buah akan berisi nama buah dan variabel harga akan berisi harga buah yang sesuai)
+    print(f"{buah}, {harga}")                   # --> Mencetak nilai dari variabel buah, harga pada setiap iterasi dan hasilnya adalah Apel 1000, Mangga 2000, Jeruk 3000
 
 
 """ Teknik Lebih Lanjut Penggunaan list comprehensions, generator expressions, iterasi melalui file, serta manipulasi iterator. """
 
 # 1. List Comprehension -->  Cara singkat dan elegan untuk membuat list baru dari itrable yang ada
 # Membuat list dengan list comprehension
-list_buah = ['Apel', 'Mangga', 'Jeruk']
-buah_baru = [buah.upper() for buah in list_buah]
+list_buah = ['Apel', 'Mangga', 'Jeruk']             # --> Deklarasi list yang berisi 3 elemen
+buah_baru = [buah.upper() for buah in list_buah]    # --> 
 print(buah_baru) # Hasilnya adalah APEL, MANGGA, JERUK
 
 # list comprehension dengan kondisi
