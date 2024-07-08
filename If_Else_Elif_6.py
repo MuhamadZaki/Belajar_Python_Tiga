@@ -3,38 +3,38 @@
 
 # Contoh Dalam Penentuan Nilai pada Siswa (Program)
 
-while True: # --> Loop ini akan terus berjalan sampai pernyataan break
+while True: # --> I infinite loop terus berjalan sampai ada pernyataan break 
     try:    # --> Menjalankan blok kode di dalamnya, jika ada kesalahan dalam blok try, program akan melajutkan ke blok except
 
-        nilai = int(input("Masukan nilai ujian : ")) # Fungsi input String yang dikonversi ke Integer
+        nilai = int(input("Masukan nilai ujian : ")) # --> fungsi input(), mengambil input sebagai string dan mengkonversinya ke integer
     
         # Kondisional (tentukan hasil berdasarkan nilai)
-        if nilai >= 90 and nilai <= 100: #  Jika menggunakan operator dengan rentang tertentu contoh rentang 90 hingga 100, dan tambahkan --> nilai >=90 and nilai <=100
+        if nilai >= 90 and nilai <= 100:    # --> Menggunakan kondisional, mengevaluasi nilai yang dimasukan dan menentukan hasil berdasrakan rentang nilai (jika nilai antara 90 hingga 100  , maka hasilnya lulus dengan niliai A)
             hasil = "Lulus dengan nilai A"
 
-        elif nilai >= 80 and nilai < 90:
+        elif nilai >= 80 and nilai < 90:    # --> 
             hasil = "Lulus dengan nilai B"
 
-        elif nilai >= 70 and nilai < 80:
+        elif nilai >= 70 and nilai < 80:    # --> 
             hasil = "Lulus dengan nilai C"
 
-        elif nilai >= 60 and nilai < 70:
+        elif nilai >= 60 and nilai < 70:    # --> 
             hasil = "Lulus dengan nilai D"
 
-        elif nilai >=0 and nilai < 60:
+        elif nilai >=0 and nilai < 60:      # -->
             hasil = "Tidak Lulus dengan nilai E"
         else:
-            print("Nilai diluar jangkauan! Masukan nilai antara 0 hingga 100!")
+            print("Nilai diluar jangkauan! Masukan nilai antara 0 hingga 100!") # -->
 
-        print(f"Hasil Nilai : {hasil}") # Dinamis, jika user memasukan nilai berupa angka (karena string sudah konversi menjadi integer)
+        print(f"Hasil Nilai : {hasil}")                                         # -->
 
-        lanjut = input("Ingin memasukan nilai lagi tidak tobrut? (y/n) :")
+        lanjut = input("Ingin memasukan nilai lagi tidak tobrut? (y/n) :")      # -->
 
-        if lanjut.lower() != 'y':
-            break
+        if lanjut.lower() != 'y':                    # -->
+            break                                    # -->
         
     except ValueError: # Pesan kesalahan
-        print("Input tidak benar! Masukan angka!")
+        print("Input tidak benar! Masukan angka!")   # -->
 
 # Note if-elif-else :
 # 1. if     --> Merupakan pernyataan kondisional yang memeriksa apakah suatu kondisi benar (True), jika kondisi benar blok code yang berada di bawah if akan dijalankan
