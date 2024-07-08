@@ -4,13 +4,11 @@
 # Note :
 # Itersi atau Iteration --> Proses di mana kita menelusuri atau melintasi setiap elemen dari suatu koleksi data seperti (ist, tuple, set dan dict) satu persatu (secara singkat adalah aksi atau proses)
 numbers = [1, 2, 3, 4, 5] # --> List yang diitersi
-
 for number in numbers:    # --> Iterasi dimulai dari sini
     print(number)         # --> Aksi selama iterasi
 
 # Iterable --> Merupakan sebuah objek yang bisa diiterasi atau dilintasi (secara singkat adalah objek yang mendukung aksi atau proses)
 my_list = [1, 2, 3, 4, 5] # --> Ini adalah contoh dari iterable
-
 # Memeriksa apakah my_list adalah iterable
 iter_obj = iter(my_list)  # --> Ini tidak akan menghasilkan error, sehingga my_list adalah iterable
 print(iter_obj)           # --> Mencetak objek iterator
@@ -23,8 +21,8 @@ print(iter_obj)           # --> Mencetak objek iterator
 
 # 2. Itersi melalui list
 list_buah = ["Semangka", "Tobrut", "Jeruk", "Durian"] # --> Deklasari dari list_buah dan berisi 4 elemen
-for buah in list_buah: # --> loop for yang akan mengulang setiap elemen dalam list_buah dan pada setiap iterasi variabel buah akan berisi salah satu elemen dari list
-    print(buah)        # --> Hasilnya adalah Semangka, Tobrut, Jeruk, Durian (mencetak nilai atau elemen dari variabel buah pada setiap iterasi)
+for buah in list_buah:                                # --> loop for yang akan mengulang setiap elemen dalam list_buah dan pada setiap iterasi variabel buah akan berisi salah satu elemen dari list
+    print(buah)                                       # --> Hasilnya adalah Semangka, Tobrut, Jeruk, Durian (mencetak nilai atau elemen dari variabel buah pada setiap iterasi)
 
 # 3. Iterasi melalui string
 toket_brutal = "Ukhti"      # --> Deklasari variabe toket_brutal dengan nilai string
@@ -33,56 +31,55 @@ for huruf in toket_brutal:  # --> Loop for yang akan mengulangi setiap karakter 
 
 # 4. Iterasi melalui tuple
 tuple_buah = ("Anggur", "Jeruk", "Nanas") # --> Deklarasi tuple_buah dan berisi tiga elemen (ingat tupel tuple bersifat immutabel atau tidak bisa diubah setelah dibuat)
-for buah in  tuple_buah: # --> Loop for yang akan mengulang setiap elemen dalam tuple_buah dan pada setiap iterasi variabel buah, akan berisi salah satu elemen dari tuple
-    print(buah)          # --> Hasilnya adalah Amggur, Jeruk, Nanas (mencetak nilai dari variabel buah, pada setiap iterasi)
+for buah in  tuple_buah:                  # --> Loop for yang akan mengulang setiap elemen dalam tuple_buah dan pada setiap iterasi variabel buah, akan berisi salah satu elemen dari tuple
+    print(buah)                           # --> Hasilnya adalah Amggur, Jeruk, Nanas (mencetak nilai dari variabel buah, pada setiap iterasi)
 
 
 # 5. Iterasi melaui dictionary
 dict_buah = {"Mangga": 1, "Apel": 2, "Jeruk": 3} # --> Deklarasi dictionary dict_buah yang berisi tiga pasangan key-value
-
-for kunci in dict_buah:            # --> Loop for yang mengulang setiap key dalam dict_buah (pada setiap iterasi variabel kunci akan berisi salah satu key dari dict)
-    print(kunci, dict_buah[kunci]) # --> Hasilnya adalah Mangga 1, Apel 2, Jeruk 3 (mencetak nilai dari variabel kunci (key dan value yang sesuai dari dict))
+for kunci in dict_buah:                          # --> Loop for yang mengulang setiap key dalam dict_buah (pada setiap iterasi variabel kunci akan berisi salah satu key dari dict)
+    print(kunci, dict_buah[kunci])               # --> Hasilnya adalah Mangga 1, Apel 2, Jeruk 3 (mencetak nilai dari variabel kunci (key dan value yang sesuai dari dict))
 
 # 6. Menggunakan range() --> Untuk menghasilkan urutan bilangan
-for tobrut in range(5):
-    print(tobrut) # Hasilnya adalah 0 1 2 3 4
+for tobrut in range(5): # --> Loop for yang akan mengulang setiap nilai dalam rentang 0 hingga 4 atau (pada setiap iterasi variabel tobrut akan mengambil nilai dari 0 hingga 4)
+    print(tobrut)       # --> Mencetak nilai dari variabel tobrut pada setiap iterasi dan hasilnya adalah 0 1 2 3 4
 
 # 7. Menggunakan range() dengan strat dan stop
-for tobrut in range(1, 5):
-    print(tobrut) # Hasilnya adalah 1 2 3 4
+for tobrut in range(1, 5): # --> loop for yang akan mengulang setiap nilai dalam rentang 1 hingga 4 (inklusif) atau (pada setiap iterasi variabel tobrut akan mengambil nilai dari 1 hingga 4)
+    print(tobrut)          # --> Mencetak nilai dari variabel tobrut pada setiap iterasi dan hasilnya adalah 1 2 3 4
 
 # 8. Menggunakan range() dengan step
-for tobrut in range(1, 8, 2):
-    print(tobrut) # Hasilnya adalah 1 3 5 7
+for tobrut in range(1, 8, 2): # --> Loop for yang akan mengulang setiap nilai dalam rentang 1 hingga 7 (inklusif) dengan langkah sebesar 2 atau (pada setiap iterasi variabel tobrut akan mengambil nilai dari 1,3,5,7)
+    print(tobrut)             # --> Mencetak nilai dari variabel tobrut pada setiap iterasi dan hasilnya adalah 1 3 5 7
 
 # 9. Menggunakan perulangan bersarang (nested loops)
-for tobrut in range(3):
-    for brutal in range(2):
-        print(f"tobrut: {tobrut}, brutal: {brutal}") # Hasilnya adalah tobrut:0, brutal:0 - tobrut:0, brutal:1 - tobrut1, brutal0 - tobrut:1, brutal:1 - tobrut:2, nrutal:0 - tobrut:2, brutal:1
+for tobrut in range(3):                              # --> Loop for terluar yang akan mengulang setiap nilai dalam rentang 0 hingga 2 (inklusif) atau (pada setiap iterasi variabel tobrut akan mengambil nilai dari 0 hingga 2)
+    for brutal in range(2):                          # --> Loop bersarang yang berada di dalam loop terluar dan loop ini akan mengulang setiap nilai dalam rentang 0 hingga 1 (inklusif) atau (pada setiap iterasi variabel brutal akan mengambil nilai dari 0 hingga 1)
+        print(f"tobrut: {tobrut}, brutal: {brutal}") # --> Mencetak nilai dari variabel tobrut dan brutal pada setiapp iterasi dan hasilnya adalah mencetak kombinasi pasangan nilai dari kedua loop tobrut:0, brutal:0 - tobrut:0, brutal:1 - tobrut1, brutal0 - tobrut:1, brutal:1 - tobrut:2, nrutal:0 - tobrut:2, brutal:1
 
 # 10. Perulangan dengan else
-for tobrut in range(3):
-    print(tobrut) # Hasilnya adalah 0 1 2
+for tobrut in range(3): # --> Loop for yang akan mengulang setiap nilai dalam rentang 0 hingga 2 (inklusif) atau (pada setiap iterasi variabel tobrut akan mengambil nilai 0 hingga 2)
+    print(tobrut)       # --> Mencetak nilai dari variabel tobrut pada setiap iterasi dan hasilnya adalah 0 1 2
 else:
-    print("Selesai") # Hasilnya adalah Selesai
+    print("Selesai")    # --> Blok else dalam loop for akan dieksekusi setelah semua iterasi selesai dan hasilnya adalah Selesai
 
 # 11. Menggunakan break dan continue
 # break untuk menghentikan perulangan
-for tobrut in range(5):
-    if tobrut == 3:
-        break
-    print(tobrut) # Hasilnya adalah 0 1 2
+for tobrut in range(5): # --> Loop for yang akan mengulang setiap nilai dalam rentang 0 hingga 4 (inklusif) atau (pada setiap iterasi variabel tobrut akan mengambil nilai 0 hingga 4)
+    if tobrut == 3:     # --> Kita menggunakan kondisi, jika nilai tobrut sama dengan 3, maka pernyataan di dalam blok if akan dieksekusi atau (pada iterasi ketiga, ketika tobrut bernilai 3 kondisi terpenuhi)
+        break           # --> Lalu loop akan dihentikan dengan pernyataan break
+    print(tobrut)       # --> Mencetak nilai dari variabel tobrut pada setiap iterasi sebelum kondisi terpenuhi dan asilnya adalah 0 1 2
 
 # continue untuk melewati iterasi
-for tobrut in range(5):
-    if tobrut == 3:
-        continue
-    print(tobrut) # Hasilnya adalah 0 1 2 3 4
+for tobrut in range(5):           # --> Loop for akan mengulang setiap nilai dalam rentang 0 hingga 4 (inklusif) atau (pada setiap iterasi variabel tobrut akan mengambil nilai 0 hingga 4)
+    if tobrut == 3:               # --> Kita menggunakan kondisi, jika nilai tobrut sama dengan 3, maka pernyataan di dalam blok if akan dieksekusi atau (pada iterasi ketiga, ketika tobrut bernilai 3 kondisi terpenuhi)
+        continue                  # --> Lalu loop akan melanjutkan ke iterasi berikutnya menggunakan pernyataan continue
+    print(f"coba {tobrut}")       # --> Mencetak setiap nilai dari variabel tobrut pada setiap iterasi sebelum kondisi terpenuho dan hasilnya adalah 0 1 2 4 (kenapa 0 1 2 4 bukan 0 1 2 karena kita menggunakan pernyataan continue)
 
 # 12. Iterasi melalui set
-set_buah = {'Apel', 'Mangga', 'Jeruk'}
-for buah in set_buah:
-    print(buah) # Hasilnya adalah Apel Mangga Jeruk
+set_buah = {'Apel', 'Mangga', 'Jeruk'} # --> Deklarasi set yang berisi 3 elemen (perbedaan utama set dan list/dict adalah set tidak memiliki urutan dan tidak mengizinkan duplikasi)
+for buah in set_buah:                  # --> Loop for yang akan mengulang setiap elemen dalam set_buah (pada setiap iterasi variabel buah akan berisi salah satu elemen dari set)
+    print(buah)                        # --> Mencetak nilai dari variabel buah pada setiap iterasi dan hasilnya adalah Apel Mangga Jeruk
 
 # 13. Menggunakan enumerate() --> Menambahkan penghitung ke itrable dan mengembalikannya dalam bentuk objek enum. Berguna ketika kita memerlukan indeks dalam perulangan
 list_buah = ['Apel', 'Mangga', 'Jeruk']
