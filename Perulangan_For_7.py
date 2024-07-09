@@ -115,80 +115,80 @@ for angka in generator_angka:                    # --> Loop for untuk mengitaras
     print(angka)                                 # --> Laulu mencetak nilai dari variabel angka, pada setiap iterasi dan hasilnya adalah 0 1 2 3 4 5 6 7 8 9
 
 # 3. Iterasi melalui file --> Kita dapat membaca file baris demi baris menggunakan perulangan for
-with open("contoh.txt", "w") as file:  # Membuat file contoh.txt
-    file.write("Toket brutal 2024!\n") # Isi dari file contoh.txt
-    file. write("Terlalu unfaedah\n")  # Isi dari file contoh.txt
+with open("contoh.txt", "w") as file:  # --> Membuka file dalam mode tulis dan jika file tidak ada, maka akan dibuat
+    file.write("Toket brutal 2024!\n") # --> Menulis teks ke dalam file dan \n untuk membuat baris baru setelah teks
+    file. write("Terlalu unfaedah\n")  # --> Menulis teks ke dalam file dan \n untuk membuat baris baru setelah teks
 
-with open("contoh.txt", "r") as file:  # Membaca  isi file dari contoh.txt
-    for line in file:
-        hasil_line = line.strip() # strip() --> menghapus spasi putih di awal dan akhir
-        print(hasil_line) # Hasilnya adlaah isi dari file contoh.txt
+with open("contoh.txt", "r") as file:  # --> Membuka file dalam mode baca dan dapat membaca isi file
+    for line in file:                  # --> Membaca setiap baris dari isi file dan meyimpan dalam variabel line
+        hasil_line = line.strip()      # --> strip() --> menghapus spasi putih di awal dan akhir setiap baris lalu menyimpan ke variabel hasil_line
+        print(hasil_line)              # --> Mencetak isi setiap baris file dan hasilnya adlaah isi dari file contoh.txt
 
 # 4. Manipulasi Iterator dengan itertools Count --> Menghasilkan iterator yang menghasilkan angka yang tidak pernah berakhir
 
-import itertools
-for tobrut in itertools.count(10):
-    print(tobrut) # Hasilnya adalah 10 11 12 13 14 15
-    if tobrut >= 15:
-        break
+import itertools                   # --> Mengimpor modul yang berisi fungsi dan generator untuk menghasilkan iterasi berbagai bentuk data
+for tobrut in itertools.count(10): # --> Loop for (menggunakan generator iteratools) untuk mengitrasi generator ini yang akan menghasilkan angka secara beruntun dimulai dari angka 10 dan setiap iterasi, nilai akan disipan di variabel tobrut
+    print(tobrut)                  # --> Mencetak nilai pada setiap iterasi dan hasilnya adalah 10 11 12 13 14 15
+    if tobrut >= 15:               # --> Menggunakan kondisional, yang memerikas apakah nilai tobrut lebih besar sama dengan 15
+        break                      # --> Jika kondisi terpenuhi yaitu 15, maka pernyataan break akan memekasa menghentikan loop
 
 # Itertools Cycle --> Mengulang elemen dari iterable tanpa henti
-ukhti = 0
-for tobrut in itertools.cycle(["A", "B", "C"]):
-    print(tobrut) # Hasilnya aalah A B C. A B C, A B C
-    ukhti += 1
-    if ukhti == 9:
-        break
+ukhti = 0                                       # --> Inisialisasi variabel ukhti dengan nilai 0
+for tobrut in itertools.cycle(["A", "B", "C"]): # --> Loop for yang menggunakan generator iteratools, generator ini akan mengulang elemen dari list secara berulang tanpa henti dan setiap iterasi nilai akan disimpan dalam variabel tobrut
+    print(tobrut)                               # --> Mencetak nilai tobrut pada setiap iterasi dan hasilnya aalah A B C. A B C, A B C
+    ukhti += 1                                  # --> Pada setiap iterasi nilai ukhti akan ditambahkan 1 (increment)
+    if ukhti == 9:                              # --> Menggunakan kondisional, memerikasa apakah nilai ukhti sama dengan 9
+        break                                   # --> Jika kondisi terpenuhi, penyetaan break akan memekasa mehnetikan loop
 
 # Itertools Chain --> Menggabungkan beberapa iterble menjadi satu iterator
-list1 = [1,2,3]
-list2 = ["a", "b", "c"]
-for item in itertools.chain(list1, list2):
-    print(item) # --> Hasilnya adalah 1 2 3 a b c
+list1 = [1,2,3]                             # --> Mendeklarasikan list dengan 3 elemen (tanah air dan udara eh bukan avatar ding wkwkwk-abaikan)
+list2 = ["a", "b", "c"]                     # --> Deklarasi list dengan 3 elemen
+for item in itertools.chain(list1, list2):  # --> Loop for yang menggunakan generator itertools, generator ini menggabungkan elemen dari kedua list dan menjadikan satu urutan, lalu setiap elemen akan di smpan dalam variabel item
+    print(item)                             # --> Mencetak nilai item dalam setiap iterasi dan hasilnya adalah 1 2 3 a b c
 
 # 5. Menggunakan fungsi buatan sendiri dalam List Comprehension
-def is_tobrut(t):
-    if t <= 1:
-        return False
-    for tobrut in range(2, int(t ** 0.5) + 1):
-        if t % tobrut == 0:
-            return False
-    return True
+def is_tobrut(t):                               # --> Deklarasi fungsi is_tobrut dengan satu parameter
+    if t <= 1:                                  # --> Menggunakan kondisi, jika nilai t kurang dari sama dengan 1
+        return False                            # --> lalu jika terpenuhi maka akan mengembalikan false
+    for tobrut in range(2, int(t ** 0.5) + 1):  # --> Loop for yang akan berjalan dari 2 hingga akhir kuadrat dari t (dibulatkan ke atas) dan dalam setiap iterasi nilai tobrut akan mengembil nilai dari rentang tersebut
+        if t % tobrut == 0:                     # --> Menggunakan kondisi, jika nilai t dapat dibagi habis oleh tobrut
+            return False                        # --> lalu jika terpenuhi makan akan mengembalikan False
+    return True                                 # --> Jika kondisi di atas tidak terpenuhi, fungsi akan mengembalikan True (menandakan bahwa t adalah bilangan prima)
 
-ukhti_tobrut = [x for x in range(20) if is_tobrut(x)]
-print(ukhti_tobrut) # Hasilnya adalah 2 3 5 7 11 13 17 19
+ukhti_tobrut = [x for x in range(20) if is_tobrut(x)] # --> List comprehension, ukhti_tobrut yang berisi bilangan prima dari 0 hingga 19 (1. mengulang dari 0 hingga 19 | 2. kondisi yang memeriksa apakah x adalah bilangan prima dan menggunakan fungsi is_tobrut | 3. jika kondisi terpenuhi, x akan dimasukan ke dalam list ukhti_tobrut)
+print(ukhti_tobrut)                                   # --> Mencetak isi list yang berisi bilangan prima 0 hingga 19 dan hasilnya adalah 2 3 5 7 11 13 17 19
 
 # 6. Nested List Comprehension --> ini juga bisa bersarang untuk mengulangi melalui nested struktur
-ukhti = [[1,2,3], [4,5,6], [7,8,9]]
-tobrut = [num for row in ukhti for num in row]
-print(tobrut) # Hasilnya adalah 1 2 3 4 5 6 7 8 9
+ukhti = [[1,2,3], [4,5,6], [7,8,9]]             # --> Deklarasi list yang berisi 3 list atau sublist lalu masing-masing dari sublist berisi 3 elemen
+tobrut = [num for row in ukhti for num in row]  # --> List comprehension yang menggabungkan semua elemen dari sublist menjadi satu list tunggal (1. for row mengulang memalui setiap sublist dalam ukhti | 2. for in row mengulang memaluli setiap elemen dalam sublist 3. num merupakan variabel yang menyimpan elemen)
+print(tobrut)                                   # --> Mencetak isi dari list dan hasilnya adalah 1 2 3 4 5 6 7 8 9
 
 # 7. Enumerete dengan start index --> Kita dapat menentukan dari mana index enumerate dimulai
-list_buah = ['Apel', 'Mangga', 'Jeruk']
-for index, buah in enumerate(list_buah, start=1):
-    print(index, buah) # Hasilnya adalah 1 Apel, 2 Mangga, 3 Jeruk
+list_buah = ['Apel', 'Mangga', 'Jeruk']             # --> Deklasari list yang berisi 3 elemen
+for index, buah in enumerate(list_buah, start=1):   # --> loop for yang menggunakan fungsi enumrate (1. enumerate(list_buah, start=1) menghasilkan pasangan indeks dan nilai dari setiap elemen dalam list_buah | 2. index adalah variabel yang menyimpan indeks (dimulai dari 1 karena kita menggunakan start=1 | 3. buah adalah variabel yang menyimpan nilai dari setiap elemen dalam list_buah )
+    print(index, buah)                              # --> Mencetak indeks dan nilai dari setiap elemen dalam list dan hasilnya adalah 1 Apel, 2 Mangga, 3 Jeruk
 
 # 8. Menggunakan zip untuk menggabungkan list dengan panjang berbeda --> Dapat menggabungkan list dengan panjang yang berbeda
-from itertools import zip_longest
+from itertools import zip_longest                               # -->
 
-list1 = [1, 2]
-list2 = ['a', 'b', 'c']
-for num, char in zip_longest(list1, list2, fillvalue='None'):
-    print(num, char) # Hasilnya adalah 1 a, 2 b dan None c
+list1 = [1, 2]                                                  # -->
+list2 = ['a', 'b', 'c']                                         # -->
+for num, char in zip_longest(list1, list2, fillvalue='None'):   # -->
+    print(num, char)                                            # Hasilnya adalah 1 a, 2 b dan None c
 
 
 # 9. Bonus untuk kamu
-for heart in range(10):
-    love = "I Love You"
-    print(love) # Hasilnya adalah I Love You 10x
+for heart in range(10): # -->
+    love = "I Love You" # -->
+    print(love)         # --> Hasilnya adalah I Love You 10x
 
 
-hati = [1,2,3,4,5]
-for sayang in hati:
-    cinta = "I Love U"
-    if sayang < 3:   # Tidak menggunakan kondisi juga bisa
-        print(cinta) # Hasilnya adalah I Love U, I Love U
+hati = [1,2,3,4,5]      # -->
+for sayang in hati:     # -->
+    cinta = "I Love U"  # -->
+    if sayang < 3:      # --> Tidak menggunakan kondisi juga bisa
+        print(cinta)    # --> Hasilnya adalah I Love U, I Love U
 
-hati = ["Sayang"] * 2
-for pesan in hati:
-    print(pesan) # Hasilnya adalah Sayang, Sayang
+hati = ["Sayang"] * 2   # -->
+for pesan in hati:      # -->
+    print(pesan)        # --> Hasilnya adalah Sayang, Sayang
