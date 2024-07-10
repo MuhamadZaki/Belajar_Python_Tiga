@@ -108,7 +108,7 @@ def tobrut(t):      # --> Mendfinisikan fungsi tibrut dengan parameter t
 print(tobrut(5))    # --> Hasilnya adalah 120 --> Dalam kasus ini kita menghitung faktorial dari 5 (5 !=5 x4 x3 x2 x1 = 120)
 
 # 11. Menggunakan while untuk iterasi dengan struktur data lain atau di sini dengan list
-list_tobrut = [1,2,3,4,5]           # --> List tobrut dengan beberapa nilai atau elemen
+list_tobrut = [1,2,3,4,5]           # --> Inisialisasi list_tobrut dengan beberapa nilai atau elemen
 index = 0                           # --> Inisialisasi variabel index dengan nilai 0
 while index < len(list_tobrut):     # --> Selama nilai index kurang dari panjang list_tobrut, maka looping akan berjalan
     print(list_tobrut[index])       # --> Setiap iterasi akan mencetak elemen dari list_tobrut berdasarkan nilai index dan hasilnya adlaah 1 2 3 4 5
