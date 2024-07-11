@@ -13,21 +13,30 @@ my_list = [1, 2, 3, 4, 5] # --> Ini adalah contoh dari iterable
 iter_obj = iter(my_list)  # --> Ini tidak akan menghasilkan error, sehingga my_list adalah iterable
 print(iter_obj)           # --> Mencetak objek iterator
 
-# Deklarasi variabel --> Langkah paertama saat membuat variabel di dalam program dan menginformasikan interpreter atau kompailer tentang nama variabel yang akan digunakan dan (pada saat deklarasi kita hanya menyatakan nama variabel tanpa memberikan nilai awal) ()
-kimochi = None
-print(kimochi)
+# Note :
+"""
+Deklarasi --> Pada saat deklarasi kita hanya menyatakan nama variabel tanpa memberikan nilai awal
 
-# Inisialisasi --> Langkah kedua di mana kita memberikan nilai awal ke dalam variabel yang terlah dideklarasikan (pada saat inisialisasi kita memberikan nilai konkret ke variabel)
-ah = 5              # --> Ini adalah inisialisasi variabel, karena kita membarikan nilai awal 5 ke dalam variabel ah
-print(ah)
+Deklarasi variabel dalam Python 1--> Tidak ada deklarasi variabel secara eksplisit, Variabel dideklarasikan secara implisit ketika pertama kali diberikan nilai. Jadi, Python tidak memiliki konsep deklarasi variabel secara terpisah. 
+tob = 10  # Deklarasi dan inisialisasi variabel tob dengan nilai 10
 
-ah = "Mantap Jiwa!" # --> Ini adalah inisialisasi variabel, karena kita membarikan nilai awal "Mantap Jiwa!" ke dalam variabel ah
-print(ah)
+Deklarasi variabel dalam Python 2--> Memperkenalkan suatu variabel, fungsi, atau kelas ke dalam program. Dalam Python, deklarasi variabel terjadi secara implisit saat pertama kali variabel diberi nilai.
 
-ah = [1,2,3]        # --> Ini adalah inisialisasi variabel, karena langsung diberikan nilai berupa list saat didefinisikan. Ini berarti mereka diinisialisasi dengan nilai awal tertentu.
-print(ah)
 
-ah = ["Apel", "Nanas"] # --> Ini adalah inisialisasi variabel, karena langsung diberikan nilai berupa list saat didefinisikan. Ini berarti mereka diinisialisasi dengan nilai awal tertentu.
+"""
+
+"""
+Inisialisasi di Python --> Merupakan proses menetapkan nilai awal ke variabel pada saat didefinisikan. Dalam Python, setiap kali kamu menetapkan nilai ke variabel, itu disebut inisialisasi.
+tob = 10  # Deklarasi dan inisialisasi variabel tob dengan nilai 10
+
+"""
+
+"""
+
+Definisi di Python --> Memberikan bentuk atau nilai spesifik kepada variabel, fungsi, atau kelas. Dalam Python, mendefinisikan berarti memberikan nilai atau kode yang menentukan apa yang dilakukan atau diwakili oleh (entitas / variabel, fungsi, atau kelas) tersebut.
+
+"""
+
 
 # Perulangan for digunakan untuk mengulangi item-item dalam urutan seperti (list, tuple, dict, set dan string)
 

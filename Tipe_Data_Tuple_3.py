@@ -10,16 +10,19 @@
 """ Tipe Data Tuple (Ordered-Terurut) - (Unchnagble-Tidak Bisa diubah) """
 
 # Cara Standar Tuple
-standar_tuple = ('Laki-laki', 'Perempuan')
-print(standar_tuple)        # Laki-laki, Perempuan
+standar_tuple = ('Laki-laki', 'Perempuan') # --> Inisialisasi tuple dengan 2 elemen
+print(standar_tuple)                       # --> Mencetak variabel standar_tuple dan hasilnya adalah Laki-laki, Perempuan
 
 # Tanpa Kurung Tuple
-tanpa_kurung_tuple = 'Tobrut', 'Ukhti'
-print(tanpa_kurung_tuple)   # Tobrut, Ukhti
+tanpa_kurung_tuple = 'Tobrut', 'Ukhti'   # --> Inisialisasi tupel dengan 2 elemen
+print(tanpa_kurung_tuple)                # --> Mencetak variabel dan hasilnya adalah Tobrut, Ukhti
+
+Ini_sting_bukan_tuple = 'Tobrut'         # --> Inisialisasi variabel dengan nilai string (Ingat yang ini bukan tuple)
+print(Ini_sting_bukan_tuple)             # --> Mencetak variabel dan hasilnya adalah Tobrut
 
 # Tuple Kosong
-tuple_kosong = ()
-print(tuple_kosong) # Kosong
+tuple_kosong = ()   # --> Inisialisasi tuple kosong
+print(tuple_kosong) # --> Mencetak variabel tuple_kosong dan hasinya adalah  ()
 
 # Tupel Tunggal (Hanya Berisi Satu Item)
 tuple_tunggal = (10)
