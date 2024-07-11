@@ -2,39 +2,40 @@
 """ Teknik Lebih Lanjut Juga Tersedia """
 
 # Note :
-# Itersi atau Iteration --> Proses di mana kita menelusuri atau melintasi setiap elemen dari suatu koleksi data seperti (ist, tuple, set dan dict) satu persatu (secara singkat adalah aksi atau proses)
-numbers = [1, 2, 3, 4, 5] # --> List yang diitersi
+# Itersi --> Proses di mana kita menelusuri atau melintasi setiap elemen dari suatu koleksi data seperti (ist, tuple, set dan dict) satu persatu (secara singkat adalah aksi atau proses) / proses mengulang elemen-elemen dari sebuah itrable
+numbers = [1, 2, 3, 4, 5] # --> List (iterabel) yang diitersi
 for number in numbers:    # --> Iterasi dimulai dari sini
     print(number)         # --> Aksi selama iterasi
 
-# Iterable --> Merupakan sebuah objek yang bisa diiterasi atau dilintasi (secara singkat adalah objek yang mendukung aksi atau proses)
-my_list = [1, 2, 3, 4, 5] # --> Ini adalah contoh dari iterable
+# Iterable --> Merupakan sebuah objek yang bisa diiterasi atau dilintasi (secara singkat adalah objek yang mendukung aksi atau proses) / objek yang dapat diulang (iterasi) dan Iterable memiliki metode __iter__() yang mengembalikan iterator.
+my_list = [1, 2, 3, 4, 5] # --> myl_list Ini adalah contoh dari iterable
 # Memeriksa apakah my_list adalah iterable
 iter_obj = iter(my_list)  # --> Ini tidak akan menghasilkan error, sehingga my_list adalah iterable
 print(iter_obj)           # --> Mencetak objek iterator
 
+# Iterator --> 
+list_buah = ["Apel", "Jeruk", "Mangga"]
+iterator_buah = iter(list_buah)  # Membuat iterator dari iterable
+print(next(iterator_buah))
+
 # Note :
 """
-Deklarasi --> Pada saat deklarasi kita hanya menyatakan nama variabel tanpa memberikan nilai awal
+- Deklarasi --> Pada saat deklarasi kita hanya menyatakan nama variabel tanpa memberikan nilai awal
 
-Deklarasi variabel dalam Python --> Memperkenalkan suatu variabel, fungsi, atau kelas ke dalam program. Dalam Python, deklarasi variabel terjadi secara implisit saat pertama kali variabel diberi nilai. Jadi, Python tidak memiliki konsep deklarasi variabel secara terpisah. 
+- Deklarasi variabel dalam Python --> Memperkenalkan suatu variabel, fungsi, atau kelas ke dalam program. Dalam Python, deklarasi variabel terjadi secara implisit saat pertama kali variabel diberi nilai. Jadi, Python tidak memiliki konsep deklarasi variabel secara terpisah. 
 tob = 10  # Deklarasi dan inisialisasi variabel tob dengan nilai 10
 
-"""
-
-"""
-Inisialisasi di Python --> Merupakan proses menetapkan nilai awal ke variabel pada saat didefinisikan. Dalam Python, setiap kali kamu menetapkan nilai ke variabel, itu disebut inisialisasi.
-tob = 10  # Deklarasi dan inisialisasi variabel tob dengan nilai 10
-
-"""
-
-"""
-
-Definisi di Python --> Memberikan bentuk atau nilai spesifik kepada variabel, fungsi, atau kelas. Dalam Python, mendefinisikan berarti memberikan nilai atau kode yang menentukan apa yang dilakukan atau diwakili oleh (entitas / variabel, fungsi, atau kelas) tersebut.
+- Definisi di Python --> Memberikan bentuk atau nilai spesifik kepada variabel, fungsi, atau kelas. Dalam Python, mendefinisikan berarti memberikan nilai atau kode yang menentukan apa yang dilakukan atau diwakili oleh (entitas / variabel, fungsi, atau kelas) tersebut.
 tob = 10  # Mendefinisikan variabel tob dengan nilai 10
 
-"""
+Deklarasi variabel, fungsi, dan kelas terjadi secara bersamaan dengan definisinya. 
 
+- Inisialisasi di Python --> Merupakan proses menetapkan nilai awal ke variabel pada saat didefinisikan. Dalam Python, setiap kali kamu menetapkan nilai ke variabel, itu disebut inisialisasi.
+tob = 10  # Deklarasi dan inisialisasi variabel tob dengan nilai 10
+
+Dalam Python, karena deklarasi dan inisialisasi terjadi secara bersamaan ketika kamu pertama kali menetapkan nilai pada variabel, tidak ada perbedaan yang jelas seperti dalam beberapa bahasa lain. Setiap kali kamu membuat variabel dan memberikan nilai kepadanya, kamu secara bersamaan mendeklarasikan dan menginisialisasi variabel tersebut.
+
+"""
 
 # Perulangan for digunakan untuk mengulangi item-item dalam urutan seperti (list, tuple, dict, set dan string)
 
