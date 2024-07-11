@@ -17,11 +17,8 @@ print(iter_obj)           # --> Mencetak objek iterator
 """
 Deklarasi --> Pada saat deklarasi kita hanya menyatakan nama variabel tanpa memberikan nilai awal
 
-Deklarasi variabel dalam Python 1--> Tidak ada deklarasi variabel secara eksplisit, Variabel dideklarasikan secara implisit ketika pertama kali diberikan nilai. Jadi, Python tidak memiliki konsep deklarasi variabel secara terpisah. 
+Deklarasi variabel dalam Python --> Memperkenalkan suatu variabel, fungsi, atau kelas ke dalam program. Dalam Python, deklarasi variabel terjadi secara implisit saat pertama kali variabel diberi nilai. Jadi, Python tidak memiliki konsep deklarasi variabel secara terpisah. 
 tob = 10  # Deklarasi dan inisialisasi variabel tob dengan nilai 10
-
-Deklarasi variabel dalam Python 2--> Memperkenalkan suatu variabel, fungsi, atau kelas ke dalam program. Dalam Python, deklarasi variabel terjadi secara implisit saat pertama kali variabel diberi nilai.
-
 
 """
 
@@ -34,6 +31,7 @@ tob = 10  # Deklarasi dan inisialisasi variabel tob dengan nilai 10
 """
 
 Definisi di Python --> Memberikan bentuk atau nilai spesifik kepada variabel, fungsi, atau kelas. Dalam Python, mendefinisikan berarti memberikan nilai atau kode yang menentukan apa yang dilakukan atau diwakili oleh (entitas / variabel, fungsi, atau kelas) tersebut.
+tob = 10  # Mendefinisikan variabel tob dengan nilai 10
 
 """
 
