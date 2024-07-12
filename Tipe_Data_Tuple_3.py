@@ -10,11 +10,11 @@
 """ Tipe Data Tuple (Ordered-Terurut) - (Unchnagble-Tidak Bisa diubah) """
 
 # Cara Standar Tuple
-standar_tuple = ('Laki-laki', 'Perempuan') # --> Inisialisasi tuple dengan 2 elemen
+standar_tuple = ('Laki-laki', 'Perempuan') # --> Inisialisasi tuple menyimpan 2 elemen
 print(standar_tuple)                       # --> Mencetak variabel standar_tuple dan hasilnya adalah Laki-laki, Perempuan
 
 # Tanpa Kurung Tuple
-tanpa_kurung_tuple = 'Tobrut', 'Ukhti'   # --> Inisialisasi tupel dengan 2 elemen
+tanpa_kurung_tuple = 'Tobrut', 'Ukhti'   # --> Inisialisasi tupel menyimpan 2 elemen
 print(tanpa_kurung_tuple)                # --> Mencetak variabel dan hasilnya adalah Tobrut, Ukhti
 
 Ini_sting_bukan_tuple = 'Tobrut'         # --> Inisialisasi variabel dengan nilai string (Ingat yang ini bukan tuple)
@@ -25,11 +25,11 @@ tuple_kosong = ()   # --> Inisialisasi tuple kosong
 print(tuple_kosong) # --> Mencetak variabel tuple_kosong dan hasinya adalah  ()
 
 # Tupel Tunggal (Hanya Berisi Satu Item)
-tuple_tunggal = (10)
+tuple_tunggal = (10) #    --> Inisialisasi 
 print(tuple_tunggal) # 10 --> Akan tetapi di Anggap Integer
 
-tuple_tunggal = (10,)
-print(tuple_tunggal) # 10 --> Ini Baru dianggap Tuple
+tuple_tunggal = (10,) #    --> Inisialisasti
+print(tuple_tunggal)  # 10 --> Ini Baru dianggap Tuple
 
 print('-------------')
 

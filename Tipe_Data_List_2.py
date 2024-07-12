@@ -1,5 +1,8 @@
 # Praktekan dan Pahami!
 
+# Note:
+# List adalah tipe data yang berisi kumpulan elemen-elemen dengan berbagai tipe data seperti string, integer, float dan boolean
+
 # Tipe Data Canggih atau Koleksi
 
 # 1. List
@@ -10,15 +13,15 @@
 """ Tipe Data List - (Ordered-Terurut) - (Changable-Bisa diubah) """
 
 # List Kosong
-list_kosong = [] 
+list_kosong = [] # --> Inisialisasi variabel dengan data list yang berisi elemen kosong
 
 
 # List yang Berisi Kumpulan String
-list_string = ['Manusia', 'adalah', 'mahluk', 'Bumi!'] 
+list_string = ['Manusia', 'adalah', 'mahluk', 'Bumi!'] # --> Inisialisasi variabel yang menyimpan data list, berisi 4 elemen data string
 
 
 # List yang Berisi Kumpulan Integer
-list_integer = [1,2,3,4,5,6,7,8,9,0] 
+list_integer = [1,2,3,4,5,6,7,8,9,0] # --> Inisialisasi variabel yang menyimpan data list, berisi 10 elemen data integer
 
 
 # List yang Berisi Campuran Tipe Data (int, float, string, boolean)
