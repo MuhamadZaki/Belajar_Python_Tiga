@@ -1,7 +1,8 @@
 """ Perulangan for Termasuk Penjelasan Dasar, Iterasi Melalui Berbagai Tipe Data """
 """ Teknik Lebih Lanjut Juga Tersedia """
 
-# Note :
+# Catatan sangat penting! :
+
 # Itersi --> Proses di mana kita menelusuri atau melintasi setiap elemen dari suatu koleksi data seperti (ist, tuple, set dan dict) satu persatu (secara singkat adalah aksi atau proses) / proses mengulang elemen-elemen dari sebuah itrable
 numbers = [1, 2, 3, 4, 5] # --> Ini adalah iterable yang diiterai
 for number in numbers:    # --> Iterasi dimulai dari sini
@@ -62,25 +63,153 @@ iterator_buah = iter(list_buah)          # --> Mengembalikan iterator dari itrab
 print(next(iterator_buah))               # --> Menggunakan iterator untuk mengakses elemen dan mengambalikan elemen selanjutnya
 print(next(iterator_buah))               # --> Menggunakan iterator untuk mengakses elemen dan mengambalikan elemen selanjutnya
 print(next(iterator_buah))               # --> Menggunakan iterator untuk mengakses elemen dan mengambalikan elemen selanjutnya
-print("memek")
-# Note :
-"""
-- Deklarasi --> Pada saat deklarasi kita hanya menyatakan nama variabel tanpa memberikan nilai awal
 
-- Deklarasi variabel dalam Python --> Memperkenalkan suatu variabel, fungsi, atau kelas ke dalam program. Dalam Python, deklarasi variabel terjadi secara implisit saat pertama kali variabel diberi nilai. Jadi, Python tidak memiliki konsep deklarasi variabel secara terpisah. 
-tob = 10  # Deklarasi dan inisialisasi variabel tob dengan nilai 10
+# Iniisalisasi --> Mengatur nilai awal untuk variabel, objek atau fungsi sehingga siap digunakan dan ada berbagai cara kita bisa melakukan inisialisasi (tergantung pada konteksnya)
+    # 1. Inisialisasi variabel (menugaskan nilai awal ke sebuah variabel)
+nama = "Tobrut"
+umur = 26
+tinggi = 170.5
+is_student = True
+print(nama, umur, tinggi, is_student)
 
-- Definisi di Python --> Memberikan bentuk atau nilai spesifik kepada variabel, fungsi, atau kelas. Dalam Python, mendefinisikan berarti memberikan nilai atau kode yang menentukan apa yang dilakukan atau diwakili oleh (entitas / variabel, fungsi, atau kelas) tersebut.
-tob = 10  # Mendefinisikan variabel tob dengan nilai 10
+    # 2. Inisialisasi list, tuple, set dan dict --> Menyiapkan struktur data dengan nilai awal
 
-Deklarasi variabel, fungsi, dan kelas terjadi secara bersamaan dengan definisinya. 
+buah = ["apel", "jeruk", "mangga"]
+angka = [1, 2, 3, 4, 5]
+campuran = [1, "dua", 3.0, True]
+print(buah, angka, campuran)
 
-- Inisialisasi di Python --> Merupakan proses menetapkan nilai awal ke variabel pada saat didefinisikan. Dalam Python, setiap kali kamu menetapkan nilai ke variabel, itu disebut inisialisasi.
-tob = 10  # Deklarasi dan inisialisasi variabel tob dengan nilai 10
+warna = ("merah", "hijau", "biru")
+angka_tuple = (1, 2, 3, 4, 5)
+print(warna, angka_tuple)
 
-Dalam Python, karena deklarasi dan inisialisasi terjadi secara bersamaan ketika kamu pertama kali menetapkan nilai pada variabel, tidak ada perbedaan yang jelas seperti dalam beberapa bahasa lain. Setiap kali kamu membuat variabel dan memberikan nilai kepadanya, kamu secara bersamaan mendeklarasikan dan menginisialisasi variabel tersebut.
+hewan = {"anjing", "kucing", "burung"}
+angka_set = {1, 2, 3, 4, 5}
+print(hewan, angka_set)
 
-"""
+mahasiswa = {"nama": "Tobrut", "umur": 26, "jurusan": "Teknik Informatika"}
+angka_dict = {1: "satu", 2: "dua", 3: "tiga"}
+print(mahasiswa, angka_dict)
+
+    # 3. Inisialisasi objek dalam class, list, dict, nested data structure --> Menggunakan konstruktor __init__ untuk mengatur nilai-nilai awal atribut objek
+
+# --> Mendefinisikan kelas
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+# --> Inisialisasi objek dari kelas
+person_satu = Person("Zaki", 26)
+person_dua = Person("Ali", 30)
+
+print(f"Nama: {person_satu.name}, Umur: {person_satu.age}")
+print(f"Nama: {person_dua.name}, Umur: {person_dua.age}")
+
+
+# --> Inisialisasi list berisi objek-objek dari class Person
+people = [Person("Zaki", 26), Person("Ali", 30), Person("Tina", 22)] 
+for person in people:
+    print(f"Nama: {person.name}, Umur: {person.age}")
+
+# --> Inisialisasi dict berisi on=bjek-objek dalam celass person
+people_dict = {                             
+    "Zaki": Person("Zaki", 26),
+    "Ali": Person("Ali", 30),
+    "Tina": Person("Tina", 22)
+}
+for key, person in people_dict.items():
+    print(f"Kunci: {key}, Nama: {person.name}, Umur: {person.age}")
+
+# --> Inisialisasi nested data structure atau struktur data bsersarang
+data = {                                    
+    "buah": ["apel", "jeruk", "mangga"],
+    "angka": [1, 2, 3, 4, 5],
+    "hewan": {"anjing", "kucing", "burung"},
+    "mahasiswa": {"nama": "Tobrut", "umur": 26, "jurusan": "Teknik Informatika"}
+}
+print(data)
+
+    # 4. Inisialisasi fungsi 
+
+# --> Inisialisasi fungsi tanpa parameter
+def halo_dunia():
+    print("Halo, Dunia!")
+halo_dunia()
+
+# --> Inisialisasi fungsi dengan parameter
+def halo_nama(nama):
+    print(f"Halo, {nama}!")
+halo_nama("Tobrut")
+
+# --> Inisialisasi fungsi dengan nilai balik (return)
+def tambah(a, b):
+    return a + b
+hasil = tambah(5, 3)
+print(f"Hasil penjumlahan: {hasil}")
+
+# --> Inisialisasi fungsi dengan parameter default
+def sapa(nama="Dunia"):
+    print(f"Halo, {nama}!")
+sapa()
+sapa("Tobrut")
+
+# --> Inisialisasi fungsi dengan parameter variabel
+def cetak_semua(*args):
+    for arg in args:
+        print(arg)
+cetak_semua("apel", "jeruk", "mangga")
+
+# --> Inisialisasi fungsi dengan keyword arguments
+def cetak_detail(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+cetak_detail(nama="Tobrut", umur=26, pekerjaan="Programmer")
+
+    # 5. inisialisasi menggunakan built-in functions
+
+# --> Menggunakan built-in function untuk menginisialisasi list
+list_angka = list(range(1, 6))
+print(list_angka)
+
+# --> Menggunakan built-in function untuk menginisialisasi string
+str_angka = str(12345)
+print(str_angka) 
+
+# --> Menggunakan built-in function untuk menginisialisasi tuple
+tuple_buah = tuple(["apel", "jeruk", "mangga"])
+print(tuple_buah)  
+
+# --> Menggunakan built-in function untuk menginisialisasi set
+set_hewan = set(["anjing", "kucing", "burung"])
+print(set_hewan) 
+
+# --> Menggunakan built-in function untuk menginisialisasi dictionary
+dict_mahasiswa = dict(nama="Tobrut", umur=26, jurusan="Teknik Informatika")
+print(dict_mahasiswa)  
+
+# --> Menggunakan built-in function untuk memetakan (map) nilai
+list_kuadrat = list(map(lambda x: x**2, list_angka))
+print(list_kuadrat) 
+
+# --> Menggunakan built-in function untuk menyaring (filter) nilai
+list_genap = list(filter(lambda x: x % 2 == 0, list_angka))
+print(list_genap)  
+
+# --> Menggunakan built-in function untuk mendapatkan panjang elemen
+panjang_list = len(list_angka)
+print(f"Panjang list: {panjang_list}")  
+
+# --> Menggunakan built-in function untuk mendapatkan nilai maksimum dan minimum
+nilai_maks = max(list_angka)
+nilai_min = min(list_angka)
+print(f"Nilai maksimum: {nilai_maks}, Nilai minimum: {nilai_min}")  
+
+# -->Menggunakan built-in function untuk mengurutkan elemen
+list_terurut = sorted(list_angka, reverse=True)
+print(list_terurut)  
+
+# Catatan hanya sampai sini!
 
 # Perulangan for digunakan untuk mengulangi item-item dalam urutan seperti (list, tuple, dict, set dan string)
 
