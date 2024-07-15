@@ -3,7 +3,7 @@
 
 # Note :
 # Itersi --> Proses di mana kita menelusuri atau melintasi setiap elemen dari suatu koleksi data seperti (ist, tuple, set dan dict) satu persatu (secara singkat adalah aksi atau proses) / proses mengulang elemen-elemen dari sebuah itrable
-numbers = [1, 2, 3, 4, 5] # --> List (iterabel) yang diitersi
+numbers = [1, 2, 3, 4, 5] # --> Ini adalah iterable yang diiterai
 for number in numbers:    # --> Iterasi dimulai dari sini
     print(number)         # --> Aksi selama iterasi
 
@@ -31,7 +31,7 @@ for number in numbers:    # --> Iterasi dimulai dari sini
 
 # Iterable --> Merupakan objek yang dapat diulang (loop) satu persatu, seperti list, tuple, string, dict dan fitur ini memungkinkan kita untuk mengakses elemen-elemen dari objek tersebut secara berurutan
    # 1. Contoh itrabel
-my_list = [1, 2, 3, 4, 5] # --> List (iterabel)
+my_list = [1, 2, 3, 4, 5] # --> Ini adalah iterable yang diiterai
 for list in my_list:
     print(my_list)
 
@@ -48,7 +48,7 @@ for dict in my_dictionary:
     print(dict)
 
     # 2. Untuk memeriksa apakah suatu objek adalah itrabel, kita dapat menggunakan fungsi iter() dan jika objek bisa diubah menjadi iterator, maka objek tersebut adalah iterabel
-my_list = [1, 2, 3, 4, 5] # --> List (iterabel)
+my_list = [1, 2, 3, 4, 5] # --> Ini adalah iterable yang diiterai
 iter_obj = iter(my_list)  # --> Ini tidak akan menghasilkan error, sehingga my_list adalah iterator
 print(iter_obj)           # --> Mencetak objek iterator
 
