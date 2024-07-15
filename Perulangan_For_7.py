@@ -7,26 +7,62 @@ numbers = [1, 2, 3, 4, 5] # --> List (iterabel) yang diitersi
 for number in numbers:    # --> Iterasi dimulai dari sini
     print(number)         # --> Aksi selama iterasi
 
-# Iterable --> Merupakan sebuah objek yang bisa diiterasi (diulang) atau dilintasi (secara singkat adalah objek yang mendukung aksi atau proses) dan Iterable memiliki metode khusus seperti __iter__() / __getitem__() lalu contoh umum untuk itrable adalah list, tuple, dict dan set.
-my_list = [1, 2, 3, 4, 5] # --> myl_list Ini adalah contoh dari iterable (karena kita bisa mengulanginya menggunakan loop for)
-iter_obj = iter(my_list)  # --> Ini tidak akan menghasilkan error, sehingga my_list adalah iterable
+    # 1. Iterasi eksplisit --> Kita secara jelas menulis kode untuk mengontrol loop atau perulangan elemen dalam koleksi data, ini biasanya dilakukan dengan menggunakan struktur kontrol loop seperti for dan while
+    numbers = [1, 2, 3, 4, 5] 
+    for number in numbers:    
+        print(number)         
+
+    counts = 0
+    while counts < 5:
+        print(counts)
+        counts += 1
+    # 2. Iterasi implisit --> Kita menggunakan fungsi built-in fuction python yang secara internal mengiterasi melalui elemen-elemen koleksi data tanpa kita harus menulis loop ekslisit, fugsi ini seperti map, filter dan list comprhension
+    numbers = [1, 2, 3, 4, 5]
+    squared = map(lambda x: x**2, numbers)
+    print(list(squared))
+
+    numbers = [1, 2, 3, 4, 5]
+    even = filter(lambda x: x % 2 == 0, numbers)
+    print(list(even))
+
+    numbers = [1, 2, 3, 4, 5]
+    squared = [x**2 for x in numbers]
+    print(squared)
+
+# Iterable --> Merupakan objek yang dapat diulang (loop) satu persatu, seperti list, tuple, string, dict dan fitur ini memungkinkan kita untuk mengakses elemen-elemen dari objek tersebut secara berurutan
+   # 1. Contoh itrabel
+my_list = [1, 2, 3, 4, 5] # --> List (iterabel)
+for list in my_list:
+    print(my_list)
+
+my_tuple = (1, 2, 3, 4, 5)
+for tuple in my_tuple:
+    print(tuple)
+    
+my_string = "Zaki"
+for char in my_string:
+    print(char)
+
+my_dictionary = {'key1':'value1', 'key2':'value2'}
+for dict in my_dictionary:
+    print(dict)
+
+    # 2. Untuk memeriksa apakah suatu objek adalah itrabel, kita dapat menggunakan fungsi iter() dan jika objek bisa diubah menjadi iterator, maka objek tersebut adalah iterabel
+my_list = [1, 2, 3, 4, 5] # --> List (iterabel)
+iter_obj = iter(my_list)  # --> Ini tidak akan menghasilkan error, sehingga my_list adalah iterator
 print(iter_obj)           # --> Mencetak objek iterator
 
-# Iterator --> Objek yang mengimplementasikan metode khusus __iter() / __next__() atau objek yang melacak posisi saat ini dalam iterble dan mengembalikan elemen berikutnya saat diminta contoh dengan metode __next__()
-list_buah = ["Apel", "Jeruk", "Mangga"] # --> Iterable
-iterator_buah = iter(list_buah)  # --> Membuat iterator dari iterable
-print(next(iterator_buah))       # --> Menggunakan iterator atau mendapatkan elemen berikutnya dari iterator
+# Iterator --> Objek yang mengimplementasikan metode khusus __iter() / __next__() atau memungkinkan kita untuk menelusuri elemen-elemen dari suatu koleksi data seperti list, set, tuple, dict satu persatu dan ini membantu dalam mengakses item tersebut tanpa perlu mengakses seluruh kumpulan data secara langsung
 
-# Contoh lengkap
-list_buah = ["Apel", "Jeruk", "Mangga"]  # --> Ini adalah iterable
+    # 1. Iterator objek yang mewakili alur iterasi di atas iterabel, menggunakan metode iter(yang mengembalikan iterator dari itrabel) next(yang mengakses elemen untuk mengembalikan elemen selanjutnya, jika tidak ada elemen yang tersisa metode ini akan memunculkan pengecualian yaitu stopiteration)
+list_buah = ["Apel", "Jeruk", "Mangga"]  # --> Ini adalah iterable yang diiterai
 for buah in list_buah:                   # --> Proses iterasi menggunakan loop for
     print(buah)
-iterator_buah = iter(list_buah)          # --> Membuat iterator secara eksplisit
-
-print(next(iterator_buah))               # --> Menggunakan iterator untuk iterasi atau mendapatkan elemen berikutnya dari iterator
-print(next(iterator_buah))  
-print(next(iterator_buah))  
-
+iterator_buah = iter(list_buah)          # --> Mengembalikan iterator dari itrabel
+print(next(iterator_buah))               # --> Menggunakan iterator untuk mengakses elemen dan mengambalikan elemen selanjutnya
+print(next(iterator_buah))               # --> Menggunakan iterator untuk mengakses elemen dan mengambalikan elemen selanjutnya
+print(next(iterator_buah))               # --> Menggunakan iterator untuk mengakses elemen dan mengambalikan elemen selanjutnya
+print("memek")
 # Note :
 """
 - Deklarasi --> Pada saat deklarasi kita hanya menyatakan nama variabel tanpa memberikan nilai awal
