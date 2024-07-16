@@ -28,7 +28,7 @@ while True:
     try:  
         data_usia_string = input("Masukan Usia Sobat : ")
         usia = int(data_usia_string)
-        break # keluar loop, jika konversi berhasil
+        break
     except ValueError:
         print("Input tidak benar! Masukan angka!") 
 print("Usia sobat : ", usia ) 
