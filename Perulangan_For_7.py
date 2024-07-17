@@ -9,40 +9,43 @@ for number in numbers:    # --> Iterasi dimulai dari sini
     print(number)         # --> Aksi selama iterasi
 
     # 1. Iterasi eksplisit --> Kita secara jelas menulis kode untuk mengontrol loop atau perulangan elemen dalam koleksi data, ini biasanya dilakukan dengan menggunakan struktur kontrol loop seperti for dan while
-    numbers = [1, 2, 3, 4, 5] 
-    for number in numbers:    
-        print(number)         
+numbers = [1, 2, 3, 4, 5] 
+for number in numbers:    
+    print(number)   
 
-    counts = 0
-    while counts < 5:
-        print(counts)
-        counts += 1
+counts = 0
+while counts < 5:
+    print(counts)
+    counts += 1
+
     # 2. Iterasi implisit --> Kita menggunakan fungsi built-in fuction python yang secara internal mengiterasi melalui elemen-elemen koleksi data tanpa kita harus menulis loop ekslisit, fugsi ini seperti map, filter dan list comprhension
-    numbers = [1, 2, 3, 4, 5]
-    squared = map(lambda x: x**2, numbers)
-    print(list(squared))
+numbers = [1, 2, 3, 4, 5]
+squared = map(lambda x: x**2, numbers)
+print(list(squared))
 
-    numbers = [1, 2, 3, 4, 5]
-    even = filter(lambda x: x % 2 == 0, numbers)
-    print(list(even))
+numbers = [1, 2, 3, 4, 5]
+even = filter(lambda x: x % 2 == 0, numbers)
+print(list(even))
 
-    numbers = [1, 2, 3, 4, 5]
-    squared = [x**2 for x in numbers]
-    print(squared)
+numbers = [1, 2, 3, 4, 5]
+squared = [x**2 for x in numbers]
+print(squared)
+
+print("Anjing")
 
 # Iterable --> Merupakan objek yang dapat diulang (loop) satu persatu, seperti list, tuple, string, dict dan fitur ini memungkinkan kita untuk mengakses elemen-elemen dari objek tersebut secara berurutan
    # 1. Contoh itrabel
 my_list = [1, 2, 3, 4, 5] # --> Ini adalah iterable yang diiterai
-for list in my_list:
-    print(my_list)
+for lists in my_list:
+    print(lists)
 
 my_tuple = (1, 2, 3, 4, 5)
-for tuple in my_tuple:
-    print(tuple)
+for tuples in my_tuple:
+    print(tuples)
     
 my_string = "Zaki"
-for char in my_string:
-    print(char)
+for chars in my_string:
+    print(chars)
 
 my_dictionary = {'key1':'value1', 'key2':'value2'}
 for dict in my_dictionary:
@@ -185,8 +188,8 @@ set_hewan = set(["anjing", "kucing", "burung"])
 print(set_hewan) 
 
 # --> Menggunakan built-in function untuk menginisialisasi dictionary
-dict_mahasiswa = dict(nama="Tobrut", umur=26, jurusan="Teknik Informatika")
-print(dict_mahasiswa)  
+#dict_mahasiswa = dict(nama="Tobrut", umur=26, jurusan="Teknik Informatika")
+#print(dict_mahasiswa)
 
 # --> Menggunakan built-in function untuk memetakan (map) nilai
 list_kuadrat = list(map(lambda x: x**2, list_angka))
@@ -218,23 +221,23 @@ print(list_terurut)
     #Lakukan sesuatu dengan item
 
 # 2. Itersi melalui list
-list_buah = ["Semangka", "Tobrut", "Jeruk", "Durian"] # --> Inisialisasi variabel list_buah dan berisi 4 elemen
+list_buah = ["Semangka", "Tobrut", "Jeruk", "Durian"] # --> Inisialisasi variabel yang menyimpan data list, berisi 4 elemen data string
 for buah in list_buah:                                # --> loop for yang akan mengulang setiap elemen dalam list_buah dan pada setiap iterasi variabel buah akan berisi salah satu elemen dari list
     print(buah)                                       # --> Hasilnya adalah Semangka, Tobrut, Jeruk, Durian (mencetak nilai atau elemen dari variabel buah pada setiap iterasi)
 
 # 3. Iterasi melalui string
-toket_brutal = "Ukhti"      # --> Inisialisasi variabel toket_brutal dengan nilai atau elemen
+toket_brutal = "Ukhti"      # --> Inisialisasi variabel yang menyimpan data string
 for huruf in toket_brutal:  # --> Loop for yang akan mengulangi setiap karakter dalam toket_brutal dan pada setiap iterasi variabel huruf, akan berisi salah satu karakter dari string
     print(huruf)            # --> Hasilnya adalah mencetak setiap karakter dari ukhti secara terpisah (mencetak nilai dari variabel huruf pada setiap iterasi)
 
 # 4. Iterasi melalui tuple
-tuple_buah = ("Anggur", "Jeruk", "Nanas") # --> Inisialisasi variabel tuple_buah dan berisi tiga elemen string (ingat tupel tuple bersifat immutabel atau tidak bisa diubah setelah dibuat)
+tuple_buah = ("Anggur", "Jeruk", "Nanas") # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data string (ingat tupel tuple bersifat immutabel atau tidak bisa diubah setelah dibuat)
 for buah in  tuple_buah:                  # --> Loop for yang akan mengulang setiap elemen dalam tuple_buah dan pada setiap iterasi variabel buah, akan berisi salah satu elemen dari tuple
     print(buah)                           # --> Hasilnya adalah Amggur, Jeruk, Nanas (mencetak nilai dari variabel buah, pada setiap iterasi)
 
 
 # 5. Iterasi melaui dictionary
-dict_buah = {"Mangga": 1, "Apel": 2, "Jeruk": 3} # --> Inisialisasi variabel dict_buah yang berisi tiga pasangan key-value
+dict_buah = {"Mangga": 1, "Apel": 2, "Jeruk": 3} # --> Inisialisasi variabel yang menyimpan data dict, berisi 3 key-value data stirng dan integer
 for kunci in dict_buah:                          # --> Loop for yang mengulang setiap key dalam dict_buah (pada setiap iterasi variabel kunci akan berisi salah satu key dari dict)
     print(kunci, dict_buah[kunci])               # --> Hasilnya adalah Mangga 1, Apel 2, Jeruk 3 (mencetak nilai dari variabel kunci (key dan value yang sesuai dari dict))
 
@@ -275,18 +278,18 @@ for tobrut in range(5):           # --> Loop for akan mengulang setiap nilai dal
     print(f"coba {tobrut}")       # --> Mencetak setiap nilai dari variabel tobrut pada setiap iterasi sebelum kondisi terpenuho dan hasilnya adalah 0 1 2 4 (kenapa 0 1 2 4 bukan 0 1 2 karena kita menggunakan pernyataan continue)
 
 # 12. Iterasi melalui set
-set_buah = {'Apel', 'Mangga', 'Jeruk'} # --> Inisialisasi variabel set_buah yang berisi 3 elemen (perbedaan utama set dan list/dict adalah set tidak memiliki urutan dan tidak mengizinkan duplikasi)
+set_buah = {'Apel', 'Mangga', 'Jeruk'} # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string (perbedaan utama set dan list/dict adalah set tidak memiliki urutan dan tidak mengizinkan duplikasi)
 for buah in set_buah:                  # --> Loop for yang akan mengulang setiap elemen dalam set_buah (pada setiap iterasi variabel buah akan berisi salah satu elemen dari set)
     print(buah)                        # --> Mencetak nilai dari variabel buah pada setiap iterasi dan hasilnya adalah Apel Mangga Jeruk
 
 # 13. Menggunakan enumerate() --> Menambahkan penghitung ke itrable dan mengembalikannya dalam bentuk objek enum. Berguna ketika kita memerlukan indeks dalam perulangan
-list_buah = ['Apel', 'Mangga', 'Jeruk']     # --> Inisialisasi variabel list_buah yang berisi 3 elemen
+list_buah = ['Apel', 'Mangga', 'Jeruk']     # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data string
 for index, buah in enumerate(list_buah):    # --> loop for yang akan mengulang setiap elemen dalam list_buah dan fungsi enumerate() digunakan untuk menghasilkan pasangan indeks dan nilai dari list (pada setiap iterasi, variabel index akan berisi indeks mulai dari 0 dan variabel buah akan berisi nilai dari lis)
     print(index, buah)                      # --> Mencetak nilai dari variabel index dan buah pada setiap iterasi dan hasilnya aalah 0 apel, 1 Mangga, 2 Jeruk (indeks dan nama buah yang ada dalam list)
 
 # 14. Menggunakan zip() --> digunakan untuk menggabungkan dua atau lebih itrable, menghasilkan tuple pasangan elemen dari itrable
-list_buah = ['Apel', 'Mangga', 'Jeruk']         # --> Inisialisasi variabel list_buah yang berisi 3 elemen
-list_harga = [1000, 2000, 3000]                 # --> Inisialisasi variabel list_harga yang berisi 3 elemen (nantinya masing-masing akan mewakili harga buah yang sesuai dengan urutan di list_buah)
+list_buah = ['Apel', 'Mangga', 'Jeruk']         # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data string
+list_harga = [1000, 2000, 3000]                 # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer (nantinya masing-masing akan mewakili harga buah yang sesuai dengan urutan di list_buah)
 
 for buah, harga in zip(list_buah, list_harga):  # --> Loop for yang akan mengulang setiap pasangan nilai dari list_buah dan list_harga dan fungsi zip menggabungkan elemen-elemen dari dua list menjadi pasang-pasangan (pada setiap iterasi variabel buah akan berisi nama buah dan variabel harga akan berisi harga buah yang sesuai)
     print(f"{buah}, {harga}")                   # --> Mencetak nilai dari variabel buah, harga pada setiap iterasi dan hasilnya adalah Apel 1000, Mangga 2000, Jeruk 3000
@@ -296,12 +299,12 @@ for buah, harga in zip(list_buah, list_harga):  # --> Loop for yang akan mengula
 
 # 1. List Comprehension -->  Cara singkat dan elegan untuk membuat list baru dari itrable yang ada
 # Membuat list dengan list comprehension
-list_buah = ['Apel', 'Mangga', 'Jeruk']             # --> Inisialisasi variabel list_buah yang berisi 3 elemen
+list_buah = ['Apel', 'Mangga', 'Jeruk']             # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data string
 buah_baru = [buah.upper() for buah in list_buah]    # --> Membuat list baru yang berisi elemen dari list_buah, namun setiap elemen diubah menjadi huruf kapital menggunakan metode upper() atau (for untuk membuat list comprehension atau digunakan untuk mengitersi melalui setiap elemen dalam list_buah dan merubah elemen menjadi huruf kapital)
 print(buah_baru)                                    # --> Mencetak dari list baru yaitu buah_baru dan hasilnya adalah APEL, MANGGA, JERUK
 
 # list comprehension dengan kondisi
-list_angka = [1,2,3,4,5,6,7,8,9,10]                              # --> Inisialisasi variabel list_angka yang berisi elemen atau nilai 1-10
+list_angka = [1,2,3,4,5,6,7,8,9,10]                              # --> Inisialisasi variabel yang meyimpan data list, berisi 10 elemen data integer
 angka_genap = [angka for angka in list_angka if angka % 2 == 0]  # --> Membuat list baru (list comprehension mengambil setiap elemen dari list_angka dan menyimpan dalam variabel angka, lalu memeriksa apakah elemen tersebut adalah angka genap) (jika kondisi terpenuhi, yaitu elemen yang berada di varieable angka adalah genap maka lemen tersebut disimpan ke dalam list baru yaitu angka_genap)
 angka_ganjil = [nomor for nomor in list_angka if nomor % 2]      # --> Membuat list baru (list comprehension mengambil setiap elemen dari list_angka dan menyipan dalam variabel nomor, lalu memeriksa apakah elemen tesebut merupakan angka ganjil) (jika kondisi terpenuhi, yaitu elemen yang berada di variabel nomor adalah ganjil maka elemen tersebut disimpan ke dalam list baru yaitu angka_ganjil)
 print(f"japan : {angka_genap}")                                  # --> Mencetak dari list angka_genap dan hasilnya adalah 2,4,6,8,10
@@ -331,7 +334,7 @@ for tobrut in itertools.count(10): # --> Loop for (menggunakan generator iterato
         break                      # --> Jika kondisi terpenuhi yaitu 15, maka pernyataan break akan memekasa menghentikan loop
 
 # Itertools Cycle --> Mengulang elemen dari iterable tanpa henti
-ukhti = 0                                       # --> Inisialisasi variabel ukhti dengan nilai 0
+ukhti = 0                                       # --> Inisialisasi variabel yang menyimpan data integer
 for tobrut in itertools.cycle(["A", "B", "C"]): # --> Loop for yang menggunakan generator iteratools, generator ini akan mengulang elemen dari list secara berulang tanpa henti dan setiap iterasi nilai akan disimpan dalam variabel tobrut
     print(tobrut)                               # --> Mencetak nilai tobrut pada setiap iterasi dan hasilnya aalah A B C. A B C, A B C
     ukhti += 1                                  # --> Pada setiap iterasi nilai ukhti akan ditambahkan 1 (increment)
@@ -339,8 +342,8 @@ for tobrut in itertools.cycle(["A", "B", "C"]): # --> Loop for yang menggunakan 
         break                                   # --> Jika kondisi terpenuhi, penyetaan break akan memekasa mehnetikan loop
 
 # Itertools Chain --> Menggabungkan beberapa iterble menjadi satu iterator
-list1 = [1,2,3]                             # --> Inisialisasi variabel list1 dengan 3 elemen (tanah air dan udara eh bukan avatar ding wkwkwk-abaikan)
-list2 = ["a", "b", "c"]                     # --> Inisialisasi variabel list2 dengan 3 elemen
+list1 = [1,2,3]                             # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer (tanah air dan udara eh bukan avatar ding wkwkwk-abaikan)
+list2 = ["a", "b", "c"]                     # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data string
 for item in itertools.chain(list1, list2):  # --> Loop for yang menggunakan generator itertools, generator ini menggabungkan elemen dari kedua list dan menjadikan satu urutan, lalu setiap elemen akan di smpan dalam variabel item
     print(item)                             # --> Mencetak nilai item dalam setiap iterasi dan hasilnya adalah 1 2 3 a b c
 
@@ -357,36 +360,36 @@ ukhti_tobrut = [x for x in range(20) if is_tobrut(x)] # --> List comprehension, 
 print(ukhti_tobrut)                                   # --> Mencetak isi list yang berisi bilangan prima 0 hingga 19 dan hasilnya adalah 2 3 5 7 11 13 17 19
 
 # 6. Nested List Comprehension --> ini juga bisa bersarang untuk mengulangi melalui nested struktur
-ukhti = [[1,2,3], [4,5,6], [7,8,9]]             # --> Inisialisasi variabel ukhti yang berisi 3 list atau sublist lalu masing-masing dari sublist berisi 3 elemen
+ukhti = [[1,2,3], [4,5,6], [7,8,9]]             # --> Inisialisasi variabel yang menyimpan data list, berisi 3 list atau sublist lalu masing-masing dari sublist berisi 3 elemen data integer
 tobrut = [num for row in ukhti for num in row]  # --> List comprehension yang menggabungkan semua elemen dari sublist menjadi satu list tunggal (1. for row mengulang memalui setiap sublist dalam ukhti | 2. for in row mengulang memaluli setiap elemen dalam sublist 3. num merupakan variabel yang menyimpan elemen)
 print(tobrut)                                   # --> Mencetak isi dari list dan hasilnya adalah 1 2 3 4 5 6 7 8 9
 
 # 7. Enumerete dengan start index --> Kita dapat menentukan dari mana index enumerate dimulai
-list_buah = ['Apel', 'Mangga', 'Jeruk']             # --> Inisialisasi variabel list_buah yang berisi 3 elemen
+list_buah = ['Apel', 'Mangga', 'Jeruk']             # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data string
 for index, buah in enumerate(list_buah, start=1):   # --> loop for yang menggunakan fungsi enumrate (1. enumerate(list_buah, start=1) menghasilkan pasangan indeks dan nilai dari setiap elemen dalam list_buah | 2. index adalah variabel yang menyimpan indeks (dimulai dari 1 karena kita menggunakan start=1 | 3. buah adalah variabel yang menyimpan nilai dari setiap elemen dalam list_buah )
     print(index, buah)                              # --> Mencetak indeks dan nilai dari setiap elemen dalam list dan hasilnya adalah 1 Apel, 2 Mangga, 3 Jeruk
 
 # 8. Menggunakan zip untuk menggabungkan list dengan panjang berbeda --> Dapat menggabungkan list dengan panjang yang berbeda
 from itertools import zip_longest                               # --> Mengimpor fungsi zip_longest dari modul iteratools (digunakan untuk menggabungkan dua atau lebih itrable secara berurutan atau mengisi nilai default/None jika salah satu iterble lebih pendek dari yang lain)
 
-list1 = [1, 2]                                                  # --> Inisialisasi variabel list1 yang berisi 2 element
-list2 = ['a', 'b', 'c']                                         # --> Inisialisasi variabel list2 yang berisi 3 elemen
+list1 = [1, 2]                                                  # --> Inisialisasi variabel yang menyimpan data list, berisi 2 elemen data integer
+list2 = ['a', 'b', 'c']                                         # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data string
 for num, char in zip_longest(list1, list2, fillvalue='None'):   # --> Loop for yang menggunakan fungsi zip_longest (1. menggabungkan elemen kedua list secara berurutan, jika salah satu list lebih pendek nilai default/None akan digunakan sebagai pengganti - 2. num variabel yang menyimpan nilai dari list1 - 3. char adalah variabel yang menyimpan nilai dari list2)
     print(num, char)                                            # --> Mencetak nilai pada setiap iterasi dan hasilnya adalah 1 a, 2 b dan None c
 
 
 # 9. Bonus untuk kamu
 for heart in range(10): # --> Loop for yang akan berjalan dari 0 hingga 9 dan setiap iterasi variabel heart akan mengambil nilai dari rentang tersebut
-    love = "I Love You" # --> Inisialisasi variabel Love dengan nilai string
+    love = "I Love You" # --> Inisialisasi variabel yang menyimpan data string
     print(love)         # --> Mencetak nilai pada setiap iterasi dan hasilnya adalah I Love You 10x
 
 
-hati = [1,2,3,4,5]      # --> Inisialisasi variabel hati dengan 5 elemen
+hati = [1,2,3,4,5]      # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
 for sayang in hati:     # --> Loop for yang akan mengulang setiap elemen dalam list hati dan setiap iterasi nilai dari elemen akan disimpan dalam variabel sayang
-    cinta = "I Love U"  # --> Inisialisasi variabel cinta dengan nilai string
+    cinta = "I Love U"  # --> Inisialisasi variabel yang meyimpan data string
     if sayang < 3:      # --> Menggunakan kondisi, yang memeriksa apakah nilai sayang kurang dari 3 dan jika kondisi terpenuhi (yaitu sayang adalah 1 atau 2)
         print(cinta)    # --> Jika terpenuhi makan akan mencetan ini dan hasilnya adalah I Love U, I Love U
 
-hati = ["Sayang"] * 2   # --> Inisialisasi variabel hati dengan elemen tunggal yang diulangi 2 kali
+hati = ["Sayang"] * 2   # --> Inisialisasi variabel yang menyimpan data list, berisi 1 elemen data string yang diulangi 2 kali
 for pesan in hati:      # --> Loop for yang mengulang melalui setiap elemen dalam list hati dan setiap iterasi, nilai dari elemen akan disimpan dalam variabel pesan
     print(pesan)        # --> Mencetak nilai dari variabel pesan pada setiap iterasi dan hasilnya adalah Sayang, Sayang

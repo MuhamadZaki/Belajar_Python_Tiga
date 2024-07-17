@@ -1,7 +1,7 @@
 """ Perulangan While digunakan untuk menjalankan blok kode selama kondisi benar atau True """
 
 # Note :
-# Itersi atau Iteration --> Proses di mana kita menelusuri atau melintasi setiap elemen dari suatu koleksi data seperti (ist, tuple, set dan dict) satu persatu (secara singkat adalah aksi atau proses)
+# Itersi --> Proses di mana kita menelusuri atau melintasi setiap elemen dari suatu koleksi data seperti (ist, tuple, set dan dict) satu persatu (secara singkat adalah aksi atau proses) / proses mengulang elemen-elemen dari sebuah itrable
 numbers = [1, 2, 3, 4, 5]   # --> list yang di iterasi
 index = 0                   # --> Melacak posisi elemen lit, ini adalah bagiandari persiapan untuk melakukan iterasi
 

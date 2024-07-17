@@ -1,5 +1,17 @@
 """ Percabangan if-else-elif  """
 # Proses penentuan keputusan atau kita sebut dengan conditional statement
+"""
+
+if kondisi1:
+    # --> Blok kode yang dijalankan jika kondisi1 True
+
+elif kondisi2:
+    # --> Blok kode yang dijalankan jika kondisi2 True
+
+else:
+    # -->Blok kode yang dijalankan jika semua kondisi di atas False
+
+"""
 
 # Contoh Dalam Penentuan Nilai pada Siswa (Program)
 
@@ -38,8 +50,8 @@ while True: # --> I infinite loop terus berjalan sampai ada pernyataan break
         print("Input tidak benar! Masukan angka!")   # --> Jika terjadi kesalahan makan akan mencetak ini
 
 # Note if-elif-else :
-# 1. if     --> Merupakan pernyataan kondisional yang memeriksa apakah suatu kondisi benar (True), jika kondisi benar blok code yang berada di bawah if akan dijalankan
-# 2. elif   --> Merupakan singkatan dari else if, pernyataan ini digunakan untuk memeriksa kondisi tambahan jika kondisi if di atasnya salah (False) dan kita dapat memiliki beberpa elif dalam satu rangkaian pernyataan kondisional
+# 1. if     --> Merupakan pernyataan kondisional yang memeriksa apakah suatu kondisi benar (True), jika kondisi benar blok code yang berada di bawah if akan dijalankan dan semua kondisi berikutnya diabaikan
+# 2. elif   --> Merupakan singkatan dari else if, pernyataan ini digunakan untuk memeriksa kondisi kedua, jika kondisi ini True blok kode di dalam elif akan dijalankan dan kondisi berikutnya diabaikain
 # 3. else   --> Merupakan pernyataan yang digunakan untuk menangani semua kondisi lain yang tidak terpenuhi oleh if dan elif dan code di bawah else akan dijalankan ketika semua kondisi sebelumnya salah (False)
 
 # Note while dan for:
