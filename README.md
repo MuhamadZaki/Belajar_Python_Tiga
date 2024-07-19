@@ -5,26 +5,26 @@
 #### - Variabel
 #### - Conditions
 #### - Chained
-#### - Chained conditions
+#### - Chained Conditions
 #### - Operator
 #### - Control Flow(if/else)
 #### - Loops and Iterables
-#### - Basic data structures
+#### - Basic Data Structures
 #### - Functions
-#### - Mutable vs immutable
-#### - Common methods
+#### - Mutable vs Immutable
+#### - Common Methods
 #### - File I/O
 
 ## Intermidiate
 #### - OOPS
-#### - Data structures
+#### - Data Structures
 #### - Comprehensions
-#### - Lambda fuctions
-#### - Map, filter
+#### - Lambda Fuctions
+#### - Map, Filter
 #### - Collections
-#### - *Args and **kwargs
+#### - *Args and **Kwargs
 #### - Inheritance
-#### - Dunder methods
+#### - Dunder Methods
 #### - Pip
 #### - Environments
 #### - Modules
@@ -33,11 +33,11 @@
 ## Expert
 #### - Decorators
 #### - Generators
-#### - Context managers
+#### - Context Managers
 #### - Metaclasses
 #### - Paralleism
 #### - Testing
 #### - Packages
 #### - Cython 
 
-Author: Muhamad Zaki
+###### Author: Muhamad Zaki
