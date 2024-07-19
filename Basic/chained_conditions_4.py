@@ -62,7 +62,7 @@ else:
 print("-------->")      # -- Abaikan ini
 
 umur = 25                                        # --> Inisialisasi variabel yang menyimpan data integer
-status = "Dewasa" if umur >= 18 else "Anak-anak" # --> Kondisi, jika nilai variabel umur lebih besar sama dengan 18 (jika kondisi terpenuhi maka akan mecetak string "Dewasa") dan Jika kondisi tidak terpenuhi maka akan mengeksekusi blok else (mencetak data string "Anak-anak") lalu menyimpannya pada variabel status
+status = "Dewasa" if umur >= 40 else "Anak-anak" # --> Kondisi, jika nilai variabel umur lebih besar sama dengan 18 (jika kondisi terpenuhi maka akan mecetak string "Dewasa") dan Jika kondisi tidak terpenuhi maka akan mengeksekusi blok else (mencetak data string "Anak-anak") lalu menyimpannya pada variabel status
 print(status)                                    # --> Mencetak variabel
 
 
@@ -77,39 +77,48 @@ else:                                                                    # --> K
     print("x tidak memenuhi kedua kondisi tersebut")                     # --> Jika semua kondisi sebelumnya tidak terpenuhi maka akan mencetak data string
 
 
-nilai = 75
-kehadiran = 85
+angka = 60                               # --> Inisialisasi variabel yang menyimpan data integer
+kehadiran = 85                           # --> Inisialisasi variabel yang menyimpan data integer
 
-if nilai >= 90 and kehadiran >= 75:
-    grade = "A"
-elif nilai >= 80 and kehadiran >= 75:
-    grade = "B"
-elif nilai >= 70 and kehadiran >= 75:
-    grade = "C"
-else:
-    grade = "D" if kehadiran >= 75 else "F"
+if angka >= 90 and kehadiran >= 75:      # --> Kondisi, jika nilai variabel angka lebih besar sama dengan 90 lalu menggabungkan kondisi dengan operator and jika nilai variabel kehadiran lebih besar sama dengan 75, selanjutnya jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melanjutkan ke kondisi berikutnya
+    grade = "Amat Baik"                  # --> Inisialisasi variabel yang menyimpan data string
+elif angka >= 80 and kehadiran >= 75:    # --> Kondisi, jika nilai variabel angka lebih besar sama dengan 80 lalu menggabungkan kondisi dengan operator and jika nilai variabel kehadiran lebih besar sama dengan 75, selanjutnya jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melanjutkan ke kondisi berikutnya 
+    grade = "Baik"                       # --> Inisialisasi variabel yang menyimpan data string
+elif angka >= 70 and kehadiran >= 75:    # --> Kondisi, jika nilai variabel angka lebih besar sama dengan 70 lalu menggabungkan kondisi dengan operator and jika nilai variabel kehadiran lebih besar sama dengan 75, selanjutnya jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melanjutkan ke kondisi berikutnya
+    grade = "Cukup"                      # --> Inisialisasi variabel yang menyimpan data string
+else:                                               # --> Kondisi, jika semua kondisi sebelumnya tidak terpenuhi, maka blok kode else akan dieksekusi
+    grade = "Dongo" if kehadiran >= 75 else "Folol" # --> Jika semua kondisi sebelumnya tidak terpenuhi dan terdapat kondisi lagi, jika nilai variabel kehadiran lebih besar sama dengan 75, jika terpenuhi mengambalikan data string "Dongo"dan jika tidak terpenuhi mengembalikan data string "Folol" kemudian di simpan pada variabel grade (Baris code ini menggunakan operator ternary)
+print(grade)                                        # --> Mencetak variabel
 
-print(grade) # --> Cape negejelasinya, nanti lagi yah
+#print(True and False)  --> Jika salah satu kondisi False, maka akan mencetak False  (Ibaratkan menggunakan kondisi)
+#print(False and True)  --> Jika salah satu kondisi False, maka akan mencetak False  (Ibaratkan menggunakan kondisi)
+#print(True and True)   --> Jika kedua kondisi True, maka akan mecetak True          (Ibaratkan menggunakan kondisi)
+#print(False and False) --> Jika kedua kondisi False, maka akan mencetak False       (Ibaratkan menggunakan kondisi)
+
+#print(True or False)  # --> Jika salah satu kondisi True, maka mencetak True    (Ibaratkan menggunakan kondisi)
+#print(False or True)  # --> Jika salah satu Kondisi True, maka mencetak True    (Ibaratkan menggunakan kondisi)
+#print(True or True)   # --> Jika kedua kondisi True, maka mencetak True         (Ibaratkan menggunakan kondisi)
+#print(False or False) # --> Jika kedua kondisi False, maka mencetak False       (Ibaratkan menggunakan kondisi)
 
 
 """ Contoh Kondisi Berantai Dengan Fungsi """
 
 print("-------->")      # -- Abaikan ini
 
-def evaluasi_nilai(nilai, kehadiran):
-    if nilai >= 90 and kehadiran >= 75:
-        return "A"
-    elif nilai >= 80 and kehadiran >= 75:
-        return "B"
-    elif nilai >= 70 and kehadiran >= 75:
-        return "C"
-    else:
-        return "D" if kehadiran >= 75 else "F"
+def evaluasi_nilai(angka, kehadiran):           # --> Membuat fungsi evaluasi_nailai dengan 2 parameter yaitu nilai dan kehadiran
+    if angka >= 90 and kehadiran >= 75:         # -->
+        return "A"                              # --> 
+    elif angka >= 80 and kehadiran >= 75:       # -->
+        return "B"                              # -->
+    elif angka >= 70 and kehadiran >= 75:       # -->
+        return "C"                              # -->
+    else:                                       # -->
+        return "D" if kehadiran >= 75 else "F"  # -->
 
-nilai = 65
-kehadiran = 80
-grade = evaluasi_nilai(nilai, kehadiran)
-print(grade) # --> Cape negejelasinya, nanti lagi yah
+nilai = 65                                      # -->
+kehadiran = 80                                  # --> 
+grade = evaluasi_nilai(nilai, kehadiran)        # -->
+print(grade)                                    # --> Mencetak variabel
 
 """ Note! """
 
