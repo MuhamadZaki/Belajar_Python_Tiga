@@ -86,9 +86,9 @@ elif angka >= 80 and kehadiran >= 75:    # --> Kondisi, jika nilai variabel angk
     grade = "Baik"                       # --> Inisialisasi variabel yang menyimpan data string
 elif angka >= 70 and kehadiran >= 75:    # --> Kondisi, jika nilai variabel angka lebih besar sama dengan 70 lalu menggabungkan kondisi dengan operator and jika nilai variabel kehadiran lebih besar sama dengan 75, selanjutnya jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melanjutkan ke kondisi berikutnya
     grade = "Cukup"                      # --> Inisialisasi variabel yang menyimpan data string
-else:                                               # --> Kondisi, jika semua kondisi sebelumnya tidak terpenuhi, maka blok kode else akan dieksekusi
-    grade = "Dongo" if kehadiran >= 75 else "Folol" # --> Jika semua kondisi sebelumnya tidak terpenuhi dan terdapat kondisi lagi, jika nilai variabel kehadiran lebih besar sama dengan 75, jika terpenuhi mengambalikan data string "Dongo"dan jika tidak terpenuhi mengembalikan data string "Folol" kemudian di simpan pada variabel grade (Baris code ini menggunakan operator ternary)
-print(grade)                                        # --> Mencetak variabel
+else:                                       # --> Kondisi, jika semua kondisi sebelumnya tidak terpenuhi, maka blok kode else akan dieksekusi
+    grade = "D" if kehadiran >= 75 else "F" # --> Jika semua kondisi sebelumnya tidak terpenuhi dan terdapat kondisi lagi, jika nilai variabel kehadiran lebih besar sama dengan 75, jika terpenuhi mengambalikan data string "Dongo"dan jika tidak terpenuhi mengembalikan data string "Folol" kemudian di simpan pada variabel grade (Baris code ini menggunakan operator ternary)
+print(grade)                                # --> Mencetak variabel
 
 #print(True and False)  --> Jika salah satu kondisi False, maka akan mencetak False  (Ibaratkan menggunakan kondisi)
 #print(False and True)  --> Jika salah satu kondisi False, maka akan mencetak False  (Ibaratkan menggunakan kondisi)
