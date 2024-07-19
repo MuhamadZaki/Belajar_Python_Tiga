@@ -1,40 +1,43 @@
 # Belajar Python Tiga
 
 ## Basic
-#### 1 . Start learning
-#### 2 . Variabel
-#### 3 . Conditions
-#### 4 . Chained
-#### 5 . Chained conditions
-#### 6 . Operator
-#### 7 . Control Flow(if/else)
-#### 8 . Loops and Iterables
-#### 9 . Basic data structures
-#### 10 . Functions
-#### 11 . Mutable vs immutable
-#### 12 . Common methods
-#### 13 . File I/O
+#### - Start learning
+#### - Variabel
+#### - Conditions
+#### - Chained
+#### - Chained conditions
+#### - Operator
+#### - Control Flow(if/else)
+#### - Loops and Iterables
+#### - Basic data structures
+#### - Functions
+#### - Mutable vs immutable
+#### - Common methods
+#### - File I/O
 
 ## Intermidiate
-#### 1 . OOPS
-#### 2 . Data structures
-#### 3 . Comprehensions
-#### 4 . Lambda fuctions
-#### 5 . Map, filter
-#### 6 . Collections
-#### 7 . *Args and **kwargs
-#### 8 . Inheritance
-#### 9 . Dunder methods
-#### 10 . Pip
-#### 11 . Environments
-#### 12 . Modules
-#### 13 . Async 10
+#### - OOPS
+#### - Data structures
+#### - Comprehensions
+#### - Lambda fuctions
+#### - Map, filter
+#### - Collections
+#### - *Args and **kwargs
+#### - Inheritance
+#### - Dunder methods
+#### - Pip
+#### - Environments
+#### - Modules
+#### - Async 10
 
 ## Expert
-#### 1. Decorators
-#### 2. Generators
-#### 3. Context managers
-#### 4. Metaclasses
-#### 5. 
+#### - Decorators
+#### - Generators
+#### - Context managers
+#### - Metaclasses
+#### - Paralleism
+#### - Testing
+#### - Packages
+#### - Cython 
 
 Author: Muhamad Zaki
