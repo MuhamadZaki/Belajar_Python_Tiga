@@ -1,6 +1,6 @@
 # Belajar Python Tiga
 
 ## Basic
-### 1. 
+#### 1. 
 
 Author: Muhamad Zaki
