@@ -12,7 +12,7 @@ print(results)                                                  # --> mencetak v
 
 # 1. strip()                    --> Mengapus sepasi di awal dan akhir string
 # 2. upper()                    --> Mengubah string menjadi huruf besar
-# 3. replace("Hello", "TOBRUT") --> Menggantikan HELLO dengan TOBRUT
+# 3. replace("HELLO", "TOBRUT") --> Menggantikan HELLO dengan TOBRUT
 
 """ Contoh Chaining Operasi Aritmatika"""
 

@@ -32,7 +32,7 @@ print("Anjing")
 
 # Iterable --> Merupakan objek yang dapat diulang (loop) satu persatu, seperti list, tuple, string, dict dan fitur ini memungkinkan kita untuk mengakses elemen-elemen dari objek tersebut secara berurutan
    # 1. Contoh itrabel
-my_list = [1, 2, 3, 4, 5] # --> Ini adalah iterable yang diiterai
+my_list = [1, 2, 3, 4, 5] # --> Ini adalah iterable yang diiterasi
 for lists in my_list:
     print(lists)
 
@@ -49,14 +49,14 @@ for dict in my_dictionary:
     print(dict)
 
     # 2. Untuk memeriksa apakah suatu objek adalah itrabel, kita dapat menggunakan fungsi iter() dan jika objek bisa diubah menjadi iterator, maka objek tersebut adalah iterabel
-my_list = [1, 2, 3, 4, 5] # --> Ini adalah iterable yang diiterai
+my_list = [1, 2, 3, 4, 5] # --> Ini adalah iterable yang diiterasi
 iter_obj = iter(my_list)  # --> Ini tidak akan menghasilkan error, sehingga my_list adalah iterator
 print(iter_obj)           # --> Mencetak objek iterator
 
 # Iterator --> Objek yang mengimplementasikan metode khusus __iter() / __next__() atau memungkinkan kita untuk menelusuri elemen-elemen dari suatu koleksi data seperti list, set, tuple, dict satu persatu dan ini membantu dalam mengakses item tersebut tanpa perlu mengakses seluruh kumpulan data secara langsung
 
     # 1. Iterator objek yang mewakili alur iterasi di atas iterabel, menggunakan metode iter(yang mengembalikan iterator dari itrabel) next(yang mengakses elemen untuk mengembalikan elemen selanjutnya, jika tidak ada elemen yang tersisa metode ini akan memunculkan pengecualian yaitu stopiteration)
-list_buah = ["Apel", "Jeruk", "Mangga"]  # --> Ini adalah iterable yang diiterai
+list_buah = ["Apel", "Jeruk", "Mangga"]  # --> Ini adalah iterable yang diiterasi
 for buah in list_buah:                   # --> Proses iterasi menggunakan loop for
     print(buah)
 iterator_buah = iter(list_buah)          # --> Mengembalikan iterator dari itrabel
