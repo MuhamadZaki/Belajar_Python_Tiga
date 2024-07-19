@@ -25,6 +25,8 @@ else:
 
 """ Contoh Penggunaan IF Statement"""
 
+print("-------->")      # -- Abaikan ini
+
 num = 10          # --> Inisialisasi variabel yang menyimpan data integer
 if num > 5:       # --> Kondisi, jika nilai variabel num lebih beasr dari 5 dan jika kondisi terpenuhi maka akan mencetak blok kode di dalamnya
     print(True)   # --> Jika kondisi terpenuhi maka akan mencetak True
