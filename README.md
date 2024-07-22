@@ -1,6 +1,6 @@
 # Belajar Python Tiga
 
-[![Saweria](https://img.shields.io/badge/-Support%20Me-yellow?logo=buymeacoffee)](https://saweria.co/himaswork)
+[![Saweria](https://img.shields.io/badge/-Support%20Me-blue?logo=buymeacoffee)](https://saweria.co/himaswork)
 [![PayPal](https://img.shields.io/badge/-Support%20Me-blue?logo=paypal)](https://paypal.me/himaswork)
 
 ## Basic
