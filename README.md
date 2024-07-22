@@ -1,5 +1,8 @@
 # Belajar Python Tiga
 
+[![Saweria](https://img.shields.io/badge/Saweria-Support%20Me-yellow?logo=coffee)](https://saweria.co/himaswork)
+
+
 ## Basic
 #### - Start learning
 #### - Variabel
