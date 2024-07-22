@@ -106,18 +106,18 @@ print(grade)                                # --> Mencetak variabel
 print("-------->")      # -- Abaikan ini
 
 def evaluasi_nilai(angka, kehadiran):           # --> Membuat fungsi evaluasi_nailai dengan 2 parameter yaitu nilai dan kehadiran
-    if angka >= 90 and kehadiran >= 75:         # -->
-        return "A"                              # --> 
-    elif angka >= 80 and kehadiran >= 75:       # -->
-        return "B"                              # -->
-    elif angka >= 70 and kehadiran >= 75:       # -->
-        return "C"                              # -->
-    else:                                       # -->
-        return "D" if kehadiran >= 75 else "F"  # -->
+    if angka >= 90 and kehadiran >= 75:         # --> Kondisi, jika nilai variabel angka lebih besar sama dengan 90 lalu menggabungkan kondisi dengan operator and jika nilai variabel kehadiran lebih besar sama dengan 75, selanjutnya jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melanjutkan ke kondisi berikutnya
+        return "A"                              # --> Mengembalikan data string
+    elif angka >= 80 and kehadiran >= 75:       # --> Kondisi, jika nilai variabel angka lebih besar sama dengan 80 lalu menggabungkan kondisi dengan operator and jika nilai variabel kehadiran lebih besar sama dengan 75, selanjutnya jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melanjutkan ke kondisi berikutnya
+        return "B"                              # --> Mengembalikan data string
+    elif angka >= 70 and kehadiran >= 75:       # --> Kondisi, jika nilai variabel angka lebih besar sama dengan 70 lalu menggabungkan kondisi dengan operator and jika nilai variabel kehadiran lebih besar sama dengan 75, selanjutnya jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melanjutkan ke kondisi berikutnya
+        return "C"                              # --> Mengembalikan data string
+    else:                                       # --> Jika semua kondisi sebelumnya tidak terpenuhi, maka blok kode else akan dieksekusi
+        return "D" if kehadiran >= 75 else "F"  # --> Jika semua kondisi sebelumnya tidak terpenuhi dan mengembalikan data string, namun terdapat kondisi lagi jika nilai variabel kehadiran lebih besar sama dengan 75, jika terpenuhi mengambalikan data string "Dongo"dan jika tidak terpenuhi mengembalikan data string "Folol" (Baris code ini menggunakan operator ternary)
 
-nilai = 65                                      # -->
-kehadiran = 80                                  # --> 
-grade = evaluasi_nilai(nilai, kehadiran)        # -->
+nilai = 65                                      # --> Inisialisasi variabel yang menyimpan data integer
+hadir = 80                                      # --> Inisialisasi variabel yang menyimpan data integer
+grade = evaluasi_nilai(nilai, hadir)            # --> Memanggil fungsi dengan argumen nilai, hadir dan menyimpan pada variabel grade
 print(grade)                                    # --> Mencetak variabel
 
 """ Note! """
