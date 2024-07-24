@@ -328,3 +328,70 @@ print("-------->")      # -- Abaikan ini
 my_list = [1, 2, 3, 4, 5]   # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
 results = 6 not in my_list  # --> Apakah elemen angka 5 berada dalam variabel my_list, jika tidak ada maka mengembalikan True dan tersimpan pada variabel results
 print(results)              # --> Mencetak variabel
+
+my_tupel = (1, 2, 3, 4, 5)  # --> Inisialisasi variabel yang menyimpan data tuple, berisi 5 elemen data integer
+results = 6 not in my_tuple # --> Apakah elemen angka 6 berada dalam variabel my_tuple, jika tidak ada maka mengembalikan True dan tersimpan pada variabel results
+print(results)              # --> Mencetak variabel
+
+my_set = {1, 2, 3, 4, 5}    # --> Inisialisasi variabel yang menyimpan data set, berisi 5 elemen data integer
+results = 6 not in my_set   # --> Apakah elemen angka 6 berada dalam variabel my_set, jika tidak ada maka mengembalikan True dan tersimpan pada variabel results
+print(results)              # --> Mencetak variabel
+
+my_dictionary = {"nama":"Muhamad", "pets":"Anjing"} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data string dan tersimpan pada variabel results
+results = "monyet" not in my_dictionary             # --> Apakah key monyet berada dalam variabel my_dictionary, jika tidak ada maka mengembalikan True dan tersimpan pada variabel result
+print(results)                                      # --> Mencetak variabel
+
+my_string = " Jaga Mulutmu Kalau Tidak Ingin Saya Balas " # --> Inisialisasi variabel yang menyimpan data string
+results = "Fitnah" not in my_string                       # --> Apakah Fitnah berada dalam variabel my_string, jika tidak ada maka mengembalikan True dan tersimpan pada variabel results
+print(results)                                            # --> Mencetak variabel
+
+my_range = range(1, 5)      # --> Inisialisasi variabel yang menyimpan fungsi range, berisi atau mencakup data integer 1 hingga 4
+results = 5 not in my_range # --> Apakah angka 5 berada dalam cakupan fungsi range di variabel my_range, jika tidak ada maka mengembalikan True dan tersimpan pada variabel results
+print(results)              # --> Mencetak variabel
+
+
+# 7. Opreator Identitas --> Untuk memeriksa apakah dua objek adalah objek yang sama dan memiliki alamat memori yang sama
+
+""" Is (Mengembalikan True Jika Dua Variabel Merujuk Ke Objek, memori yang sama Dan Mengembalikan False Jika Dua Variabel Tidak Merujuk Ke Objek, memori Yang Sama) """
+
+print("-------->")      # -- Abaikan ini
+
+my_integer1 = 97                     # --> Inisialisasi variabel yang menyimpan data integer
+my_integer2 = 97                     # --> Inisialisasi variabel yang menyimpan data integer
+results = my_integer1 is my_integer2 # --> Meskipun nilai variabel my_integer1 dan my_integer2 sama, kedua objek ini sebenernya secara memori berbeda akan tetapi anehnya python mengoptimalkan penggunaan memori karena nilainya sama, kemudian menjadikan kedua objek mengacu pada memori yang sama maka mengembalikan True dan menyimpan pada variabel result
+print(results)                       # --> Mencetak variabel
+
+my_boolean1 = True                   # --> Inisialisasi variabel yang menyimpan data boolean
+my_boolean2 = True                   # --> Inisialisasi variabel yang menyimpan data boolean
+results = my_boolean1 is my_boolean2 # --> Meskipun nilai variabel my_boolean1 dan my_boolean2 sama, kedua objek ini sebenernya secara memori berbeda akan tetapi anehnya python mengoptimalkan penggunaan memori karena nilainya sama, kemudian menjadikan kedua objek mengacu pada memori yang sama maka mengembalikan True dan menyimpan pada variabel result
+print(results)                       # --> Mencetak variabel
+
+my_float1 = 5.5                      # --> Inisialisasi variabel yang menyimpan data float
+my_float2 = 5.5                      # --> Inisialisasi variabel yang menyimpan data float
+results = my_float1 is my_float2     # --> Meskipun nilai variabel my_float1 dan my_float2 sama, kedua objek ini sebenernya secara memori berbeda akan tetapi anehnya python mengoptimalkan penggunaan memori karena nilainya sama, kemudian menjadikan kedua objek mengacu pada memori yang sama maka mengembalikan True dan menyimpan pada variabel result
+print(results)                       # --> Mencetak variabel
+
+my_string1 = "Zaki"                  # --> Inisialisasi variabel yang menyimpan data string
+my_string2 = "Zaki"                  # --> Inisialisasi variabel yang menyimpan data string
+results = my_string1 is my_string2   # --> Meskipun nilai variabel my_string1 dan my_string2 sama, kedua objek ini sebenernya secara memori berbeda akan tetapi anehnya python mengoptimalkan penggunaan memori karena nilainya sama, kemudian menjadikan kedua objek mengacu pada memori yang sama maka mengembalikan True dan menyimpan pada variabel result
+print(results)                       # --> Mencetak variabel
+
+my_list1 = [1, 2, 3, 4, 5]           # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+my_list2 = [1, 2, 3, 4, 5]           # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+results = my_list1 is my_list2       # --> Meskipun nilai variabel my_list1 dan my_list2 sama, kedua objek ini sebenernya berbeda secara memori maka mengembalikan False dan tersimpan dalam variabel results
+print(results)                       # --> Mencetak variabel
+
+my_tuple1 = (1, 2, 3, 4, 5)          # --> Inisialisasi variabel yang menyimpan data tuple, berisi 5 elemen data integer
+my_tuple2 = (1, 2, 3, 4, 5)          # --> Inisialisasi variabel yang menyimpan data tuple, berisi 5 elemen data integer
+results = my_tupel is my_tuple2      # --> Meskipun nilai variabel my_tuple1 dan my_tuple2 sama, kedua objek ini sebenernya secara memori berbeda akan tetapi anehnya python mengoptimalkan penggunaan memori karena nilainya sama, kemudian menjadikan kedua objek mengacu pada memori yang sama maka mengembalikan True dan menyimpan pada variabel results
+print(results)
+
+my_dict1 = {"a":"b", "c":"d"}        # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data string
+my_dict2 = {"a":"b", "c":"d"}        # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data sting
+results = my_dict1 is my_dict2       # --> Meskipun nilai variabel my_dict1 dan my_dict2 sama, kedua objek ini sebenernya berbeda secara memori maka mengembalikan False dan tersimpan dalam variabel results
+print(results)
+
+
+""" Is Not (Mengembalikan True Jika Dua Variabel Tidak Merujuk Ke Objek, Memori Yang Sama) """
+
+print("-------->")      # -- Abaikan ini

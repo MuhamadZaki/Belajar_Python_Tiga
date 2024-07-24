@@ -1,6 +1,6 @@
 """ Variabel """
 
-# Variabel --> Merupakan wadah untuk menampung nilai
+# Variabel --> Merupakan wadah untuk menampung nilai dan bise disebut dengan objek 
 
 # Aturan Penamaan Variabel
 # 1. Nama variabel harus dimulai dengan huruf (a-z, A-Z) dan karakter garis bawah juga termasuk
@@ -99,3 +99,7 @@ print("-------->")  # -- Abaikan ini
 
 my_integer = 15         # --> Inisialisasi variabel yang menyimpan data integer
 print(type(my_integer)) # --> Mencetak variabel, menggunakan fungsi type untuk memeriksa data suatu variabel
+
+
+""" Note! """
+# 1. Objek di python mencakup variabel, class dan fungsi 
