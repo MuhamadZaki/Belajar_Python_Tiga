@@ -384,13 +384,19 @@ print(results)                       # --> Mencetak variabel
 my_tuple1 = (1, 2, 3, 4, 5)          # --> Inisialisasi variabel yang menyimpan data tuple, berisi 5 elemen data integer
 my_tuple2 = (1, 2, 3, 4, 5)          # --> Inisialisasi variabel yang menyimpan data tuple, berisi 5 elemen data integer
 results = my_tupel is my_tuple2      # --> Meskipun nilai variabel my_tuple1 dan my_tuple2 sama, kedua objek ini sebenernya secara memori berbeda akan tetapi anehnya python mengoptimalkan penggunaan memori karena nilainya sama, kemudian menjadikan kedua objek mengacu pada memori yang sama maka mengembalikan True dan menyimpan pada variabel results
-print(results)
+print(results)                       # --> Mencetak variabel
 
 my_dict1 = {"a":"b", "c":"d"}        # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data string
 my_dict2 = {"a":"b", "c":"d"}        # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data sting
 results = my_dict1 is my_dict2       # --> Meskipun nilai variabel my_dict1 dan my_dict2 sama, kedua objek ini sebenernya berbeda secara memori maka mengembalikan False dan tersimpan dalam variabel results
-print(results)
+print(results)                       # --> Mencetak variabel
 
+class MyClass:                      # --> Membuat class dengan nama Myclass
+    pass                            # --> Tidak ada kode yang dieksekusi, sehingga melajutkan mengeksekusi code berikutnya
+obj1 = MyClass()                    # --> Inisialisasi variabel yang menyimpan data MyClass atau membuat objek(instance) dari kelas MyClass
+obj2 = MyClass()                    # --> Inisialisasi variabel yang menyimpan data MyClass atau membuat objek(instance) dari kelas MyClass
+results = obj1 is obj2              # --> Kedua nilai variabel obj1 dan obj2 sama, kedua objek ini sebenernya berbeda secara memori maka mengembalikan False dan tersimpan dalam variabel results
+print(results)                      # --> Mencetak variabel
 
 """ Is Not (Mengembalikan True Jika Dua Variabel Tidak Merujuk Ke Objek, Memori Yang Sama) """
 
