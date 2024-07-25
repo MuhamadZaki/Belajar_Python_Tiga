@@ -386,10 +386,10 @@ my_tuple2 = (1, 2, 3, 4, 5)          # --> Inisialisasi variabel yang menyimpan 
 results = my_tupel is my_tuple2      # --> Pada tipe data tuple, python memperlakukan setiap inisialisasi data tuple dengan elemen yang sama sebagai objek yang sama di dalam memori maka mengembalikan True dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
 
-my_dict1 = {"key1":"value1", "key2":"value2"}        # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data string
-my_dict2 = {"key1":"value1", "key2":"value2"}        # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data sting
-results = my_dict1 is my_dict2       # --> Karena tipe data dict bersifat mutable, Python memperlakukan setiap inisialisasi data dict sebagai objek yang berbeda di dalam memori, bahkan jika key-value nya sama maka hasinya False dan tersimpan pada variabel results
-print(results)                       # --> Mencetak variabel
+my_dict1 = {"key1":"value1", "key2":"value2"} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data string
+my_dict2 = {"key1":"value1", "key2":"value2"} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data sting
+results = my_dict1 is my_dict2                # --> Karena tipe data dict bersifat mutable, Python memperlakukan setiap inisialisasi data dict sebagai objek yang berbeda di dalam memori, bahkan jika key-value nya sama maka hasinya False dan tersimpan pada variabel results
+print(results)                                # --> Mencetak variabel
 
 class MyClass:                       # --> Membuat class dengan nama Myclass
     pass                             # --> Tidak ada kode yang dieksekusi, sehingga melajutkan mengeksekusi code berikutnya
@@ -434,8 +434,8 @@ print(results)                       # --> Mencetak variabel
 
 my_dict1 = {"key1": "valu11", "key2": "value2"} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data string
 my_dict2 = {"key1": "value1", "key2": "value2"} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data string
-results = my_dict1 is not my_dict2   # --> Karena tipe data dict bersifat mutable, Python memperlakukan setiap inisialisasi data dict sebagai objek yang berbeda di dalam memori, bahkan jika key-value nya sama maka hasinya True karena not kebalikan dari is dan tersimpan pada variabel results
-print(results)                       # --> Mencetak variabel
+results = my_dict1 is not my_dict2              # --> Karena tipe data dict bersifat mutable, Python memperlakukan setiap inisialisasi data dict sebagai objek yang berbeda di dalam memori, bahkan jika key-value nya sama maka hasinya True karena not kebalikan dari is dan tersimpan pada variabel results
+print(results)                                  # --> Mencetak variabel
 
 class MyClass:                       # --> Membuat kelas bernama MyClass
     pass                             # --> Tidak ada code yang dieksekusi, sehingga maelajutkan mengeksekusi code berikutnya

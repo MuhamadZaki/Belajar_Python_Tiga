@@ -1,6 +1,6 @@
-""" Catatan Sangat Penting! """
+""" Catatan Sangat Penting! Pahami Secukupnya, Karena Kita Harus Mempelajari Pondasinya Terlebih Dahulu Dan Maka Dari Itu Setiap Baris Code Di Bagian Ini Tidak Saya Jelaskan Secara Detail """
 
-# Itersi --> Proses di mana kita menelusuri atau melintasi setiap elemen dari suatu koleksi data seperti (ist, tuple, set dan dict) satu persatu (secara singkat adalah aksi atau proses) / proses mengulang elemen-elemen dari sebuah itrable
+# Itersi --> Proses di mana kita menelusuri atau melintasi setiap elemen dari suatu koleksi data seperti (list, tuple, set dan dict) satu persatu (secara singkat adalah aksi atau proses) / proses mengulang elemen-elemen dari sebuah itrable
 numbers = [1, 2, 3, 4, 5] # --> Ini adalah iterable yang diiterai
 for number in numbers:    # --> Iterasi dimulai dari sini
     print(number)         # --> Aksi selama iterasi
@@ -32,7 +32,7 @@ print("Anjing")
 
 # Iterable --> Merupakan objek yang dapat diulang (loop) satu persatu, seperti list, tuple, string, dict dan fitur ini memungkinkan kita untuk mengakses elemen-elemen dari objek tersebut secara berurutan
    # 1. Contoh itrabel
-my_list = [1, 2, 3, 4, 5] # --> Ini adalah iterable yang diiterasi
+my_list = [1, 2, 3, 4, 5]
 for lists in my_list:
     print(lists)
 
