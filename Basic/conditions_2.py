@@ -9,20 +9,6 @@
 #else:
     # Blok kode yang dieksekusi jika tidak ada kondisi yang benar
 
-""" contoh Conditions dan Conditional """
-
-print("-------->")      # --> Abaikan ini
-
-# Condition (sebuah ekspresi)
-mz = 10
-condition = mz > 5
-
-# Conditional statement
-if condition:
-    print(True)
-else:
-    print(False)
-
 """ Contoh Penggunaan IF Statement"""
 
 print("-------->")      # --> Abaikan ini
