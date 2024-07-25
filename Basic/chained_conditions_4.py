@@ -4,7 +4,7 @@
 
 """ Contoh Kondisi Berantai Dengan If-Elif-Else """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 angka = 50                  # --> Inisialisasi variabel yang menyimpan data integer
 if angka >= 90:             # --> Kondisi, jika nilai variabel angka lebih besar sama dengan 90 dan kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melanjutkan ke kondisi berikutnya
@@ -24,7 +24,7 @@ else:                       # --> Kondisi, jika semua kondisi sebelumnya tidak a
 
 """ Kondisi Berantai Dengan Operator Logika AND """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 umur = 17                            # --> Inisialisasi variabel yang menyimpan data integer
 pendapatan = 9000                    # --> Inisialisasi variabel yang menyimpan data integer
@@ -42,7 +42,7 @@ else:                                # --> Kondisi, jika semua kondisi sebelumny
 
 """ Kondisi Berantai Dengan Operator Logika OR """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 umur = 15                            # --> Inisialisasi variabel yang menyimpan data integer
 pendapatan = 9000                    # --> Inisialisasi variabel yang menyimpan data integer
@@ -59,7 +59,7 @@ else:
 
 """ Contoh Kondisi Berantai Dengan Operator Ternary """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 umur = 25                                        # --> Inisialisasi variabel yang menyimpan data integer
 status = "Dewasa" if umur >= 40 else "Anak-anak" # --> Kondisi, jika nilai variabel umur lebih besar sama dengan 18 (jika kondisi terpenuhi maka akan mecetak string "Dewasa") dan Jika kondisi tidak terpenuhi maka akan mengeksekusi blok else (mencetak data string "Anak-anak") lalu menyimpannya pada variabel status
@@ -68,7 +68,7 @@ print(status)                                    # --> Mencetak variabel
 
 """ Contoh Kondisi Berantai Lebih Kompleks """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 x = 15                                    # --> Inisialisasi variabel yang menyimpan data integer
 if x > 13 and (x % 2 == 0 or x % 3 == 0): # --> Kondisi, jika nilai variabel x lebih besar dari 13 lalu menggabungkan kondisi dengan operator and jika kondisi pertama terpenuhi maka akan melajutkan ke kondisi berikutnya dan selanjutnya (x % 2 == 0): Ini memeriksa apakah x adalah kelipatan dari 2 (menggabungkan kondisi dengan operator or), (x % 3 == 0): Ini memeriksa apakah x adalah kelipatan dari 3, jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melajutkan ke kondisi berikutnya 
@@ -103,7 +103,7 @@ print(grade)                                # --> Mencetak variabel
 
 """ Contoh Kondisi Berantai Dengan Fungsi """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 def evaluasi_nilai(angka, kehadiran):           # --> Membuat fungsi evaluasi_nailai dengan 2 parameter yaitu nilai dan kehadiran
     if angka >= 90 and kehadiran >= 75:         # --> Kondisi, jika nilai variabel angka lebih besar sama dengan 90 lalu menggabungkan kondisi dengan operator and jika nilai variabel kehadiran lebih besar sama dengan 75, selanjutnya jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melanjutkan ke kondisi berikutnya

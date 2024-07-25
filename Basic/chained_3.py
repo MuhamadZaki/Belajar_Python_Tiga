@@ -4,7 +4,7 @@
 
 """ Contoh Chaining Metode String """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 my_string = "Hello, World!"                                     # --> Inisialisasi variabel yang menyimpan data string
 results = my_string.strip().upper().replace("HELLO", "TOBRUT")  # --> Melakukan beberapa operasi berantai pada variabel my_string dan akan tersimpan pada variabel results
@@ -16,7 +16,7 @@ print(results)                                                  # --> mencetak v
 
 """ Contoh Chaining Operasi Aritmatika"""
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 integer_a = 5                                          # --> Inisialisasi variabel yang menyimpan data integer
 integer_b = 3                                          # --> Inisialisasi variabel yang menyimpan data integer
@@ -47,7 +47,7 @@ print(sorted_nums)                        # --> Mencetak variabel
 
 """ Chaining Dengan Fungsi Custom """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 class kalkulator:                   
     def __init__(self, value=0):  
@@ -76,7 +76,7 @@ print(results)
 
 """ Contoh Chaining Pada Dictionary"""
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 data = {                         # --> Insiasialisasi variabel yang menyimpan data dict, data berisi key user
     "user":{                     # --> ini key user sebuah dict yang memiliki key nama dan detail

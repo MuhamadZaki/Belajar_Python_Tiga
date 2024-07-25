@@ -10,7 +10,7 @@
 
 """ Contoh Penamaan Yang Benar """
 
-print("-------->")                          # -- Abaikan ini
+print("-------->")                          # --> Abaikan ini
 
 nama = "Zaki"                               # --> Inisialisasi variabel yang menyimpan data string
 umur = 26                                   # --> Inisialisasi variabel yang menyimpan data integer
@@ -26,7 +26,7 @@ print(nama, umur, _alamat, nilai2, Srigala) # --> Mencetak variabel
 
 """ Inisialisasi Varibel """
 
-print("-------->")  # -- Abaikan ini
+print("-------->")  # --> Abaikan ini
 
 a = 1               # --> Inisialisasi variabel yang menyimpan data integer
 b = "Hello World!"  # --> Inisialisasi variabel yang menyimpan data string
@@ -36,7 +36,7 @@ print(a, b, c, d)   # --> Mencetak variabel
 
 """ Mengubah Value Variabel """
 
-print("-------->")  # -- Abaikan ini
+print("-------->")  # --> Abaikan ini
 
 himaswork = 10      # --> Inisialisasi variabel yang menyimpan data integer
 himaswork = 10      # --> Inisialisasi variabel yang menyimpan data integer
@@ -44,7 +44,7 @@ print(himaswork)    # --> Mencetak variabel
 
 """ Mengubah Value Dua Variabel """
 
-print("-------->")  # -- Abaikan ini
+print("-------->")  # --> Abaikan ini
 
 maswork = 10                             # --> Inisialisasi variabel yang menyimpan data integer
 himaswork = 20                           # --> Inisialisasi variabel yang menyimpan data integer
@@ -64,7 +64,7 @@ print(himaswork)                         # --> Mencetak variabel
 
 """ Contoh Penggunaan Tipe Data """
 
-print("-------->")  # -- Abaikan ini
+print("-------->")  # --> Abaikan ini
 
 my_integer = 10                # --> Inisialisasi variabel yang menyimpan data integer
 print(my_integer)              # --> Mencetak variabel
@@ -95,7 +95,7 @@ print(my_dictionary)                                                # --> Mencet
 
 """ Memeriksa Tipe Data """
 
-print("-------->")  # -- Abaikan ini
+print("-------->")  # --> Abaikan ini
 
 my_integer = 15         # --> Inisialisasi variabel yang menyimpan data integer
 print(type(my_integer)) # --> Mencetak variabel, menggunakan fungsi type untuk memeriksa data suatu variabel

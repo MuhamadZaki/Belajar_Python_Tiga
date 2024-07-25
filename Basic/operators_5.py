@@ -4,7 +4,7 @@
 
 """ Penjumlahan """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -13,7 +13,7 @@ print(results)   # --> Mencetak variabel
 
 """ Pengurangan """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -22,7 +22,7 @@ print(results)   # --> Mencetak variabel
 
 """ Perkalian """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
@@ -31,7 +31,7 @@ print(results)  # --> Mencetak variabel
 
 """ Pembagian (Float) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -40,7 +40,7 @@ print(results)   # --> Mencetak variabel
 
 """ Pembagian (Integer) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -49,7 +49,7 @@ print(results)   # --> Mencetak variabel
 
 """ Modulo (Sisa Bagi) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
@@ -58,7 +58,7 @@ print(results)  # --> Mencetak variabel
 
 """ Pemangkatan """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -70,7 +70,7 @@ print(results)   # --> Mencetak variabel
 
 """ Sama Dengan """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -79,7 +79,7 @@ print(results)   # --> Mencetak variabel
 
 """ Tidak Sama Dengan """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -88,7 +88,7 @@ print(results)   # --> Mencetak variabel
 
 """ Lebih Besar Dari """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5           # --> Inisialisasi vriabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
@@ -97,7 +97,7 @@ print(results)  # --> Mencetak variabel
 
 """ Lebih Kecil Dari """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
@@ -106,7 +106,7 @@ print(results)  # --> Mencetak variabel
 
 """ Lebih Besar Atau Sama Dengan """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -115,7 +115,7 @@ print(results)   # --> Mencetak variabel
 
 """ Lebih Kecil Atau Sama Dengan """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -127,7 +127,7 @@ print(results)   # --> Mencetak variabel
 
 """ And (Mengembalikan True Jika Kedua Kondisi Bernilai True) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = True          # --> Inisialisasi variabel yang menyimpan data boolean
 b = False         # --> Inisialisasi variabel yang menyimpan data boolean
@@ -146,7 +146,7 @@ print(results)    # --> Mencetak variabel
 
 """ Or (Mengembalikan True Jika Salah Satu Kondisi Bernilai True) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = True          # --> Inisialisasi variabel yang menyimpan data boolean
 b = False         # --> Inisialisasi variabel yang menyimpan data boolean
@@ -165,7 +165,7 @@ print(results)    # --> Mencetak variabel
 
 """ Not (Membalikan Nilai Kondisi) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = False       # --> Inisialisasi variabel yang menyimpan daya boolean
 results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersipan pada variabel results
@@ -176,14 +176,14 @@ print(results)  # --> Mencetak variabel
 
 """ Penugasan (=, Menetapkan Nilai Ke Variabel) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 print(a) # --> Mencetak variabel
 
 """ Penugasan (+=, Menambahkan Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a += 3   # --> Menambahkan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
@@ -191,7 +191,7 @@ print(a) # --> Mencetak variabel
 
 """ Penugasan (-=, Mengurangi Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a -= 3   # --> Mengurangi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
@@ -199,7 +199,7 @@ print(a) # --> Mencetak variabel
 
 """ Penugasan (*=, Mengalikan Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a *= 3   # --> Mengalikan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
@@ -207,7 +207,7 @@ print(a) # Mencetak variabel
 
 """ Penugasan (/=, Membagi Nilai Ke Variabel Dan Menetapkan Hasilnya)-(Float) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a /= 3   # --> Mebagi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri (hasil pembagian float)
@@ -215,7 +215,7 @@ print(a) # --> Mencetak variabel
 
 """ Penugasan (//=, Membagi Nilai Ke Variabel Dan Menetapkan Hasilnya)-(Integer) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a //= 3   # --> Mebagi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri (hasil pembgian integer)
@@ -223,7 +223,7 @@ print(a) # --> Mencetak variabel
 
 """ Penugasan (%=, Sisa Hasil Pembagian Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a %= 3   # --> Sisa hasil pembagian nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
@@ -231,7 +231,7 @@ print(a) # --> Mencetak variabel
 
 """ Penugasan (**=, Memangkatkan Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data inetegr
 a **= 3  # --> Memangkatkan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
@@ -241,7 +241,7 @@ print(a) # --> Mencetak variabel
 
 """ AND Bitwise (&) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer (bit 0011)
@@ -250,7 +250,7 @@ print(results)  # --> Mencetak variabel
 
 """ OR Bitwise (|) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer (bit 0011)
@@ -259,7 +259,7 @@ print(results)  # --> Mencetak variebl
 
 """ XOR Bitwise (^) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer (bit 0011)
@@ -268,7 +268,7 @@ print(results)  # --> Mencetak variabel
 
 """ NOT Bitwise (~) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 results = ~ a   # --> Melakukan operasi NOT bit per bit (representasi biner dua komplemen)
@@ -276,7 +276,7 @@ print(results)  # --> Mencetak variabel
 
 """ Shift Kiri Bitwise (<<) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5             # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 results = a << 1  # --> Melakukan operasi Shift left atau menggeser bit ke kiri
@@ -284,7 +284,7 @@ print(results)    # --> Mencetak variabel
 
 """ Shift Kanan Bitwise (>>) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 a = 5             # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 results = a >> 1  # --> Melakukan operasi Shift right atau menggeser bit ke kanan
@@ -294,7 +294,7 @@ print(results)    # --> Mencetak variabel
  
 """ In (Mengembalikan True Jika Elemen Ada Dalam koleksi Dan Jika Elemen Tidak Ada Dalam Koleksi Maka Mengembalikan False ) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 my_list = [1, 2, 3, 4, 5]   # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
 results = 2 in my_list      # --> Apakah elemen angka 2 berada dalam variabel my_list, jika ada maka mengembalikan True dan tersimpan pada variabel results
@@ -323,7 +323,7 @@ print(results)          # --> Mencetak variabel
 
 """ Not In (Mengembalikan True Jika Elemen Tidak Ada Dalam Koleksi Dan Mengembalikan False Jika Elemen Berada Dalam Koleksi) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 my_list = [1, 2, 3, 4, 5]   # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
 results = 6 not in my_list  # --> Apakah elemen angka 5 berada dalam variabel my_list, jika tidak ada maka mengembalikan True dan tersimpan pada variabel results
@@ -354,7 +354,7 @@ print(results)              # --> Mencetak variabel
 
 """ Is (Untuk Memeriksa Apakah Dua Variabel Mengacu Pada Objek Yang Sama Di Dalam Memori, Maka Mengembalikan True) """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 my_integer1 = 97                     # --> Inisialisasi variabel yang menyimpan data integer
 my_integer2 = 97                     # --> Inisialisasi variabel yang menyimpan data integer
@@ -376,9 +376,14 @@ my_string2 = "Zaki"                  # --> Inisialisasi variabel yang menyimpan 
 results = my_string1 is my_string2   # --> Pada tipe data string, python memperlakukan setiap inisialisasi data string dengan nilai yang sama sebagai objek yang sama di dalam memori maka mengembalikan True dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
 
+my_set1 = {1, 2, 3, 4, 5}            # --> Inisialisasi variabel yang menyimpan data set, berisi 5 elemen data integer
+my_set2 = {1, 2, 3, 4, 5}            # --> Inisialisasi vairabel yang menyimpan data set, berisi 5 elemen data integer
+results = my_set1 is my_set2         # --> Pada tipe data set python memperlakukan setiap inisialisasi data set sebagai objek yang berbeda di dalam memori, bahkan jika elemennya sama maka hasilnya False dan tersimpan pada variabel results
+print(results)                       # --> Mencetak variabel
+
 my_list1 = [1, 2, 3, 4, 5]           # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
 my_list2 = [1, 2, 3, 4, 5]           # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
-results = my_list1 is my_list2       # --> Karena tipe data list bersifat mutable, python memperlakukan setiap inisialisasi data list sebagai objek yang berbeda di dalam memori, bahkan jika elemennya sama maka hasilnya True dan tersimpan pada variabel results
+results = my_list1 is my_list2       # --> Karena tipe data list bersifat mutable, python memperlakukan setiap inisialisasi data list sebagai objek yang berbeda di dalam memori, bahkan jika elemennya sama maka hasilnya False dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
 
 my_tuple1 = (1, 2, 3, 4, 5)          # --> Inisialisasi variabel yang menyimpan data tuple, berisi 5 elemen data integer
@@ -400,7 +405,7 @@ print(results)                       # --> Mencetak variabel
 
 """ Is Not (Membalik Hasil Dari Ekspresi Is) """
 
-print("-------->")      # -- Abaikan ini 
+print("-------->")      # --> Abaikan ini 
 
 my_int1 = 10                         # --> Inisialisasi variabel yang menyimpan data integer
 my_int2 = 10                         # --> Inisialisasi variabel yang menyimpan data integer
@@ -420,6 +425,11 @@ print(results)                       # --> Mencetak variabel
 my_str1 = "Lala"                     # --> Inisialisasi variabel yang menyimpan data string
 my_str2 = "Lala"                     # --> Inisialisasi variabel yang menyimpan data string
 results = my_str1 is not my_str2     # --> Pada tipe data string, python memperlakukan setiap inisialisasi data string dengan nilai yang sama sebagai objek yang sama di dalam memori maka mengembalikan False karena not kebalikan dari is dan tersimpan pada variabel results
+print(results)                       # --> Mencetak variabel
+
+my_set1 = {1, 2, 3, 4, 5}            # --> Inisialisasi variabel yang menyimpan data set, berisi 5 elemen data integer
+my_set2 = {1, 2, 3, 4, 5}            # --> Inisialisasi vairabel yang menyimpan data set, berisi 5 elemen data integer
+results = my_set1 is not my_set2         # --> Pada tipe data set python memperlakukan setiap inisialisasi data set sebagai objek yang berbeda di dalam memori, bahkan jika elemennya sama maka hasilnya True karena not kebalikan dari is dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
 
 my_list1 = [1, 2, 3, 4]              # --> Inisialisasi variabel yang menyimpan data list, berisi 4 elemen data integer

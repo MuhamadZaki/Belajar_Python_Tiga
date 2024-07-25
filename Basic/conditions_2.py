@@ -11,7 +11,7 @@
 
 """ contoh Conditions dan Conditional """
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 # Condition (sebuah ekspresi)
 mz = 10
@@ -25,7 +25,7 @@ else:
 
 """ Contoh Penggunaan IF Statement"""
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 num = 10          # --> Inisialisasi variabel yang menyimpan data integer
 if num > 5:       # --> Kondisi, jika nilai variabel num lebih beasr dari 5 dan jika kondisi terpenuhi maka akan mencetak blok kode di dalamnya
@@ -33,7 +33,7 @@ if num > 5:       # --> Kondisi, jika nilai variabel num lebih beasr dari 5 dan 
 
 """ Contoh Penggunaan IF-Else Statement"""
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 num = 20          # --> Inisialisasi variabel yang menyimpan data integer
 if num > 25:      # --> Kondisi, jika nilai variabel num lebih besar dari 25 dan jika kondisi terpenuhi maka akan mencetak blok kode di dalamnya, lalu jika tidak terpenuhi makan akan eksekusi blok kode selanjutnya
@@ -43,7 +43,7 @@ else:             # --> Jika kondisi tidak terpenuhi atau tidak ada yang benar m
 
 """ Contoh Penggunaan IF-Elif-Else Statement"""
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 num = 15           # --> Inisialisasi variabel yang menyimpan data integer
 if num > 30:       # --> Kondisi, jika nilai variabel num lebih besar dari 30 dan jika kondisi terpenuhi maka akan mencetak blok kode di dalamnya, lalu jika tidak terpenuhi maka akan eksekusi blok kode selanjutnya
@@ -57,7 +57,7 @@ else:              # --> Jika semua kondisi tidak terpenuhi atau tidak ada yang 
 
 """ Contoh Kondisi Bersarang - Nested Conditions"""
 
-print("-------->")      # -- Abaikan ini
+print("-------->")      # --> Abaikan ini
 
 """ Contoh Dalam Penentuan Nilai pada Siswa (Program) """
 
