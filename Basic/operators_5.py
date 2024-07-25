@@ -429,7 +429,7 @@ print(results)                       # --> Mencetak variabel
 
 my_set1 = {1, 2, 3, 4, 5}            # --> Inisialisasi variabel yang menyimpan data set, berisi 5 elemen data integer
 my_set2 = {1, 2, 3, 4, 5}            # --> Inisialisasi vairabel yang menyimpan data set, berisi 5 elemen data integer
-results = my_set1 is not my_set2         # --> Pada tipe data set python memperlakukan setiap inisialisasi data set sebagai objek yang berbeda di dalam memori, bahkan jika elemennya sama maka hasilnya True karena not kebalikan dari is dan tersimpan pada variabel results
+results = my_set1 is not my_set2     # --> Pada tipe data set python memperlakukan setiap inisialisasi data set sebagai objek yang berbeda di dalam memori, bahkan jika elemennya sama maka hasilnya True karena not kebalikan dari is dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
 
 my_list1 = [1, 2, 3, 4]              # --> Inisialisasi variabel yang menyimpan data list, berisi 4 elemen data integer

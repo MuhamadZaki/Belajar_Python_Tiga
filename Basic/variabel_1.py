@@ -1,6 +1,6 @@
 """ Variabel """
 
-# Variabel --> Merupakan wadah untuk menampung nilai dan bise disebut dengan objek 
+# Variabel --> Merupakan wadah untuk menampung nilai
 
 # Aturan Penamaan Variabel
 # 1. Nama variabel harus dimulai dengan huruf (a-z, A-Z) dan karakter garis bawah juga termasuk
@@ -10,7 +10,7 @@
 
 """ Contoh Penamaan Yang Benar """
 
-print("-------->")                          # --> Abaikan ini
+print("-------->")  # --> Abaikan ini
 
 nama = "Zaki"                               # --> Inisialisasi variabel yang menyimpan data string
 umur = 26                                   # --> Inisialisasi variabel yang menyimpan data integer
