@@ -358,12 +358,12 @@ print("-------->")      # -- Abaikan ini
 
 my_integer1 = 97                     # --> Inisialisasi variabel yang menyimpan data integer
 my_integer2 = 97                     # --> Inisialisasi variabel yang menyimpan data integer
-results = my_integer1 is my_integer2 # --> 
+results = my_integer1 is my_integer2 # --> Pada tipe data integer, python memperlakukan setiap inisialisasi data int dengan nilai yang sama sebagai objek yang sama di dalam memori maka mengembalikan True dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
 
 my_boolean1 = True                   # --> Inisialisasi variabel yang menyimpan data boolean
 my_boolean2 = True                   # --> Inisialisasi variabel yang menyimpan data boolean
-results = my_boolean1 is my_boolean2 # --> 
+results = my_boolean1 is my_boolean2 # --> Pada tipe data, boolean, python memperlakukan setiap inisialisasi data bool dengan nilai yang sama sebagai objek yang sama di dalam memori maka mengembalikan True dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
 
 my_float1 = 5.5                      # --> Inisialisasi variabel yang menyimpan data float
@@ -395,7 +395,7 @@ class MyClass:                       # --> Membuat class dengan nama Myclass
     pass                             # --> Tidak ada kode yang dieksekusi, sehingga melajutkan mengeksekusi code berikutnya
 obj1 = MyClass()                     # --> Inisialisasi variabel yang menyimpan data MyClass atau membuat objek(instance) dari kelas MyClass
 obj2 = MyClass()                     # --> Inisialisasi variabel yang menyimpan data MyClass atau membuat objek(instance) dari kelas MyClass
-results = obj1 is obj2               # --> 
+results = obj1 is obj2               # --> Python memperlakukan setiap inisialisasi sebagai objek yang berbeda di dalam memori, bahkan jika keduanya dari class yang sama maka mengembalikan False dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
 
 """ Is Not (Membalik Hasil Dari Ekspresi Is) """
@@ -404,27 +404,27 @@ print("-------->")      # -- Abaikan ini
 
 my_int1 = 10                         # --> Inisialisasi variabel yang menyimpan data integer
 my_int2 = 10                         # --> Inisialisasi variabel yang menyimpan data integer
-results = my_int1 is not my_int2     # --> 
+results = my_int1 is not my_int2     # --> Pada tipe data integer, python memperlakukan setiap inisialisasi data int dengan nilai yang sama sebagai objek yang sama di dalam memori maka mengembalikan False karena not kebalikan dari is dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
 
 my_bool1 = True                      # --> Inisialisasi variabel yang menyimpan data boolean
 my_bool2 = True                      # --> Inisialisasi variabel yang menyimpan data boolean
-results = my_bool1 is not my_bool2   # -->  
+results = my_bool1 is not my_bool2   # --> Pada tipe data boolean, python memperlakukan setiap inisialisasi data boolean dengan nilai yang sama sebagai objek yang sama di dalam memori maka mengembalikan False karena not kebalikan dari is dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
 
 my_float1 = 2.2                      # --> Inisialisasi variabel yang menyimpan data float
 my_float2 = 2.2                      # --> Inisailisasi variabel yang menyimpan data float
-results = my_float1 is not my_float2 # --> 
+results = my_float1 is not my_float2 # --> Pada tipe data float, python memperlakukan setiap inisialisasi data float dengan nilai yang sama sebagai objek yang sama di dalam memori maka mengembalikan False karena not kebalikan dari is dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
 
 my_str1 = "Lala"                     # --> Inisialisasi variabel yang menyimpan data string
 my_str2 = "Lala"                     # --> Inisialisasi variabel yang menyimpan data string
-results = my_str1 is not my_str2     # -->  
+results = my_str1 is not my_str2     # --> Pada tipe data string, python memperlakukan setiap inisialisasi data string dengan nilai yang sama sebagai objek yang sama di dalam memori maka mengembalikan False karena not kebalikan dari is dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
 
 my_list1 = [1, 2, 3, 4]              # --> Inisialisasi variabel yang menyimpan data list, berisi 4 elemen data integer
 my_list2 = [1, 2, 3, 4]              # --> Inisialisasi variabel yang menyimpan data list, berisi 4 elemen data integer
-results = my_list1 is not my_list2   # --> Karena tipe data list bersifat mutable, python memperlakukan setiap inisialisasi data list sebagai objek yang berbeda di dalam memori, bahkan jika elemennya sama maka hasilnya True dan tersimpan pada variabel results
+results = my_list1 is not my_list2   # --> Karena tipe data list bersifat mutable, python memperlakukan setiap inisialisasi data list sebagai objek yang berbeda di dalam memori, bahkan jika elemennya sama maka hasilnya True karena not kebalikan dari is dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel 
 
 my_tuple1 = (1, 2, 3, 4)             # --> Inisialisasi variabel yang menyimpan data tuple, berisi 4 elemen data integer        
@@ -434,12 +434,12 @@ print(results)                       # --> Mencetak variabel
 
 my_dict1 = {"key1": "valu11", "key2": "value2"} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data string
 my_dict2 = {"key1": "value1", "key2": "value2"} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data string
-results = my_dict1 is not my_dict2   # --> Karena tipe data dict bersifat mutable, Python memperlakukan setiap inisialisasi data dict sebagai objek yang berbeda di dalam memori, bahkan jika key-value nya sama maka hasinya True dan tersimpan pada variabel results
+results = my_dict1 is not my_dict2   # --> Karena tipe data dict bersifat mutable, Python memperlakukan setiap inisialisasi data dict sebagai objek yang berbeda di dalam memori, bahkan jika key-value nya sama maka hasinya True karena not kebalikan dari is dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
 
 class MyClass:                       # --> Membuat kelas bernama MyClass
     pass                             # --> Tidak ada code yang dieksekusi, sehingga maelajutkan mengeksekusi code berikutnya
 obj1 = MyClass()                     # --> Inisialisasi variabel yang menyimpan data MyClass atau membuat objek(instance) dari kelas MyClass
 obj2 = MyClass()                     # --> Inisialisasi variabel yang menyimpan data Myclass atau membuat objek(instance) dari kelas MyClass
-results = obj1 is not obj2           # --> 
+results = obj1 is not obj2           # --> Python memperlakukan setiap inisialisasi sebagai objek yang berbeda di dalam memori, bahkan jika keduanya dari class yang sama maka mengembalikan True karena not kebalikan dari is dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
