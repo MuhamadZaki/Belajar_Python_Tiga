@@ -172,14 +172,34 @@ results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu
 print(results)  # --> Mencetak variabel
 
 
-# 4. Operator Penugasan --> Untuk menetapkan nilai ke variabel
+# 4. Operator Penugasan --> Untuk menetapkan nilai ke variabel (digunakan pada tipe data integer, float, string, list, dict dan set)
 
-""" Penugasan (=, Menetapkan Nilai Ke Variabel) """
+""" Penugasan (=, Menetapkan Nilai Ke Variabel Atau Penugasan Langsung) """
 
 print("-------->")      # --> Abaikan ini
 
-a = 5    # --> Inisialisasi variabel yang menyimpan data integer
-print(a) # --> Mencetak variabel
+a = 5               # --> Inisialisasi variabel yang menyimpan data integer
+print(a)            # --> Mencetak variabel
+
+a = 5.5             # --> Inisialisasi variabel yang menyimpan data float
+print(a)            # --> Mencetak variabel
+
+a = "5"             # --> Inisialisasi variabel yang menyimpan data string
+print(a)            # --> Mencetak variabel
+
+a = [1, 2, 3, 4, 5] # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+print(a)            # --> Mencetak variabel
+
+a = {"key1":"value1", "key2":"value2"} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data string
+print(a)                               # --> Mencetak variabel
+
+a = {"a": 1, "b":2}                    # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value data integer
+a ["a"] = "Ganti"                      # --> Mengganti value key a pada variabel a
+a ["c"] = "Tambah"                     # --> Menambah key-value baru
+print(a)                               # --> Mencetak variabel
+
+a = {1, 2, 3, 4, 5} # --> Inisialisasi variabel yang menyimpan data set, berisi 5 elemen data integer
+print(a)            # --> Mencetak variabel
 
 """ Penugasan (+=, Menambahkan Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
@@ -189,6 +209,18 @@ a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a += 3   # --> Menambahkan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
 print(a) # --> Mencetak variabel
 
+a = 5.5  # --> Inisialisasi variabel yang menyimpan data float
+a += 3.3 # --> Menambahkan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
+print(a) # --> Mencetak variabel
+
+a = "Coin "  # --> Inisialiasai variabel yang menyimpan data string
+a += "Memew" # --> Menambahkan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
+print(a)     # --> Mencetak variabel
+
+a = [1, 2, 3, 4, 5] # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+a += [6]            # --> Menambahkan elemen data integer ke variabel a yang menyimpan data list dan menetapkan hasilnya ke variabel itu sendiri
+print(a)            # --> Mencetak variabel
+
 """ Penugasan (-=, Mengurangi Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
 print("-------->")      # --> Abaikan ini
@@ -196,6 +228,14 @@ print("-------->")      # --> Abaikan ini
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a -= 3   # --> Mengurangi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
 print(a) # --> Mencetak variabel
+
+a = 5.5  # --> Inisialisasi variabel yang menyimpan data float
+a -= 3.3 # --> Mengurangi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
+print(a) # --> Mencetak variabel
+
+a = {1, 2, 3, 4, 5} # --> Inisialisasi variabel yang menyimpan data set, berisi 5 elemen data integer
+a -= {2}            # --> Menghilangkan elemen 2 pada variabel a dan menetapkan hasilnya ke variabel itu sendiri
+print(a)            # --> Mencetak variabel
 
 """ Penugasan (*=, Mengalikan Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
@@ -205,6 +245,14 @@ a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a *= 3   # --> Mengalikan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
 print(a) # Mencetak variabel
 
+a = 5.5  # --> Inisialisasi variabel yang menyimpan data float
+a *= 3.3 # --> Mengalikan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
+print(a) # --> Mencetak variabel
+
+a = [1, 2, 3, 4, 5] # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+a *= 2              # --> Mengalikan elemen dalam vriabel a dan menetapkan hasilnya ke variabel itu sendiri
+print(a)            # --> Mencetak variabel
+
 """ Penugasan (/=, Membagi Nilai Ke Variabel Dan Menetapkan Hasilnya)-(Float) """
 
 print("-------->")      # --> Abaikan ini
@@ -213,13 +261,21 @@ a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a /= 3   # --> Mebagi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri (hasil pembagian float)
 print(a) # --> Mencetak variabel
 
+a = 5.5  # --> Inisialisasi variabel yang menyimpan data float
+a /= 3.3 # --> Membagi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
+print(a) # --> Mencetak variabel
+
 """ Penugasan (//=, Membagi Nilai Ke Variabel Dan Menetapkan Hasilnya)-(Integer) """
 
 print("-------->")      # --> Abaikan ini
 
-a = 5    # --> Inisialisasi variabel yang menyimpan data integer
+a = 5     # --> Inisialisasi variabel yang menyimpan data integer
 a //= 3   # --> Mebagi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri (hasil pembgian integer)
-print(a) # --> Mencetak variabel
+print(a)  # --> Mencetak variabel
+
+a = 5.5   # --> Inisialisasi variabel yang menyimpan data float
+a //= 3.3 # --> Membagi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
+print(a)  # --> Mencetak variabel
 
 """ Penugasan (%=, Sisa Hasil Pembagian Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
@@ -227,6 +283,10 @@ print("-------->")      # --> Abaikan ini
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a %= 3   # --> Sisa hasil pembagian nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
+print(a) # --> Mencetak variabel
+
+a = 5.5  # --> Inisialisasi variabel yang menyinpan data float
+a %= 3.3 # --> Sisa hasil pembagian nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
 print(a) # --> Mencetak variabel
 
 """ Penugasan (**=, Memangkatkan Nilai Ke Variabel Dan Menetapkan Hasilnya) """
@@ -237,7 +297,13 @@ a = 5    # --> Inisialisasi variabel yang menyimpan data inetegr
 a **= 3  # --> Memangkatkan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
 print(a) # --> Mencetak variabel
 
-# 5. Operator Bitwise --> Untuk operasi bit per bit pada angka biner
+a = 5.5  # --> Inisialisasi variabel yang menyimpan data float
+a **= 2  # --> Memangkatkan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
+print(a) # --> Mencetak variabel
+
+""" Penugasan ()"""
+
+# 5. Operator Bitwise --> Untuk operasi bit per bit pada angka biner (digunakan pada tipe data integer, bytearray dan boolean)
 
 """ AND Bitwise (&) """
 
@@ -245,7 +311,17 @@ print("-------->")      # --> Abaikan ini
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer (bit 0011)
-results = a & b # --> Melakukan operasi AND bit per bit
+results = a & b # --> Melakukan operasi AND dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
+
+a = bytearray([0b10101010])  # --> Inisialisasi variabel yang menyimpan data bytearray (byte dengan nilai biner 10101010)
+b = bytearray([0b11001100])  # --> Inisialisasi variabel yang menyimpan data bytearray (byte dengan nilai biner 11001100)
+results = a[0] & b[0]        # --> Melakukan Operasi AND dan tersimpan pada variabel results
+print(results)               # --> Mencetak variabel
+
+a = True        # --> Inisialisasi variabel yang menyimpan data boolean (Treu atau 1)
+b = False       # --> Inisialisasi variabel yang menyimpan data boolean (False atau 0)
+results = a & b # --> Melakukan operasi AND dan tersimpan pada variabel results
 print(results)  # --> Mencetak variabel
 
 """ OR Bitwise (|) """
@@ -254,8 +330,18 @@ print("-------->")      # --> Abaikan ini
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer (bit 0011)
-results = a | b # --> Melakukan operasi OR bit per bit
+results = a | b # --> Melakukan operasi OR dan tersimpan pada variabel results
 print(results)  # --> Mencetak variebl
+
+a = bytearray([0b10101010])  # --> Inisialisasi variabel yang menyimpan data bytearray (byte dengan nilai biner 10101010)
+b = bytearray([0b11001100])  # --> Inisialisasi variabel yang menyimpan data bytearray (byte dengan nilai biner 11001100)
+results = a[0] | b[0]        # --> Melakukan Operasi OR dan tersimpan pada variabel results
+print(results)               # --> Mencetak variabel
+
+a = True        # --> Inisialisasi variabel yang menyimpan data boolean (Treu atau 1)
+b = False       # --> Inisialisasi variabel yang menyimpan data boolean (False atau 0)
+results = a | b # --> Melakukan operasi OR dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
 
 """ XOR Bitwise (^) """
 
@@ -263,7 +349,17 @@ print("-------->")      # --> Abaikan ini
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer (bit 0011)
-results = a ^ b # --> Melakukan operasi XOR bit per bit
+results = a ^ b # --> Melakukan operasi XOR dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
+
+a = bytearray([0b10101010])  # --> Inisialisasi variabel yang menyimpan data bytearray (byte dengan nilai biner 10101010)
+b = bytearray([0b11001100])  # --> Inisialisasi variabel yang menyimpan data bytearray (byte dengan nilai biner 11001100)
+results = a[0] ^ b[0]        # --> Melakukan Operasi XOR dan tersimpan pada variabel results
+print(results)               # --> Mencetak variabel
+
+a = True        # --> Inisialisasi variabel yang menyimpan data boolean (Treu atau 1)
+b = False       # --> Inisialisasi variabel yang menyimpan data boolean (False atau 0)
+results = a ^ b # --> Melakukan operasi XOR dan tersimpan pada variabel results
 print(results)  # --> Mencetak variabel
 
 """ NOT Bitwise (~) """
@@ -271,15 +367,34 @@ print(results)  # --> Mencetak variabel
 print("-------->")      # --> Abaikan ini
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
-results = ~ a   # --> Melakukan operasi NOT bit per bit (representasi biner dua komplemen)
+results = ~ a   # --> Melakukan operasi NOT dan tersimpan pada variabel results
 print(results)  # --> Mencetak variabel
+
+a = bytearray([0b10101010])  # --> Inisialisasi variabel yang menyimpan data bytearray (byte dengan nilai biner 10101010)
+results = ~a[0]              # --> Melakukan Operasi NOT dan tersimpan pada variabel results
+print(results)               # --> Mencetak variabel
+
+#a = True        # --> Inisialisasi variabel yang menyimpan data boolean (Treu atau 1)
+#b = False       # --> Inisialisasi variabel yang menyimpan data boolean (False atau 0)
+#results = ~ a   # --> Melakukan operasi NOT dan tersimpan pada variabel results (ingat sering tidak digunakan untuk yang ini)
+#print(results)  # --> Mencetak variabel
 
 """ Shift Kiri Bitwise (<<) """
 
 print("-------->")      # --> Abaikan ini
 
 a = 5             # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
-results = a << 1  # --> Melakukan operasi Shift left atau menggeser bit ke kiri
+results = a << 1  # --> Melakukan operasi Shift left atau menggeser bit ke kiri dan tersimpan pada variabel results
+print(results)    # --> Mencetak variabel
+
+a = bytearray([0b10101010])  # --> Inisialisasi variabel yang menyimpan data bytearray (byte dengan nilai biner 10101010)
+b = bytearray([0b11001100])  # --> Inisialisasi variabel yang menyimpan data bytearray (byte dengan nilai biner 11001100)
+results = a[0] << b[0]       # --> Melakukan Operasi shift left dan tersimpan pada variabel results
+print(results)               # --> Mencetak variabel
+
+a = True          # --> Inisialisasi variabel yang menyimpan data boolean (Treu atau 1)
+b = False         # --> Inisialisasi variabel yang menyimpan data boolean (False atau 0)
+results = a << 1  # --> Melakukan operasi Shift dan tersimpan pada variabel results
 print(results)    # --> Mencetak variabel
 
 """ Shift Kanan Bitwise (>>) """
@@ -287,7 +402,17 @@ print(results)    # --> Mencetak variabel
 print("-------->")      # --> Abaikan ini
 
 a = 5             # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
-results = a >> 1  # --> Melakukan operasi Shift right atau menggeser bit ke kanan
+results = a >> 1  # --> Melakukan operasi Shift right atau menggeser bit ke kanan dan tersimpan pada variabel results
+print(results)    # --> Mencetak variabel
+
+a = bytearray([0b10101010])  # --> Inisialisasi variabel yang menyimpan data bytearray (byte dengan nilai biner 10101010)
+b = bytearray([0b11001100])  # --> Inisialisasi variabel yang menyimpan data bytearray (byte dengan nilai biner 11001100)
+results = a[0] >> b[0]       # --> Melakukan Operasi shift right dan tersimpan pada variabel results
+print(results)               # --> Mencetak variabel
+
+a = True          # --> Inisialisasi variabel yang menyimpan data boolean (Treu atau 1)
+b = False         # --> Inisialisasi variabel yang menyimpan data boolean (False atau 0)
+results = a >> 1  # --> Melakukan operasi Shift right bit per bit yang tersimpan pada variabel results
 print(results)    # --> Mencetak variabel
 
 # 6. Operator Keanggotaan --> Untuk memeriksa apakah suatu nilai ada dalam sebuah koleksi seperti list, tuple, set, string, dictionary (bisa juga di range)
@@ -453,3 +578,9 @@ obj1 = MyClass()                     # --> Inisialisasi variabel yang menyimpan 
 obj2 = MyClass()                     # --> Inisialisasi variabel yang menyimpan data Myclass atau membuat objek(instance) dari kelas MyClass
 results = obj1 is not obj2           # --> Python memperlakukan setiap inisialisasi sebagai objek yang berbeda di dalam memori, bahkan jika keduanya dari class yang sama maka mengembalikan True karena not kebalikan dari is dan tersimpan pada variabel results
 print(results)                       # --> Mencetak variabel
+
+
+""" Note! """
+
+# --> 1. Operator bitwise tidak bisa menggunakan bytes karena sifat tidak bisa diubah (immutable) 
+# --> 2. Operator bitwise bisa menggunakan bytearray karena sifat dapat diubah (mutable)
