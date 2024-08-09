@@ -342,10 +342,10 @@ b = [1,2,3,4,5]   # --> Inisialisasi variabel yang menyimpan data list, berisi 5
 results = a or b  # --> Menggunakan operator or, menggabungkan nilai variabel a, b lalu jika salah satu nilai variabel True maka akan mengembalikan True dan tersimpan pada variabel results
 print(results)    # --> Mencetak variabel
 
-a = ()            # --> Inisialisasi variabel yang menyimpan data set
-b = (1,2)
-results = a or b
-print(results)
+a = ()            # --> Inisialisasi variabel yang menyimpan data tuple, berisi elemen kosong
+b = (1,2)         # --> Inisialisasi variabel yang menyimpan data tuple, berisi 2 elemen data integer
+results = a or b  # --> Menggunakan operator or, Menggabungkan nilai variabel a, b lalu jika salah satu nilai variabel True maka akan mengembalikan True dan tersimpan pada variabel results
+print(results)    # --> Mencetak variabel
 
 a = {}              # --> Inisialisasi variabel yang menyimpan data dict, tidak berisi key-value
 b = {"key":"value"} # --> Inisialisasi variabel yang menyimpan data dict, berisi 1 key-value
@@ -397,6 +397,10 @@ print(results)  # --> Mencetak variabel
 a = None        # --> Inisialisasi variabel yang menyinpan data None
 results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan Treu dan tersimpan pada variabel results
 print(results)
+
+a = ()          # --> Inisialisasi variabel yang menyimpan data tupel kosong
+results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
 
 
 
