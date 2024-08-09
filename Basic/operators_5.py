@@ -72,8 +72,23 @@ print(results)   # --> Mencetak variabel
 
 print("-------->")      # --> Abaikan ini
 
+a = True         # --> Inisialisasi variabel yang menyimpan data boolean
+b = False        # --> Inisialisasi variabel yang menyimpan data boolean
+results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
+print(results)   # --> Mencetak variabel
+
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
+results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
+print(results)   # --> Mencetak variabel
+
+a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
+b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
+results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
+print(results)   # --> Mencetak variabel
+
+a = "Jawa"       # --> Inisialisasi variabel yang menyimpan data string
+b = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
 results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
 print(results)   # --> Mencetak variabel
 
@@ -81,46 +96,113 @@ print(results)   # --> Mencetak variabel
 
 print("-------->")      # --> Abaikan ini
 
+a = True         # --> Inisialisasi variabel yang meyimpan data boolean
+b = False        # --> Inisialisasi variabel yang menyimpan data boolean
+results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
+print(results)   # --> Mencetak variabel
+
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a != b # --> Menggunakan operator !=, apakah nilai vaiabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
+print(results)   # --> Mencetak variabel
+
+a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
+b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
+results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
+print(results)   # --> Mencetak variabel
+
+a = "Jawa"       # --> Inisialisasi variabel yang menyimpan data string
+b = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
+results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
 print(results)   # --> Mencetak variabel
 
 """ Lebih Besar Dari """
 
 print("-------->")      # --> Abaikan ini
 
+a = True        # --> Inisialisasi variabel yang menyimpan data boolean
+b = False       # --> Inisialisasi variabel yang menyimpan data boolean 
+results = a > b # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b dan tersimpan pada variabel results 
+print(results)  # --> Mencetak variabel
+
 a = 5           # --> Inisialisasi vriabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
 results = a > b # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b dan tersimpan pada variabel results
 print(results)  # --> Mencetak variabel
 
+a = 5.5         # --> Inisialisasi variabel yang menyimpan data float
+b = 3.3         # --> Inisialisasi variabel yang menyimpan data float
+results = a > b # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
+
+a = "Jawa"      # --> Inisialisasi variabel yang menyimpan data string
+b = "Tengah"    # --> Inisialisasi variabel yang menyimpan data string
+results = a > b # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau panjang teks) dan tersimpan pada variabel results
+print(results)
+
 """ Lebih Kecil Dari """
 
 print("-------->")      # --> Abaikan ini
+
+a = True        # --> Inisialisasi variabel yang menyimpan data boolean
+b = False       # --> Inisialisasi variabel yang menyimpan data boolean
+results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
 results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b dan tersimpan pada variabel results
 print(results)  # --> Mencetak variabel 
 
+a = 5.5         # --> Inisialisasi variabel yang menyimpan data float
+b = 3.3         # --> Inisialisasi variabel yang menyimpan data float
+results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
+
+a = "Jawa"      # --> Inisialisasi variabel yang menyimpan data string
+b = "Tengah"    # --> Inisialisasi variabel yang menyimpan data string
+results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau panjang teks) dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
+
 """ Lebih Besar Atau Sama Dengan """
 
 print("-------->")      # --> Abaikan ini
+
+a = True         # --> Inisialisasi variabel yang menyimpan data boolean
+b = False        # --> Inisialisasi variabel yang menyimpan data boolean
+results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar sama dengan nilai variabel b dan tersimpan pada variabel results 
+print(results)   # --> Mencetak variabel 
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar sama dengan nilai variabel b dan tersimpan pada variabel results
 print(results)   # --> Mencetak variabel
 
+a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
+b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
+results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar sama dengan nilai variabel b dan tersipan pada variabel results
+print(results)   # --> Mencetak variabel
+
+
+
 """ Lebih Kecil Atau Sama Dengan """
 
 print("-------->")      # --> Abaikan ini
+
+
+a = True         # --> Inisialisasi variabel yang menyimpan data boolean
+b = False        # --> Inisialisasi variabel yang menyimpan dat bolean
+results = a <= b # --> Mengghunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b dan tersimpan pada variabel results 
+print(results)   # --> Mencetak variabel
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a <= b # --> Menggunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b dan tersimpan pada variabel results
 print(results)   # --> Mencetak variabel
+
+a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
+b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
+results = a <= b # --> Menggunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b dan tersimpan pada variabel results
 
 
 # 3. Operator Logika --> Untuk menggabungkan kondisi-kondisi (Boolean)
@@ -144,6 +226,39 @@ b = False         # --> Inisialisasi variabel yang menyimpan data boolean
 results = a and b # --> Menggunakan operator and, menggbungkan variabel a, b lalu jika kedua nilai variabel False maka akan menghasilkan False dan tersimpan pada variabel results
 print(results)    # --> Mencetak variabel
 
+a = 0             # --> Inisialisasi variabel yang menyimpan data integer
+b = 5             # --> Inisialisasi variabel yang menyimpan data integer
+results = a and b # --> Menggunakan operator and, menggabungkan variabel a, b lalu jika salah satu nilai variabel False maka akan menghasilkan False dan tersimpan pada variabel results
+print(results)    # --> Mencetak variabel
+
+a = 0.0           # --> Inisialisasi variabel yang menyimpan data float
+b = 5.5           # --> Inisialisasi variabel yang menyimpan data float
+results = a and b # --> Menggunakan operator and, menggabungkan variabel a, b lalu jika salah satu nilai vairbel False maka akan menghasilkan False dan tersimpan pada variabel results
+print(results)
+
+a = ""            # --> Inisialisasi variabel yang menyimpan data string kosong
+b = "Zaki"        # --> Inisialisasi variabel yang menyimpan data string
+results = a and b # --> Menggunakan operator and, menggabungkan variabel a, b lalu jika salah satu nilai variabel False maka akan menghasilkan False dan tersimpan pada variabel results
+print(results)    # --> Mencetak variabel
+
+a = []            # --> Inisialisasi variabel yang menyimpan data list, berisi elemen kosong
+b = [1,2,3,4,5]   # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+results = a and b # --> Menggunakan operator and, menggabungkan variabel a, b lalu jika salah satu nilai variabel False maka akan menghasilkan False dan tersimpan pada varibel results
+print(results)    # --> Mencetak variabel
+
+a = {}              # --> Inisialisasi variabel yang menyimpan data dict, tidak berisi key-value
+b = {"key":"value"} # --> Inisialisasi variabel yang menyimpan data dict, berisi 1 key-value
+results = a and b   # --> Menggunakan operator and, menggbaungkan variabel a, b lalu jika salah satu nilai variabel False maka akan menghasilkan False dan tersimpan pada variabel results
+print(results)      # --> Mencetak variabel
+
+a = set()           # --> Inisialisasi variabel yang menyimpan data set, berisi elemen kosong
+b = {1,2,3,4,5}     # --> Inisialisasi variabel yang menyimpan data set, berisi 5 elemen data integer
+results = a and b   # --> Menggunakan operator and, menggabungkan variabel a, b lalu jika salah satu nilai variabel False maka akan menghasilkan False dan tersimpan pada variabel results
+
+a = None            # --> Inisialisasi variabel yang menyimpan data None
+b = "Python"        # --> Inisialisasi variabel yang menyimpan data string
+results = a and b   # --> Menggunakan operator and, menggabungkan variabel a, b lalu jika salah satu nilai variabel False maka akan menghasilkan False dan tersimpan pada variabel results
+
 """ Or (Mengembalikan True Jika Salah Satu Kondisi Bernilai True) """
 
 print("-------->")      # --> Abaikan ini
@@ -163,6 +278,41 @@ b = False         # --> Inisialisasi variabel yang menyimpan data boolean
 results = a or b  # --> Menggunakan operator or, menggabungkan nilai variabel a, b lalu jika kedua nilai variabel False maka akan menghasilkan False dan tersimpan pada variabel results
 print(results)    # --> Mencetak variabel
 
+a = 0             # --> Inisialisasi variabel yang menyimpan data integer
+b = 5             # --> Inisialisasi variabel yang menyimpan data integer
+results = a or b  # --> Menggunakan operator or, menggabungkan nilai variabel a, b lalu jika salah satu nilai variabel True maka akan mengembalikan True dan tersimpan pada variabel results
+print(results)    # --> Mencetak variabel
+
+a = 0.0           # --> Inisialisasi variabel yang menyimpan data float
+b = 5.5           # --> Inisialisasi variabel yang menyimpan data float
+results = a or b  # --> Menggunakan operator or, menggabungkan nilai variabel a, b lalu jika salah satu nilai variabel True maka akan mengembalikan True dan tersimpan pada variabel results
+print(results)    # --> Mencetak variabel
+
+a = ""            # --> Inisialisasi variabel yang menyimpan data string kosong
+b = "Zaki"        # --> Inisialisasi variabel yang menyimpan data string
+results = a or b  # --> Menggunakan operator or, menggabungkan nilai variabel a, b lalu jika salah satu nilai variabel True maka akan mengembalikan True dan tersimpan pada variabel results
+print(results)    # --> Mencetak variabel
+
+a = []            # --> Inisialisasi variabel yang menyimpan data list, berisi elemen kosong
+b = [1,2,3,4,5]   # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+results = a or b  # --> Menggunakan operator or, menggabungkan nilai variabel a, b lalu jika salah satu nilai variabel True maka akan mengembalikan True dan tersimpan pada variabel results
+print(results)    # --> Mencetak variabel
+
+a = {}              # --> Inisialisasi variabel yang menyimpan data dict, tidak berisi key-value
+b = {"key":"value"} # --> Inisialisasi variabel yang menyimpan data dict, berisi 1 key-value
+results = a or b    # --> Menggunakan operator or, menggbungkan nilai variabel a, b jika salah satu nilai variabel True maka akan mengembalikan True dan tersimpan pada variabel results
+print(results)      # --> Mencetak variabel
+
+a = set()         # --> Inisialisasi variabel yang menyimpan data set, berisi elemen kosong
+b = {1,2,3,4,5}   # --> Inisialisasi variabel yang menyimpan data set, berisi 5 elemen data integer
+results = a or b  # --> Menggunakan operator or, menggabungkan nilai variabel a, b jika salah satu nilai variabel True maka akan mengembalikan True dan tersimpan pada variabel results
+print(results)    # --> Mencetak variabel
+
+a = None          # --> Inisialisasi variabel yang menympan data None
+b = "Python"      # --> Inisialisasi variabel yang meyimpan data string
+results = a or b  # --> Menggunakan operator or, menggabungkan nilai variabel a, b jika salah satu nilai variabel True maka akan mengembalikan True dan tersimpan pada variabel results
+print(results)    # --> Mencetak variabel
+
 """ Not (Membalikan Nilai Kondisi) """
 
 print("-------->")      # --> Abaikan ini
@@ -170,6 +320,35 @@ print("-------->")      # --> Abaikan ini
 a = False       # --> Inisialisasi variabel yang menyimpan daya boolean
 results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersipan pada variabel results
 print(results)  # --> Mencetak variabel
+
+a = 0           # --> Inisialisasi variabel yang meyimpan data integer
+results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersimpan pada variabel results
+print(results)  # --> Inisialisasi variabel
+
+a = 0.0         # --> Inisialisasi variabel yang menyimpan data float
+results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
+
+a = ""          # --> Inisialisasi vriabel yang menyimpan data string kosong
+results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
+
+a = []          # --> Inisialisasi variabel yang menyimpan data list, berisi elemen kosong
+results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
+
+a = {}          # --> Inisialisasi variabel yang menyimpan data dict, tidak berisi key-value
+results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
+
+a = set()       # --> Inisialisasi variabel yang menyimpan data set, berisi elemen kosong
+results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
+
+a = None        # --> Inisialisasi variabel yang menyinpan data None
+results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan Treu dan tersimpan pada variabel results
+print(results)
+
 
 
 # 4. Operator Penugasan --> Untuk menetapkan nilai ke variabel (digunakan pada tipe data integer, float, string, list, dict dan set)
@@ -300,8 +479,6 @@ print(a) # --> Mencetak variabel
 a = 5.5  # --> Inisialisasi variabel yang menyimpan data float
 a **= 2  # --> Memangkatkan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
 print(a) # --> Mencetak variabel
-
-""" Penugasan ()"""
 
 # 5. Operator Bitwise --> Untuk operasi bit per bit pada angka biner (digunakan pada tipe data integer, bytearray dan boolean)
 
