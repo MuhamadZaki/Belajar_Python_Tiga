@@ -60,19 +60,20 @@ print(himaswork)                         # --> Mencetak variabel
 # 4. Boolean    --> Nilai True atau False
 # 5. List       --> Tipe data yang berisi kumpulan elemen-elemen dengan berbagai tipe data seperti string, integer, float dan boolean (kumpulan nilai yang terurut dan bisa diubah)
 # 6. Tuple      --> Tipe data yang berisi kumpulan elemen-elemen dengan berbagai tipe data seperti string, integer, float dan boolean (kumpulan nilai yang terurut dan tidak bisa diubah)
-# 7. Dictionary --> Kumpulan pasangan key-value
+# 7. Set        --> Tipe data yang berisi kumpulan elemen-elemen dengan berbagai tipe data seperti string, integer, float dan boolean (kumpulan nilai yang tidak terurut dan bisa diubah tapi terbatas(menambahkan dan menghapus elemen))
+# 8. Dictionary --> Kumpulan pasangan key-value
 
 """ Contoh Penggunaan Tipe Data """
 
 print("-------->")  # --> Abaikan ini
 
-my_integer = 10                # --> Inisialisasi variabel yang menyimpan data integer
-print(my_integer)              # --> Mencetak variabel
+my_integer = 10            # --> Inisialisasi variabel yang menyimpan data integer
+print(my_integer)          # --> Mencetak variabel
 
 my_float = 5.5             # --> Inisialisasi variabel yang menyimpan data float
 print(my_float)            # --> Mencetak variabel
 
-my_string = "Hello Dunia!" # --> Inisalisasi yang menyimpan data ftring
+my_string = "Hello Dunia!" # --> Inisalisasi yang menyimpan data string
 print(my_string)           # --> Mencetak variabel
 
 my_boolean = True          # --> Inisialisasi variabel yang menyimpan data boolean
@@ -89,6 +90,9 @@ print(my_tupel)            # --> Mencetak variabel
 
 not_tupel = (10)           # --> Inisialisasi variabel yang menyimpan data integer
 print(not_tupel)           # --> Mencetak variabel
+
+my_set = {1,2,3,4,5}       # --> Inisialisasi variabel yang menyimpan data set, berisi 5 elemen data integer
+print(my_set)              # --> Mencetak variabel
 
 my_dictionary = {"key1":"value1", "key2":"value2", "key3":"value3"} # --> Inisialisasi variabel yang menyimpan data dict, berisi 3 key dan value data string
 print(my_dictionary)                                                # --> Mencetak variabel

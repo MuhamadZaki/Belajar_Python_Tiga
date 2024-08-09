@@ -103,4 +103,4 @@ print(locations)                                                 # --> Mencetak 
 
 """ Note! """
 
-# Set dan Tupel sebenernya bisa menggunakan chaining tapi terbatas, karena sifat immutable
+# Set sebenernya bisa menggunakan chaining tapi terbatas(hanya menambahkan dan menghapus elemen) dan tuple tidak bisa menggunakan karena sifatnya immutable atau tidak dapat diubah

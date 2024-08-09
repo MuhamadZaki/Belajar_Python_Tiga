@@ -92,6 +92,11 @@ b = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
 results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
 print(results)   # --> Mencetak variabel
 
+a = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+b = [4,5,6]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
+print(results)   # --> Mencetak variabel
+
 """ Tidak Sama Dengan """
 
 print("-------->")      # --> Abaikan ini
@@ -113,6 +118,11 @@ print(results)   # --> Mencetak variabel
 
 a = "Jawa"       # --> Inisialisasi variabel yang menyimpan data string
 b = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
+results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
+print(results)   # --> Mencetak variabel
+
+a = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+b = [4,5,6]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
 print(results)   # --> Mencetak variabel
 
@@ -140,6 +150,11 @@ b = "Tengah"    # --> Inisialisasi variabel yang menyimpan data string
 results = a > b # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau panjang teks) dan tersimpan pada variabel results
 print(results)
 
+a = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+b = [4,5,6]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+results = a > b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (dibandingkan elemen per-elemen yang paling depan) dan tersimpan pada variabel results
+print(results)   # --> Mencetak variabel
+
 """ Lebih Kecil Dari """
 
 print("-------->")      # --> Abaikan ini
@@ -164,6 +179,11 @@ b = "Tengah"    # --> Inisialisasi variabel yang menyimpan data string
 results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau panjang teks) dan tersimpan pada variabel results
 print(results)  # --> Mencetak variabel
 
+a = [1,2,3]     # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+b = [4,5,6]     # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b (dibandingkan elemen per-elemen yang paling depan) dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
+
 """ Lebih Besar Atau Sama Dengan """
 
 print("-------->")      # --> Abaikan ini
@@ -183,7 +203,16 @@ b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
 results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar sama dengan nilai variabel b dan tersipan pada variabel results
 print(results)   # --> Mencetak variabel
 
+a = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
+b = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
+results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar sama dengan nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau teks sama dan lebih panjang) dan tersimpan pada variabel results
+print(results)   # --> Mencetak variabel
 
+a = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+b = [4,5,6]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar samadengan nilai variabel b (dibandingkan elemen per-elemen yang paling depan) dan tersimpan pada variabel results
+print(results)   # --> Mencetak varibel
+print("Latihan memek")
 
 """ Lebih Kecil Atau Sama Dengan """
 
@@ -203,7 +232,17 @@ print(results)   # --> Mencetak variabel
 a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
 b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
 results = a <= b # --> Menggunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b dan tersimpan pada variabel results
+print(results)
 
+a = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
+b = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
+results = a <= b # --> Menggunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau teks sama dan lebih pendek) dan tersimpan pada variabel results
+print(results)   # --> Mencetak variabel
+
+a = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+b = [4,5,6]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+results = a <= b # --> Menggunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b (dibandingkan elemen per-elemen yang paling depan) dan tersimpan pada variabel results
+print(results)   # --> Mencetak variabel
 
 # 3. Operator Logika --> Untuk menggabungkan kondisi-kondisi (Boolean)
 
@@ -244,6 +283,11 @@ print(results)    # --> Mencetak variabel
 a = []            # --> Inisialisasi variabel yang menyimpan data list, berisi elemen kosong
 b = [1,2,3,4,5]   # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
 results = a and b # --> Menggunakan operator and, menggabungkan variabel a, b lalu jika salah satu nilai variabel False maka akan menghasilkan False dan tersimpan pada varibel results
+print(results)    # --> Mencetak variabel
+
+a = ()            # --> Inisialisasi variabel yang menyimpan data tupel, berisi elemen kosong
+b = (1,2)         # --> Inisialisasi variabel yang menyimpan data tupel, berisi 2 elemen data integer
+results = a and b # --> Menggunakan operator and, menggabungkan variabel a, b lalu jika salah satu nilai variabel False maka akan menghasilkan False dan tersimpan pada variabel results
 print(results)    # --> Mencetak variabel
 
 a = {}              # --> Inisialisasi variabel yang menyimpan data dict, tidak berisi key-value
@@ -297,6 +341,11 @@ a = []            # --> Inisialisasi variabel yang menyimpan data list, berisi e
 b = [1,2,3,4,5]   # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
 results = a or b  # --> Menggunakan operator or, menggabungkan nilai variabel a, b lalu jika salah satu nilai variabel True maka akan mengembalikan True dan tersimpan pada variabel results
 print(results)    # --> Mencetak variabel
+
+a = ()            # --> Inisialisasi variabel yang menyimpan data set
+b = (1,2)
+results = a or b
+print(results)
 
 a = {}              # --> Inisialisasi variabel yang menyimpan data dict, tidak berisi key-value
 b = {"key":"value"} # --> Inisialisasi variabel yang menyimpan data dict, berisi 1 key-value
