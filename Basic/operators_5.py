@@ -9,7 +9,7 @@ print("-------->")      # --> Abaikan ini
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a + b  # --> Menjumlahkan nilai variabel a, b menggunakan operator + dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Penjumlahan = ", results)   # --> Mencetak variabel --> 8
 
 """ Pengurangan """
 
@@ -18,7 +18,7 @@ print("-------->")      # --> Abaikan ini
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a - b  # --> Mengurangi nilai variabel a, b menggunakan operatpr - dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Pengurangan = ", results)        # --> Mencetak variabel --> 2
 
 """ Perkalian """
 
@@ -27,7 +27,7 @@ print("-------->")      # --> Abaikan ini
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
 results = 5 * 3 # --> Mengalikan nilai variabel a, b menggunakan operator * dan terimpan pada variabel results
-print(results)  # --> Mencetak variabel
+print("Perkalian = ", results)          # --> Mencetak variabel --> 15
 
 """ Pembagian (Float) """
 
@@ -36,7 +36,7 @@ print("-------->")      # --> Abaikan ini
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a / b  # --> Membagi milai variabel a, b menggunakan operator / (float) dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Pembagian(float) = ", results)   # --> Mencetak variabel --> 1.6
 
 """ Pembagian (Integer) """
 
@@ -45,7 +45,7 @@ print("-------->")      # --> Abaikan ini
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a // b # --> Membagi nilai variabel a, b menggunakan operator // (integer) dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Pembagian(int) = ", results)     # --> Mencetak variabel --> 1
 
 """ Modulo (Sisa Bagi) """
 
@@ -54,7 +54,7 @@ print("-------->")      # --> Abaikan ini
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
 results = a % b # --> Sisa bagi nilai variabel a, b menggunakan operator % dan tersimpan pada variabel results
-print(results)  # --> Mencetak variabel
+print("Modulo = ", results)             # --> Mencetak variabel --> 2
 
 """ Pemangkatan """
 
@@ -63,7 +63,7 @@ print("-------->")      # --> Abaikan ini
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a ** b # --> Memangkatkan nilai variabel a, b menggunakan operator ** dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel 
+print("Pemangkatan = ", results)        # --> Mencetak variabel --> 125
 
 
 # 2. Operator Perbandingan --> Untuk membandingkan dua nilai  dan mengembalikan True atau False 
@@ -75,27 +75,30 @@ print("-------->")      # --> Abaikan ini
 a = True         # --> Inisialisasi variabel yang menyimpan data boolean
 b = False        # --> Inisialisasi variabel yang menyimpan data boolean
 results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> False
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> False
 
 a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
 b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
 results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> False
 
 a = "Jawa"       # --> Inisialisasi variabel yang menyimpan data string
 b = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
 results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> False
 
 a = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
-b = [4,5,6]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+b = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> True
+
+
+
 
 """ Tidak Sama Dengan """
 
@@ -104,27 +107,27 @@ print("-------->")      # --> Abaikan ini
 a = True         # --> Inisialisasi variabel yang meyimpan data boolean
 b = False        # --> Inisialisasi variabel yang menyimpan data boolean
 results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Tidak sama dengan(!=) = ", results)   # --> Mencetak variabel --> True
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a != b # --> Menggunakan operator !=, apakah nilai vaiabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Tidak sama dengan(!=) = ", results)   # --> Mencetak variabel --> True
 
 a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
 b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
 results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Tidak sama dengan(!=) = ", results)   # --> Mencetak variabel --> True
 
 a = "Jawa"       # --> Inisialisasi variabel yang menyimpan data string
 b = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
 results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Tidak sama dengan(!=) = ", results)   # --> Mencetak variabel --> True
 
 a = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
-b = [4,5,6]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+b = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Tidak sama dengan(!=) = ", results)   # --> Mencetak variabel --> False
 
 """ Lebih Besar Dari """
 
@@ -133,27 +136,27 @@ print("-------->")      # --> Abaikan ini
 a = True        # --> Inisialisasi variabel yang menyimpan data boolean
 b = False       # --> Inisialisasi variabel yang menyimpan data boolean 
 results = a > b # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b dan tersimpan pada variabel results 
-print(results)  # --> Mencetak variabel
+print("Lebih besar dari(>) = ", results)  # --> Mencetak variabel --> True
 
 a = 5           # --> Inisialisasi vriabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
 results = a > b # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b dan tersimpan pada variabel results
-print(results)  # --> Mencetak variabel
+print("Lebih besar dari(>) = ", results)  # --> Mencetak variabel --> True
 
 a = 5.5         # --> Inisialisasi variabel yang menyimpan data float
 b = 3.3         # --> Inisialisasi variabel yang menyimpan data float
 results = a > b # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b dan tersimpan pada variabel results
-print(results)  # --> Mencetak variabel
+print("Lebih besar dari(>) = ", results)  # --> Mencetak variabel --> True
 
 a = "Jawa"      # --> Inisialisasi variabel yang menyimpan data string
 b = "Tengah"    # --> Inisialisasi variabel yang menyimpan data string
 results = a > b # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau panjang teks) dan tersimpan pada variabel results
-print(results)
+print("Lebih besar dari(>) = ", results)   # --> Mencetak variabel --> False
 
 a = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 b = [4,5,6]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 results = a > b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (dibandingkan elemen per-elemen yang paling depan) dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Lebih besar dari(>) = ", results)   # --> Mencetak variabel --> False
 
 """ Lebih Kecil Dari """
 
@@ -162,27 +165,27 @@ print("-------->")      # --> Abaikan ini
 a = True        # --> Inisialisasi variabel yang menyimpan data boolean
 b = False       # --> Inisialisasi variabel yang menyimpan data boolean
 results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b dan tersimpan pada variabel results
-print(results)  # --> Mencetak variabel
+print("Lebih kecil dari(<) = ", results)  # --> Mencetak variabel --> False
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
 results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b dan tersimpan pada variabel results
-print(results)  # --> Mencetak variabel 
+print("Lebih kecil dari(<) = ", results)  # --> Mencetak variabel --> False
 
 a = 5.5         # --> Inisialisasi variabel yang menyimpan data float
 b = 3.3         # --> Inisialisasi variabel yang menyimpan data float
 results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b dan tersimpan pada variabel results
-print(results)  # --> Mencetak variabel
+print("Lebih kecil dari(<) = ", results)  # --> Mencetak variabel --> False
 
 a = "Jawa"      # --> Inisialisasi variabel yang menyimpan data string
 b = "Tengah"    # --> Inisialisasi variabel yang menyimpan data string
 results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau panjang teks) dan tersimpan pada variabel results
-print(results)  # --> Mencetak variabel
+print("Lebih kecil dari(<) = ", results)  # --> Mencetak variabel --> True
 
 a = [1,2,3]     # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 b = [4,5,6]     # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b (dibandingkan elemen per-elemen yang paling depan) dan tersimpan pada variabel results
-print(results)  # --> Mencetak variabel
+print("Lebih kecil dari(<) = ", results)  # --> Mencetak variabel --> True
 
 """ Lebih Besar Atau Sama Dengan """
 
@@ -191,28 +194,27 @@ print("-------->")      # --> Abaikan ini
 a = True         # --> Inisialisasi variabel yang menyimpan data boolean
 b = False        # --> Inisialisasi variabel yang menyimpan data boolean
 results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar sama dengan nilai variabel b dan tersimpan pada variabel results 
-print(results)   # --> Mencetak variabel 
+print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel --> True
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar sama dengan nilai variabel b dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel --> True
 
 a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
 b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
 results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar sama dengan nilai variabel b dan tersipan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel --> True
 
 a = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
 b = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
 results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar sama dengan nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau teks sama dan lebih panjang) dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel --> True
 
 a = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 b = [4,5,6]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar samadengan nilai variabel b (dibandingkan elemen per-elemen yang paling depan) dan tersimpan pada variabel results
-print(results)   # --> Mencetak varibel
-print("Latihan memek")
+print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak varibel --> False
 
 """ Lebih Kecil Atau Sama Dengan """
 
@@ -222,29 +224,29 @@ print("-------->")      # --> Abaikan ini
 a = True         # --> Inisialisasi variabel yang menyimpan data boolean
 b = False        # --> Inisialisasi variabel yang menyimpan dat bolean
 results = a <= b # --> Mengghunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b dan tersimpan pada variabel results 
-print(results)   # --> Mencetak variabel
+print("Lebih kecil atau sama dengan(<=) = ", results)  # --> Mencetak variabel --> False
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a <= b # --> Menggunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Lebih kecil atau sama dengan(<=) = ", results)  # --> Mencetak variabel --> False
 
 a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
 b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
 results = a <= b # --> Menggunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b dan tersimpan pada variabel results
-print(results)
+print("Lebih kecil atau sama dengan(<=) = ", results)  # --> Mencetak variabel --> False
 
 a = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
 b = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
 results = a <= b # --> Menggunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau teks sama dan lebih pendek) dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Lebih kecil atau sama dengan(<=) = ", results)   # --> Mencetak variabel --> True
 
 a = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 b = [4,5,6]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 results = a <= b # --> Menggunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b (dibandingkan elemen per-elemen yang paling depan) dan tersimpan pada variabel results
-print(results)   # --> Mencetak variabel
+print("Lebih kecil atau sama dengan(<=) = ", results)   # --> Mencetak variabel --> True
 
-# 3. Operator Logika --> Untuk menggabungkan kondisi-kondisi (Boolean)
+# 3. Operator Logika --> Untuk menggabungkan kondisi-kondisi
 
 """ And (Mengembalikan True Jika Kedua Kondisi Bernilai True) """
 
@@ -386,6 +388,10 @@ a = []          # --> Inisialisasi variabel yang menyimpan data list, berisi ele
 results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersimpan pada variabel results
 print(results)  # --> Mencetak variabel
 
+a = ()          # --> Inisialisasi variabel yang menyimpan data tupel kosong
+results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersimpan pada variabel results
+print(results)  # --> Mencetak variabel
+
 a = {}          # --> Inisialisasi variabel yang menyimpan data dict, tidak berisi key-value
 results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersimpan pada variabel results
 print(results)  # --> Mencetak variabel
@@ -398,13 +404,7 @@ a = None        # --> Inisialisasi variabel yang menyinpan data None
 results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan Treu dan tersimpan pada variabel results
 print(results)
 
-a = ()          # --> Inisialisasi variabel yang menyimpan data tupel kosong
-results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersimpan pada variabel results
-print(results)  # --> Mencetak variabel
-
-
-
-# 4. Operator Penugasan --> Untuk menetapkan nilai ke variabel (digunakan pada tipe data integer, float, string, list, dict dan set)
+# 4. Operator Penugasan --> Untuk menetapkan nilai ke variabel
 
 """ Penugasan (=, Menetapkan Nilai Ke Variabel Atau Penugasan Langsung) """
 
@@ -645,7 +645,7 @@ b = False         # --> Inisialisasi variabel yang menyimpan data boolean (False
 results = a >> 1  # --> Melakukan operasi Shift right bit per bit yang tersimpan pada variabel results
 print(results)    # --> Mencetak variabel
 
-# 6. Operator Keanggotaan --> Untuk memeriksa apakah suatu nilai ada dalam sebuah koleksi seperti list, tuple, set, string, dictionary (bisa juga di range)
+# 6. Operator Keanggotaan --> Untuk memeriksa apakah suatu nilai ada dalam sebuah koleksi tipe data
  
 """ In (Mengembalikan True Jika Elemen Ada Dalam koleksi Dan Jika Elemen Tidak Ada Dalam Koleksi Maka Mengembalikan False ) """
 
