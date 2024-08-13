@@ -8,7 +8,7 @@ print("-------->")      # --> Abaikan ini
 
 my_string = "Hello, World!"                                     # --> Inisialisasi variabel yang menyimpan data string
 results = my_string.strip().upper().replace("HELLO", "TOBRUT")  # --> Melakukan beberapa operasi berantai pada variabel my_string dan akan tersimpan pada variabel results
-print(results)                                                  # --> mencetak variabel
+print(results)                                                  # --> mencetak variabel --> TOBRUT, WORLD!
 
 # 1. strip()                    --> Mengapus sepasi di awal dan akhir string
 # 2. upper()                    --> Mengubah string menjadi huruf besar
@@ -22,7 +22,7 @@ integer_a = 5                                          # --> Inisialisasi variab
 integer_b = 3                                          # --> Inisialisasi variabel yang menyimpan data integer
 integer_c = 2                                          # --> Inisialisasi variabel yang menyimpan data integer
 results = (integer_a + integer_b - integer_c) * 2 / 3  # --> Melakukan beberapa operasi berantai pada variabel integer_a,integer_b, integer_c dan akan tersimpan pada variabel results
-print(results)                                         # --> Mencetak variabel
+print(results)                                         # --> Mencetak variabel --> 4.0
 
 # 1. () --> Mengutamakan (diutamakan)
 # 2. +  --> Menjumlahkan 
@@ -39,7 +39,7 @@ print(results)                                         # --> Mencetak variabel
 nums = [5, 3, 2, 8, 1]                    # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer 
 sorted_nums = sorted(nums, reverse=True)  # --> List yang diurutkan
 sorted_nums.append(10)                    # --> Menambahkan 1 elemen data integer yang sudah diurutkan
-print(sorted_nums)                        # --> Mencetak variabel
+print(sorted_nums)                        # --> Mencetak variabel --> [8, 5, 3, 2, 1, 10]
 
 # 1. sorted(nums)   --> Mengurutkan elemen-elemen di dalam variabel nums dari nilai terbesar ke nilai terkecil
 # 2. reverse = True --> Menunjukan bahwa pengurutan dilakukan secara descending(menurun)
@@ -72,7 +72,7 @@ class kalkulator:
 
 alat = kalkulator()
 results = alat.add(10).kurang(5).kali(2).bagi(2).value
-print(results)
+print(results) # --> Mencetak variabel --> 5.0
 
 """ Contoh Chaining Pada Dictionary"""
 
@@ -91,9 +91,9 @@ data = {                         # --> Insiasialisasi variabel yang menyimpan da
 names1 = data.get("user", {})       
 names2 = data.get("user", {}).get("nama", "kosong")        
 locations = data.get("user", {}).get("detail", {}).get("lokasi", "kosong") 
-print(names1)                                                    # --> Mencetak variabel
-print(names2)                                                    # --> Mencetak variabel
-print(locations)                                                 # --> Mencetak variabel
+print(names1)                                                    # --> Mencetak variabel --> {'nama': 'Zaki', 'detail': {'umur': 26, 'lokasi': 'Jakarta'}}
+print(names2)                                                    # --> Mencetak variabel --> Zaki
+print(locations)                                                 # --> Mencetak variabel --> Jakarta
 
 # 1. data.get("user", {})    --> Mengembil isi dari key user dalam variabel data, jika key user tidak ada maka akan mengembalikan dict kosong {}
 # 2. get("nama", "kosong")   --> Mengambil value dari key nama, jika key nama tidak ada maka akan mengembalikan string "kosong" dan ini berkaitan dengan data.get("user", {}) 
