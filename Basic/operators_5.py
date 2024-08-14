@@ -97,7 +97,15 @@ b = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 
 results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
 print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> True
 
+a = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+b = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
+print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> True
 
+a = {"a":1, "b":2} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value --> Note: Hanya untuk kesetaraan
+b = {"a":1, "b":2} # --> Inisialisasi vraiabel yang menyimpan data dict, berisi 2 key-value
+results = a == b   # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
+print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> True
 
 
 
@@ -130,6 +138,16 @@ b = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 
 results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
 print("Tidak sama dengan(!=) = ", results)   # --> Mencetak variabel --> False
 
+a = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+b = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
+print("Tidak sama dengan(!=) = ", results)   # --> Mencetak variabel --> False
+
+a = {"a":1, "b":2} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value --> Note: Hanya untuk pengecekan kesetaraan
+b = {"a":1, "b":2} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value
+results = a != b   # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dnegan nilai variabel b dan tersimpan pada variabel results
+print("Tidak sama dngan(!=) = ", results)    # --> Mencetak variabel --> False
+
 """ Lebih Besar Dari """
 
 print("-------->")      # --> Abaikan ini
@@ -159,6 +177,10 @@ b = [4,5,6]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 
 results = a > b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (dibandingkan elemen per-elemen, nilai elemen besar paling depan diutamakan) dan tersimpan pada variabel results
 print("Lebih besar dari(>) = ", results)   # --> Mencetak variabel --> False
 
+a = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+b = (4,5,6)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+results = a > b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (dibandingkan elemen-perelemen, nilai elemen besar paling depan diutamakan) dan tersimpan pada variabel results
+print("Lebih besar dari(>) = ", results)   # --> Mencetak variabel --> False
 
 """ Lebih Kecil Dari """
 
@@ -189,34 +211,44 @@ b = [4,5,6]     # --> Inisialisasi variabel yang menyimpan data list, berisi 3 e
 results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b (dibandingkan elemen per-elemen, nilai elemen kecil paling depan diutamakan) dan tersimpan pada variabel results
 print("Lebih kecil dari(<) = ", results)  # --> Mencetak variabel --> True
 
+a = (1,4,7)     # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+b = (1,5,6)     # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b (dibandingkan elemen-perelemen, nilai elemen kecil paling depan diutamakan) dan tersimpan pada variabel results
+print("Lebih kecil dari(<) = ", results)   # --> Mencetak variabel --> True
+
 """ Lebih Besar Atau Sama Dengan """
 
 print("-------->")      # --> Abaikan ini
 
 a = True         # --> Inisialisasi variabel yang menyimpan data boolean
 b = False        # --> Inisialisasi variabel yang menyimpan data boolean
-results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar sama dengan nilai variabel b dan tersimpan pada variabel results 
+results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar atau sama dengan nilai variabel b dan tersimpan pada variabel results 
 print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel --> True
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
-results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar sama dengan nilai variabel b dan tersimpan pada variabel results
+results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar atau sama dengan nilai variabel b dan tersimpan pada variabel results
 print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel --> True
 
 a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
 b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
-results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar sama dengan nilai variabel b dan tersipan pada variabel results
+results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar atau sama dengan nilai variabel b dan tersipan pada variabel results
 print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel --> True
 
 a = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
 b = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
-results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar sama dengan nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau teks sama dan lebih panjang) dan tersimpan pada variabel results
+results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar atau sama dengan nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau teks sama dan lebih panjang) dan tersimpan pada variabel results
 print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel --> True
 
-a = [5,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+a = [4,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 b = [4,5,6]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
-results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar samadengan nilai variabel b (dibandingkan elemen per-elemen, nilai elemen besar paling depan diutamankan) dan tersimpan pada variabel results
-print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak varibel --> True
+results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar atau samadengan nilai variabel b (dibandingkan elemen per-elemen, nilai elemen besar paling depan diutamankan) dan tersimpan pada variabel results
+print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak varibel --> False
+
+a = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+b = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar atau samadengan nilai variabel b (dibandingkan elemen per-elemen, nilai elemen besar paling depan diutamakan) dan tersimpan pada variabel results
+print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel --> True   
 
 """ Lebih Kecil Atau Sama Dengan """
 
@@ -246,6 +278,11 @@ print("Lebih kecil atau sama dengan(<=) = ", results)   # --> Mencetak variabel 
 a = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 b = [4,5,6]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
 results = a <= b # --> Menggunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b (dibandingkan elemen per-elemen, nilai elemen kecil paling depan diutamakan) dan tersimpan pada variabel results
+print("Lebih kecil atau sama dengan(<=) = ", results)   # --> Mencetak variabel --> True
+
+a = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+b = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+results = a <= b # --> Menggunakan operator <=, apakah nilai vriabel a lebih kecil sama dengan nilai variabel b (dibandingkan elemen per-elemen, nilai elemen kecil paling depan diutamakan) dan tersimpan pada variabel results
 print("Lebih kecil atau sama dengan(<=) = ", results)   # --> Mencetak variabel --> True
 
 # 3. Operator Logika --> Untuk menggabungkan kondisi-kondisi
