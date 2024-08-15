@@ -9,7 +9,12 @@ print("-------->")      # --> Abaikan ini
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a + b  # --> Menjumlahkan nilai variabel a, b menggunakan operator + dan tersimpan pada variabel results
-print("Penjumlahan = ", results)   # --> Mencetak variabel --> 8
+print("Penjumlahan(+) = ", results)   # --> Mencetak variabel --> 8
+
+a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
+b = 3.3          # --> Inisialisasi variabel yang menuimpan data float
+results = a + b  # --> Menjumlahkan nilai variabel a, b menggunakan operator + dan tersimpan pada variabel results
+print("Penjumlahan(+) = ", results)   # --> Mencetak variabel --> 8.8
 
 """ Pengurangan """
 
@@ -18,7 +23,12 @@ print("-------->")      # --> Abaikan ini
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a - b  # --> Mengurangi nilai variabel a, b menggunakan operatpr - dan tersimpan pada variabel results
-print("Pengurangan = ", results)        # --> Mencetak variabel --> 2
+print("Pengurangan(-) = ", results)    # --> Mencetak variabel --> 2
+
+a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
+b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
+results = a - b  # --> Mengurangi nilai variabel a, b menggunakan operator - dan tersimpan pada variabel results
+print("Pengurangan(-) = ", results)    # --> Mencetak variabel --> 2.2
 
 """ Perkalian """
 
@@ -102,12 +112,20 @@ b = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3
 results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
 print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> True
 
-a = {"a":1, "b":2} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value --> Note: Hanya untuk kesetaraan
+a = {"a":1, "b":2} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value --> Note: Hanya untuk kesetaraan atau ketidaksamaan
 b = {"a":1, "b":2} # --> Inisialisasi vraiabel yang menyimpan data dict, berisi 2 key-value
 results = a == b   # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
 print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> True
 
+a = {1,2,3}      # --> Inisialisasi varibael yang menyimpan data set, berisi 3 elemen data integer --> Note: Hanya untuk pengecekan kesetaraan atau ketidaksamaan
+b = {1,2,3}      # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data integer
+results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
+print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> True
 
+a = None         # --> Inisialisasi variabel yang menyimpan data None --> Note: Hanya untuk pengecekan kesetaraan atau ketidaksamaan
+b = None         # --> Inisialisasi variabel yang menyimpan data None
+results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
+print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> True
 
 """ Tidak Sama Dengan """
 
@@ -143,10 +161,20 @@ b = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3
 results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
 print("Tidak sama dengan(!=) = ", results)   # --> Mencetak variabel --> False
 
-a = {"a":1, "b":2} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value --> Note: Hanya untuk pengecekan kesetaraan
+a = {"a":1, "b":2} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value --> Note: Hanya untuk pengecekan kesetaraan atau ketidaksamaan
 b = {"a":1, "b":2} # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value
 results = a != b   # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dnegan nilai variabel b dan tersimpan pada variabel results
 print("Tidak sama dngan(!=) = ", results)    # --> Mencetak variabel --> False
+
+a = {1,2,3}      # --> Inisialisasi variabel yang mennyimpan data set, berisi 3 elemen data integer --> Note: Hanya untuk pengecekan kesetaraan atau ketidaksamaan
+b = {1,2,3}      # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data integer
+results = a != b # --> Menggunakan operator !=, apakah nilai vriabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
+print("Tidak sama dengan(!=) = ", results)   # --> Mencetak variabel --> False
+
+a = None         # --> Inisialisasi variabel yang menyimpan data None --> Note: Hanya untuk pengecekan kesetaraan atau ketidaksamaan
+b = None         # --> Inisialisasi variabel yang menyimpan data None 
+results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
+print("Tidak sama dnegan(!=) = ", results)   # --> Mencetak variabel --> False
 
 """ Lebih Besar Dari """
 
@@ -858,3 +886,5 @@ print("Is not = ", results)          # --> Mencetak variabel --> True
 
 # --> 1. Operator bitwise tidak bisa menggunakan bytes karena sifat tidak bisa diubah (immutable) 
 # --> 2. Operator bitwise bisa menggunakan bytearray karena sifat dapat diubah (mutable)
+# --> 3. Operator perbandingan ==, != dapat digunakan pada semua tipe data untuk mengecek kesetaraan atau ketidaksamaan
+# --> 4. Operator perbandingan >, <, >=, <= dapat digunakan pada tipe data yang mendukung urutan atau perbandingan langsung seperti angka, string, list dan tuple
