@@ -16,6 +16,21 @@ b = 3.3          # --> Inisialisasi variabel yang menuimpan data float
 results = a + b  # --> Menjumlahkan nilai variabel a, b menggunakan operator + dan tersimpan pada variabel results
 print("Penjumlahan(+) = ", results)   # --> Mencetak variabel --> 8.8
 
+a = 5j           # --> Inisialisasi variabel yang menyimpan data complex
+b = 3j           # --> Inisialisasi variabel yang menyimpan data complex
+results = a + b  # --> Menjumlahkan nilai variabel a, b mengguanakan operator + dan tersimpan pada variabel results
+print("Penjumlahan(complex) = ", results) # --> Mencetak variabel --> 8j
+
+a = 5 + 3j      # --> Inisialisasi variabel yang menyimpan data complex
+b = 5 + 3j      # --> Inisialisasi vriabel yang menyimpan data complex
+results = a + b # --> Menjumlahkan nilai variabel a, b menggunakan operator + dan tersimpan pada variabel results
+print("Penjumlahan(complex) = ", results) # --> Mencetak variabel --> (10+6j)
+
+a = "Muhamad"          # --> Inisialisasi variabel yang menyimpan data string
+b = "Zaki"             # --> Inisialisasi variabel yang menyimpan data string
+results = a + " " + b  # --> Menggabungkan (concatenation) nilai vriabel a, b menggunakan operator + dan tersimpan pada variabel results
+print("Penjumlahan(+) = ", results)       # --> Mencetak vriabel --> Muhamad Zaki
+
 """ Pengurangan """
 
 print("-------->")      # --> Abaikan ini
@@ -30,15 +45,46 @@ b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
 results = a - b  # --> Mengurangi nilai variabel a, b menggunakan operator - dan tersimpan pada variabel results
 print("Pengurangan(-) = ", results)    # --> Mencetak variabel --> 2.2
 
+a = 5j           # --> Inisialisasi variabel yang menyimpan data complex
+b = 3j           # --> Inisialisasi variabel yang menyimpan data complex
+results = a - b  # --> Mengurangi nilai variabel a, b menggunakan operator - dan tersimpan pada variabel results
+print("Pengurangan(-) = ", results)    # --> Mencetak variabel --> 2j
+
+a = 5 + 3j       # --> Inisialisasi variabel yang menyimpan data complex
+b = 5 + 3j       # --> Inisialisasi variabel yang menyimpan data complex
+results = a - b  # --> Mengurangi nilai variabel a, b menggunakan operator - dan tersimpan pada variabel results
+print("Pengurangan(-) = ", results)    # --> Mencetak variabel --> (0j)
+
+# --> Tidak bisa menggunakan tipe data string
+ 
 """ Perkalian """
 
 print("-------->")      # --> Abaikan ini
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
-results = 5 * 3 # --> Mengalikan nilai variabel a, b menggunakan operator * dan terimpan pada variabel results
-print("Perkalian = ", results)          # --> Mencetak variabel --> 15
+results = a * b # --> Mengalikan nilai variabel a, b menggunakan operator * dan terimpan pada variabel results
+print("Perkalian(*) = ", results)          # --> Mencetak variabel --> 15
 
+a = 5.5         # --> Inisialisasi variabel yang menyimpan data float
+b = 3.3         # --> Inisialisasi variabel yang menyimpan data float
+results = a * b # --> Mengalikan nilai variabel a, b menggunakan operator * dan tersimpan pada variabel results
+print("Perkalian(*) = ", results)       # --> Mencetak variabel --> 18.15
+
+a = 5j          # --> Inisialisasi variabel yang menyimpan data complex
+b = 3j          # --> Inisialisasi variabel yang menyimpan data complex
+results = a * b # --> Mengalikan nilai variabel a, b menggunakan operator * dan tersimpan pada variabel results
+print("Perkalian(*) = ", results)       # --> Mencetak variabel --> (-15j+0j)
+
+a = 5 + 3j      # --> Inisialisasi variabel yang menyimpan data complex
+b = 5 + 3j      # --> Inisialisasi variabel yang menyimpan data complex
+results = a * b # --> Mengalikan nilai variabel a, b menggunakan operator * dan tersimpan pada variable results
+print("Perkalian(*) = ", results)       # --> Mencetak variabel --> (16+30j)
+
+a ="Aduhai"     # --> Inisialisasi variabel yang menyimpan data string
+results = a * 3 # --> Mengalikan (pengulangan) nilai variabel a dengan angka 3 menggunakan operator * dan tersimpan pada variabel results
+print("Perkalian(*) = ", results)       # --> Mencetak variabel --> AduhaiAduhaiAduhai
+ 
 """ Pembagian (Float) """
 
 print("-------->")      # --> Abaikan ini
@@ -46,7 +92,24 @@ print("-------->")      # --> Abaikan ini
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a / b  # --> Membagi milai variabel a, b menggunakan operator / (float) dan tersimpan pada variabel results
-print("Pembagian(float) = ", results)   # --> Mencetak variabel --> 1.6
+print("Pembagian(/) = ", results)   # --> Mencetak variabel --> 1.6
+
+a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
+b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
+results = a / b  # --> Membagi nilai variabel a, b menggunakan operator / dan tersimpan pada variabel results
+print("Pembagian(/) = ", results)   # --> Mencetak variabel --> 1.6
+
+a = 5j           # --> Inisialisasi variabel yang menyimpan data complex
+b = 3j           # --> Inisialisasi variabel yang menyimpan data complex
+results = a / b
+print("Pembagian(/) = ", results)   # --> Mencetak variabel --> (1.6+0j)
+
+a = 5 + 3j       # --> Inisialisasi variabel yang menyimpan data complex
+b = 5 + 3j       # --> Inisialisasi variabel yang menyimpan data complex
+results = a / b  # --> Membagi nilai vriabel a, b menggunakan operator / dan tersimpan pada variabel results
+print("Pembagian(/) = ", results)   # --> Mencetak vriabel --> (1+0j)
+
+# --> Tidak bisa menggunakan tipe data string
 
 """ Pembagian (Integer) """
 
@@ -55,7 +118,15 @@ print("-------->")      # --> Abaikan ini
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a // b # --> Membagi nilai variabel a, b menggunakan operator // (integer) dan tersimpan pada variabel results
-print("Pembagian(int) = ", results)     # --> Mencetak variabel --> 1
+print("Pembagian(//) = ", results)     # --> Mencetak variabel --> 1
+
+a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
+b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
+results = a // b # --> Membagi nilai variabel a, b menggunakan operator // dan tersimpan pada variabel results
+print("Pembagian(//) = ", results)              # --> Mencetak variabel -->  1.0
+
+# --> Tidak bisa menggunakan tipe data complex
+# --> Tidak bisa menggunakan tipe data string
 
 """ Modulo (Sisa Bagi) """
 
@@ -64,7 +135,15 @@ print("-------->")      # --> Abaikan ini
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
 results = a % b # --> Sisa bagi nilai variabel a, b menggunakan operator % dan tersimpan pada variabel results
-print("Modulo = ", results)             # --> Mencetak variabel --> 2
+print("Modulo(%) = ", results)             # --> Mencetak variabel --> 2
+
+a = 5.5         # --> Inisialisasi variabel yang menyimpan data float
+b = 3.3         # --> Inisialisasi variabel yang menyimpan data float
+results = a % b # --> Sisa bagi nilai variabel a, b menggunakan operator % dan tersimpan pada variabel results
+print("Modulo(%) = ", results)             # --> Mencetak variabel --> 2.2
+
+# --> Tidak bisa menggunakan tipe data complex
+# --> Tidak bisa menggunakan tipe data string
 
 """ Pemangkatan """
 
@@ -74,6 +153,23 @@ a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
 results = a ** b # --> Memangkatkan nilai variabel a, b menggunakan operator ** dan tersimpan pada variabel results
 print("Pemangkatan = ", results)        # --> Mencetak variabel --> 125
+
+a = 5.5          # --> Inisialisasi variabel yang menyimpan data float
+b = 3.3          # --> Inisialisasi variabel yang menyimpan data float
+results = a ** b # --> Memangkatkan nilai variabel a, b menggunakan operator ** dan tersimpan pada variabel results
+print("Pemangkatan(**) = ", results)    # --> Mencetak variabel --> 277
+
+a = 5j           # --> Inisialisasi variabel yang menyimpan data complex
+b = 3j           # --> Inisialisasi variabel yang menyimpan data complex
+results = a ** b # --> Memangkatkan vriabel a, b mengguakan operator ** dan tersimpan pada variabel results
+print("Pemangkatan(**) = ", results)    # --> Mencetak vriabel --> (0.0010390549422230513-0.00892299738862152j)
+
+a = 5 + 3j       # --> Inisailisasi variabel yang menyimpan data complex
+b = 5 + 3j       # --> Inisialisasi variabel yang menyimpan data complex
+results = a ** b # --> Memangkatkan variabel a, b menggunakan operator ** dan tersimpan pada variabel results
+print("Pemangkatan(**) = ", results)    # --> Mencetak vriabel --> (-182.81777310243447+1319.6714172143916j)
+
+# --> Tidak bisa menggunakan tipe data string
 
 
 # 2. Operator Perbandingan --> Untuk membandingkan dua nilai  dan mengembalikan True atau False 
