@@ -31,6 +31,27 @@ b = "Zaki"             # --> Inisialisasi variabel yang menyimpan data string
 results = a + " " + b  # --> Menggabungkan (concatenation) nilai vriabel a, b menggunakan operator + dan tersimpan pada variabel results
 print("Penjumlahan(+) = ", results)       # --> Mencetak vriabel --> Muhamad Zaki
 
+a = [1,2,3]     # --> Inisialisasi varirbel yang menyimpan data list, berisi 3 elemen data integer
+b = [4,5,6]     # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+results = a + b # --> Menggabungkan (concatenation) nilai variabel a, b menggunakan operator + dam tersimpan pada variabel results
+print("Penjumlahan(+) = ", results)       # --> Mencetak variabel --> [1,2,3,4,5,6]
+
+a = (1,2,3)     # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+b = (4,5,6)     # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+results = a + b # --> Menggabungkan (concatenation) nilai variabel a, b mengguakan operator + dan tersimpan pada variabel results
+print("Penjumlahan(+) = ", results)       # --> Mencetak variabel --> (1,2,3,4,5,6)
+
+a = b"Muhamad"  # --> Inisialisasi variabel yang menyimpan data bytes
+b = b"Zaki"     # --> Inisialisasi variabel yang menyimpan data bytes
+results = a + b # --> Menggabungkan (concatenation) nilai variabel a, b menggunakan operator + dan tersimpan pada variabel results
+print("Penjumlahan(+) = ", results)       # --> Mencetak variabel --> b'MuhamadZaki'
+
+a = bytearray(b"mantap")   # --> Inisialisasi variabel yang menyimpan data bytearray
+b = bytearray(b'gede')     # --> Inisialisasi variabel yang menyimpan data bytearray
+results = a + b # --> Menggabungkan (concatenation) nilai vairbel a, b menggunakan operator + dan tersimpan pada variabel results
+print("Penjumlahan(+) = ", results)       # --> Mencetak variabel --> bytearray(b'mantapgede')
+
+
 """ Pengurangan """
 
 print("-------->")      # --> Abaikan ini
@@ -56,6 +77,10 @@ results = a - b  # --> Mengurangi nilai variabel a, b menggunakan operator - dan
 print("Pengurangan(-) = ", results)    # --> Mencetak variabel --> (0j)
 
 # --> Tidak bisa menggunakan tipe data string
+# --> Tidak bisa menggunakan tipe data list
+# --> Tidak bisa menggunakan tipe data tuple
+# --> Tidak bisa menggunakan tipe data bytes
+# --> Tidak bisa menggunakan tipe data bytearray
  
 """ Perkalian """
 
@@ -84,6 +109,22 @@ print("Perkalian(*) = ", results)       # --> Mencetak variabel --> (16+30j)
 a ="Aduhai"     # --> Inisialisasi variabel yang menyimpan data string
 results = a * 3 # --> Mengalikan (pengulangan) nilai variabel a dengan angka 3 menggunakan operator * dan tersimpan pada variabel results
 print("Perkalian(*) = ", results)       # --> Mencetak variabel --> AduhaiAduhaiAduhai
+
+a = [1,2,3]     # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+results = a * 2 # --> Mengulangi (pengulangan) nilai variabel sebanyak 2x menggunakan operator * dan tersimpan pada variabel results
+print("Perkalian(*) = ", results)         # --> Mencetak variabel --> [1,2,3,1,2,3]
+
+a = (1,2,3)     # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+results = a * 2 # --> Mengulangi (pengulangan) nilai variabel sebanyak 2x menggunakan operator * dan tersimpan pada variabel results
+print("Perkalian(*) = ", results)         # --> Mencetak variabel --> (1,2,3,1,2,3)
+
+a = b"Nenen"    # --> Inisialisasi variabel yang menyimpan data bytes
+results= a * 2  # --> Mengulangi (pengulangan) nilai variabel sebanyak 2x menggunakan operator * dan tersimpan pada variabel results
+print("Perkalian(*) = ", results)         # --> Mencetak variabel --> b'NenenNenen'
+
+a = bytearray(b"gede") # --> Inisialisasi variabel yang menyimpan data bytearray
+results = a * 2        # --> Mengulangi (pengulangan) nilai variabel sebanyak 2x menggunakan operator * dan tersimpan pada variabel results
+print("Perkalian(*) = ", results)         # --> Mencetak variabel --> bytearray(b'gedegede')
  
 """ Pembagian (Float) """
 
@@ -110,6 +151,10 @@ results = a / b  # --> Membagi nilai vriabel a, b menggunakan operator / dan ter
 print("Pembagian(/) = ", results)   # --> Mencetak vriabel --> (1+0j)
 
 # --> Tidak bisa menggunakan tipe data string
+# --> Tidak bisa menggunakan tipe data list
+# --> Tidak bisa menggunakan tipe data tuple
+# --> Tidak bisa menggunakan tipe data bytes
+# --> Tidak bisa menggunakan tipe data bytearray
 
 """ Pembagian (Integer) """
 
@@ -127,6 +172,10 @@ print("Pembagian(//) = ", results)              # --> Mencetak variabel -->  1.0
 
 # --> Tidak bisa menggunakan tipe data complex
 # --> Tidak bisa menggunakan tipe data string
+# --> Tidak bisa menggunakan tipe data list
+# --> Tidak bisa menggunakan tipe data tuple
+# --> Tidak bisa menggunakan tipe data bytes
+# --> Tidak bisa menggunakan tipe data bytearray
 
 """ Modulo (Sisa Bagi) """
 
@@ -144,6 +193,10 @@ print("Modulo(%) = ", results)             # --> Mencetak variabel --> 2.2
 
 # --> Tidak bisa menggunakan tipe data complex
 # --> Tidak bisa menggunakan tipe data string
+# --> Tidak bisa menggunakan tipe data list
+# --> Tidak bisa menggunakan tipe data tuple
+# --> Tidak bisa menggunakan tipe data bytes
+# --> Tidak bisa menggunakan tipe data bytearray
 
 """ Pemangkatan """
 
@@ -170,7 +223,10 @@ results = a ** b # --> Memangkatkan variabel a, b menggunakan operator ** dan te
 print("Pemangkatan(**) = ", results)    # --> Mencetak vriabel --> (-182.81777310243447+1319.6714172143916j)
 
 # --> Tidak bisa menggunakan tipe data string
-
+# --> Tidak bisa menggunakan tipe data list
+# --> Tidak bisa menggunakan tipe data tuple
+# --> Tidak bisa menggunakan tipe data bytes
+# --> Tidak bisa menggunakan tipe data bytearray
 
 # 2. Operator Perbandingan --> Untuk membandingkan dua nilai  dan mengembalikan True atau False 
 
