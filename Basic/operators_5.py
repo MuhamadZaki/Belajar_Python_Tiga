@@ -48,7 +48,7 @@ print("Penjumlahan(+) = ", results)       # --> Mencetak variabel --> b'MuhamadZ
 
 a = bytearray(b"mantap")   # --> Inisialisasi variabel yang menyimpan data bytearray
 b = bytearray(b'gede')     # --> Inisialisasi variabel yang menyimpan data bytearray
-results = a + b # --> Menggabungkan (concatenation) nilai vairbel a, b menggunakan operator + dan tersimpan pada variabel results
+results = a + b            # --> Menggabungkan (concatenation) nilai vairbel a, b menggunakan operator + dan tersimpan pada variabel results
 print("Penjumlahan(+) = ", results)       # --> Mencetak variabel --> bytearray(b'mantapgede')
 
 
@@ -279,6 +279,16 @@ b = None         # --> Inisialisasi variabel yang menyimpan data None
 results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
 print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> True
 
+a = b"aki"       # --> Inisialisasi variabel yang menyimpan data bytes
+b = b"aki"       # --> Inisialisasi variabel yang menyimpan data bytes
+results = a == b # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
+print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> True
+
+a = bytearray(b"aki") # --> Inisialisasi variabel yang menyimpan data bytearray
+b = bytearray(b"aki") # --> Inisialisasi variabel yang menyimpan data bytearray
+results = a == b      # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
+print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> True
+
 """ Tidak Sama Dengan """
 
 print("-------->")      # --> Abaikan ini
@@ -328,6 +338,16 @@ b = None         # --> Inisialisasi variabel yang menyimpan data None
 results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
 print("Tidak sama dnegan(!=) = ", results)   # --> Mencetak variabel --> False
 
+a = b"aki"       # --> Inisialisasi variabel yang menyimpan data bytes
+b = b"aki"       # --> Inisialisasi variabel yang menyimpan data bytes
+results = a != b # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
+print("Tidak sama dengan(!=) = ", results)   # --> Mencetak variabel --> False
+
+a = bytearray(b"aki") # --> Inisialisasi variabel yang menyimpan data bytearray
+b = bytearray(b"aki") # --> Inisialisasi variabel yang menyimpan data bytearray
+results = a != b      # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
+print("Tidak sama dengan(!=) = ", results)   # --> Mencetak variabel --> False
+
 """ Lebih Besar Dari """
 
 print("-------->")      # --> Abaikan ini
@@ -361,6 +381,20 @@ a = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3
 b = (4,5,6)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
 results = a > b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (dibandingkan elemen-perelemen, nilai elemen besar paling depan diutamakan) dan tersimpan pada variabel results
 print("Lebih besar dari(>) = ", results)   # --> Mencetak variabel --> False
+
+a = b"zAki"      # --> Inisialisasi variabel yang menyimpan data bytes
+b = b"aki"       # --> Inisialisasi variabel yang menyimpan data bytes
+results = a > b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (huruf depan harus kecil dan selanjutnya boleh huruf besar) dan tersimpan pada variabel results
+print("Lebih besar dari(>) = ", results)      # --> Mencetak variabel --> True
+
+a = bytearray(b"aki")  # --> Inisialisasi variabel yang menyimpan data bytearray
+b = bytearray(b"jaki") # --> Inisialisasi variabel yang menyimpan data bytearray
+results = a > b        # --> Menggunakan operator >, apakah nilai vairiabel a lebih besar dari nilai variabel b dan tersimpan pada variabel results
+print("Lebih besar dari(>) = ", results)      # --> Mencetak variabel --> False
+
+# --> Tidak bisa menggunakan tipe data None
+# --> Tidak bisa menggunakan tipe data set
+# --> Tidak bisa menggunakan tipe data dict
 
 """ Lebih Kecil Dari """
 
@@ -396,6 +430,21 @@ b = (1,5,6)     # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 
 results = a < b # --> Menggunakan operator <, apakah nilai variabel a lebih kecil dari nilai variabel b (dibandingkan elemen-perelemen, nilai elemen kecil paling depan diutamakan) dan tersimpan pada variabel results
 print("Lebih kecil dari(<) = ", results)   # --> Mencetak variabel --> True
 
+a = b"zAki"      # --> Inisialisasi variabel yang menyimpan data bytes
+b = b"aki"       # --> Inisialisasi variabel yang menyimpan data bytes
+results = a < b  # --> Menggunakan operator >, apakah nilai variabel a lebih kecil dari nilai variabel b (huruf depan harus kecil dan selanjutnya boleh huruf besar) dan tersimpan pada variabel results
+print("Lebih kecil dari(>) = ", results)      # --> Mencetak variabel --> True
+
+a = bytearray(b"aki")  # --> Inisialisasi variabel yang menyimpan data bytearray
+b = bytearray(b"jaki") # --> Inisialisasi variabel yang menyimpan data bytearray
+results = a < b        # --> Menggunakan operator >, apakah nilai vairiabel a lebih kecil dari nilai variabel b dan tersimpan pada variabel results
+print("Lebih kecil dari(>) = ", results)      # --> Mencetak variabel --> False
+
+
+# --> Tidak bisa menggunakan tipe data None
+# --> Tidak bisa menggunakan tipe data set
+# --> Tidak bisa menggunakan tipe data dict
+
 """ Lebih Besar Atau Sama Dengan """
 
 print("-------->")      # --> Abaikan ini
@@ -429,6 +478,21 @@ a = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3
 b = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
 results = a >= b # --> Menggunakan operator >=, apakah nilai variabel a lebih besar atau samadengan nilai variabel b (dibandingkan elemen per-elemen, nilai elemen besar paling depan diutamakan) dan tersimpan pada variabel results
 print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel --> True   
+
+a = b"zAki"      # --> Inisialisasi variabel yang menyimpan data bytes
+b = b"aki"       # --> Inisialisasi variabel yang menyimpan data bytes
+results = a >= b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar atau sama dengan nilai variabel b (huruf depan harus kecil dan selanjutnya boleh huruf besar) dan tersimpan pada variabel results
+print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel --> True
+
+a = bytearray(b"aki")  # --> Inisialisasi variabel yang menyimpan data bytearray
+b = bytearray(b"jaki") # --> Inisialisasi variabel yang menyimpan data bytearray
+results = a >= b        # --> Menggunakan operator >, apakah nilai vairiabel a lebih besar atau sama dengan nilai variabel b dan tersimpan pada variabel results
+print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel --> False
+
+
+# --> Tidak bisa menggunakan tipe data None
+# --> Tidak bisa menggunakan tipe data set
+# --> Tidak bisa menggunakan tipe data dict
 
 """ Lebih Kecil Atau Sama Dengan """
 
@@ -464,6 +528,21 @@ a = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3
 b = (1,2,3)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
 results = a <= b # --> Menggunakan operator <=, apakah nilai vriabel a lebih kecil sama dengan nilai variabel b (dibandingkan elemen per-elemen, nilai elemen kecil paling depan diutamakan) dan tersimpan pada variabel results
 print("Lebih kecil atau sama dengan(<=) = ", results)   # --> Mencetak variabel --> True
+
+a = b"zAki"      # --> Inisialisasi variabel yang menyimpan data bytes
+b = b"aki"       # --> Inisialisasi variabel yang menyimpan data bytes
+results = a <= b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar atau sama dengan nilai variabel b (huruf depan harus kecil dan selanjutnya boleh huruf besar) dan tersimpan pada variabel results
+print("Lebih kecil atau sama dengan(<=) = ", results)   # --> Mencetak variabel --> False
+
+a = bytearray(b"aki")  # --> Inisialisasi variabel yang menyimpan data bytearray
+b = bytearray(b"jaki") # --> Inisialisasi variabel yang menyimpan data bytearray
+results = a <= b        # --> Menggunakan operator >, apakah nilai vairiabel a lebih besar atau sama dengan nilai variabel b dan tersimpan pada variabel results
+print("Lebih kecil atau sama dengan(<=) = ", results)   # --> Mencetak variabel --> True
+
+
+# --> Tidak bisa menggunakan tipe data None
+# --> Tidak bisa menggunakan tipe data set
+# --> Tidak bisa menggunakan tipe data dict
 
 # 3. Operator Logika --> Untuk menggabungkan kondisi-kondisi
 
