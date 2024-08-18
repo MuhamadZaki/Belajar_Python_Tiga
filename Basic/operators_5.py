@@ -1117,5 +1117,6 @@ print("Is not = ", results)          # --> Mencetak variabel --> True
 
 # --> 1. Operator bitwise tidak bisa menggunakan bytes karena sifat tidak bisa diubah (immutable) 
 # --> 2. Operator bitwise bisa menggunakan bytearray karena sifat dapat diubah (mutable)
-# --> 3. Operator perbandingan ==, != dapat digunakan pada semua tipe data untuk mengecek kesetaraan atau ketidaksamaan
-# --> 4. Operator perbandingan >, <, >=, <= dapat digunakan pada tipe data yang mendukung urutan atau perbandingan langsung seperti angka, string, list dan tuple
+# --> 3. Operator bitwise tidak berlaku untuk tipe data string, float, list, set, tuple dan dict
+# --> 4. Operator perbandingan ==, != dapat digunakan pada semua tipe data untuk mengecek kesetaraan atau ketidaksamaan
+# --> 5. Operator perbandingan >, <, >=, <= dapat digunakan pada tipe data yang mendukung urutan atau perbandingan langsung seperti angka, string, list dan tuple
