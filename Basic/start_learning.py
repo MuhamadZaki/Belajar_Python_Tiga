@@ -1,7 +1,7 @@
 """ Catatan Cukup Penting! Pahami Secukupnya, Maka Dari Itu Setiap Baris Code Di Bagian Ini Tidak Saya Jelaskan Secara Detail! """
 
 # Itersi --> Proses di mana kita menelusuri atau melintasi setiap elemen dari suatu koleksi data seperti (list, tuple, set dan dict) satu persatu (secara singkat adalah aksi atau proses) / proses mengulang elemen-elemen dari sebuah itrable
-numbers = [1, 2, 3, 4, 5] # --> Ini adalah iterable yang diiterai
+numbers = [1, 2, 3, 4, 5] # --> Ini adalah iterable yang diiterasi
 for number in numbers:    # --> Iterasi dimulai dari sini
     print(number)         # --> Aksi selama iterasi
 

@@ -605,6 +605,17 @@ b = "Python"        # --> Inisialisasi variabel yang menyimpan data string
 results = a and b   # --> Menggunakan operator and, menggabungkan variabel a, b lalu jika salah satu nilai variabel False maka akan menghasilkan False dan tersimpan pada variabel results
 print("And = ", results)     # --> Mencetak variabel --> None False
 
+a = b""             # --> Inisialisasi variabel yang menyimpan data bytes
+b = b"satu"         # --> Inisialisasi variabel yang menyimpan data bytes
+results = a and b   # --> Menggunakan operator and, menggabungkan variabel a, b lalu jika salah satu nilai variabel False maka akan menghasilkan False dan tersimpan pada variabel results
+print("And = ", results)     # --> Mencetak variabel --> b'' False
+
+a = bytearray(b"")     # --> Inisialisasi variabel yang menyimpan data byteaaray
+b = bytearray(b"satu") # --> Inisialisasi variabel yang menyimpan data bytearray
+results = a and b      # --> Menggunakan operator and, menggabungkan variabel a, b lalu jika salah satu nilai variabel False maka akan menghasilkan False dan tersimpan pada variabel results
+print("And = ", results)     # --> Mencetak variabel --> bytearray(b'')
+
+
 """ Or (Mengembalikan True Jika Salah Satu Kondisi Bernilai True) """
 
 print("-------->")      # --> Abaikan ini
@@ -664,6 +675,17 @@ b = "Python"      # --> Inisialisasi variabel yang meyimpan data string
 results = a or b  # --> Menggunakan operator or, menggabungkan nilai variabel a, b jika salah satu nilai variabel True maka akan mengembalikan True dan tersimpan pada variabel results
 print("Or = ", results)   # --> Mencetak variabel --> Python True
 
+a = b""           # --> Inisialisasi variabel yang menyimpan data bytes
+b = b"satu"       # --> Inisialisasi variabel yang menyimpan data bytes
+results = a or b  # --> Menggunakan operator or, menggabungkan nilai variabel a, b jika salah satu nilai variabel True maka akan mengembalikan True dan tersimpan pada variabel results
+print("Or = ", results)   # --> Mencetak variabel --> b'sat' True
+
+a = bytearray(b"")     # --> Inisialisasi variabel yang menyimpan data bytearray
+b = bytearray(b"satu") # --> Inisialisasi variabel yang menyimpan data bytearray
+results = a or b       # --> Menggunakan operator or, menggabungkan nilai variabel a, b jika salah satu nilai variabel True makan akan mengahsilkan True dan tersimpan pada variabel results
+print("Or = ", results)   # --> Mencetak variabel --> bytearray(b'sat') True
+
+
 """ Not (Membalikan Nilai Kondisi) """
 
 print("-------->")      # --> Abaikan ini
@@ -702,6 +724,10 @@ print("Not = ", results)  # --> Mencetak variabel --> True
 
 a = None        # --> Inisialisasi variabel yang menyinpan data None
 results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan Treu dan tersimpan pada variabel results
+print("Not = ", results)  # --> Mencetak variabel --> True
+
+a = b""         # --> Inisialisasi variabel yang menyimpan data bytes
+results = not a # Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersimpan pada vriabel results
 print("Not = ", results)  # --> Mencetak variabel --> True
 
 # 4. Operator Penugasan --> Untuk menetapkan nilai ke variabel
