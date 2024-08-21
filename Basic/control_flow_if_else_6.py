@@ -1,4 +1,4 @@
-""" Control Flow If Else"""
+""" Control Flow If Else 1 """
 
 print("-------->")     
 
@@ -69,3 +69,39 @@ if x % 2 == 0:               # --> Kondisi, jika nilai variabel angka genap dan 
 x = 5                        # --> Inisialisasi variabel yang menyimpan data integer
 if x % 2:                    # --> Kondisi, jika nilai variabel angka ganjil dan jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya
     print("Bilangan ganjil") # --> Jika kondisi terpenuhi maka akan mencetak Bilangan ganjil
+
+# 7. Penggunaan pass dalam blok if
+
+x = 10    # --> Inisialisasi variabel yang menyimpan data integer
+if x > 5: # --> Kondisi, jika nilai variabel x lebih besar dari 5 dan jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melajutkan ke kondisi berikutnya
+    pass  # --> Lewati, tidak mealukan apa-apa
+
+# 8. Menggabungkan kondisi dengan and or
+
+x = 10              # --> Inisialisasi variabel yang menyimpan data integer
+y = 5               # --> Inisialisasi variabel yang menyimpan data integer
+if x > y and y < x: # --> Kondisi, Jika nilai vairbael x lebih besar dari nilai variabel y dan digabungkan dengan nilai variabel y lebih kecil dari nilai variabel x, jika keduanya True atau kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melajutkan ke kondisi berikutnya
+    print(True)     # --> Jika kondisi terpenuhi maka akan mencetak True
+else:               # --> Kondisi, jika kondisi sebelumnya tidak ada yang terpenuhi maka blok kode ini akan dieksekusi
+    print(False)    # --> Jika semua kondisi tidak terpenuhi makan akan mencetak False
+
+x = 10              # --> Inisialisasi variabel yang menyimpan data integer
+y = 5               # --> Inisialisasi variabel yang menyimpan data integer 
+if x > y or y > x:  # --> Kondisi, jika nilai variabel x lebih besar dari nilai variabel y dan digabungkan dengan nilai variabel y lebih besar dari nilai variabel x, jika salah satu True atau kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melanjutkan ke kondisi berikutnya
+    print(True)     # --> Jika kondisi terpenuhi maka akan mencetak True
+else:               # --> Kondisi, jika kondisi sebelumnya tidak ada yang terpenuhi maka blok kode ini akan dieksekusi
+    print(False)    # --> Jika semua kondisi tidak terpenuhi maka akan mencetak False
+
+# 9. Contoh program sangat sederhana
+
+users = int(input("Coba masukan angka 1, -1 dan 0 : ")) # --> Inisialisasi variabel yang menyimpan data integer, menggunakan fungsi input() sebagai string dan mengkonversinya ke integer
+if users > 0:       # --> Kondisi, jika nilai variabel users lebih besar dari 0 dan jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika kondisi tidak terpenuhi maka akan melajutkan ke kondisi berikutnya
+    print("Lebih")  # --> Jika kondisi terpenuhi maka akan mencetak Lebih
+elif users < 0:     # --> Kondisi, jika nilai variabel users lebih kecil dari 0 dan jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika kondisi tidak terpenuhi maka akan melajutkan ke kondisi berikutnya
+    print("Kurang") # --> Jika kondisi terpenuhi maka akan mencetak Kurang
+else:               # --> Kondisi, jika kondisi sebelumnya tidak ada yang terpenuhi maka blok kode ini akan dieksekusi
+    print(False)    # --> Jika semua kondisi tidak terpenuhi maka akan mencetak False
+
+""" Control Flow If Else 2 """
+
+# --> Lanjut besok
