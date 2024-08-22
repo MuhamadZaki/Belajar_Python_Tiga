@@ -70,11 +70,15 @@ x = 5                        # --> Inisialisasi variabel yang menyimpan data int
 if x % 2:                    # --> Kondisi, jika nilai variabel angka ganjil dan jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya
     print("Bilangan ganjil") # --> Jika kondisi terpenuhi maka akan mencetak Bilangan ganjil
 
+print("-------->") 
+
 # 7. Penggunaan pass dalam blok if
 
 x = 10    # --> Inisialisasi variabel yang menyimpan data integer
 if x > 5: # --> Kondisi, jika nilai variabel x lebih besar dari 5 dan jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika tidak terpenuhi maka akan melajutkan ke kondisi berikutnya
     pass  # --> Lewati, tidak mealukan apa-apa
+
+print("-------->") 
 
 # 8. Menggabungkan kondisi dengan and or
 
@@ -92,16 +96,99 @@ if x > y or y > x:  # --> Kondisi, jika nilai variabel x lebih besar dari nilai 
 else:               # --> Kondisi, jika kondisi sebelumnya tidak ada yang terpenuhi maka blok kode ini akan dieksekusi
     print(False)    # --> Jika semua kondisi tidak terpenuhi maka akan mencetak False
 
+print("-------->") 
+
 # 9. Contoh program sangat sederhana
 
-users = int(input("Coba masukan angka 1, -1 dan 0 : ")) # --> Inisialisasi variabel yang menyimpan data integer, menggunakan fungsi input() sebagai string dan mengkonversinya ke integer
-if users > 0:       # --> Kondisi, jika nilai variabel users lebih besar dari 0 dan jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika kondisi tidak terpenuhi maka akan melajutkan ke kondisi berikutnya
-    print("Lebih")  # --> Jika kondisi terpenuhi maka akan mencetak Lebih
-elif users < 0:     # --> Kondisi, jika nilai variabel users lebih kecil dari 0 dan jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika kondisi tidak terpenuhi maka akan melajutkan ke kondisi berikutnya
-    print("Kurang") # --> Jika kondisi terpenuhi maka akan mencetak Kurang
-else:               # --> Kondisi, jika kondisi sebelumnya tidak ada yang terpenuhi maka blok kode ini akan dieksekusi
-    print(False)    # --> Jika semua kondisi tidak terpenuhi maka akan mencetak False
+#users = int(input("Coba masukan angka 1, -1 dan 0 : ")) # --> Inisialisasi variabel yang menyimpan data integer, menggunakan fungsi input() sebagai string dan mengkonversinya ke integer
+#if users > 0:       # --> Kondisi, jika nilai variabel users lebih besar dari 0 dan jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika kondisi tidak terpenuhi maka akan melajutkan ke kondisi berikutnya
+    #print("Lebih")  # --> Jika kondisi terpenuhi maka akan mencetak Lebih
+#elif users < 0:     # --> Kondisi, jika nilai variabel users lebih kecil dari 0 dan jika kondisi terpenuhi maka akan mengeksekusi blok kode di dalamnya, jika kondisi tidak terpenuhi maka akan melajutkan ke kondisi berikutnya
+    #print("Kurang") # --> Jika kondisi terpenuhi maka akan mencetak Kurang
+#else:               # --> Kondisi, jika kondisi sebelumnya tidak ada yang terpenuhi maka blok kode ini akan dieksekusi
+    #print(False)    # --> Jika semua kondisi tidak terpenuhi maka akan mencetak False
+
+print("-------->") 
 
 """ Control Flow If Else 2 """
 
-# --> Lanjut besok
+# 1. Operator perbandingan ==
+
+a = True           # --> Inisialisasi variabel yang menyimpan data boolean
+b = False          # --> Inisialisasi variabel yang menyimpan data boolean
+if a == b:         # --> Kondisi, jika nilai variabel a sama dengan nilai variabel b dan jika keduanya nilainya sama maka akan mengeksekusi blok kode di dalamnya, jika tidak maka akan melajutkan mengeksekusi kondisi berikutnya
+    print(True)    # --> Jiksa kondisi terpenuhi maka akan mencetak True
+else:              # --> Kondisi, jika kondisi sebelumnya tidak terpenuhi maka blok kode ini akan dieksekusi
+    print(False)   # --> Jiksa kondisi tidka terpenuhi maka akan mencetak False
+
+a = 5              # --> Inisialisasi variabel yang menyimpan data integer
+b = 5              # --> Inisialisasi variabel yang menyimpan data integer
+if a == b:         # --> Kondisi, jika nilai variabel a sama dengan nilai variabel b dan jika keduanya nilainya sama maka akan mengeksekusi blok kode di dalamnnya, jika tidak maka akan melajutkan mengeksekusi kondisi berikutnya
+    print(True)    # --> Jika kondisi terpenuhi maka akan mencetak True
+else:              # --> Kondisi, jika kondisi sebelumnya tidak terpenuhi maka blok kode ini akan dieksekusi
+    print(False)   # --> Jika kondisi tidak terpenuhi maka akan mencetak False
+
+a = 5.5            # --> Inisialisasi variabel yang menyimpan data float
+b = 5.5            # --> Inisialisasi variabel yang menyimpan data float
+if a == b:         # --> Kondisi, jika nilai variabel a sama dengan nilai variabel b dan jika keduanya nilainya sama maka akan mengeksekusi blok kode di dalamnya, jika tidak maka akan melanjutkan mengeksekusi kondisi berikutnya
+    print(True)    # --> Jika kondisi terpenuhi maka akan mencetak True
+else:              # --> Kondisi, jika kondisi sebelumnya tidak terpenuhi maka blok kode ini akan dieksekusi        
+    print(False)   # --> Jika kondisi tidak terpenuhi maka akan mencetak False
+
+a = "Jakarta"      # --> Inisialisasi variabel yang mneyimpan data string
+b = "Jawa"         # --> Inisialisasi variabel yang menyimpan data string
+if a == b:         # --> Kondisi, jika nilai variabel a sama dengan nilai variabel b dan jika kdeuanya nilainya sama maka akan mengeksekusi blok kode di dalamnya, jika tidak maka akan melanjutkan mengeksekusi kondisi berikutnya 
+    print(True)    # --> Jika kondisi terpenuhi maka akan mencetak True
+else:              # --> Kondisi, jika kondisi sebelumnya tidak terpenuhi maka blok ini akan dieksekusi
+    print(False)   # --> Jika kondisi tidak terpenuhi maka akan mencetak False
+
+a = [2,2,3]        # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+b = [1,2,3]        # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+if a == b:         # --> Kondisi, jika nilai variabel a sama dengan nilai variabel b dan jika kdeuanya nilainya sama maka akan mengeksekusi blok kode di dalamnya, jika tidak maka akan melanjutkan mengeksekusi kondisi berikutnya 
+    print(True)    # --> Jika kondisi terpenuhi maka akan mencetak True
+else:              # --> Kondisi, jika kondisi sebelumnya tidak terpenuhi maka blok ini akan dieksekusi
+    print(False)   # --> Jika kondisi tidak terpenuhi maka akan mencetak False
+
+a = (1,2,3)        # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+b = (2,2,3)        # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data integer
+if a == b:         # --> Kondisi, jika nilai variabel a sama dengan nilai variabel b dan jika kdeuanya nilainya sama maka akan mengeksekusi blok kode di dalamnya, jika tidak maka akan melanjutkan mengeksekusi kondisi berikutnya 
+    print(True)    # --> Jika kondisi terpenuhi maka akan mencetak true
+else:              # --> Kondisi, jika kondisi sebelumnya tidak terpenuhi maka blok ini akan dieksekusi
+    print(False)   # --> Jika kondisi tidak terpenuhi maka akan mencetak False
+
+a = {"satu":1, "dua":2} # --> Inisialiasai variabel yang menyimpan data dict, berisi 1 key-value
+b = {"satu":1, "dua":2} # --> inisialisasi variabel yang menyimpan data dict, berisi 1 key-value
+if a == b:              # --> Kondisi, jika nilai variabel a sama dengan nilai variabel b dan jika kdeuanya nilainya sama maka akan mengeksekusi blok kode di dalamnya, jika tidak maka akan melanjutkan mengeksekusi kondisi berikutnya 
+    print(True)         # --> Jika kondisi terpenuhi maka akan mencetak True
+else:                   # --> Kondisi, jika kondisi sebelumnya tidak terpenuhi maka blok ini akan dieksekusi
+    print(False)        # --> Jika kondisi tidak terpenuhi makan akan mencetak False
+
+a = {1,2,3}       # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data integer
+b = {1,2,3}       # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data integer
+if a == b:        # --> Kondisi, jika nilai variabel a sama dengan nilai variabel b dan jika kdeuanya nilainya sama maka akan mengeksekusi blok kode di dalamnya, jika tidak maka akan melanjutkan mengeksekusi kondisi berikutnya 
+    print(True)   # --> Jika kondisi terpenuhi maka akan mencetak True
+else:             # --> Kondisi, jika kondisi sebelumnya tidak terpenuhi maka blok ini akan dieksekusi
+    print(False)  # --> Jika kondisi tidak terpenuhi maka akan mencetak false
+
+a = None          # --> Insisialisasi variabel yang menyimpan data None
+b = None          # --> Inisialisassi variabel yang menyimpan data None
+if a == b:        # --> Kondisi, jika nilai variabel a sama dengan nilai variabel b dan jika kdeuanya nilainya sama maka akan mengeksekusi blok kode di dalamnya, jika tidak maka akan melanjutkan mengeksekusi kondisi berikutnya 
+    print(True)   # --> Jika kondisi terpenuhi maka akan mencetak True
+else:             # --> Kondisi, jika kondisi sebelumnya tidak terpenuhi maka blok ini akan dieksekusi
+    print(False)  # --> Jika kondisi tidak terpenuhi maka akan mencetak False
+
+a = b"akii"       # --> Inisialisasi variabel yang menyimpan data bytes
+b = b"aki"        # --> Inisialisasi variabel yang menyimpan data bytes
+if a == b:        # --> Kondisi, jika nilai variabel a sama dengan nilai variabel b dan jika kdeuanya nilainya sama maka akan mengeksekusi blok kode di dalamnya, jika tidak maka akan melanjutkan mengeksekusi kondisi berikutnya 
+    print(True)   # --> Jika kondisi terpenuhi maka akan mencetak True
+else:             # --> Kondisi, jika kondisi sebelumnya tidak terpenuhi maka blok ini akan dieksekusi
+    print(False)  # --> Jika kondisi tidak terpenuhi maka akan mencetak false
+
+a = bytearray(b"akii") # --> Inisialisasi variabel yang menyimpan data bytearray
+b = bytearray(b"aki")  # --> Inisialisasi variabel yang menyimpan data bytearray
+if a == b:             # --> Kondisi, jika nilai variabel a sama dengan nilai variabel b dan jika kdeuanya nilainya sama maka akan mengeksekusi blok kode di dalamnya, jika tidak maka akan melanjutkan mengeksekusi kondisi berikutnya 
+    print(True)        # --> Jika kondisi terpenuhi maka akan mencetak True
+else:                  # --> Kondisi, jika kondisi sebelumnya tidak terpenuhi maka blok kode ini akan dieksekusi
+    print(False)       # --> Jika kondisi tidak terpenuhi maka akan mencetak False
+
+# 2. Operator perbandinagan !=

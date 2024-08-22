@@ -369,7 +369,7 @@ print("Lebih besar dari(>) = ", results)  # --> Mencetak variabel --> True
 
 a = "Jawa"      # --> Inisialisasi variabel yang menyimpan data string
 b = "Tengah"    # --> Inisialisasi variabel yang menyimpan data string
-results = a > b # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau panjang teks) dan tersimpan pada variabel results
+results = a > b # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (dibandingkan berdasarkan urutan leksikografis atau panjang teks dan besar kecil huruf paling depan) dan tersimpan pada variabel results
 print("Lebih besar dari(>) = ", results)   # --> Mencetak variabel --> False
 
 a = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
@@ -382,10 +382,12 @@ b = (4,5,6)      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3
 results = a > b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (dibandingkan elemen-perelemen, nilai elemen besar paling depan diutamakan) dan tersimpan pada variabel results
 print("Lebih besar dari(>) = ", results)   # --> Mencetak variabel --> False
 
-a = b"zAki"      # --> Inisialisasi variabel yang menyimpan data bytes
-b = b"aki"       # --> Inisialisasi variabel yang menyimpan data bytes
-results = a > b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (huruf depan harus kecil dan selanjutnya boleh huruf besar) dan tersimpan pada variabel results
+a = b"jawa"      # --> Inisialisasi variabel yang menyimpan data bytes
+b = b"jateng"       # --> Inisialisasi variabel yang menyimpan data bytes
+results = a > b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar dari nilai variabel b (huruf depan  harus sama kecil/besar, lalu selanjutnya boleh huruf besar dan panjang teks, beda teks tidak mempengaruhinya) dan tersimpan pada variabel results
 print("Lebih besar dari(>) = ", results)      # --> Mencetak variabel --> True
+
+print("Memek lala")
 
 a = bytearray(b"aki")  # --> Inisialisasi variabel yang menyimpan data bytearray
 b = bytearray(b"jaki") # --> Inisialisasi variabel yang menyimpan data bytearray
@@ -432,7 +434,7 @@ print("Lebih kecil dari(<) = ", results)   # --> Mencetak variabel --> True
 
 a = b"zAki"      # --> Inisialisasi variabel yang menyimpan data bytes
 b = b"aki"       # --> Inisialisasi variabel yang menyimpan data bytes
-results = a < b  # --> Menggunakan operator >, apakah nilai variabel a lebih kecil dari nilai variabel b (huruf depan harus kecil dan selanjutnya boleh huruf besar) dan tersimpan pada variabel results
+results = a < b  # --> Menggunakan operator >, apakah nilai variabel a lebih kecil dari nilai variabel b (huruf depan  harus sama kecil/besar, lalu selanjutnya boleh huruf besar dan panjang teks, beda teks tidak mempengaruhinya) dan tersimpan pada variabel results
 print("Lebih kecil dari(>) = ", results)      # --> Mencetak variabel --> True
 
 a = bytearray(b"aki")  # --> Inisialisasi variabel yang menyimpan data bytearray
@@ -481,7 +483,7 @@ print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel 
 
 a = b"zAki"      # --> Inisialisasi variabel yang menyimpan data bytes
 b = b"aki"       # --> Inisialisasi variabel yang menyimpan data bytes
-results = a >= b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar atau sama dengan nilai variabel b (huruf depan harus kecil dan selanjutnya boleh huruf besar) dan tersimpan pada variabel results
+results = a >= b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar atau sama dengan nilai variabel b (huruf depan  harus sama kecil/besar, lalu selanjutnya boleh huruf besar dan panjang teks, beda teks tidak mempengaruhinya) dan tersimpan pada variabel results
 print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel --> True
 
 a = bytearray(b"aki")  # --> Inisialisasi variabel yang menyimpan data bytearray
@@ -516,7 +518,7 @@ print("Lebih kecil atau sama dengan(<=) = ", results)  # --> Mencetak variabel -
 
 a = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
 b = "Tengah"     # --> Inisialisasi variabel yang menyimpan data string
-results = a <= b # --> Menggunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b (dibandingkan berdasarkan urutan lekssikografis atau teks sama dan lebih pendek) dan tersimpan pada variabel results
+results = a <= b # --> Menggunakan operator <=, apakah nilai variabel a lebih kecil sama dengan nilai variabel b (dibandingkan berdasarkan urutan leksikografis atau teks sama dan lebih pendek) dan tersimpan pada variabel results
 print("Lebih kecil atau sama dengan(<=) = ", results)   # --> Mencetak variabel --> True
 
 a = [1,2,3]      # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
@@ -531,7 +533,7 @@ print("Lebih kecil atau sama dengan(<=) = ", results)   # --> Mencetak variabel 
 
 a = b"zAki"      # --> Inisialisasi variabel yang menyimpan data bytes
 b = b"aki"       # --> Inisialisasi variabel yang menyimpan data bytes
-results = a <= b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar atau sama dengan nilai variabel b (huruf depan harus kecil dan selanjutnya boleh huruf besar) dan tersimpan pada variabel results
+results = a <= b  # --> Menggunakan operator >, apakah nilai variabel a lebih besar atau sama dengan nilai variabel b (huruf depan  harus sama kecil/besar, lalu selanjutnya boleh huruf besar dan panjang teks, beda teks tidak mempengaruhinya) dan tersimpan pada variabel results
 print("Lebih kecil atau sama dengan(<=) = ", results)   # --> Mencetak variabel --> False
 
 a = bytearray(b"aki")  # --> Inisialisasi variabel yang menyimpan data bytearray
