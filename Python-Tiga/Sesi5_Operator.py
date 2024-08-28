@@ -1,10 +1,13 @@
 """ All Operator """
 
-# 1. Operator Aritmatika --> Untuk melakukan operasi matematika
+# Operator Adalah Suatu Karakter Yang Memiliki Kegunaan Khusus Contohnya Seperti + Untuk Operasi Aritmatika Tambah, Dan and Untuk operasi logika AND
 
-""" Penjumlahan """
 
-print("-------->")      # --> Abaikan ini
+print("-------->") 
+
+# 1. Operator Aritmatika --> Untuk Melakukan Operasi Matematika Dasar
+
+# Penjumlahan
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -52,9 +55,9 @@ results = a + b            # --> Menggabungkan (concatenation) nilai vairbel a, 
 print("Penjumlahan(+) = ", results)       # --> Mencetak variabel --> bytearray(b'mantapgede')
 
 
-""" Pengurangan """
+print("-------->")      
 
-print("-------->")      # --> Abaikan ini
+# Pengurangan
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -82,9 +85,10 @@ print("Pengurangan(-) = ", results)    # --> Mencetak variabel --> (0j)
 # --> Tidak bisa menggunakan tipe data bytes
 # --> Tidak bisa menggunakan tipe data bytearray
  
-""" Perkalian """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")      
+
+# Perkalian
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
@@ -126,9 +130,10 @@ a = bytearray(b"gede") # --> Inisialisasi variabel yang menyimpan data bytearray
 results = a * 2        # --> Mengulangi (pengulangan) nilai variabel sebanyak 2x menggunakan operator * dan tersimpan pada variabel results
 print("Perkalian(*) = ", results)         # --> Mencetak variabel --> bytearray(b'gedegede')
  
-""" Pembagian (Float) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")    
+
+# Pembagian (Float)
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -156,9 +161,10 @@ print("Pembagian(/) = ", results)   # --> Mencetak vriabel --> (1+0j)
 # --> Tidak bisa menggunakan tipe data bytes
 # --> Tidak bisa menggunakan tipe data bytearray
 
-""" Pembagian (Integer) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")      
+
+# Pembagian Integer
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -177,9 +183,10 @@ print("Pembagian(//) = ", results)              # --> Mencetak variabel -->  1.0
 # --> Tidak bisa menggunakan tipe data bytes
 # --> Tidak bisa menggunakan tipe data bytearray
 
-""" Modulo (Sisa Bagi) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")      
+
+# Modulo Atau Sisa Bagi
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer
@@ -198,9 +205,10 @@ print("Modulo(%) = ", results)             # --> Mencetak variabel --> 2.2
 # --> Tidak bisa menggunakan tipe data bytes
 # --> Tidak bisa menggunakan tipe data bytearray
 
-""" Pemangkatan """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")     
+
+# Pemangkatan
 
 a = 5            # --> Inisialisasi variabel yang menyimpan data integer
 b = 3            # --> Inisialisasi variabel yang menyimpan data integer
@@ -228,11 +236,12 @@ print("Pemangkatan(**) = ", results)    # --> Mencetak vriabel --> (-182.8177731
 # --> Tidak bisa menggunakan tipe data bytes
 # --> Tidak bisa menggunakan tipe data bytearray
 
-# 2. Operator Perbandingan --> Untuk membandingkan dua nilai  dan mengembalikan True atau False 
 
-""" Sama Dengan """
+print("-------->")
 
-print("-------->")      # --> Abaikan ini
+# 2. Operator Perbandingan --> Pasti Menghasilkan Nilai Kebenaran bool Dengan Kemungkinannya Hanya Dua Nilai , Yaitu True Atau False
+
+# Sama Dengan (==)
 
 a = True         # --> Inisialisasi variabel yang menyimpan data boolean
 b = False        # --> Inisialisasi variabel yang menyimpan data boolean
@@ -289,9 +298,10 @@ b = bytearray(b"aki") # --> Inisialisasi variabel yang menyimpan data bytearray
 results = a == b      # --> Menggunakan operator ==, apakah nilai variabel a sama dengan nilai variabel b dan tersimpan pada variabel results
 print("Sama dengan(==) = ", results)   # --> Mencetak variabel --> True
 
-""" Tidak Sama Dengan """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")
+
+# Tidak Sama Dengan (!=)
 
 a = True         # --> Inisialisasi variabel yang meyimpan data boolean
 b = False        # --> Inisialisasi variabel yang menyimpan data boolean
@@ -348,9 +358,10 @@ b = bytearray(b"aki") # --> Inisialisasi variabel yang menyimpan data bytearray
 results = a != b      # --> Menggunakan operator !=, apakah nilai variabel a tidak sama dengan nilai variabel b dan tersimpan pada variabel results
 print("Tidak sama dengan(!=) = ", results)   # --> Mencetak variabel --> False
 
-""" Lebih Besar Dari """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")
+
+# Lebih Besar Dari (>)
 
 a = True        # --> Inisialisasi variabel yang menyimpan data boolean
 b = False       # --> Inisialisasi variabel yang menyimpan data boolean 
@@ -398,9 +409,10 @@ print("Lebih besar dari(>) = ", results)      # --> Mencetak variabel --> False
 # --> Tidak bisa menggunakan tipe data set
 # --> Tidak bisa menggunakan tipe data dict
 
-""" Lebih Kecil Dari """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")    
+
+# Lebih Kecil Dari (<)
 
 a = True        # --> Inisialisasi variabel yang menyimpan data boolean
 b = False       # --> Inisialisasi variabel yang menyimpan data boolean
@@ -447,9 +459,10 @@ print("Lebih kecil dari(>) = ", results)      # --> Mencetak variabel --> False
 # --> Tidak bisa menggunakan tipe data set
 # --> Tidak bisa menggunakan tipe data dict
 
-""" Lebih Besar Atau Sama Dengan """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")   
+
+# Lebih Besar Atau Sama Dengan (>=)
 
 a = True         # --> Inisialisasi variabel yang menyimpan data boolean
 b = False        # --> Inisialisasi variabel yang menyimpan data boolean
@@ -496,10 +509,10 @@ print("Lebih besar atau sama dengan(>=) = ", results)   # --> Mencetak variabel 
 # --> Tidak bisa menggunakan tipe data set
 # --> Tidak bisa menggunakan tipe data dict
 
-""" Lebih Kecil Atau Sama Dengan """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")     
 
+# Lebih Kecil Atau Sama Dengan (<=)
 
 a = True         # --> Inisialisasi variabel yang menyimpan data boolean
 b = False        # --> Inisialisasi variabel yang menyimpan dat bolean
@@ -546,11 +559,13 @@ print("Lebih kecil atau sama dengan(<=) = ", results)   # --> Mencetak variabel 
 # --> Tidak bisa menggunakan tipe data set
 # --> Tidak bisa menggunakan tipe data dict
 
-# 3. Operator Logika --> Untuk menggabungkan kondisi-kondisi
 
-""" And (Mengembalikan True Jika Kedua Kondisi Bernilai True) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->") 
+
+# 3. Operator Logika --> Untuk Melakukan Operasi Logis Pada Ekspresi Boolean (True Atau False) Dan Biasanya Digunakan Dalam Kondisi if, while Atau Pernyataan Logika Lainnya
+
+# And (Mengembalikan True Jika Kedua Kondisi Bernilai True)
 
 a = True          # --> Inisialisasi variabel yang menyimpan data boolean
 b = False         # --> Inisialisasi variabel yang menyimpan data boolean
@@ -618,9 +633,9 @@ results = a and b      # --> Menggunakan operator and, menggabungkan variabel a,
 print("And = ", results)     # --> Mencetak variabel --> bytearray(b'')
 
 
-""" Or (Mengembalikan True Jika Salah Satu Kondisi Bernilai True) """
+print("-------->") 
 
-print("-------->")      # --> Abaikan ini
+# Or (Mengembalikan True Jika Salah Satu Kondisi Bernilai True)
 
 a = True          # --> Inisialisasi variabel yang menyimpan data boolean
 b = False         # --> Inisialisasi variabel yang menyimpan data boolean
@@ -688,9 +703,9 @@ results = a or b       # --> Menggunakan operator or, menggabungkan nilai variab
 print("Or = ", results)   # --> Mencetak variabel --> bytearray(b'sat') True
 
 
-""" Not (Membalikan Nilai Kondisi) """
+print("-------->") 
 
-print("-------->")      # --> Abaikan ini
+# Not (Membalikan Nilai Kondisi)
 
 a = False       # --> Inisialisasi variabel yang menyimpan daya boolean
 results = not a # --> Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersipan pada variabel results
@@ -732,11 +747,14 @@ a = b""         # --> Inisialisasi variabel yang menyimpan data bytes
 results = not a # Menggunakan operator not, membalikan nilai variabel a lalu jika nilai variabel False maka akan menghasilkan True dan tersimpan pada vriabel results
 print("Not = ", results)  # --> Mencetak variabel --> True
 
-# 4. Operator Penugasan --> Untuk menetapkan nilai ke variabel
 
-""" Penugasan (=, Menetapkan Nilai Ke Variabel Atau Penugasan Langsung) """
+print("-------->")
 
-print("-------->")      # --> Abaikan ini
+# 4. Operator Penugasan Atau Assignment --> Untuk menetapkan nilai ke variabel
+
+names = "Natashia"           # --> 'names' nama variabel, '=' operator assignment, dan 'Natashia' adalah nilai
+
+print("-------->")
 
 a = 5                        # --> Inisialisasi variabel yang menyimpan data integer
 print("Penugasan(=) = ", a)  # --> Mencetak variabel --> 5
@@ -764,9 +782,10 @@ print("Penugasan(=) = ", a)  # --> Mencetak variabel --> {1, 2, 3, 4, 5}
 a = (10, )                   # --> Inisialisasi variabel yang menyimpan data tuple, berisi 1 elemen data integer
 print("Penugasan(=) = ", a)  # --> Mencetak variabel --> (10,)
 
-""" Penugasan (+=, Menambahkan Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")
+
+# Penugasan (+=, Menambahkan Nilai Ke Variabel Dan Menetapkan Hasilnya)
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a += 3   # --> Menambahkan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
@@ -784,9 +803,10 @@ a = [1, 2, 3, 4, 5] # --> Inisialisasi variabel yang menyimpan data list, berisi
 a += [6]            # --> Menambahkan elemen data integer ke variabel a yang menyimpan data list dan menetapkan hasilnya ke variabel itu sendiri
 print("Penambahan(+=) = ", a)  # --> Mencetak variabel --> [1, 2, 3, 4, 5]
 
-""" Penugasan (-=, Mengurangi Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->") 
+
+# Penugasan (-=, Mengurangi Nilai Ke Variabel Dan Menetapkan Hasilnya)
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a -= 3   # --> Mengurangi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
@@ -800,9 +820,10 @@ a = {1, 2, 3, 4, 5} # --> Inisialisasi variabel yang menyimpan data set, berisi 
 a -= {2}            # --> Menghilangkan elemen 2 pada variabel a dan menetapkan hasilnya ke variabel itu sendiri
 print("Pengurangan(-=) = ", a) # --> Mencetak variabel --> {1, 3, 4, 5}
 
-""" Penugasan (*=, Mengalikan Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")
+
+# Penugasan (*=, Mengalikan Nilai Ke Variabel Dan Menetapkan Hasilnya)
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a *= 3   # --> Mengalikan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
@@ -816,9 +837,10 @@ a = [1, 2, 3, 4, 5] # --> Inisialisasi variabel yang menyimpan data list, berisi
 a *= 2              # --> Mengalikan elemen dalam vriabel a dan menetapkan hasilnya ke variabel itu sendiri
 print("Perkalian(*=) = ", a) # --> Mencetak variabel --> [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
 
-""" Penugasan (/=, Membagi Nilai Ke Variabel Dan Menetapkan Hasilnya)-(Float) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")
+
+# Penugasan (/=, Membagi Nilai Ke Variabel Dan Menetapkan Hasilnya)-(Float)
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a /= 3   # --> Mebagi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri (hasil pembagian float)
@@ -828,9 +850,10 @@ a = 5.5  # --> Inisialisasi variabel yang menyimpan data float
 a /= 3.3 # --> Membagi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
 print("Pembagian(/=) = ", a) # --> Mencetak variabel --> 1.6
 
-""" Penugasan (//=, Membagi Nilai Ke Variabel Dan Menetapkan Hasilnya)-(Integer) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->") 
+
+# Penugasan (//=, Membagi Nilai Ke Variabel Dan Menetapkan Hasilnya)-(Integer)
 
 a = 5     # --> Inisialisasi variabel yang menyimpan data integer
 a //= 3   # --> Mebagi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri (hasil pembgian integer)
@@ -840,9 +863,10 @@ a = 5.5   # --> Inisialisasi variabel yang menyimpan data float
 a //= 3.3 # --> Membagi nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
 print("Pembagian(//=) = ", a)  # --> Mencetak variabel --> 1.1
 
-""" Penugasan (%=, Sisa Hasil Pembagian Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->") 
+
+# Penugasan (%=, Sisa Hasil Pembagian Nilai Ke Variabel Dan Menetapkan Hasilnya)
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data integer
 a %= 3   # --> Sisa hasil pembagian nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
@@ -852,9 +876,10 @@ a = 5.5  # --> Inisialisasi variabel yang menyinpan data float
 a %= 3.3 # --> Sisa hasil pembagian nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
 print("Modulo(%=) = ", a) # --> Mencetak variabel --> 2.2
 
-""" Penugasan (**=, Memangkatkan Nilai Ke Variabel Dan Menetapkan Hasilnya) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")
+
+# Penugasan (**=, Memangkatkan Nilai Ke Variabel Dan Menetapkan Hasilnya) 
 
 a = 5    # --> Inisialisasi variabel yang menyimpan data inetegr
 a **= 3  # --> Memangkatkan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
@@ -864,11 +889,12 @@ a = 5.5  # --> Inisialisasi variabel yang menyimpan data float
 a **= 2  # --> Memangkatkan nilai variabel a dan menetapkan hasilnya ke variabel itu sendiri
 print("Pemangkatan(**=) = ", a) # --> Mencetak variabel --> 30.25
 
+
+print("-------->")
+
 # 5. Operator Bitwise --> Untuk operasi bit per bit pada angka biner (digunakan pada tipe data integer, bytearray dan boolean)
 
-""" AND Bitwise (&) """
-
-print("-------->")      # --> Abaikan ini
+# AND Bitwise (&)
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer (bit 0011)
@@ -885,9 +911,10 @@ b = False       # --> Inisialisasi variabel yang menyimpan data boolean (False a
 results = a & b # --> Melakukan operasi AND dan tersimpan pada variabel results
 print("And(&) = ", results)  # --> Mencetak variabel --> False
 
-""" OR Bitwise (|) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->") 
+
+# OR Bitwise (|) 
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer (bit 0011)
@@ -904,9 +931,10 @@ b = False       # --> Inisialisasi variabel yang menyimpan data boolean (False a
 results = a | b # --> Melakukan operasi OR dan tersimpan pada variabel results
 print("Or(|) = ", results)   # --> Mencetak variabel --> True
 
-""" XOR Bitwise (^) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")  
+
+# XOR Bitwise (^)
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 b = 3           # --> Inisialisasi variabel yang menyimpan data integer (bit 0011)
@@ -923,9 +951,10 @@ b = False       # --> Inisialisasi variabel yang menyimpan data boolean (False a
 results = a ^ b # --> Melakukan operasi XOR dan tersimpan pada variabel results
 print("Xor(^) = ", results)  # --> Mencetak variabel --> True
 
-""" NOT Bitwise (~) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->") 
+
+# NOT Bitwise (~) 
 
 a = 5           # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 results = ~ a   # --> Melakukan operasi NOT dan tersimpan pada variabel results
@@ -940,9 +969,10 @@ print("Not(~) = ", results)  # --> Mencetak variabel --> -171
 #results = ~ a   # --> Melakukan operasi NOT dan tersimpan pada variabel results (ingat sering tidak digunakan untuk yang ini)
 #print("Not(~) = ", results)  # --> Mencetak variabel
 
-""" Shift Kiri Bitwise (<<) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->")
+
+# Shift Kiri Bitwise (<<)
 
 a = 5             # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 results = a << 1  # --> Melakukan operasi Shift left atau menggeser bit ke kiri dan tersimpan pada variabel results
@@ -958,9 +988,10 @@ b = False         # --> Inisialisasi variabel yang menyimpan data boolean (False
 results = a << 1  # --> Melakukan operasi Shift dan tersimpan pada variabel results
 print("Shift kiri(<<) = ", results)    # --> Mencetak variabel --> 2
 
-""" Shift Kanan Bitwise (>>) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->") 
+
+# Shift Kanan Bitwise (>>)
 
 a = 5             # --> Inisialisasi variabel yang menyimpan data integer (bit 0101)
 results = a >> 1  # --> Melakukan operasi Shift right atau menggeser bit ke kanan dan tersimpan pada variabel results
@@ -976,11 +1007,12 @@ b = False         # --> Inisialisasi variabel yang menyimpan data boolean (False
 results = a >> 1  # --> Melakukan operasi Shift right bit per bit yang tersimpan pada variabel results
 print("Shift kanan(>>) = ", results)    # --> Mencetak variabel --> 0
 
-# 6. Operator Keanggotaan --> Untuk memeriksa apakah suatu nilai ada dalam sebuah koleksi tipe data
+# 6. Operator Keanggotaan Atau Membership --> Untuk Mengecek Apakah Suatu Nilai Merupakan Bagian Dari Data Kolektif Atau Tidak Dan Biasanya Digunakan Pada Semya Tipe Data Kolektif, Seperti Dict, Set, Tuple, Dan List
  
-""" In (Mengembalikan True Jika Elemen Ada Dalam koleksi Dan Jika Elemen Tidak Ada Dalam Koleksi Maka Mengembalikan False ) """
 
-print("-------->")      # --> Abaikan ini
+print("-------->") 
+
+# In (Mengembalikan True Jika Elemen Ada Dalam koleksi Dan Jika Elemen Tidak Ada Dalam Koleksi Maka Mengembalikan False)
 
 my_list = [1, 2, 3, 4, 5]   # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
 results = 2 in my_list      # --> Apakah elemen angka 2 berada dalam variabel my_list, jika ada maka mengembalikan True dan tersimpan pada variabel results
@@ -1007,9 +1039,9 @@ results = 2 in my_range # --> Apakah, anka 2 berada dalam cakupan fungsi range d
 print("In = ", results) # --> Mencetak variabel --> True
 
 
-""" Not In (Mengembalikan True Jika Elemen Tidak Ada Dalam Koleksi Dan Mengembalikan False Jika Elemen Berada Dalam Koleksi) """
+print("-------->") 
 
-print("-------->")      # --> Abaikan ini
+# Not In (Mengembalikan True Jika Elemen Tidak Ada Dalam Koleksi Dan Mengembalikan False Jika Elemen Berada Dalam Koleksi)
 
 my_list = [1, 2, 3, 4, 5]   # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
 results = 6 not in my_list  # --> Apakah elemen angka 5 berada dalam variabel my_list, jika tidak ada maka mengembalikan True dan tersimpan pada variabel results
@@ -1036,11 +1068,11 @@ results = 5 not in my_range # --> Apakah angka 5 berada dalam cakupan fungsi ran
 print("Not in = ", results) # --> Mencetak variabel --> True
 
 
+print("-------->") 
+
 # 7. Opreator Identitas --> Untuk memeriksa apakah dua variabel mengacu pada objek yang sama di dalam memori dan membalik hasil dari ekpresi 
 
-""" Is (Untuk Memeriksa Apakah Dua Variabel Mengacu Pada Objek Yang Sama Di Dalam Memori, Maka Mengembalikan True) """
-
-print("-------->")      # --> Abaikan ini
+# Is (Untuk Memeriksa Apakah Dua Variabel Mengacu Pada Objek Yang Sama Di Dalam Memori, Maka Mengembalikan True)
 
 my_integer1 = 97                     # --> Inisialisasi variabel yang menyimpan data integer
 my_integer2 = 97                     # --> Inisialisasi variabel yang menyimpan data integer
@@ -1089,9 +1121,10 @@ obj2 = MyClass()                     # --> Inisialisasi variabel yang menyimpan 
 results = obj1 is obj2               # --> Python memperlakukan setiap inisialisasi sebagai objek yang berbeda di dalam memori, bahkan jika keduanya dari class yang sama maka mengembalikan False dan tersimpan pada variabel results
 print("Is = ", results)              # --> Mencetak variabel --> False
 
-""" Is Not (Membalik Hasil Dari Ekspresi Is) """
 
-print("-------->")      # --> Abaikan ini 
+print("-------->")
+
+# Is Not (Membalik Hasil Dari Ekspresi Is) 
 
 my_int1 = 10                         # --> Inisialisasi variabel yang menyimpan data integer
 my_int2 = 10                         # --> Inisialisasi variabel yang menyimpan data integer
@@ -1141,6 +1174,19 @@ results = obj1 is not obj2           # --> Python memperlakukan setiap inisialis
 print("Is not = ", results)          # --> Mencetak variabel --> True
 
 
+# 8. Fungsi print() Tanpa String Formating --> 
+
+print("Pesan: %s %s %s" % ("Hi", "Python", "Telu")) # --> Menggunakan string formating
+print("Pesan:", "Hi", "Python", "Telu")             # --> Tidak menggunakan string formating
+
+# 9. Fungsi id() --> Digunakan Untuk Mengambil Nilai Identitas atau ID suatu Data
+
+data = "Zaki"      # --> Inisialisasi variabel yang menyimpan data string
+id_data = id(data) # --> Mengambil identitas unik (alamat memori) dari objek data
+print(data)        # --> Mencetak variabel --> Zaki
+print(id_data)     # --> Mencetak variabel --> 2535914452864 (ini nilai integer yang unik)
+
+
 """ Note! """
 
 # --> 1. Operator bitwise tidak bisa menggunakan bytes karena sifat tidak bisa diubah (immutable) 
@@ -1148,3 +1194,6 @@ print("Is not = ", results)          # --> Mencetak variabel --> True
 # --> 3. Operator bitwise tidak berlaku untuk tipe data string, float, list, set, tuple dan dict
 # --> 4. Operator perbandingan ==, != dapat digunakan pada semua tipe data untuk mengecek kesetaraan atau ketidaksamaan
 # --> 5. Operator perbandingan >, <, >=, <= dapat digunakan pada tipe data yang mendukung urutan atau perbandingan langsung seperti angka, string, list dan tuple
+# --> 6. Pengecekan nilai kosong (atau None) dianjurkan untuk selalu dilakukan menggunakan operator is, dan menghindari penggunaan operator == ...
+# -->    Hal ini karena operator is membandingkan identitas data dan identitas data None selalu valid. Sedangkan operator == perbandingannya dilakukan dengan via special method __eq__() yang default method tersebut bisa di-override isinya
+# --> 7. 
