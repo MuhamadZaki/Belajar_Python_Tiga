@@ -89,4 +89,4 @@ print("------")
 # 4. Kombinasi while Dan for
 # Kedua Keyword Perulangan Yang Sudah Dipelajari, Yaitu for Dan while Bisa Dikombinasikan Untuk Membuat Suatu Nested Loop Atau Perulangan Bercabang
 
-input_konversi = int("")
+input_konversi = int(input("Masukan angka: "))
