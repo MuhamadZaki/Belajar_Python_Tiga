@@ -11,7 +11,7 @@
 
     #if input_konversi <= 0 or input_konversi % 2 == 1: # --> Kondisi, memeriksa nilai input_konversi kurang dari atau sama dengan 0 atau merupakan bilangan ganjil, jika salah satu kondisi terpenuhi maka akan mengeksekusi kode di dalamnya dan jika kondisi tidak terpenuhi maka akan melanjutkan ke kondisi berikutnya
         #print(input_konversi)                          # --> Jika kondisi benar atau terpenuhi, maka mencetak pesan angka ganjil (tergantung inputan pengguna)
-        #lanjutkan = False                              # --> Untuk mengakhiri perulangan atau loop, jika kondisi sebelumnya terpenuhi
+        #lanjutkan = False                              # --> Untuk mengakhiri perulangan atau loop, jika kondisi sebelumnya terpenuhi  atau variabel lanjutkan diubah menjadi False
     
     #else:                                              # --> Kondisi, jika kondisi sebelumnya tidak terpenuhi maka blok kode ini dieksekusi
         #print("Lol", input_konversi)                   # --> Jika kondisi sebelumnya salah atau tidak terpenuhi, maka mencetak pesan "Lol" dan (angka inputan pengguna)
