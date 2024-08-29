@@ -45,5 +45,5 @@ for index in range(input_konversi):            # --> Perulangan atau loop, seban
 
         if jidex >= 7:                         # --> Kondisi, memeriksa apakah nilai jidex lebih besar dari atau sama dengan 7, jika kondisi terpenuhi maka akan mengeksekusi kode di dalamnya
             lingkaranLuar = False              # --> Untuk mengakhiri perulangan atau loop, jika kondisi sebelumnya terpenuhi atau variabel lingkaranLuar diubah menjadi False
-            break                              # --> Jika kondisi benar atau terpenuhi, maka perulangan atau loop dihentikan
-    print()                                    # --> Maka mencetak pesan newline (baris baru) setelah mencetak bintang sejumlah yang sesuai
+            break                              # --> Jika kondisi benar atau terpenuhi, maka perulangan atau loop terdalam dihentikan paksa
+    print()                                    # --> Mencetak pesan newline (baris baru) setelah mencetak bintang sejumlah yang sesuai
