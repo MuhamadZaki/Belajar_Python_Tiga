@@ -89,4 +89,14 @@ print("------")
 # 4. Kombinasi while Dan for
 # Kedua Keyword Perulangan Yang Sudah Dipelajari, Yaitu for Dan while Bisa Dikombinasikan Untuk Membuat Suatu Nested Loop Atau Perulangan Bercabang
 
-input_konversi = int(input("Masukan angka: "))
+input_konversi = int(input("Masukan angka: "))  # --> Meminta pengguna memasukan nilai sebagai string, lalu mengonversinya menjadi tipe data integer dan tersimpan pada variabel input_konversi
+index = 0                                       # --> Inisialisasi variabel yang menyimpan data integer, dengan nilai 0
+
+for index in range(input_konversi):             # --> Perulangan atau loop, sebanyak nilai yang dimasukan oleh pengguna (input_konversi) dan (variabel index akan mengambil nilai dari 0 hingga input_konveri -1)
+    jidex = 0                                   # --> Inisialisasi variabel yang menyimpan data integer, dengan nilai 0
+
+    while jidex < input_konversi - index:       # --> Perulangan atau loop bersarang, selama nilai jidex kurang dari nilai input_konversi - index, jika kondisi terpenuhi maka akan mengeksekusi kode di dalamnya atau berikutnya 
+        print("*", end=" ")                     # --> Jika kondisi benar atau terpenuhi, maka mencetak pesan karakter bintang dengan spasi sebagai pemisah (tanpa newline)
+        jidex += 1                              # --> Menambahkan 1 pada nilai variabel jidex, setiap iterasi (increment)
+    
+    print()                                     # --> Maka mencetak pesan newline (baris baru) setelah mencetak bintang sejumlah yang sesuai
