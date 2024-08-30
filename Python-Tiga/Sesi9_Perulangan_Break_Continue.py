@@ -20,7 +20,7 @@ print("------")
 # Keyword continue Digunakan Untuk Memaksa Perulangan Lanjut Ke Iterasi Berikutnya (Seperti Proses Skip)
 
 
-#for index in range(10):        # --> Perulangan atau loop, sebanyak 10 kali (variabel index akan mengambil nilai 0 hingga 9)
+#for index in range(10):        # --> Perulangan atau loop, mengiterasi sebanyak 10 kali (variabel index akan mengambil nilai 0 hingga 9)
     #if index < 3 or index > 7: # --> Kondisi, memeriksa apakah nilai index kurang dari 3 atau nilai index lebih besar dari 7, jika salah satu kondisi terpenuhi maka akan mengeksekusi kode di dalamnya
         #continue               # --> Jika kondisi benar atau terpenuhi (jika nilai index yang memenuhi kondisi ini 0,1,2,8,9), maka akan dilewati
     #print(index)               # --> Jika kondisi salah atau tidak terpenuhi, maka akan mencetak pesan 3 4 5 6 7
@@ -36,11 +36,11 @@ print("------")
 input_konversi = int(input("Masukan nilai: ")) # --> Meminta pengguna memasukan nilai sebagai string, lalu mengonversinya menjadi tipe data integer dan tersimpan pada variabel input_konversi
 lingkaranLuar = True                           # --> Inisialisasi variabel yang menyimpan data boolean, dengan nilai True
 
-for index in range(input_konversi):            # --> Perulangan atau loop, sebanyak nilai yang dimasukan oleh pengguna (input_konvarsi) dan (variabel index akan mengambil nilai dari 0 hingga input_konveri -1)
+for index in range(input_konversi):            # --> Perulangan atau loop, mengiterasi sebanyak nilai yang dimasukan oleh pengguna (input_konvarsi) dan (variabel index akan mengambil nilai dari 0 hingga input_konveri -1)
     if not lingkaranLuar:                      # --> Kondisi, memeriksa apakah nilai lingkarLuar adalah False, Jika kondisi terpenuhi maka akan mengeksekusi kode di dalamnya dan jika kondisi tidak terpenuhi maka akan melanjutkan ke blok kode berikutnya
         break                                  # --> Jika kondisi benar atau terpenuhi, maka perulangan utama akan dihentikan dengan break
 
-    for jidex in range(index + 1):             # --> Perulangan atau loop bersarang, sebanyak nilai index + 1
+    for jidex in range(index + 1):             # --> Perulangan atau loop bersarang, mengitrasi sebanyak nilai index + 1
         print("*", end=" ")                    # --> Mencetak pesan karakter bintang dengan spasi sebagai pemisah (tanpa newline)
 
         if jidex >= 7:                         # --> Kondisi, memeriksa apakah nilai jidex lebih besar dari atau sama dengan 7, jika kondisi terpenuhi maka akan mengeksekusi kode di dalamnya

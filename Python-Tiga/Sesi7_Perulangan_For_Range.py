@@ -67,21 +67,21 @@ print("------")
 # Iterasi Data List
 
 pesan_list = ["Zaki", 26]    # --> Inisialisasi variabel yang menyimpan data list, berisi 2 elemen data string dan integr (yang akan di itersi)
-for p in pesan_list:         # --> Melakukan perulangan atau loop melalui setip elemen dalam list pesan_list (variabel p digunakan untuk menyimpan nilai setiap elemen selama iterasi)
+for p in pesan_list:         # --> Melakukan perulangan atau loop, mengiterasi melalui setip elemen dalam list pesan_list (variabel p digunakan untuk menyimpan nilai setiap elemen selama iterasi)
     print(p)                 # --> Mencetak variabel pada setiap iterasi, maka mencetk pesan Zaki 26
     print(type(p))           # --> Mencetak variabel pada setiap iterasi dan mengecek tipe data, maka mencetak pesan <class 'str'> <class 'int'>
 
 # Iterasi Data Tuple
 
 pesan_tuple = ("Zaki", 26)   # --> Inisialisasi variabel yang menyimpan data tuple, besiri 2 elemen data string dan integer (yang akan di iterasi)
-for p in pesan_tuple:        # --> Melakukan perulangan atau loop melalui setiap elemen dalam tuple pesan_tuple (variabel p digunakan untuk menyimpan nilai setiap elemen selama iterasi)
+for p in pesan_tuple:        # --> Melakukan perulangan atau loop, mengiterasi melalui setiap elemen dalam tuple pesan_tuple (variabel p digunakan untuk menyimpan nilai setiap elemen selama iterasi)
     print(p)                 # --> Mencetak variabel pada setiap iterasi, maka mencetak pesan Zaki 26
     print(type(p))           # --> Mencetak variabel pada setiap iterasi dan mengecek tipe data, maka mencetak pesan <class 'str'> <class 'int'>
 
 # Iterasi Data String
 
 pesan_string = "Natashia"    # --> Inisialisasi variabel yang menyimpan data string (yang akan di iterasi)
-for char in pesan_string:    # --> Melakukan perulangan atau loop melalui setiap karakter dalam string pesan_string (variabel char digunakan untuk menyimpan karakter setiap iterasi)
+for char in pesan_string:    # --> Melakukan perulangan atau loop, mengiterasi melalui setiap karakter dalam string pesan_string (variabel char digunakan untuk menyimpan karakter setiap iterasi)
     print(char)              # --> Mencetak variabel pada setiap iterasi, maka mencetak pesan Natashia
     print(type(char))        # --> Mencetak variabel pada setiap iterasi dan mengecek tipe data, maka mencetak pesan <class 'str'>
 
@@ -92,14 +92,14 @@ pesan_dict = {
     "nama":"Laura",
     "umur": 17
 }                               # --> Inisialisasi variabel yang menyimpan data dict, berisi 2 key-value (yang akan di iterasi)
-for key in pesan_dict:          # --> Melakukan perulangan atau loop melalui setiap key dalam dictionary pesan_dict (variabel key digunakan untuk menyimpan key setiap iterasi)
+for key in pesan_dict:          # --> Melakukan perulangan atau loop, mengiterasi melalui setiap key dalam dictionary pesan_dict (variabel key digunakan untuk menyimpan key setiap iterasi)
     print(key, pesan_dict[key]) # --> Mencetak variabel pada setiap iterasi, maka mencetak pesan nama Laura umur 17
     print(type(key))            # --> Mencetak variabel pada setiap iterasi dan mengecek tipe data, maka mencetak pesan <class 'str'> <class 'str'>
 
  
 # Iterasi Data Set
 pesan_set = {"Jaki", 25}        # --> Inisialisasi variabel yang menyimpan data set, berisi 2 elemen data string dan integer (yang akan di iterasi)
-for p in pesan_set:             # --> Melakukan perulangan atau loop melalui setiap elemen dalam set pesan_set (variabel p digunakan untuk menyimpan nilai setiap elemen selama iterasi)
+for p in pesan_set:             # --> Melakukan perulangan atau loop, mengiterasi melalui setiap elemen dalam set pesan_set (variabel p digunakan untuk menyimpan nilai setiap elemen selama iterasi)
     print(p)                    # --> Mencetak variabel pada setiap iterasi, maka mencetak pesan Jaki 25 (posisi berubah setiap dijalankan)
     print(type(p))              # --> Mencetak variabel pada setiap iterasi dan mengecek tipe data, maka mencetak pesan <class 'str'> <class 'int'>
 

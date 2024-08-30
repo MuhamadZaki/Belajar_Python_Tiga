@@ -59,7 +59,7 @@ print("------")
 
 #input_konversi = int(input("Masukan nilai: "))  # --> Meminta pengguna memasukan nilai sebagai string, lalu mengonversinya menjadi tipe data integer dan tersimpan pada variabel input_konversi
 
-#for index in range(input_konversi):             # --> Perulangan atau loop, sebanyak nilai yang dimasukan oleh pengguna input_konversi dan (variabel index akan mengambil nilai dari 0 hingga input_konveri -1)
+#for index in range(input_konversi):             # --> Perulangan atau loop, mengiterasi sebanyak nilai yang dimasukan oleh pengguna input_konversi dan (variabel index akan mengambil nilai dari 0 hingga input_konveri -1)
     #print(index)                                # --> Setiap iterasi nilai index akan dicetak (tergantung inputan pengguna, jika 5 maka 0 1 2 3 4)
 
 
@@ -92,7 +92,7 @@ print("------")
 input_konversi = int(input("Masukan angka: "))  # --> Meminta pengguna memasukan nilai sebagai string, lalu mengonversinya menjadi tipe data integer dan tersimpan pada variabel input_konversi
 index = 0                                       # --> Inisialisasi variabel yang menyimpan data integer, dengan nilai 0
 
-for index in range(input_konversi):             # --> Perulangan atau loop, sebanyak nilai yang dimasukan oleh pengguna (input_konversi) dan (variabel index akan mengambil nilai dari 0 hingga input_konveri -1)
+for index in range(input_konversi):             # --> Perulangan atau loop, mengiterasi sebanyak nilai yang dimasukan oleh pengguna (input_konversi) dan (variabel index akan mengambil nilai dari 0 hingga input_konveri -1)
     jidex = 0                                   # --> Inisialisasi variabel yang menyimpan data integer, dengan nilai 0
 
     while jidex < input_konversi - index:       # --> Perulangan atau loop bersarang, selama nilai jidex kurang dari nilai input_konversi - index, jika kondisi terpenuhi maka akan mengeksekusi kode di dalamnya atau berikutnya 
