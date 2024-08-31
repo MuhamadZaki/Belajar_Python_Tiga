@@ -20,3 +20,9 @@ Komentar baris satu
 Komentar baris dua
 komentar baris tiga
 """
+
+'''
+Komentar baris satu
+Komentar baris dua
+komentar baris tiga
+'''

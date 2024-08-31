@@ -66,3 +66,47 @@ for i, e in enumerate(a_list):      # --> Perulangan atau loop, mengiterasi mela
 print("------")
 
 # 3. Nested list
+
+matrix = [
+    [0, 1, 0, 1, 0],
+    [1, 1, 1, 0, 0],
+    [0, 0, 0, 1, 1],
+    [0, 1, 1, 1, 0],
+]                                   # --> Inisialisasi variabel yang menyimpan data list, berisi 4 baris 5 kolom dengan elemen data integer
+
+for baris in matrix:                # --> Perulangan atau loop, mengiterasi melalui setiap baris dalam matrix
+    for cel in baris:               # --> Perulangan atau loop bersarang, mengiterasi melalui setiap elemen dalam baris tersebut
+        print(cel, end=" ")         # --> Menceta variabel dengan spasi sebagai pemisah (tanpa newline)
+    print()                         # --> Mencetak pesan newline (baris baru) setelah mencetak variabel
+
+
+print("------")
+
+# Fungsi list()
+
+# Konversi range Ke list
+# Data range (Hasil Pemanggilan Fungsi range()) Bisa Dikonversi Ke Bentuk list Menggunakan Fungsi list() Dan Cara Ini Cukup Efisien Untuk Pembuatan Data list Yang Memiliki Pattern Atau Pola
+
+a_range = range(6)         # --> Membuat sebuah range, rentang dari angka 0 hingga 5 dan tersimpan pada variabel a_range
+a_list = list(a_range)     # --> Mengonversi variabel a_range menjadi sebuah list dan tersimpan pada variabel a_list
+print(a_list)              # --> Mencetak variabel, maka akan mencetak pesan [0,1,2,3,4,5]
+
+a_range = range(1, 6)      # --> Membuat sebuah range, rentang dari angka 1 hingga 5 dan tersimpan dalam variabel results
+a_list = list(a_range)     # --> Mengonversi variabel a_range menjadi sebuah list dan tersimpan pada variabel a_list
+print(a_list)              # --> Mencetak variabel, maka akan mencetak pesan [1, 2, 3, 4, 5]
+
+a_range = range (0, 14, 3) # --> Membuat sebuah range, rentang dari angka 0 hingga 13 dengan langkah sebesar 3 dan tersimpan pada variabel a_range
+a_list = list(a_range)     # --> Mengonversi variabek a_range menjadi sebuah list dan tersimpan pada variabel a_list
+print(a_list)              # --> Mencetak variabel, maka akan mencetak pesan [0, 3, 6, 9, 12]
+
+a_range = (100, 0, -10)    # --> Membuat sebuah range, rentang dari angka 100 hingga 0 dengan langkah sebesar -10 dan tersimpan pada variabel a_range
+a_list = list(a_range)     # --> Mengonversi variabel a_range menjadi sebuah list dan tersimpan pada variabel a_list
+print(a_list)              # --> mencetak variabel, maka akan mencetak pesan [100, 0, -10] (agak aneh!) harusnya [100, 90, 80, 70, 60, 50, 40, 30, 20, 10]
+
+# Selain Metode Ini, Ada Juga Cara Lainnya Untuk Membuat list, Yaitu Menggunakan Metode list Comprehension
+
+
+print("------")
+
+# Konversi string Ke list
+
