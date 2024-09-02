@@ -221,3 +221,55 @@ print(a_list)                     # --> Mencetak variabel, maka akan mencetak pe
 
 # Extend/concat/union Element
 #Operasi extend (Atau concat / union) Adalah Operasi Penggabungan Dua Data list dan Ada Beberapa Metode Yang Tersedia
+
+# Menggunakan Method extend()
+a_list = [10,20,30]               # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+a_list.extend([19, 20, 40])       # --> Menembahkan beberapa elemen baru ke akhir list
+print(a_list)                     # --> Mencetak variabel, maka akan mencetak [10, 20, 30, 19, 20, 40]
+
+a_list = [10,20,30]               # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+new_list = [40,50]                # --> Inisialisasi variabel yang menyimpan data list berisi 2 elemen data integer
+a_list.extend(new_list)           # --> Menambahkan elemen-elemen dari variabel new_list ke akhir list a_list
+print(a_list)                     # --> Mencetak variabel, maka akan mencetak pesan [10, 20, 30, 40, 50]
+
+# Menggunakan Slicing
+a_list = [10,100,20]              # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+new_list = [60, 70]               # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+a_list[len(a_list):] = new_list   # --> Menghitung panjang (jumlah elemen) dari a_list, lalu mengambil irisan dari a_list mulai dari indeks terakhir (setelah elemen terakhir - karena ini irisan kosong, kita menambahkan elemen baru ke akhir list) hingga akhir list dan menambahkan elemen-elemen dari variabel new_list
+print(a_list)                     # --> Mencetak variabel, maka akan mencetak pesan [10, 100, 20, 60, 70]
+
+# Menggunakan Operator +
+# Metode extend Menggunakan Operator + Mengharuskan Hasil Operasi Untuk Ditampung Ke Variabel
+
+a_list = [1,2,3]                  # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+new_list = [4,5,6]                # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+results = a_list + new_list       # --> Menggabungkan atau mengkonkatenasi a_list dan new_list dan tersimpan dalam variabel results
+print(results)                    # --> Mencetak variabel, maka akan mencetak pesan [1, 2, 3, 4, 5, 6]
+
+
+# Menyisipkan Element Pada Index  (list)
+# Method insert() Digunakan Untuk Menyisipkan Element Baru Pada Posisi Index Tertentu Dan Hasil Operasi Ini Membuat Semua Element Setelah Index Tersebut Posisinya Bergeser Ke Kanan
+
+a_list = [1,2,3]                  # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+a_list.insert(0,50)               # --> Menyisipkan nilai atau elemen ke dalam a_list pada indeks 0
+print(a_list)                     # --> Mencetak variabel, maka akan mencetak pesan [50, 1, 2, 3]
+
+b_list = [1,2,3,4,5]              # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+b_list.insert(2, 50)              # --> Menyisipkan nilai atau elemen ke dalam b_list pada indeks 2
+print(b_list)                     # --> Mencetak variabel, maka akan mencetak pesan [1, 2, 50, 3, 4, 5]
+
+
+# Menghapus Elemen list Menggunakan remove()
+# Method remove() Digunakan Untuk Menghapus Elemen, Isi Parameter Fungsi Dengan Elemen Yang Ingin Di Hapus dan Jika Element Yang Ingin Dihapus Ditemukan Ada Lebih Dari 1, Maka Yang Dihapus Hanya Yang Petama (Sesuai Urutan Indeks)
+
+a_list = [1,2,3,4,5,3]            # --> Inisialisasi variabel yang menyimpan data list, berisi 6 elemen data integer
+a_list.remove(3)                  # --> Menghapus elemen pertama (3) dari a_list
+print(a_list)                     # --> Mencetak variiabel, maka akan mencetak pesan [1, 2, 4, 5, 3]
+
+b_list = [1,2,3,4,5]              # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+b_list.remove(5)                  # --> Menghapus elemen terakhir (5) dari b_list
+print(b_list)                     # --> Mencetak variabe, maka akan mencetak pesan [1, 2, 3, 4]
+
+
+# Menghapus Elemen Pada Index 
+# Method pop() 
