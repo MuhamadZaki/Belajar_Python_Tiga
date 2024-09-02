@@ -272,4 +272,44 @@ print(b_list)                     # --> Mencetak variabe, maka akan mencetak pes
 
 
 # Menghapus Elemen Pada Index 
-# Method pop() 
+# Method pop() Berfungsi Untuk Menghapus Element Pada Index Tertentu, Jika Tidak Ada Index Yang Ditentukan, Maka Dala Element Terakhir Yang Dihapus Dan Bisa Mengambalikan Data Elemen Yang Berhasil Dihapus
+# Jika Indek Yang Ingin Kita Hapus Tidak Ditemukan Atau Tidak Ada, Maka Error
+# Selain Menggunakan Method pop(), Keyword del Juga Bisa Difungsikan Untuk Hal Yang Sama, Yaitu Menghapus Elemen Tertentu
+
+a_list = [20,30,40,50]            # --> Inisialisasi variabel yang menyimpan data list, berisi 4 elemen data integer
+results = a_list.pop(2)           # --> Menghapus elemen pada indeks 2 dari variabel a_list dan hanya nilai yang dihapus yang tersimpan pada variabel results
+print(a_list)                     # --> Mencetak variabel, maka akan mencetak [20, 30, 50]
+print(results)                    # --> Mencetak variabel, mencetak nilai atau elemen yang dihapus dan mencetak pesan 40
+
+b_list = [1,2,3,4,5]              # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+b_list.pop()                      # --> Menghapus elemen terakhir
+print(b_list)                     # --> Mencetak variabel, maka akan mencetak pesan [1, 2, 3, 4]
+
+c_list = [1,2,3,4,5]              # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+del c_list[2]                     # --> Menghapus elemen indeks 2 dari variabel c_list
+print(c_list)                     # --> Mencetak variabel, maka akan mencetak pesan [1, 2, 4, 5]
+
+
+# Menghapus Elemen Dari range Index
+# Keyword del Yang Berguna Untuk Menghapus Suatu Data, Dengan Menggabungkan Keyword Ini Dan Operasi Slicing, Kita Bisa Menghapus Element Dalam range Tertentu Dengan Cukup Mudah
+
+a_list = [1,2,3,4,5]              # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+del a_list[1:3]                   # --> Menghapus elemen dari indeks 1 hingga 2 (indeks 3 tidak temasuk)
+print(a_list)                     # --> Mencetak variabel, maka akan mencetak pesan [1,4,5]
+
+
+# Menghitung Jumlah Element
+# Fungsi len() Digunakan Untuk Menghitung Jumlah Elemen
+# Selain len() Ada Juga fungsi Method count() Milik Method slice Yang Kegunaannya Memiliki Kemiripan Dan Perbedaannya Method count() Melakukan Operasi Pencarian Sekaligus Menghitung Jumlah Elemen Yang Ditentukan
+
+a_list = [1,2,3,4,5]              # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+results = len(a_list)             # --> Menghitung jumlah elemen pada variabel a_list
+print(results)                    # --> Mencetak variabel, maka akan mencetak pesan 5
+
+a_list = [1,2,3,4,5,2]            # --> Inisialisasi variabel yang menyimpan data list, berisi 6 elemen data integer
+results = a_list.count(2)         # --> Menghitung berapa kali elemen 2 muncul 
+print(results)                    # --> Mencetak variabel, maka akan mencetak pesan 2
+
+
+# Mencari Index Elemen list
+# Untuk Mencari index Menggunakan Nilai Element, Gunakan Method index() Milik list
