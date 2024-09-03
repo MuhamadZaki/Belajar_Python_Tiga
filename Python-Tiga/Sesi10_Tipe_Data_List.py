@@ -313,3 +313,80 @@ print(results)                    # --> Mencetak variabel, maka akan mencetak pe
 
 # Mencari Index Elemen list
 # Untuk Mencari index Menggunakan Nilai Element, Gunakan Method index() Milik list
+# Jika Data Element Yang Dicari Tidak Ada, Maka Akan Muncul Error
+
+a_list = [1,2,5,4,5]              # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+results = a_list.index(5)         # --> Mencari indeks dengan elemen
+print(results)                    # --> Mencetak variabel, maka akan mencetak pesan 2
+
+
+
+# Mengosongkan ist
+# Ada Telu Cara Untuk Mengosongkan list
+
+# Menggunakan Method clear()
+
+a_list = [1,2,3,4,5]              # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+a_list.clear()                    # --> Menghapus elemen atau mengosongkan list
+print(a_list)                     # --> Mencetak variabel, maka akan mencetak pesan []
+
+# Menimpanya Dengan []
+
+a_list = [1,2,3,4,5]              # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+a_list = []                       # --> Inisialisasi variabel yang menyimpan data list, berisi elemen kosong
+print(a_list)                     # --> Mencetak variabel, maka akan mencetak pesan []
+
+# Menggunakan Keyword del Dan Slicing
+
+a_list = [1,2,3,4,5]              # --> Inisialisasi vairbael yang menyimpan data list, berisi 5 elemen data integer
+del a_list[:]                     # --> Menghapus semua elemen dalam list
+print(a_list)                     # --> Mencetak variabel, maka akan mencetak pesan []
+
+
+
+# Membalik Urutan Elemen list
+# Ada Loro Cara Untuk Membalikan Elemen Dalam list
+
+# Menggunakan Method reverse() Dan Slicing
+
+a_list = [1,2,3,4,5]              # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+a_list.reverse()                  # --> Membalikan semua elemen atau dari belakang ke depan
+print(a_list)                     # --> Mencetak variabel, maka akan mencetak pesan [5,4,3,2,1]
+
+a_list = [1,2,3,4,5,6]            # --> Inisialisasi variabel yang menyimpan data list, berisi 6 elemen data integer
+a_slice = a_list[::-1]            # --> Membuat irisan, mencakpt semua elemen atau isi dari list dengan urutan terablik (dari belakang kedepan)
+print(a_slice)                    # --> Mencetak variabel, maka akan mencetak pesan [6, 5, 4, 3, 2, 1]
+
+
+
+# Copy list
+# Ada Loro cara Untuk Mendupliksai list
+# Operasi copy Disini Jenisnya Adalah Shallow copy
+# Method Ini Sebenarnya Menyediakan Kapasitas sorting Yang Cukup Advance, Caranya Dengan Cara Menambahkan Closure/Lambda Pada Argument Method Ini
+
+# Menggunakan Methon copy()
+
+a_list = [1,2,3]                 # --> Inisialisasi variabel yang menyimpan data list, berisi 3 elemen data integer
+results = a_list.copy()          # --> Membuat slainan variabel a_list dan tersimpan pada variabel results
+print(a_list)                    # --> Mencetak variabel, maka akan mencetak pesan [1,2,3]
+print(results)                   # --> Mencetak variabel, maka akan mencetak pesan [1,2,3]
+
+# Kombinasi Operasi Assignment Dan Slicing
+
+a_list = [1,2,3,4]               # --> Inisialisasi variabel yang menyimpan data list, berisi 4 elemen data integer
+results = a_list[:]              # --> Membuat salinan tanpa indeks awal dan akhir
+print(a_list)                    # --> Mencetak variabel, maka akan mencetak pesan [1,2,3,4]
+print(results)                   # --> Mencetak variabel, maka akan mencetak pesan [1,2,3,4]
+
+
+
+# Sorting
+# Mnegurutkan data list Bisa Dilakukan Menggunakan Defaults sorter Dengan Method sort()
+
+a_list = [5,3,2,1,4]             # --> Inisialisasi variabel yang menyimpan data list, berisi 5 elemen data integer
+a_list.sort()                    # --> Mengurutkan elemen list secara ascending (dari terkecil ke yang terbesar)
+print(a_list)                    # --> Mencetak variabel, maka akan mencetak pesan [1,2,3,4,5]
+
+b_list = ["c","a","b","d"]       # --> Inisialisasi variabel yang menyimpan data list, berisi 4 elemen data string
+b_list.sort()                    # --> Mengurutkan elemen list secara ascending (dari terkecil ke yang terbesar berdasarkan urutan abjad)
+print(b_list)                    # --> Mencetak variabel, maka akan mencetak pesan ['a', 'b', 'c', 'd']
