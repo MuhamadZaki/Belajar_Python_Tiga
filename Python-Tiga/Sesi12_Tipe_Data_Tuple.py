@@ -76,8 +76,8 @@ print("------")
 
 a_tuple = ((0,1), (1,1), (2,2), (3,3)) # --> Inisialisasi variabel yang menyimpan data tuple, berisi 4 sub tuple
 
-for row in a_tuple:                    # --> Perulangan atau loop, mengiterasi setiap elemen row dari a_tuple
-    for cell in row:                   # --> Perulangan atau loop, mengiterasi melalui setiap index dan elemen cell
+for row in a_tuple:                    # --> Perulangan atau loop, mengiterasi setiap row dari a_tuple
+    for cell in row:                   # --> Perulangan bersarang, mengiterasi melalui setiap index dan elemen cell
         print(cell, end=" ")           # --> Menceta variabel dengan spasi sebagai pemisah (tanpa newline)
     print()                            # --> Mencetak pesan newline (baris baru) setelah mencetak variabel
 
@@ -101,3 +101,72 @@ print("------")
 # 5. List Dan tuple
 # Tipe Data list Dan tuple Umum Dikombinasikan, Keduanya Sangat Mirip Tapi Memiliki Perbedaan Yang Jelas, Yaitu Nilai tuple Tidak Bisa Dimodifikasi Sedangkan list Bisa
 
+# Deklarasi Atau Inisialisasi Data list Berisi Elemen tuple
+
+data = [
+    ("Meow", 18, False, ["satu", "dua"])
+]                                        # --> Inisialisasi vairabel yang menyimpan data list, berisi data tuple
+
+# append tuple Ke list
+
+data.append((
+    "Semlohe",
+    10,
+    True,
+    ["Indah", "Sekali"]
+))                                       # --> Menambakkan tupel ke dalam vairbel data
+
+
+for row in data:                         # --> Perulangan atau loop, mengiterasi melalui setiap row (tuple) dalam data
+    for cell in row:                     # --> Perulangan bersarang, Mengiterasi melalui setiap elemen cell dalam row (tuple)
+        print(cell, end=" ")             # --> Menceta variabel dengan spasi sebagai pemisah (tanpa newline)
+    print()                              # --> Mencetak pesan newline (baris baru) setelah mencetak variabel
+
+
+
+print("------")
+
+# 6. Fungsi tuple()
+# Fungsi Ini Bisa Digunakan Untuk Konversi Data string Ke tuple dan Dan Hasilnya Nilai tuple Dengan Elemen Berisi Setiap Karakter Yang Ada Di string
+
+sudahlah = tuple("Mahkota") # --> Inisialisasi varaiabel yang menyimpan data tuple, berisi elemen data string
+print(sudahlah)             # --> Mencetak variabel, maka akan mencetak pesan ('M', 'a', 'h', 'k', 'o', 't', 'a')
+
+# mengonversi list Ke tuple
+# Ini Bisa Dilakukan Dengan Mudah Menggunakan fungsi tuple()
+
+nums = tuple([1,2,3,4,5])   # --> Inisialisasi variabel yang menyimpan data tuple, berisi data list
+print(nums)                 # --> Mencetak variabel, maka akan mencetak pesan (1, 2, 3, 4, 5)
+
+# Mengonversi range ke tuple
+# range Juga Bisa Dikonversi Ke tuple Menggunakan Fungsi tuple()
+
+r = range(0, 3)             # --> Inisialisasi variabel yang menyimpan rentang nilai 0 hingga 2
+r_tuple = tuple(r)          # --> Mengonversi rentang dengan fungsi tuple, agar menjadi data tuple
+print(r_tuple)              # --> Mencetak variabel, maka akan mencetak pesan (0, 1, 2)
+
+
+
+print("------")
+
+# 7. Tuple packing Dan unpacking
+
+# Tuple packing
+# Packing Merupakan Istilah Untuk Menggabungkan Beberapa Data Menjadi Satu Data Kolektif
+# Tulis Saja Data Atau Variabel Yang Ingin Di-pack Dalam Notasi tuple, Kemudian Gunakan Sebagai Nilai Pada Operasi assignment
+# Penulisan tuple Boleh Juga Dituliskan Tanpa Menggunakan karkter () Dan Pastikan Berhati-Hati, Bisa Jadi Salah Paham Karena Metode ini Pada Saat Menggunakan tuple Sebagaii Nilai Argumen Pemanggil fungsi, Karena Intrepreter Akan Menganggapnya Sebagai banyak Argumen!
+
+satu = "Natashia"             # --> Inisialisasi variabel yang menyimpan data string
+dua = 12                      # --> Inisialisasi variabel yang menyimpan data intager
+tiga = True                   # --> Inisialisasi variabel yang menyimpan data boolean
+
+# Menggunakan ()
+row_data = (satu, dua, tiga)  # --> Menggabungkan variabel ke dalam sebuah tuple dan tersimpan pada variabel row_data
+
+# Tidak Menggunakan ()
+row_data = satu, dua, tiga    # --> Menggabungkan variabel ke dalam sebuah tuple dan tersimpan pada variabel row_data
+print(row_data)               # --> Mencetak variabel, maka akan mencetak pesan ('Natashia', 12, True)
+
+
+# Tuple unpacking
+# Unpacking Merupakan Istilah Untuk Menyebar Isi Suatu Data kolektif Ke Beberapa Variabel Dan unpacking Merupakan Kebalikan Dari unpacking
