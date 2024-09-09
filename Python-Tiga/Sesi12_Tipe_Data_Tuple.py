@@ -170,3 +170,33 @@ print(row_data)               # --> Mencetak variabel, maka akan mencetak pesan 
 
 # Tuple unpacking
 # Unpacking Merupakan Istilah Untuk Menyebar Isi Suatu Data kolektif Ke Beberapa Variabel Dan unpacking Merupakan Kebalikan Dari unpacking
+
+row_data = ("Laura", 17, True)  # --> Inisialisasi variabel yang menyimpan data tuple, berisi 3 elemen data string, integer dan boolean
+
+name, age, yes = row_data       # --> Mengambil nilai atau elemen dari variabel row_data (tuple), dan menetapkannya ke variabel terpisah
+print(name, age, yes)           # --> Mencetak variabel, maka akan mencetak pesan Laura 17 True
+
+
+
+print("------")
+
+# Tuple Kosong
+# Tuple Bisa Saja Tidak Berisi Apapun, Contoh Data (), Yang Cukup Umum Digunakan Untuk Mempresentasikan data Kolektif Yang Isinya Bisa Saja Kosong
+
+empty_tuple = ()    # --> Inisialisasi variabel yang menyimpan data tuple, berisi elemen kosong
+print(empty_tuple)  # --> Mencetak variabel, maka akan mencetak pesan ()
+
+# Berikut Proses Penerapannya, Misalkan Ada Data Kolektif Yang Didapat Dari Database Berbentuk Array Object Dan Data Tersebut Perlu Disimpan Oleh Variabel list, Yang elemennya Adalah tuple Dengan Spesifikasi
+
+# Tuple Elemen index 0 Berisi nama
+# Tuple Elemen index 1 Berisi age
+# Tuple Elemen index 2 Berisi yes
+# Tuple Elemen index 3 Berisi kimochi, Dimana kimochi Bisa Saja Kosong
+
+my_data = [
+    ("Meow", 18, True, ("satu", "dua")),
+    ("Gug", 17, True, ("Tiga", "Empat")),
+    ("Kimochiah", 10, False, ())
+]
+
+# Bisa Dilihat Dari my_data kimochiah Tidak Memiliki kimochi, Karena Terisi Dengan Nilai tuple () 
