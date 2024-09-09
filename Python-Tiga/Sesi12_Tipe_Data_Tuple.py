@@ -72,3 +72,32 @@ print("------")
 
 # Nested tuple
 # Dibuat Dengan Menuliskan Data tuple Sebagai ELemen tuple
+# Penulisan data literal nested tuple bisa dalam bentuk horizontal atau vertikal
+
+a_tuple = ((0,1), (1,1), (2,2), (3,3)) # --> Inisialisasi variabel yang menyimpan data tuple, berisi 4 sub tuple
+
+for row in a_tuple:                    # --> Perulangan atau loop, mengiterasi setiap elemen row dari a_tuple
+    for cell in row:                   # --> Perulangan atau loop, mengiterasi melalui setiap index dan elemen cell
+        print(cell, end=" ")           # --> Menceta variabel dengan spasi sebagai pemisah (tanpa newline)
+    print()                            # --> Mencetak pesan newline (baris baru) setelah mencetak variabel
+
+# Horizontal
+
+a_tuple = ((0,1), (1,1), (2,2), (3,3)) # --> Inisialisasi variabel yang menyimpan data tuple, berisi 4 sub tuple
+
+# Vertikal
+
+a_tuple = (
+    (0,1),
+    (1,1),
+    (2,2),
+    (3,3)
+)                                      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 4 sub tuple
+
+
+
+print("------")
+
+# 5. List Dan tuple
+# Tipe Data list Dan tuple Umum Dikombinasikan, Keduanya Sangat Mirip Tapi Memiliki Perbedaan Yang Jelas, Yaitu Nilai tuple Tidak Bisa Dimodifikasi Sedangkan list Bisa
+
