@@ -15,7 +15,11 @@ print(a_tuple)                  # --> Mencetak variabel, maka akan mencetak pesa
 print(len(a_tuple))             # --> Mencetak variabel dan menghirung panjang atau jumlah elemen dari a_tuple, maka akan mencetak pesan 5
 print(type(a_tuple))            # --> Mencetak variabel dan mengecek tipe data, maka akan mencetak pesan <class 'tuple'>
 
+b_tuple = (10,)                 # --> Inisialisasi variabel yang menyimpan data set, berisi satu elemen data integer
+print(type(b_tuple))            # --> Mencetak variabel dan mengecek tipe data, maka akan mencetak pesan <class 'tuple'>
 
+c_int = (10)                    # --> Inisialisasi variabel yang menyimpan data int
+print(type(c_int))              # --> mencetak variabel dan mengecek tipe data, maka akan mencetak pesan <class 'int'>
 
 print("------")
 
