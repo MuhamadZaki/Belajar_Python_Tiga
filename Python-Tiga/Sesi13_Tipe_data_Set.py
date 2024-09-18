@@ -42,3 +42,46 @@ a_set = {1,2,3,3,2,1,2,3,1} # --> Inisialisasi variabel yang menyimpan data set,
 print(a_set)                # --> Mencetak variabel, maka akan mencetak pesan {1, 2, 3}
 
 # Menggunkaan set untuk Mengeleminasi elemen Duplikat Pada Suatu list
+
+data = [1,2,3,2,1,4,3,4,5]  # --> Inisialisasi variabel yang menyimpan data list, berisi 9 elemen data integer
+print(data)                 # --> Mencetak variabel, maka akan mencetak pesan [1, 2, 3, 2, 1, 4, 3, 4, 5]
+
+data_unik_set = set(data)   # --> Mengonversi data list menjadi set, untuk menghilangkan duplikasi dan menghasilkan nilai set berisi elemen unik
+print(data_unik_set)        # --> Mencetak variabel, maka akan mecetak pesan {1, 2, 3, 4, 5}
+
+data_unik_list = list(data_unik_set) # --> Mengonversi set kembali menjadi list
+print(data_unik_list)                # --> Mencetak variabel, maka akan mencetak pesan [1, 2, 3, 4, 5]
+
+# Mengecek Apakah elemen Ada
+# Selain Untuk Kasus Sebelumnnya, set Jua Bisa Digunakan Untuk Pengecekan membership Dengan Kombinasi Keyword if Dan in
+
+data = {"satu", "dua", "tiga"} # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+temukan = "dua"                # --> Inisialisasi variabel yang menyimpan data string
+
+if temukan in data:            # --> Kondisi, memeriksa apakah nilai yang ada dalam variabel temukan terdapat dalam variabel data, jika kondisi terpenuhi maka akan mengeksekusi kode di dalamnya dan jika kondisi tidak terpenuhi maka akan melajutkan ke kondisi berikutnya
+    print(temukan)             # --> Jika kondisi benar atau terpenuhi, maka akan mencetak pesan dua
+else:                          # --> Kondisi, jika kondisi sebelumnya tidak terpenuhi maka blok kode ini dieksekusi
+    print(False)               # --> Jika kondisi salah atau tidak terpenuhi, maka mencetak pesan False
+
+
+print("------")
+
+# 3. Operasi Pada set
+# Method add() Milik Tipe Data set Digunakan Untuk Menambahkan Element Baru Dan Perlu Diingat Tipe Data Ini Didesain Untuk Mengabaikan Urutan elemen, Jadi Urutan Tersimpannya Elemen Bisa Saja Acak
+
+datas = set()      # --> Inisialisasi variabel yang menyimpan data set, berisi elemen kosong
+datas.add("Satu")  # --> Menambahkan elemen data string ke dalam variabel datas
+datas.add("Dua")   # --> Menambahkan elemen data string ke dalam variabel datas
+print(datas)       # --> Mencetak variabel, maka akan mencetak pesan {'Satu', 'Dua'}
+
+# Menghapus Elemen Secara Acak
+# Kita Menggunakan Method pop() Untuk Menghapus Satu Elemen Secara Acak Atau Random
+
+datas = {"satu", "dua", "tiga"} # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+datas.pop()                     # --> Menghapus satu elemen secara acak dari vairbel datas
+datas.pop()                     # --> Menghapus satu elemen secara acak dari variabel datas
+print(datas)                    # --> Mencatak variabel, maka akan mencetak pesan {'satu'} (ingat hasil akan berubah-ubah setiap code dijalankan)
+
+# Menghapus Spesifik elemen
+# Ada Dua Method Tersedia Untuk Kebutuhan Menghapus Elemen Tertentu dari Suatu set, Yaitu discard() Dan remove() Dan Penggunaan Keduanya Adalah Sama, Harus Disertai Dengan 1 Argumen Pemanggilan Method Yaitu Elemen Yang Ingin Dihapus
+
