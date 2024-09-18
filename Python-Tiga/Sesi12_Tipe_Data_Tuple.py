@@ -21,6 +21,7 @@ print(type(b_tuple))            # --> Mencetak variabel dan mengecek tipe data, 
 c_int = (10)                    # --> Inisialisasi variabel yang menyimpan data int
 print(type(c_int))              # --> mencetak variabel dan mengecek tipe data, maka akan mencetak pesan <class 'int'>
 
+
 print("------")
 
 # 2. Mengakses Element tuple Menggunakan index
@@ -97,7 +98,6 @@ a_tuple = (
     (2,2),
     (3,3)
 )                                      # --> Inisialisasi variabel yang menyimpan data tuple, berisi 4 sub tuple
-
 
 
 print("------")
