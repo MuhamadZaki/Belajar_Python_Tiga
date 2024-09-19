@@ -31,7 +31,7 @@ print("------")
 
 duar_mew = {"satu", "dua", "tiga"} # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
 for boom in duar_mew:              # --> Perulangan atau loop melalui setiap elemen dalam duar_mew dan vriabel boom akan mengambil nilai dari setiap elemen saat perulangan berlangsung
-    print(boom)                    # --> Mencetak variabel setiap iterasi, maka akan mencetak pesan satu, tiga, dua (ingat hasil akan berubah-ubah setiap code dijalankan)
+    print(boom)                    # --> Mencetak variabel setiap iterasi, maka akan mencetak pesan satu, tiga, dua (ingat posisi elemen akan berubah-ubah setiap code dijalankan)
 
 
 # Eliminasi Elemen Duplikat
@@ -84,4 +84,45 @@ print(datas)                    # --> Mencatak variabel, maka akan mencetak pesa
 
 # Menghapus Spesifik elemen
 # Ada Dua Method Tersedia Untuk Kebutuhan Menghapus Elemen Tertentu dari Suatu set, Yaitu discard() Dan remove() Dan Penggunaan Keduanya Adalah Sama, Harus Disertai Dengan 1 Argumen Pemanggilan Method Yaitu Elemen Yang Ingin Dihapus
+# Pada Method discard(), Jika Elemen Yang Dihapus Tidak Ada maka tidak error Dan Pada Method remove() Maka Akan Error
 
+datas = {"satu", "dua", "tiga"} # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+datas.discard("dua")            # --> Menghapus elemen "dua" pada vairbel datas
+print(datas)                    # --> Mencetak variabel, maka akan mencetak pesan {'tiga', 'satu'} (ingat posisi elemen akan berubah-ubah setiap code dijalankan)
+
+datas = {"satu", "dua", "tiga"} # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+datas.remove("tiga")            # --> Menghapus elemen "tiga" pada variabel datas
+print(datas)                    # --> Mencetak variabel, maka akan mencetak pesan {'satu', 'dua'} (ingat posisi akan berubah-ubah setiap code dijalankan)
+
+
+# Mengosongkan isi Set
+# Menggunakan Methode clear() Yang Digunakan Untuk Mengosongkan Isi Dari data set
+
+datas = {"satu", "dua", "tiga"} # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+datas.clear()                   # --> Mengosongkan elemen dari variabel datas
+print(datas)                    # --> Mencetak variabel, maka akan mencetak pesan set()
+
+# Copy set
+# Method copy() Digunakan Untuk Mengkopi set Dan Menghasilkan Data set Baru
+# Opersi Kopi Ini Jenisnya Shallow Kopi
+
+datas = {"satu", "dua", "tiga"} # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+results = datas.copy()          # --> Mengkopi nilai dari variabel datas dan tersimpan pada variabel results
+print(results)                  # --> Mencetak variabel, maka akan mencetak pesan {'tiga', 'dua', 'satu'} (ingat posisi akan berubah-ubah setiap code dijalankan)
+
+# Pengecekan difference Antar set
+# Method difference() Digunakan Untuk Mencari Perbedaan Elemen Antara Data yang Dimana method Dipanggsil vs Data Pada Argumen Pemanggil Method Tersebut
+# Selain method difference(), Adalagi yaitu Menthod diffrence_update() Yang Kegunaannya Adalah Mengubah Nilai Data (Dimana Method Dipanggil) Dengan Nilai Baru Yang Didapat Dari Perbedaan Elemen Antara Data Tersebut vs Data pada Argumen Pemanggil Method
+
+datas = {"satu", "dua", "tiga"}   # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data setring
+hello = {"satu", "dua", "empat"}  # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+results = datas.difference(hello) # --> Menghitung perbedaan antara elemen dari variabel datas dan hello, lalu mengembalikan data set berisi elemen yang hanya ada di variabel datas dan tidak ada di variabel hello dan terimpan pada variabel results
+print(results)                    # --> Mencetak variabel, maka akan mencetak pesan {'tiga'}
+
+datas = {"satu", "dua", "tiga", "lima", "enam"}   # --> Inisialisasi variabel yang menyimpan data set, berisi 5 elemen data setring
+hello = {"satu", "dua", "empat"}  # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+datas.difference_update(hello)    # --> Mengubah variabel datas dengan menghapus elemen-elemen yang juga terdapat dalam variabel hello
+print(datas)                      # --> Mencetak variabel, maka akan mencetak pesan {'lima', 'tiga', 'enam'} (ingat posisi akan berubah-ubah setiap code dijalankan)
+
+# Pengecekan intersection Antar set
+# Method intersection() Digunakan Untuk Mencari Elemen yang Ada Di Data (Dimana Method Dipanggil) Vs Data Pada Argumen Pemanggil Method Tersebut
