@@ -146,6 +146,33 @@ print(datas)                        # --> Mencetak variabel, maka akan mencetak 
 # Pengecekan Keanggotaan atau mempership subset
 # Sebelumnya Kita Sudah Menggunakan Pengecekan Membership Menggunakan Keyword if Dan in, Lalu Selain Metode Tersebut Ada Alternatif Lain Yang Bisa Digunakan Untuk Mengecek Apakah Suatu Data (Yang Pada Konteks Ini Adalah set) Merupakan Bagian Dari Elemen set Lain Dan Caranya Yaitu Menggunakan Method issubset()
 # Method issubset() Menerima Argumen Berupa Data set
+# Selain Method issubset() Ada Juga issuperset() Yang Berfungsi Kurang Lebih Sama Namun Kondisi Pengecekannya Dibalik
 
 datas = {"satu", "dua", "tiga"}     # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
 hello = {"satu", "dua", "empat"}    # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+
+results = hello.issubset(datas)     # --> Memeriksa apakah variabel hello adalah subset dari variabel datas atau jika semua elemen dalam variabel hello juga ada dalam variabel datas maka hello dianggap subset dari variabel datas dan tersimpan dalam variabel results
+print(results)                      # --> Mencetak variabel, maka akan mencetak pesan False
+
+datas = {"satu", "dua", "tiga"}     # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+hello = {"satu", "dua", "tiga"}     # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+
+results = hello.issubset(datas)     # --> Memeriksa apakah variabel hello adalah subset dari variabel data atau jika semua elemen dalam variabel hello juga ada dalam variabel datas maka hello dianggap subset dari variabel datas dan tersimpan dalam variabel results
+print(results)                      # --> Mencetak variabel, maka akan mencetak pesan True
+
+
+datas = {"satu", "dua", "tiga",}     # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+hello = {"satu", "dua", "empat"}    # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+
+results = datas.issuperset(hello)   # --> Memeriksa apakah variabel datas adalah superset dari variabel hello atau jika semua elemen dalam variabel hello ada dalam variabel datas maka datas dianggap superset dari variabel hello  dan tersimpan pada variabel results
+print(results)                      # --> Mencetak variabel, maka akan mencetak pesan False
+
+datas = {"satu", "dua", "tiga"}     # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+hello = {"satu", "dua", "tiga"}     # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+
+results = datas.issuperset(hello)   # --> Memeriksa apakah variabel datas adalah superset dari variabel hello atau jika semua elemen dalam variabel hello ada dalam variabel datas maka datas dianggap superset dari variabel hello  dan tersimpan pada variabel results
+print(results)                      # --> Mencetak variabel, maka akan mencetak pesan True
+
+
+# Pengecekan Keanggotaan Atau Membership disjoint
+# Method isdisjoint() Mengembalikan Nilai True Jika set Pada Pemanggilan Fungsi Berisi Elemen Yang Semuanya Bukan Anggota Data Method Dipanggil
