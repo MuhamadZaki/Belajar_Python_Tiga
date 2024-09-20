@@ -8,7 +8,7 @@
 
 # 1. Pengenalan set
 # Implementasi Tipe Data set Dan set Bisa Menampung Tipe Datanya Bisa Sejenis Bisa Tidak, Sama Seperti tuple Dan list
-# Fungsi len() Digunakan Untuk Menghitung Panjang Atau Lebar set
+# Fungsi len() Digunakan Untuk Menghitung Panjang Atau Lebar elemen set
 
 a_set = {5, "Laura", True, ("satu","dua")} # --> Inisialisasi variabel yang menyimpan data set, berisi elemen berbagai tipe data
 print(a_set)                               # --> Mencetak variabel, maka akan mencetak pesan {('satu', 'dua'), 'Laura', 5, True}
@@ -114,15 +114,38 @@ print(results)                  # --> Mencetak variabel, maka akan mencetak pesa
 # Method difference() Digunakan Untuk Mencari Perbedaan Elemen Antara Data yang Dimana method Dipanggsil vs Data Pada Argumen Pemanggil Method Tersebut
 # Selain method difference(), Adalagi yaitu Menthod diffrence_update() Yang Kegunaannya Adalah Mengubah Nilai Data (Dimana Method Dipanggil) Dengan Nilai Baru Yang Didapat Dari Perbedaan Elemen Antara Data Tersebut vs Data pada Argumen Pemanggil Method
 
-datas = {"satu", "dua", "tiga"}   # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data setring
+datas = {"satu", "dua", "tiga"}   # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
 hello = {"satu", "dua", "empat"}  # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+
 results = datas.difference(hello) # --> Menghitung perbedaan antara elemen dari variabel datas dan hello, lalu mengembalikan data set berisi elemen yang hanya ada di variabel datas dan tidak ada di variabel hello dan terimpan pada variabel results
 print(results)                    # --> Mencetak variabel, maka akan mencetak pesan {'tiga'}
 
 datas = {"satu", "dua", "tiga", "lima", "enam"}   # --> Inisialisasi variabel yang menyimpan data set, berisi 5 elemen data setring
 hello = {"satu", "dua", "empat"}  # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+
 datas.difference_update(hello)    # --> Mengubah variabel datas dengan menghapus elemen-elemen yang juga terdapat dalam variabel hello
 print(datas)                      # --> Mencetak variabel, maka akan mencetak pesan {'lima', 'tiga', 'enam'} (ingat posisi akan berubah-ubah setiap code dijalankan)
 
 # Pengecekan intersection Antar set
 # Method intersection() Digunakan Untuk Mencari Elemen yang Ada Di Data (Dimana Method Dipanggil) Vs Data Pada Argumen Pemanggil Method Tersebut
+# Ada Juga Method intersection_update() Yang Berguna Untuk Mengubah Nilai Data (Dimana Method Dipanggil) Dengan Nilai baru yang Didapat Dari Kesamaan Elemen Antara Data Tersebut Vs Data Pada Arguman Pemanggil Method
+
+datas = {"satu", "dua", "tiga"}     # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+hello = {"satu", "dua", "empat"}    # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+
+results = datas.intersection(hello) # --> Menghitung antara variabel  datas dan hello, lalu mengembalikan elemen-elemen yang ada di kedua variabel dan tersimpan pada variabel results
+print(results)                      # --> Mencetak variabel, maka akan mencetak pesan {'dua', 'satu'}
+
+
+datas = {"satu", "dua", "tiga"}     # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+hello = {"satu", "dua", "empat"}    # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+
+datas.intersection_update(hello)    # --> Menghitung antara variabel  datas dan hello, lalu mengubah set secara langsung atau in-place dan hanya mempertahankan elemen-elemen yang ada di kedua variabel 
+print(datas)                        # --> Mencetak variabel, maka akan mencetak pesan {'satu', 'dua'}
+
+# Pengecekan Keanggotaan atau mempership subset
+# Sebelumnya Kita Sudah Menggunakan Pengecekan Membership Menggunakan Keyword if Dan in, Lalu Selain Metode Tersebut Ada Alternatif Lain Yang Bisa Digunakan Untuk Mengecek Apakah Suatu Data (Yang Pada Konteks Ini Adalah set) Merupakan Bagian Dari Elemen set Lain Dan Caranya Yaitu Menggunakan Method issubset()
+# Method issubset() Menerima Argumen Berupa Data set
+
+datas = {"satu", "dua", "tiga"}     # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
+hello = {"satu", "dua", "empat"}    # --> Inisialisasi variabel yang menyimpan data set, berisi 3 elemen data string
