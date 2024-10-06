@@ -177,3 +177,10 @@ print("%s (%s)" % (values))                                      # --> Mencetak 
 
 values = bio["afiliasi"][1]["pedia"], bio["afiliasi"][1]["shope"] # --> Mengambil value dari "pedia", "shope" dari sict index kedua dalam list afiliasi dan tersimpan dalam variabel values
 print("%s (%s)" % (values))                                       # --> Mencetak variabel, atau value dengan format string dan akan mencetak pesan Buah (Hewan)
+
+
+
+print("------")
+# 5. Dictionary mutability
+# Item dict Adalah mutable, Perubahan value Item Bisa Dilakukan Langsung Menggunakan Operator assigment =
+
