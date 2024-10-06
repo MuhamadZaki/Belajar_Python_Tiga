@@ -149,7 +149,7 @@ print(bio["name"])               # --> Mencetak variabel, value dari keys "name"
 
 for item in bio["afiliasi"]:                             # --> Melakukan perulangan atau loop, mengiterasi melalui list "afiliasi" 
     if "ruko" in item and "gerai" in item:               # --> Kondisi, memeriksa apakah keys "ruko", "gerai" ada dalam dict item, jika kedua kondisi benar atau terpenuhi maka akan mengeksekusi kode di dalamnya
-        print("%s (%s)" % (item["ruko"], item["gerai"])) # --> Selanjutnya akan mengiterasi melalui setiap dict dalam list afiliasi dan mencetak value "ruko" dan "gerai", maka akan mencetak pesan Zaki (Toko)
+        print("%s (%s)" % (item["ruko"], item["gerai"])) # --> Jika kondisi terpenuhi makan akan mengiterasi melalui setiap dict dalam list afiliasi dan mencetak value "ruko" dan "gerai", maka akan mencetak pesan Zaki (Toko)
     
 # Pada Code Di Atas keys afiliasi Berisi List Object Dictionary
 
