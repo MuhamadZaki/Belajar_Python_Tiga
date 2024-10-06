@@ -127,3 +127,34 @@ print("------")
 # Dictionary becabang atau bersarang Bisa Dimanfaatkan Untuk menyimpan data Dengan Struktur yang Kopleks, Misalnya dict yang Salah Satu value itemnya Adalah list
 # Penerapannya Tidak Berbeda Seperti Inisialisasi dict Pada Umumnya, Langsung Tulis Saja dict Sebagai Child dictionary
 
+bio = {
+    "id":2,
+    "name":("Laura", "Natasia"),
+    "awas":"Setan",
+    "perempuan":True,
+
+    "afiliasi":[
+        {
+            "ruko":"Zaki",
+            "gerai":"Toko"
+        },
+        {
+            "pedia":"Buah",
+            "shope":"Hewan"
+        }
+    ]
+}                                # --> Inisialisasi variabel yang menyimpan data dict, berisi 4 key-value
+
+print(bio["name"])               # --> Mencetak variabel, value dari keys "name" dan mencetak pesan ('Laura', 'Natasia')
+
+for item in bio["afiliasi"]:                         # --> Melakukan perulangan atau loop, mengiterasi melalui list "afiliasi" 
+    print("%s (%s)" % (item["ruko"], item["gerai"])) # --> Selanjutnya akan mengiterasi melalui setiap dict dalam list afiliasi dan mencetak value "ruko" dan "gerai", maka akan mencetak pesan Zaki (Toko)
+
+# Pada Code Di Atas keys afiliasi Berisi List Object Dictionary
+# Contoh Cara Mengakses value nested item dictionary
+
+values = bio["afiliasi"][0]["name"], bio["afiliasi"][0]["gerai"] # --> Mengambil value dari "name", "gerai" dari dict index pertama dalam list afiliasi dan tersimpam dalam variabel values
+print("%s (%s)" % (values))                                      # --> Mencetak variabel, atau value dengan format string dan akan mencetak pesan Zaki (Toko)
+
+values = bio["afiliasi"][1]["pedia"], bio["afiliasi"][1]["shope"] # --> Mengambil value dari "pedia", "shope" dari sict index kedua dalam list afiliasi dan tersimpan dalam variabel values
+print("%s (%s)" % (values))                                       # --> Mencetak variabel, atau value dengan format string dan akan mencetak pesan Buah (Hewan)
