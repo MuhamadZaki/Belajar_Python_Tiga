@@ -143,7 +143,7 @@ bio = {
             "shope":"Hewan"
         },
     ]
-}                                # --> Inisialisasi variabel yang menyimpan data dict, berisi 4 key-value
+}                                # --> Inisialisasi variabel yang menyimpan data dict, berisi key-value
 
 print(bio["name"])               # --> Mencetak variabel, value dari keys "name" dan mencetak pesan ('Laura', 'Natasia')
 
@@ -170,17 +170,112 @@ bio = {
             "shope":"Hewan"
         },
     ]
-}                                # --> Inisialisasi variabel yang menyimpan data dict, berisi 4 key-value
+}                                # --> Inisialisasi variabel yang menyimpan data dict, berisi key-value
 
-values = bio["afiliasi"][0]["ruko"], bio["afiliasi"][0]["gerai"] # --> Mengambil value dari "name", "gerai" dari dict index pertama dalam list afiliasi dan tersimpam dalam variabel values
+values = bio["afiliasi"][0]["ruko"], bio["afiliasi"][0]["gerai"] # --> Mengambil value "name", "gerai" dari dict index pertama dalam list afiliasi dan tersimpam dalam variabel values
 print("%s (%s)" % (values))                                      # --> Mencetak variabel, atau value dengan format string dan akan mencetak pesan Zaki (Toko)
 
-values = bio["afiliasi"][1]["pedia"], bio["afiliasi"][1]["shope"] # --> Mengambil value dari "pedia", "shope" dari sict index kedua dalam list afiliasi dan tersimpan dalam variabel values
+values = bio["afiliasi"][1]["pedia"], bio["afiliasi"][1]["shope"] # --> Mengambil value "pedia", "shope" dari dict index kedua dalam list afiliasi dan tersimpan dalam variabel values
 print("%s (%s)" % (values))                                       # --> Mencetak variabel, atau value dengan format string dan akan mencetak pesan Buah (Hewan)
 
 
 
 print("------")
+
 # 5. Dictionary mutability
 # Item dict Adalah mutable, Perubahan value Item Bisa Dilakukan Langsung Menggunakan Operator assigment =
 
+bio = {
+    "id" : 2,
+    "name" : "Laura",
+    "perempuan" : True,
+    "afiliasi": [
+        {
+            "satu": "Cantik",
+            "dua": "Jelek"
+        },
+        {
+            "tiga": "Aduhai",
+            "empat": "Mempesona"
+        }
+    ]
+}                                     # --> Inisialisasi variabel yang menyimpan data dict, berisi key-value
+
+print(bio["afiliasi"][0]["dua"])      # --> Mencetak dan Mengambil value "dua" dari dict index pertama, dalam list afiliasi, maka akan mencetak pesan Jelek
+
+bio["afiliasi"][0]["satu"] = "Aduhai" # --> Mengubah value "satu" dari dict index pertama, dalam list afiliasi
+
+print(bio["afiliasi"][0]["satu"])     # --> Mencetak dan mengambil value baru "satu" setelah diubah, maka akan mencetak pesan Aduhai
+
+
+
+print("------")
+
+# Operasi Data dictionary
+
+# Pengaksesan Item
+# Pengaksesan Item dilakukan Lewat Notasi dict["keys"], Atau Bisa Digunakan Dengan Menggunakan Method get()
+
+bio = {
+    "id" : 2,
+    "name" : "Laura",
+    "perempuan" : True,
+    "afiliasi":[
+        {
+            "satu" : "Lele",
+            "dua"  : "Nila"
+        },
+        {
+            "tiga" : "Gajah",
+            "empat" : "Singa"
+        }
+    ]
+}                               # --> Inisialisasi variabel yang menyimpan data dict, berisi key-value
+
+print(bio["id"])                # --> Mencetak value dari keys "id", maka akan mencetak pesan 2
+print(bio.get("name"))          # --> Mencetak value dari keys "name", maka akan mencetak pesan laura
+
+# Mengubah Isi dictionary
+# Mengubah value item dict Adalah Dengan Mengaksesnya Terlebih Dahulu, Kemudian Diikuti Operasi assignment
+
+bio = {
+    "id" : 4,
+}                    # --> Inisialisasi variabel yang menyimpan data dict, berisi key-value
+
+bio["plus"] = "Satu" # --> Menambahkan key-value baru ke dalam dict atau variabel bio
+
+print(bio)           # --> Mencetak variabel, maka akan mencetak pesan {'id': 4, 'plus': 'Satu'}
+
+# Selain Cara Di Atas Juga Bisa menggunakan Method update(), Tulis keys Dan value Baru yang Ingin Ditambahkan Sebagai Argument Method update() Dalam Bentuk dictionary
+
+bio = {
+    "id" : 4,
+}                             # --> Inisialisasi variabel yang menyimpan data dict, berisi key-value
+
+bio.update({"motor":"Vario"}) # --> Menambahkan key-value baru ke dalam dict variabel bio
+print(bio)                    # --> Mencetak variabel, maka akan mencetak pesan {'id': 4, 'motor': 'Vario'}
+
+# Menghapus Item dictionary
+# Method pop() Digunakan Untuk Menghapus Item dictionary Berdasarkan keys
+
+bio = {
+    "id" : 3,
+    "perempuan" : True
+}                      # --> Inisialisasi variabel yang menyimpan data dict, berisi key-value
+
+bio.pop("id")          # --> Menghapus keys "id" dari dict atau variabel bio
+print(bio)             # --> Mencetak variabel, maka akan mencetak pesan {'perempuan': True}
+
+# Keyword del Juga Bisa Difungsikan Untuk Operasi Yang Sama
+
+bio = {
+    "id": 2,
+    "perempuan" : True
+}                      # --> Inisialisasi variabel yang menyimpan data dict, berisi key-value
+
+del bio["perempuan"]   # --> Menghapus keys "perempuan" dari dict atau variabel bio
+print(bio)             # --> Mencetak variabe, maka akan mencetak pesan {'id': 2}
+
+
+# Pengaksesan dictionary keys
+# Method keys() Digunakan Untuk Mengakses Semua keys dictionary, Hasilnya Adalah Tipe Data view objects dict_keys Dan Dari Nilai Tersebut, Bungkus Menggunakan list() Untuk Mendapatkan Nilainya Dalam Bentuk list
