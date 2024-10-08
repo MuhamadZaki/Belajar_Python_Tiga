@@ -279,3 +279,64 @@ print(bio)             # --> Mencetak variabe, maka akan mencetak pesan {'id': 2
 
 # Pengaksesan dictionary keys
 # Method keys() Digunakan Untuk Mengakses Semua keys dictionary, Hasilnya Adalah Tipe Data view objects dict_keys Dan Dari Nilai Tersebut, Bungkus Menggunakan list() Untuk Mendapatkan Nilainya Dalam Bentuk list
+
+bio = {
+    "id": 2,
+    "name": ("zaki", "Jeki"),
+    "perempuan": True
+
+}                               # --> Inisialisasi variabel yang menyimpan data dict, berisi key-value
+
+print(list(bio.keys()))         # --> Mencetak semua keys yang ada dalam dict atau variabel bio, maka akan mencetak pesan dict_keys(['id', 'name', 'perempuan'])
+
+
+# Pengaksesan dictionary values
+# Method values() Digunakan Untuk Mengakses Semua value dict, Hasilnya Adalah Tipe Data view objects dict_values Dan Gunakan Fungsi list() Untuk Mengonversinya Ke Bentuk list
+
+bi0 = {
+    "id": 4,
+    "name": "Zaki",
+    "perempuan": False
+}                               # --> Inisialisasi variabel yang menyimpan data dict, berisi key-value
+
+print(list(bio.values()))       # --> Mencetak semua values yang ada dalam dict atau variabel bio, maka akan mencetak pesan [2, ('zaki', 'Jeki'), True]
+
+
+# Method items() dictionary
+# Digunakan Untuk Mengakses Semua item dict, Nilai Baliknya bertipe view objects dict_items Yang Strukturnya Cukup Mirip Seperti list Berisi tuple Dan Untuk Mengonversinya Ke Bentuk list, Gunakan Fungsi list()
+
+bio = {
+    "id": 3,
+    "name": ("Ichigo", "Naruto"),
+    "perempuan": False
+}                               # --> Inisialisasi variabel yang menyimpan data dict, berisi key-value
+
+print(list(bio.items()))        # --> Mencetak semua key-value yang ada dalam dict atau variabel bio, maka akan mencetak pesan [('id', 3), ('name', ('Ichigo', 'Naruto')), ('perempuan', False)]
+
+
+# copy dictionary
+# Method copy() Digunakan Untuk Meng-copy dictionary Dan Hasilnya Data dict Baru
+
+bio = {
+    "id": 3,
+    "name": "Zaki",
+    "perempuan": False
+}                        # --> Inisialisasi variabel yang menyimpan data dict, berisi key-value
+
+profil = bio.copy()      # --> Membuat salinan dari dict atau variabel bio dan tersimpan pada variabel profil
+print(profil)            # --> Mencetak variabel, maka akan mencetak pesan {'id': 3, 'name': 'Zaki', 'perempuan': False}
+
+# Operasi copy Disini Jenisnya Adalah shallow copy
+
+
+# Mengosongkan Isi dictionary
+# Method clear() Berguna Untuk Menghapus isi dictionary
+
+bio = {
+    "id": 3,
+    "name": "Zaki",
+    "perempuan": False
+}                        # --> Inisialisasi variabel yang menyimpan data dict, berisi key-value
+
+bio.clear()              # --> Mengosongkan atau menghapus isi dari dict atau variabel bio
+print(bio)               # --> mencetak variabel, maka akan mencetak pesan {}
