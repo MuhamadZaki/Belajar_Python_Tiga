@@ -51,4 +51,7 @@ print(a_str)                # --> mencetak variabel, maka akan mencetak pesan ak
 print("------")
 
 # 2. String special characters
-# 
+# Di Atas Telah Dicontohkan Bagaimana Cara Menulis Karakter Newline Atau Baris Baru Menggunakan \n, Dan Karakter Petik Dua Menggunakan \". Dua Karakter Tersebut Adalah Contoh Dari Special characters.
+
+# Python Mengenal banyak Spesial karakter Yang Masing-masing Memiliki Kegunaan Yang Cukup Spesifik.
+
